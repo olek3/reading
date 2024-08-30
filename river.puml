@@ -5,6 +5,7 @@ skin rose
 skinparam backgroundcolor transparent
 skinparam defaultfontcolor #brown
 skinparam arrowcolor #blue
+skinparam arrowfontcolor #forestgreen
 
 title River East, River West
 
