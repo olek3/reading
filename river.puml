@@ -2,7 +2,8 @@
 
 skin rose
 left to right direction
-skinparam background transparent
+skinparam backgroundcolor transparent
+skinparam defaultfontcolor #brown
 
 title River East, River West
 
