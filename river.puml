@@ -1,9 +1,10 @@
 @startuml
 
-skin rose
 left to right direction
+skin rose
 skinparam backgroundcolor transparent
 skinparam defaultfontcolor #brown
+skinparam arrowcolor #blue
 
 title River East, River West
 
@@ -21,10 +22,10 @@ Sloan -> Alva : мать
 Fang -> Sloan : жених
 
 
+
 Fang -- (свадьба)
 Sloan -- (свадьба)
 Alva -- (свадьба)
-
 
 
 (свадьба) -- :Feng: : гость
