@@ -1,0 +1,64 @@
+@startuml
+
+skin rose
+left to right direction
+
+
+title River East, River West
+
+:Sloan:
+
+:Alva:
+
+:Lu Fang: as Fang
+
+:Li Xinwei: as Li
+
+Sloan -> Alva : мать
+
+
+Fang -> Sloan : жених
+
+
+Fang -- (свадьба)
+Sloan -- (свадьба)
+Alva -- (свадьба)
+
+
+
+(свадьба) -- :Feng: : гость
+(свадьба) -- :Lu: : гость
+note on link : или это сам Lu Fang?
+
+
+
+Li --> Alva : лучшая подруга
+
+(школа) -- Alva
+(школа) -- Li
+
+:Zhang Shao: as Zhang
+
+:Gao Xiaofan: as Gao
+
+:Ms. Song: as Song
+
+:Liu: as Liu
+
+Zhang --> Alva : просто одноклассница
+Zhang - (школа) : ученица
+
+Liu -> Li : superviser
+
+Song -- (школа) : учительница
+
+Gao -- (школа) : ученик
+
+:Teng Xin: as Teng
+:Doggy: as Doggy
+
+Teng --> Gao : друг
+Doggy --> Gao : друг
+
+
+@enduml
