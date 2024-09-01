@@ -64,4 +64,9 @@ Teng --> Gao : друг
 Doggy --> Gao : друг
 
 
+:Ciyi: as Ciyi
+
+Ciyi ->> Fang : жена
+
+
 @enduml
