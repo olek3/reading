@@ -67,11 +67,28 @@ Doggy --> Gao : друг
 :Ciyi: as Ciyi
 
 
-(Qindao, 1985) as Qingdao
+(Qingdao, 1985) as Qingdao
 
 Ciyi ->> Fang : жена
 
-Ciyi -- Qingdao
-Fang -- Qingdao
+Qingdao -- Ciyi
+Qingdao -- Fang
+Qingdao -- Sloan
+
+:Huang: as Huang
+:Xiao Qi: as Qi
+:Jim: as Jim
+:Auntie Wang: as Wang
+:Yu Chentian: as Yu
+
+
+Huang --- Qingdao : продавец молока
+Qi -- Qingdao
+Qi -> Fang : выездной коллега
+Wang --- Qingdao : соседка с 1 этажа
+
+Yu --- (школа) : из параллельного класса
+
+Jim -- Qingdao : пивовар
 
 @enduml
