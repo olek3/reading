@@ -37,7 +37,7 @@ note on link : или это сам Lu Fang?
 
 Li --> Alva : лучшая подруга
 
-(школа) -- Alva
+(школа) -- Alva : ответственная за ДЗ
 (школа) -- Li
 
 :Zhang Shao: as Zhang
@@ -48,8 +48,7 @@ Li --> Alva : лучшая подруга
 
 :Liu: as Liu
 
-Zhang --> Alva : просто одноклассница
-Zhang - (школа) : ученица
+Zhang -- (школа) : одноклассница
 
 Liu -> Li : superviser
 
@@ -82,10 +81,10 @@ Qingdao -- Sloan
 :Yu Chentian: as Yu
 
 
-Huang --- Qingdao : продавец молока
+Huang -- Qingdao : продавец молока
 Qi -- Qingdao
 Qi -> Fang : выездной коллега
-Wang --- Qingdao : соседка с 1 этажа
+Wang -- Qingdao : соседка с 1 этажа
 
 Yu --- (школа) : из параллельного класса
 
