@@ -90,4 +90,48 @@ Yu --- (школа) : из параллельного класса
 
 Jim -- Qingdao : пивовар
 
+Fang --> :Lu Min: : сын
+Ciyi --> :Lu Min: : сын
+
+' новая школа Альвы
+
+(новая школа) as new_school
+
+Alva -- new_school
+
+:Ms Steward: as Steward
+
+new_school -- Steward : учительница
+
+:Zoey: as Zoey
+
+Alva -> Zoey : новая подруга
+
+Zoey -- new_school
+
+(Дом Зои) as zoey_home
+
+Zoey -- zoey_home
+
+new_school -- :Ashley:  :одноклассница
+
+:Jiyoon: as korean <<кореянка>>
+
+new_school -- korean
+
+:Feng: as Feng_driver
+:Julia: as Julia
+:Girlie: as girlie
+
+Zoey <- Julia : мать
+
+Julia -- zoey_home
+
+zoey_home -- Feng_driver : водитель
+zoey_home -- girlie : служанка
+
+korean -> Ashley : подруга
+
+
+
 @enduml
