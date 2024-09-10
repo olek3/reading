@@ -20,12 +20,12 @@ title River East, River West
 Sloan -> Alva : мать
 
 
-Fang -> Sloan : жених
+Fang -> Sloan : в итоге муж
 
 
 
-Fang -- (свадьба)
-Sloan -- (свадьба)
+Fang -- (свадьба) : жених
+Sloan -- (свадьба) : невеста
 Alva -- (свадьба)
 
 
