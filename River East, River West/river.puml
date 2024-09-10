@@ -9,11 +9,11 @@ skinparam arrowfontcolor #forestgreen
 
 title River East, River West
 
-:Sloan:
+:Sloan: #pink
 
-:Alva:
+:Alva: #pink
 
-:Lu Fang: as Fang
+:Lu Fang: as Fang #pink
 
 :Li Xinwei: as Li
 
@@ -105,7 +105,7 @@ new_school -- Steward : учительница
 
 :Zoey: as Zoey
 
-Alva -> Zoey : новая подруга
+Alva --> Zoey : новая подруга
 
 Zoey -- new_school
 
@@ -123,7 +123,7 @@ new_school -- korean
 :Julia: as Julia
 :Girlie: as girlie
 
-Zoey <- Julia : мать
+Julia --> Zoey : мать
 
 Julia -- zoey_home
 
@@ -132,6 +132,10 @@ zoey_home -- girlie : служанка
 
 korean -> Ashley : подруга
 
+:Daniel: as Daniel
 
+Daniel -- zoey_home
+Daniel --> Zoey : отец
+Daniel --> Julia : муж
 
 @enduml
