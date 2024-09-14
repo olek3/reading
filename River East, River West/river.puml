@@ -26,7 +26,7 @@ Fang -> Sloan : в итоге муж
 
 Fang -- (свадьба) : жених
 Sloan -- (свадьба) : невеста
-Alva -- (свадьба)
+Alva -- (свадьба) : дочь невесты
 
 
 (свадьба) -- :Feng: : гость
@@ -137,5 +137,9 @@ korean -> Ashley : подруга
 Daniel -- zoey_home
 Daniel --> Zoey : отец
 Daniel --> Julia : муж
+
+:Gabe: as Gabe
+
+Zoey <-- Gabe : друг
 
 @enduml
