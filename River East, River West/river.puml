@@ -52,7 +52,7 @@ Zhang -- (школа) : одноклассница
 
 Liu -> Li : superviser
 
-Song -- (школа) : учительница
+(школа) - Song  : учительница
 
 Gao -- (школа) : ученик
 
@@ -86,7 +86,7 @@ Qi -- Qingdao
 Qi -> Fang : выездной коллега
 Wang -- Qingdao : соседка с 1 этажа
 
-Yu --- (школа) : из параллельного класса
+Yu - (школа) : из параллельного класса
 
 Jim -- Qingdao : пивовар
 
@@ -140,10 +140,25 @@ Daniel --> Julia : муж
 
 :Gabe: as Gabe
 
-Zoey <-- Gabe : друг
+Zoey <- Gabe : друг
 
 :Ms Su: as Su
 
 new_school - Su : помощник трененра
+
+(филантропический банкет) as banquet
+
+banquet -- Daniel : директор
+banquet - Alva
+banquet -- Zoey
+
+:Charles Zhe: -- banquet : директор
+:Xi Lipeng: as Lily
+Lily -- banquet
+:Alice Fan: -- banquet : директор
+
+:Ms. McCoy: - new_school : историчка
+
+Fang --> :"Old Two": : брат
 
 @enduml
