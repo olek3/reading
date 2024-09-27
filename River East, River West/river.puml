@@ -82,7 +82,7 @@ Qingdao -- Sloan
 
 
 Huang -- Qingdao : продавец молока
-Qi -- Qingdao
+Qi - Qingdao
 Qi -> Fang : выездной коллега
 Wang -- Qingdao : соседка с 1 этажа
 
@@ -160,5 +160,9 @@ Lily -- banquet
 :Ms. McCoy: - new_school : историчка
 
 Fang --> :"Old Two": : брат
+
+Alva -- (Хайнань)
+
+(Хайнань) -- :Su Lin: : барменша
 
 @enduml
