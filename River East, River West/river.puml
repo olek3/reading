@@ -2,37 +2,34 @@
 
 left to right direction
 skin rose
-skinparam backgroundcolor transparent
+skinparam backgroundcolor seashell
 skinparam defaultfontcolor #brown
 skinparam arrowcolor #blue
 skinparam arrowfontcolor #forestgreen
 
 title River East, River West
 
-:Sloan:
+:Sloan: #pink
 
-:Alva:
+:Alva: #pink
 
-:Lu Fang: as Fang
+:Lu Fang: as Fang #pink
 
 :Li Xinwei: as Li
 
 Sloan -> Alva : мать
 
 
-Fang -> Sloan : жених
+Fang -> Sloan : в итоге муж
 
 
 
-Fang -- (свадьба)
-Sloan -- (свадьба)
-Alva -- (свадьба)
+Fang -- (свадьба) : жених
+Sloan -- (свадьба) : невеста
+Alva -- (свадьба) : дочь невесты
 
 
 (свадьба) -- :Feng: : гость
-(свадьба) -- :Lu: : гость
-note on link : или это сам Lu Fang?
-
 
 
 Li --> Alva : лучшая подруга
@@ -52,7 +49,7 @@ Zhang -- (школа) : одноклассница
 
 Liu -> Li : superviser
 
-Song -- (школа) : учительница
+(школа) - Song  : учительница
 
 Gao -- (школа) : ученик
 
@@ -82,12 +79,87 @@ Qingdao -- Sloan
 
 
 Huang -- Qingdao : продавец молока
-Qi -- Qingdao
+Qi - Qingdao
 Qi -> Fang : выездной коллега
 Wang -- Qingdao : соседка с 1 этажа
 
-Yu --- (школа) : из параллельного класса
+Yu - (школа) : из параллельного класса
 
 Jim -- Qingdao : пивовар
+
+Fang --> :Lu Min: : сын
+Ciyi --> :Lu Min: : сын
+
+' новая школа Альвы
+
+(новая школа) as new_school
+
+Alva -- new_school
+
+:Ms Steward: as Steward
+
+new_school -- Steward : учительница
+
+:Zoey: as Zoey
+
+Alva --> Zoey : новая подруга
+
+Zoey -- new_school
+
+(Дом Зои) as zoey_home
+
+Zoey -- zoey_home
+
+new_school -- :Ashley:  :одноклассница
+
+:Jiyoon: as korean <<кореянка>>
+
+new_school -- korean
+
+:Feng: as Feng_driver
+:Julia: as Julia
+:Girlie: as girlie
+
+Julia --> Zoey : мать
+
+Julia -- zoey_home
+
+zoey_home -- Feng_driver : водитель
+zoey_home -- girlie : служанка
+
+korean -> Ashley : подруга
+
+:Daniel: as Daniel
+
+Daniel -- zoey_home
+Daniel --> Zoey : отец
+Daniel --> Julia : муж
+
+:Gabe: as Gabe
+
+Zoey <- Gabe : друг
+
+:Ms Su: as Su
+
+new_school - Su : помощник трененра
+
+(филантропический банкет) as banquet
+
+banquet -- Daniel : директор
+banquet - Alva
+banquet -- Zoey
+
+:Charles Zhe: -- banquet : директор
+:Xi Lipeng: as Lily
+Lily -- banquet
+:Alice Fan: -- banquet : директор
+
+:Ms. McCoy: - new_school : историчка
+
+Fang --> :"Old Two": : брат
+
+Alva -- (Хайнань)
+
+(Хайнань) -- :Su Lin: : барменша
 
 @enduml
