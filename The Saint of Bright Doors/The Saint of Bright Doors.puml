@@ -1,0 +1,20 @@
+@startuml
+
+'left to right direction
+skin rose
+skinparam backgroundcolor seashell
+
+
+' Chapter 1
+
+:Fetter: as fetter #pink
+
+:Mother-of-Glory: as mother
+
+:the Perfect and Kind: as father
+
+
+mother --> fetter : мать
+father --> fetter : отец
+
+@enduml
