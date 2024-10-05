@@ -17,4 +17,11 @@ skinparam backgroundcolor seashell
 mother --> fetter : мать
 father --> fetter : отец
 
+(Acusdab) -- mother
+(Acusdab)-- fetter
+
+' Chapter 3
+:Hejmen: as hejmen
+
+hejmen --> fetter : date 
 @enduml
