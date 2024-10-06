@@ -3,6 +3,7 @@
 'left to right direction
 skin rose
 skinparam backgroundcolor seashell
+skinparam wrapwidth 100
 
 
 ' Chapter 1
@@ -17,11 +18,33 @@ skinparam backgroundcolor seashell
 mother --> fetter : мать
 father --> fetter : отец
 
-(Acusdab) -- mother
-(Acusdab)-- fetter
+(Acusdab) - mother
+(Acusdab) - fetter : родился в
 
 ' Chapter 3
 :Hejmen: as hejmen
 
-hejmen --> fetter : date 
+hejmen --> fetter : date
+
+(Luriat) as luriat
+
+hejmen -- luriat
+fetter - luriat : осел в
+
+(Group of Unchosen) as group
+
+luriat .> group : <<includes>>
+
+:Koel:
+:Ulpe:
+
+fetter -- group
+
+group -- :Koel: : veteran
+group -- :Ulpe: : newcomer
+
+' Chapter 4
+
+group -- :Caduv: : потом пришел
+
 @enduml
