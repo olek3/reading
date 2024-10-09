@@ -4,7 +4,8 @@
 skin rose
 skinparam backgroundcolor seashell
 skinparam wrapwidth 100
-
+left to right direction
+skinparam usecase<<town>>backgroundcolor technology
 
 ' Chapter 1
 
@@ -18,6 +19,8 @@ skinparam wrapwidth 100
 mother --> fetter : мать
 father --> fetter : отец
 
+(Acusdab) <<town>>
+
 (Acusdab) - mother
 (Acusdab) - fetter : родился в
 
@@ -26,7 +29,7 @@ father --> fetter : отец
 
 hejmen --> fetter : date
 
-(Luriat) as luriat
+(Luriat) as luriat <<town>>
 
 hejmen -- luriat
 fetter - luriat : осел в
@@ -38,13 +41,14 @@ luriat .> group : <<includes>>
 :Koel:
 :Ulpe:
 
-fetter -- group
-
 group -- :Koel: : veteran
 group -- :Ulpe: : newcomer
 
 ' Chapter 4
 
 group -- :Caduv: : потом пришел
+
+note "с голосом"  as caduvNote
+:Caduv: .. caduvNote
 
 @enduml
