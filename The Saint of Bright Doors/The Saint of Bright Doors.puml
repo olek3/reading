@@ -6,6 +6,7 @@ skinparam backgroundcolor seashell
 skinparam wrapwidth 100
 left to right direction
 skinparam usecase<<town>>backgroundcolor technology
+skinparam usecase<<cult>>backgroundcolor implementation
 
 ' Chapter 1
 
@@ -36,7 +37,9 @@ fetter - luriat : осел в
 
 (Group of Unchosen) as group
 
-luriat .> group : <<includes>>
+fetter -- group
+
+luriat ..> group : <<includes>>
 
 :Koel:
 :Ulpe:
@@ -50,5 +53,16 @@ group -- :Caduv: : потом пришел
 
 note "с голосом"  as caduvNote
 :Caduv: .. caduvNote
+
+' Chapter 7
+
+(Path Above) as above <<cult>>
+(Path Behind) as behind <<cult>>
+above .> behind : <<enemy>>
+behind .> above
+
+above -- father : head of
+
+Salyut -- above : Saint-General
 
 @enduml
