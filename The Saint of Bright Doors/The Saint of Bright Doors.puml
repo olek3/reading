@@ -66,6 +66,7 @@ above -- father : head of
 Salyut -- above : Saint-General
 
 
+' Chapter 8
 :Peroe:
 
 fetter --> :Peroe: : <<impersonates>>
@@ -80,5 +81,11 @@ luriat ...> (Door Committee ) : <<includes>>
 
 (Door Committee ) -- :Gerau: : член
 (Door Committee ) -- :Coema: : член
+
+(researchers) -- :Coema: : mentoring
+(researchers) -- :Pipra:
+
+:Peroe: -- (researchers)
+
 
 @enduml
