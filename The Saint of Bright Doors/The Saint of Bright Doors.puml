@@ -52,7 +52,7 @@ group -- :Ulpe: : newcomer
 group -- :Caduv: : потом пришел
 
 note "с голосом"  as caduvNote
-:Caduv: .. caduvNote
+caduvNote . :Caduv:
 
 ' Chapter 7
 
@@ -76,5 +76,10 @@ fetter --> :Peroe: : <<impersonates>>
 
 (Door Committee ) -- :Tomarin: : председатель
 :Tomarin: <-- :Sculu: : servant
+
+luriat ...> (Door Committee ) : <<includes>>
+
+(Door Committee ) -- :Gerau: : член
+(Door Committee ) -- :Coema: : член
 
 @enduml
