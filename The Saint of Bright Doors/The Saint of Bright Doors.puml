@@ -62,6 +62,7 @@ above .> behind : <<enemy>>
 behind .> above
 
 above -- father : head of
+behind -- father : former
 
 Salyut -- above : Saint-General
 
