@@ -89,7 +89,7 @@ luriat ...> (Door Committee ) : <<includes>>
 
 ' Chapter 9
 
-(researchers) -- :Janno:
+:Janno: -- (researchers)
 
 ' Chapter 12
 
@@ -97,5 +97,9 @@ luriat ...> (Door Committee ) : <<includes>>
 :Vido: -- above : секретарь
 
 :Vido: --> father : любовник
+
+(researchers) -- :Avli:
+
+:Avli: -> :Pipra: : замена
 
 @enduml
