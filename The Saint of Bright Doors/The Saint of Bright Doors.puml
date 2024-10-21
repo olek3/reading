@@ -23,7 +23,7 @@ father --> fetter : отец
 (Acusdab) <<town>>
 
 (Acusdab) - mother
-(Acusdab) - fetter : родился в
+(Acusdab) - fetter : вырос в
 
 ' Chapter 3
 :Hejmen: as hejmen
@@ -32,7 +32,7 @@ hejmen --> fetter : date
 
 (Luriat) as luriat <<town>>
 
-hejmen -- luriat
+hejmen -- luriat : родился в
 fetter - luriat : осел в
 
 (Group of Unchosen) as group
