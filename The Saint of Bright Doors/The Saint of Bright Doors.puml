@@ -112,4 +112,19 @@ luriat ...> (Door Committee ) : <<includes>>
 
 :Isla: --> :Salyut: : lay attendant
 
+(Path Unitary) as unitary <<cult>>
+
+unitary -- father : new
+behind --> unitary : joins
+above --> unitary : join
+
+(Acusdab) -- :Ordinary: : ambassador of
+:Ordinary: -- luriat  : ambassador in
+
+:Ordinary: -> mother : lover
+
+behind - :Ripening Wisdom:
+
+fetter <-- :Unfettered: : тень
+
 @enduml
