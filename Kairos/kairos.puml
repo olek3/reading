@@ -1,0 +1,12 @@
+@startuml
+
+' while testing
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/reading/iuml"
+
+!include $stylePath/reading.iuml
+
+
+' поехали
+actor Katharina <<protagonist>>
+
+@enduml
