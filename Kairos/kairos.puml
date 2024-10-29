@@ -1,2 +1,41 @@
+@startuml
+
+' while testing
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/reading/iuml"
+
+!include $stylePath/reading.iuml
+
+'============== поехали ================
+
+actor Katharina as kat <<protagonist>>
+
+actor Hans as hans <<protagonist>>
+
+kat --> hans : ?
+
+'(Kranzler Cafe)  <<place>>
+
+'Box I
+
+:Erika Ambach: as erika
+
+erika --> kat : mother
+
+(Academie) as academy <<place>>
+
+erika -- academy : doctoral student
+
+:??: as wife
+
+wife --> hans : wife
+
+academy - wife  : research lab
+
+:Ludwig: as ludwig
+
+hans <-- ludwig  : son
+wife <-- ludwig  : son
+
+:Gernot: --> kat : first boyfriend 
 
 @enduml
