@@ -12,6 +12,7 @@ actor Katharina as kat <<protagonist>>
 actor Hans as hans <<protagonist>>
 
 kat --> hans : ?
+hans --> kat : ?
 
 '(Kranzler Cafe)  <<place>>
 
@@ -33,7 +34,7 @@ academy - wife  : research lab
 
 :Ludwig: as ludwig
 
-hans <-- ludwig  : son
+hans <- ludwig  : son
 wife <-- ludwig  : son
 
 :Gernot: --> kat : first boyfriend 
@@ -42,7 +43,7 @@ wife <-- ludwig  : son
 
 :Agnes: -- hun 
 
-:Agnes: --> kat : relative? 
+kat --> :Agnes: : relative?
 
 kat --> :Christina: : childhood friend
 
