@@ -21,7 +21,7 @@ kat --> hans : ?
 
 erika --> kat : mother
 
-(Academie) as academy <<place>>
+(Academie) as academy <<location>>
 
 erika -- academy : doctoral student
 
@@ -38,7 +38,7 @@ wife <-- ludwig  : son
 
 :Gernot: --> kat : first boyfriend 
 
-(Hungary) as hun <<place>>
+(Hungary) as hun <<location>>
 
 :Agnes: -- hun 
 
