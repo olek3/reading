@@ -38,4 +38,10 @@ wife <-- ludwig  : son
 
 :Gernot: --> kat : first boyfriend 
 
+(Hungary) as hun <<place>>
+
+:Agnes: -- hun 
+
+:Agnes: --> kat : relative? 
+
 @enduml
