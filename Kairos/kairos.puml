@@ -44,4 +44,6 @@ wife <-- ludwig  : son
 
 :Agnes: --> kat : relative? 
 
+kat --> :Christina: : childhood friend
+
 @enduml
