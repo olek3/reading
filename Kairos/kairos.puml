@@ -52,7 +52,9 @@ note on link : или матери Кристины?
 
 :Herr Sterz: as boss 
 
-boss --> kat : boss 
+kat <-- boss : boss
 
-:Sibylle: --> kat : friend (gin)
+kat <-- :Sibylle: : friend (gin)
+
+
 @enduml
