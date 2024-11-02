@@ -11,8 +11,8 @@ actor Katharina as kat <<protagonist>>
 
 actor Hans as hans <<protagonist>>
 
-kat --> hans : ?
-hans --> kat : ?
+kat --> hans
+hans --> kat
 
 '(Kranzler Cafe)  <<place>>
 
@@ -24,7 +24,7 @@ erika --> kat : mother
 
 (Academie) as academy <<location>>
 
-erika -- academy : doctoral student
+erika - academy : doctoral student
 
 :Ingrid: as wife
 
@@ -37,18 +37,17 @@ academy - wife  : research lab
 hans <- ludwig  : son
 wife <-- ludwig  : son
 
-:Gernot: --> kat : first boyfriend 
+:Gernot: -> kat : first boyfriend
 
 (Hungary) as hun <<location>>
 
 :Agnes: -- hun 
 
-kat --> :Agnes: : relative?
+:Agnes: -> erika : friend
 
-kat --> :Christina: : childhood friend
+kat -> :Christina: : childhood friend
 
-:Ralph: --> erika : second husband
-note on link : или матери Кристины?
+ erika <-- :Ralph: : second husband
 
 :Herr Sterz: as boss 
 
