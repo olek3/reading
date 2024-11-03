@@ -6,7 +6,15 @@
 
 !include $stylePath/reading.iuml
 
+
+skinparam actor<<ex>>backgroundcolor orange
+
+
 '============== поехали ================
+title Kairos
+
+
+
 
 actor Katharina as kat <<protagonist>>
 
@@ -35,26 +43,66 @@ academy - wife  : research lab
 
 :Ludwig: as ludwig
 
-hans <- ludwig  : son
+ludwig -> hans  : son
 wife <-- ludwig  : son
 
+
+:Gernot: <<ex>>
 :Gernot: -> kat : first boyfriend
 
 (Hungary) as hun <<location>>
 
-:Agnes: -- hun 
+:Agnes: -- hun
 
 :Agnes: -> erika : friend
 
 kat -> :Christina: : childhood friend
 
- erika <-- :Ralph: : second husband
+ :Ralph: --> erika  : second husband
 
-:Herr Sterz: as boss 
+:Herr Sterz: as boss
 
 kat <-- boss : boss
 
-kat <-- :Sibylle: : friend (gin)
+kat <--- :Sibylle: : friend (gin)
 
+:Heike: --> kat : colleague
+
+:Jens: <<ex>>
+
+:Jens: --> kat : first kiss
+
+kat <-- :Moritz: : guinea pig
+
+:Phillip: <<ex>>
+kat <--- :Phillip: : friend
+
+
+(Cologne relatives ) as keln <<group>>
+
+keln -- :Annie: : aunt
+
+
+(Leipzig)  as leipzig <<location>>
+"???" as father
+kat <--- father : father
+father -- leipzig
+
+
+:Senta: -- keln : dog
+
+keln -- :Katrin: : cousin
+keln -- :Manfred: : uncle
+kat  <-- :Emmi: : grandmother
+
+:Katrin: <- :Christian: : fiancee
+
+:Emmi: -->  :Annie: : mother
+:Katrin: --> :Annie: : daugher
+:Manfred: -> :Annie: : husband
+
+:Emmi: ----> erika : mother
+
+:Emmi: -- keln
 
 @enduml
