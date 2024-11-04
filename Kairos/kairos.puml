@@ -7,21 +7,16 @@
 !include $stylePath/reading.iuml
 
 
-skinparam actor<<ex>>backgroundcolor lightcoral
-
-
 '============== поехали ================
 title Kairos
-
-
 
 
 actor Katharina as kat <<protagonist>>
 
 actor Hans as hans <<protagonist>>
 
-kat --> hans
-hans --> kat
+kat ----> hans
+hans ----> kat
 
 '(Kranzler Cafe)  <<place>>
 
@@ -66,13 +61,14 @@ kat <-- boss : boss
 
 kat <--- :Sibylle: : friend (gin)
 
-:Heike: --> kat : colleague
+:Heike: ---> kat : colleague
 
 :Jens: <<ex>>
 
 :Jens: --> kat : first kiss
 
-kat <-- :Moritz: : guinea pig
+:Moritz: <<pet>>
+:Moritz: ---> kat  : guinea pig
 
 :Phillip: <<ex>>
 kat <--- :Phillip: : friend
@@ -88,7 +84,7 @@ keln -- :Annie: : aunt
 kat <--- father : father
 father -- leipzig
 
-
+:Senta: <<pet>>
 :Senta: -- keln : dog
 
 keln -- :Katrin: : cousin
@@ -99,25 +95,42 @@ kat  <-- :Emmi: : grandmother
 
 :Emmi: -->  :Annie: : mother
 :Katrin: --> :Annie: : daugher
-:Manfred: -> :Annie: : husband
+:Manfred: --> :Annie: : husband
 
 :Emmi: ----> erika : mother
 
 :Emmi: -- keln
 
-:Emmi: <-- :Karl: : husband
+:Karl: -->:Emmi:  : husband
 
 (Stavanger) <<location>>
 
-:Karl: --- (Stavanger) : stationed
+(Stavanger) --:Karl: : stationed
 
 :Gerti: -- (Stavanger)
 
 :Peter: -- (Stavanger)
 
-:Karl: <-- :Peter: : son
+:Peter: --> :Karl:   : son
 
 :Peter: <- :Gerti: : mother
+
+
+(50th birthday) <<event>> as jubilee
+
+jubilee -- hans : the guy
+
+:Barbara: -- jubilee : waiter
+:Berndt: - jubilee
+wife <- :Berndt: : collueague
+jubilee - :Melis: : fotographer
+
+:Sebastian: <<ex>>
+:André: as andre <<ex>>
+
+:Sebastian: <--- kat   : went off
+andre --> kat : mora a friend
+
 
 
 @enduml
