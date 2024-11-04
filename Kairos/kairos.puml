@@ -7,7 +7,7 @@
 !include $stylePath/reading.iuml
 
 
-skinparam actor<<ex>>backgroundcolor orange
+skinparam actor<<ex>>backgroundcolor lightcoral
 
 
 '============== поехали ================
@@ -104,5 +104,20 @@ kat  <-- :Emmi: : grandmother
 :Emmi: ----> erika : mother
 
 :Emmi: -- keln
+
+:Emmi: <-- :Karl: : husband
+
+(Stavanger) <<location>>
+
+:Karl: --- (Stavanger) : stationed
+
+:Gerti: -- (Stavanger)
+
+:Peter: -- (Stavanger)
+
+:Karl: <-- :Peter: : son
+
+:Peter: <- :Gerti: : mother
+
 
 @enduml
