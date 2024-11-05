@@ -10,6 +10,7 @@
 '============== поехали ================
 title Kairos
 
+mainframe characters
 
 actor Katharina as kat <<protagonist>>
 
