@@ -132,6 +132,23 @@ jubilee - :Melis: : fotographer
 :Sebastian: <--- kat   : went off
 andre --> kat : mora a friend
 
+(Bonfire) <<event>> as fire
+
+:Tornsten: - fire: host
+
+kat -- fire
+
+fire -- :Anne:
+fire --- :Ruth:
+fire -- :Stefen:
+fire --- :Vera:
+
+
+:Regina: <<ex>>
+:Marjut: <<ex>>
+
+:Regina: --> hans
+:Marjut: --> hans
 
 
 @enduml
