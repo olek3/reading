@@ -157,5 +157,8 @@ fire --- :Vera:
 heiner -- supper 
 supper -- hans
 
+:Grisha Meyer: as grisha 
+
+grisha --> hans : friend 
 
 @enduml
