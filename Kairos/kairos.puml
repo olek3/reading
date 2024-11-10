@@ -136,13 +136,25 @@ andre --> kat : mora a friend
 
 :Tornsten: - fire: host
 
-kat -- fire
+kat ---- fire
 
 fire -- :Anne:
 fire --- :Ruth:
 fire -- :Stefen:
 fire --- :Vera:
 
+kat <-- :Hanna: : ??
+:Hanna: -- leipzig
+
+father <- :Hanna: : ?
+
+
+(Frankfurt theatre) as theatre <<institution>>
+
+kat --- theatre
+
+theatre -- :Vadim: : assistant designer
+theatre -- :Klaus: : set designer
 
 :Regina: <<ex>>
 :Marjut: <<ex>>
@@ -154,8 +166,8 @@ fire --- :Vera:
 
 (supper) <<event>> as supper 
 
-heiner -- supper 
-supper -- hans
+supper -- hainer
+hans -- supper
 
 :Grisha Meyer: as grisha 
 
