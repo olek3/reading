@@ -171,6 +171,10 @@ hans -- supper
 
 :Grisha Meyer: as grisha 
 
-grisha --> hans : friend 
+grisha --> hans : friend
+
+:Sylvia: <<ex>>
+
+hans <-- :Sylvia: : dream
 
 @enduml
