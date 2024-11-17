@@ -179,10 +179,10 @@ hans <-- :Sylvia: : dream
 
 ' box II 
 
-(university) <<institution>> 
+(foundation course) <<institution>> as course
 
-kat -- (university) 
+kat -- course 
 
-(university) -- :Rosa: : future architect 
+course -- :Rosa: : future architect 
 
 @enduml
