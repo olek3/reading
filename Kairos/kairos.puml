@@ -177,4 +177,12 @@ grisha --> hans : friend
 
 hans <-- :Sylvia: : dream
 
+' box II 
+
+(university) <<institution>> 
+
+kat -- (university) 
+
+(university) -- :Rosa: : future architect 
+
 @enduml
