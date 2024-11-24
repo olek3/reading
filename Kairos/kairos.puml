@@ -1,0 +1,194 @@
+@startuml
+
+' while testing
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+
+
+'============== поехали ================
+title Kairos
+
+mainframe characters
+
+actor Katharina as kat <<protagonist>>
+
+actor Hans as hans <<protagonist>>
+
+kat ----> hans
+hans ----> kat
+
+'(Kranzler Cafe)  <<place>>
+
+'Box I
+
+:Erika Ambach: as erika
+
+erika --> kat : mother
+
+(Academie) as academy <<location>>
+
+erika - academy : doctoral student
+
+:Ingrid: as wife
+
+wife --> hans : wife
+
+academy - wife  : research lab
+
+:Ludwig: as ludwig
+
+ludwig -> hans  : son
+wife <-- ludwig  : son
+
+
+:Gernot: <<ex>>
+:Gernot: -> kat : first boyfriend
+
+(Hungary) as hun <<location>>
+
+:Agnes: -- hun
+
+:Agnes: -> erika : friend
+
+kat -> :Christina: : childhood friend
+
+ :Ralph: --> erika  : second husband
+
+:Herr Sterz: as boss
+
+kat <-- boss : boss
+
+kat <--- :Sibylle: : friend (gin)
+
+:Heike: ---> kat : colleague
+
+:Jens: <<ex>>
+
+:Jens: --> kat : first kiss
+
+:Moritz: <<pet>>
+:Moritz: ---> kat  : guinea pig
+
+:Phillip: <<ex>>
+kat <--- :Phillip: : friend
+
+
+(Cologne relatives ) as keln <<group>>
+
+keln -- :Annie: : aunt
+
+
+(Leipzig)  as leipzig <<location>>
+"???" as father
+kat <--- father : father
+father -- leipzig
+
+:Senta: <<pet>>
+:Senta: -- keln : dog
+
+keln -- :Katrin: : cousin
+keln -- :Manfred: : uncle
+kat  <-- :Emmi: : grandmother
+
+:Katrin: <- :Christian: : fiancee
+
+:Emmi: -->  :Annie: : mother
+:Katrin: --> :Annie: : daugher
+:Manfred: --> :Annie: : husband
+
+:Emmi: ----> erika : mother
+
+:Emmi: -- keln
+
+:Karl: -->:Emmi:  : husband
+
+(Stavanger) <<location>>
+
+(Stavanger) --:Karl: : stationed
+
+:Gerti: -- (Stavanger)
+
+:Peter: -- (Stavanger)
+
+:Peter: --> :Karl:   : son
+
+:Peter: <- :Gerti: : mother
+
+
+(50th birthday) <<event>> as jubilee
+
+jubilee -- hans : the guy
+
+:Barbara: -- jubilee : waiter
+:Berndt: - jubilee
+wife <- :Berndt: : collueague
+jubilee - :Melis: : fotographer
+
+:Sebastian: <<ex>>
+:André: as andre <<ex>>
+
+:Sebastian: <--- kat   : went off
+andre --> kat : mora a friend
+
+(Bonfire) <<event>> as fire
+
+:Tornsten: - fire: host
+
+kat ---- fire
+
+fire -- :Anne:
+fire --- :Ruth:
+fire -- :Stefen:
+fire --- :Vera:
+
+kat <-- :Hanna: : ??
+:Hanna: -- leipzig
+
+father <- :Hanna: : ?
+
+
+(Frankfurt theatre) as theatre <<institution>>
+
+kat --- theatre
+
+theatre -- :Vadim: : assistant designer
+theatre -- :Klaus: : set designer
+
+:Regina: <<ex>>
+:Marjut: <<ex>>
+
+:Regina: --> hans
+:Marjut: --> hans
+
+:Heiner Müller: as heiner 
+
+(supper) <<event>> as supper 
+
+supper -- hainer
+hans -- supper
+
+:Grisha Meyer: as grisha 
+
+grisha --> hans : friend
+
+:Sylvia: <<ex>>
+
+hans <-- :Sylvia: : dream
+
+' box II 
+
+(art college) <<institution>> as course
+
+kat -- course 
+
+course -- :Rosa: : future architect
+
+course -- :Robert: : futre sculptor
+course -- :Uta: : future industrial designer
+
+:Sybille: <-- :Rico: : new lover 
+
+kat <-- :Alessandro: :??? 
+
+@enduml
