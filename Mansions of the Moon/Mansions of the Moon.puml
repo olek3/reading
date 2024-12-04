@@ -1,0 +1,29 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+
+
+'============== поехали ================
+title Mansions of the Moon
+mainframe characters
+
+
+'Dukha I
+
+:Yasodhara: <<protagonist>> as she
+
+:Siddhartha: <<ex>> as budda
+
+budda -> she : husband
+
+:Prajapati: as aunt
+she <- aunt : aunt
+
+:Rahula: as fetter
+she <-- fetter : son
+
+
+
+@enduml
