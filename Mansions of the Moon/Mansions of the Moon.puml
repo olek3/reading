@@ -24,6 +24,9 @@ she <- aunt : aunt
 :Rahula: as fetter
 she <-- fetter : son
 
+:Devadatta: as devadatta
+
+devadatta --> she : brother
 
 
 @enduml
