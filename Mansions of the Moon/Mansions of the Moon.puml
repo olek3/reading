@@ -38,4 +38,19 @@ mother --> she : mother
 
 father --> she : father 
 
+:Maha Kosala: as overlord 
+
+overlord --> father : overlord 
+
+:Prajapati: as stepmother 
+
+stepmother --> budda : stepmother 
+stepmother --> father : sister 
+
+:Sundari Nanda: as halfsister 
+
+halfsister --> stepmother : daughter 
+
+:Suddhodana: as abuser 
+
 @enduml
