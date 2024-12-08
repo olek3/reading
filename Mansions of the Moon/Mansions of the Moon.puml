@@ -83,10 +83,13 @@ abuser --> budda : father
 
 :Mitta: --> she : orphaned spinster cousin 
 
-:Sumana: <<ex>> --> abuser : concubine 
+:Sumana: <<ex>> 
+:Sumana:  --> abuser : concubine 
+
 :Upasama: --> abuser : concubine 
 
 :Ananda: --> she : cousin 
-(Takkasila) <<location>> -- :Ananda: 
+(Takkasila) <<location>> 
+(Takkasila)  -- :Ananda: 
 
 @enduml
