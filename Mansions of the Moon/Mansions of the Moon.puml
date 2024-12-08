@@ -53,4 +53,40 @@ halfsister --> stepmother : daughter
 
 :Suddhodana: as abuser 
 
+:Pasénadi: as regent 
+regent --> overlord : regent 
+
+:Bandhula: --> regent : closest friend 
+:Karayana: --> regent : closest friend 
+
+:Bandhula: --> :Karayana: : uncle 
+
+:Kusuma: as courtesan 
+
+regent --> courtesan : patron 
+
+:Ubbiri: --> regent : wife 
+
+:Bimbisara: as emperor 
+
+:Ubbiri: --> emperor : sister 
+
+:Amitodhana: --> mother : other brother 
+
+:Mahanama: --> :Amitodhana: : son 
+
+:Suddhodana: as abuser 
+
+:Mahanama: --> abuser : successor 
+
+abuser --> budda : father 
+
+:Mitta: --> she : orphaned spinster cousin 
+
+:Sumana: <<ex>> --> abuser : concubine 
+:Upasama: --> abuser : concubine 
+
+:Ananda: --> she : cousin 
+(Takkasila) <<location>> -- :Ananda: 
+
 @enduml
