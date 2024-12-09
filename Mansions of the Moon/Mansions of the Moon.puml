@@ -90,6 +90,23 @@ abuser --> budda : father
 
 :Ananda: --> she : cousin 
 (Takkasila) <<location>> 
-(Takkasila)  -- :Ananda: 
+(Takkasila)  -- :Ananda: : exile
+
+:Anuruddha: --> she : favorite cousin 
+:Amitodhana: --> :Anuruddha: : father 
+(Takkasila) -- :Mrgi: : exile 
+
+:Mrgi: --> :Anuruddha: : mother 
+:Mrgi: --> :Amitodhana: : first wife 
+
+:Vimala: 
+note right: courtesan 
+
+
+(Takkasila) -- :Mendaka: 
+:Mendaka: --> :Ananda: : master 
+
+:Ambapali: 
+note right : famous courtesan 
 
 @enduml
