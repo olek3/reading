@@ -100,15 +100,31 @@ abuser --> budda : father
 :Mrgi: --> :Amitodhana: : first wife 
 
 :Vimala: 
-note right: courtesan 
+note top: courtesan 
 
 
 (Takkasila) -- :Mendaka: 
 :Mendaka: --> :Ananda: : master 
 
 :Ambapali: 
-note right : famous curtesan 
+note top: famous curtesan 
 
-:Visaka: --> :Vimala: : daughter 
+:Visaka: --> :Vimala: : adopted daughter 
+
+(Kapilavastu) <<location>> 
+
+(Kapilavastu) -- abuser 
+
+:Vimala: -- (Kapilavastu)
+
+' froth on the river 
+
+(Mudgala) <<location>> as gala 
+
+budda -- gala : rashtrika 
+
+gala -- :Vagantha:  : gambojaka 
+
+
 
 @enduml
