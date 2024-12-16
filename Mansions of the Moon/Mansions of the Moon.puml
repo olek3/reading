@@ -56,6 +56,7 @@ halfsister --> stepmother : daughter
 :Pasénadi: as regent 
 regent --> overlord : regent 
 
+
 :Bandhula: --> regent : closest friend 
 :Karayana: --> regent : closest friend 
 
@@ -126,5 +127,7 @@ budda -- gala : rashtrika
 gala -- :Vagantha:  : gambojaka 
 
 :Vagantha: <-- :Rupasiri: : wife 
+
+overlord --> regent : father 
 
 @enduml
