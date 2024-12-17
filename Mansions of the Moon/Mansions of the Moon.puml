@@ -134,4 +134,16 @@ overlord --> regent : father
 :Vasabha: --> :Nagamunda: :daughter 
 :Vasabha: --> :Mahanama: :daughter 
 
+' Dukkha II
+
+:Channa: --> budda : charioteer 
+
+' A Woman Eaten and Eaten
+:Sonanda: -- (Kapilavastu) : gatekeeper 
+
+note "widowed relatives" as w
+
+:Tissa: .. w
+:Utara: .. w
+
 @enduml
