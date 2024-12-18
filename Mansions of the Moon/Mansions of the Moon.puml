@@ -144,6 +144,22 @@ overlord --> regent : father
 note "widowed relatives" as w
 
 :Tissa: .. w
-:Utara: .. w
+:Utara: .. w 
+
+:Maya: --> budda : mother 
+
+:Sanga: --> abuser : concubine 
+:Visaka: --> abuser : concubine 
+
+:Jatila: -- (Kapilavastu) : Mahasetthi 
+:Rakkha: -- (Kapilavastu) : old brahmin 
+
+:Bhaddiya: --> :Anuruddha: : friend 
+:Kimbila: --> :Anuruddha: : friend 
+:Kaligodha: --> :Bhaddiya: : mother 
+
+:Sirima: --> :Jatila: : wife 
+
+:Alara Kalama: --> :Jatila: : guest 
 
 @enduml
