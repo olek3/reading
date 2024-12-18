@@ -16,17 +16,18 @@ mainframe characters
 
 :Siddhartha: <<ex>> as budda
 
-budda -> she : husband
+budda --> she : husband
 
 :Prajapati: as aunt
 she <- aunt : aunt
 
 :Rahula: as fetter
 she <-- fetter : son
+fetter --> budda  : son
 
 :Devadatta: as devadatta
 
-devadatta --> she : brother
+she <-- devadatta : brother
 
 ' Froth on the River
 
@@ -40,16 +41,16 @@ father --> she : father
 
 :Maha Kosala: as overlord 
 
-overlord --> father : overlord 
+father <-- overlord : overlord
 
-:Prajapati: as stepmother 
+:Prajapati: as aunt
 
-stepmother --> budda : stepmother 
-stepmother --> father : sister 
+aunt --> budda : stepmother
+aunt --> father : sister
 
 :Sundari Nanda: as halfsister 
 
-halfsister --> stepmother : daughter 
+aunt <-- halfsister : daughter
 
 :Suddhodana: as abuser 
 
@@ -82,7 +83,7 @@ regent --> courtesan : patron
 
 abuser --> budda : father 
 
-:Mitta: --> she : orphaned spinster cousin 
+she --> :Mitta: : orphaned spinster cousin
 
 :Sumana: <<ex>> 
 :Sumana:  --> abuser : concubine 
@@ -95,13 +96,13 @@ abuser --> budda : father
 
 :Anuruddha: --> she : favorite cousin 
 :Amitodhana: --> :Anuruddha: : father 
-(Takkasila) -- :Mrgi: : exile 
+:Mrgi: -- (Takkasila) : exile
 
 :Mrgi: --> :Anuruddha: : mother 
-:Mrgi: --> :Amitodhana: : first wife 
+:Amitodhana: <-- :Mrgi:  : first wife
 
 :Vimala: 
-note top: courtesan 
+note bottom: courtesan
 
 
 (Takkasila) -- :Mendaka: 
@@ -110,13 +111,13 @@ note top: courtesan
 :Ambapali: 
 note top: famous curtesan 
 
-:Visaka: --> :Vimala: : adopted daughter 
+:Vimala: <-- :Visaka:  : adopted daughter
 
-(Kapilavastu) <<location>> 
+'(Kapilavastu) <<location>>
 
-(Kapilavastu) -- abuser 
+'(Kapilavastu) -- abuser
 
-:Vimala: -- (Kapilavastu)
+':Vimala: -- (Kapilavastu)
 
 ' froth on the river 
 
@@ -136,30 +137,48 @@ overlord --> regent : father
 
 ' Dukkha II
 
-:Channa: --> budda : charioteer 
+budda <-- :Channa: : charioteer
 
 ' A Woman Eaten and Eaten
-:Sonanda: -- (Kapilavastu) : gatekeeper 
+'(Kapilavastu) -- :Sonanda: : gatekeeper
 
 note "widowed relatives" as w
 
 :Tissa: .. w
-:Utara: .. w 
+:Utara: .. w
 
-:Maya: --> budda : mother 
+budda <-- :Maya: : mother
 
 :Sanga: --> abuser : concubine 
-:Visaka: --> abuser : concubine 
+ :Visaka: --> abuser  : concubine
 
-:Jatila: -- (Kapilavastu) : Mahasetthi 
-:Rakkha: -- (Kapilavastu) : old brahmin 
+'(Kapilavastu) -- :Jatila: : Mahasetthi
+budda <-- Jatila : Mahasetthi
+'(Kapilavastu) -- :Rakkha: : old brahmin
 
-:Bhaddiya: --> :Anuruddha: : friend 
-:Kimbila: --> :Anuruddha: : friend 
+:Anuruddha:  --> :Bhaddiya:  : friend
+:Kimbila: <-- :Anuruddha: : friend
 :Kaligodha: --> :Bhaddiya: : mother 
 
-:Sirima: --> :Jatila: : wife 
+:Jatila: <-- :Sirima: : wife 
 
-:Alara Kalama: --> :Jatila: : guest 
+:Jatila: <-- :Alara Kalama: : guest 
+
+(woman quarters) <<institurion>> as serpentary
+
+serpentary -- :Tissa:
+serpentary -- :Utara:
+serpentary -- :Sanga:
+serpentary -- :Visaka:
+:Mitta: -- serpentary
+
+serpentary -- :Sumana:
+serpentary -- :Upasama:
+
+
+
+
+she -- serpentary
+aunt -- serpentary : leader
 
 @enduml
