@@ -1,0 +1,36 @@
+name: Render PlantUML diagrams
+
+on:
+  push:
+    paths:
+      - '**/*.puml'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Install Graphviz
+        run: sudo apt-get install graphviz
+
+      - name: Render PlantUML
+        run: |
+          for file in $(find . -name '*.puml'); do
+            java -jar plantuml.jar "$file"
+          done
+
+      - name: Commit and push diagrams
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add **/*.png
+          git commit -m 'Render PlantUML diagrams'
+          git push
