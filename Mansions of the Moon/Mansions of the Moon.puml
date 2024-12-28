@@ -176,7 +176,7 @@ serpentary -- :Sumana:
 serpentary -- :Upasama:
 
 
-she -- serpentary
+she ---- serpentary
 aunt ---- serpentary : leader
 
 :Amitodhana: -> abuser : brother
@@ -187,6 +187,14 @@ aunt ---- serpentary : leader
 :Vasabha: --> regent : married
 :Vidudabha: --> regent : son
 
-budda <-- :Kaludayi: : childhood friend 
+budda <-- :Kaludayi: : childhood friend
+
+(invitation mission) as mission <<event>>
+
+abuser -- mission
+
+mission -- :Sukkodana: : missging minister
+mission -- :Dhotodana: : missging minister
+mission -- :Kaludayi:
 
 @enduml
