@@ -16,10 +16,10 @@ mainframe characters
 
 :Siddhartha: <<ex>> as budda
 
-budda --> she : husband
+'budda --> she : husband
 
 :Prajapati: as aunt
-she <- aunt : aunt
+she <-- aunt : aunt
 
 :Rahula: as fetter
 she <-- fetter : son
@@ -109,7 +109,7 @@ note bottom: courtesan
 :Mendaka: --> :Ananda: : master 
 
 :Ambapali: 
-note top: famous curtesan 
+note bottom: famous curtesan
 
 :Vimala: <-- :Visaka:  : adopted daughter
 
@@ -176,7 +176,7 @@ serpentary -- :Sumana:
 serpentary -- :Upasama:
 
 
-she ---- serpentary
+'she --- serpentary
 aunt ---- serpentary : leader
 
 :Amitodhana: -> abuser : brother
