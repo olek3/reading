@@ -27,7 +27,7 @@ fetter --> budda  : son
 
 :Devadatta: as devadatta
 
-she <-- devadatta : brother
+devadatta --> she: brother
 
 ' Froth on the River
 
@@ -50,7 +50,7 @@ aunt --> father : sister
 
 :Sundari Nanda: as halfsister 
 
-aunt <-- halfsister : daughter
+halfsister --> aunt : daughter
 
 :Suddhodana: as abuser 
 
@@ -67,11 +67,11 @@ regent --> overlord : regent
 
 regent --> courtesan : patron 
 
-:Ubbiri: --> regent : wife 
+regent <-- :Ubbiri: : wife
 
-:Bimbisara: as emperor 
+:Bimbisara: as maharaja
 
-:Ubbiri: --> emperor : sister 
+:Ubbiri: --> maharaja : sister
 
 :Amitodhana: --> mother : other brother 
 
@@ -144,8 +144,8 @@ budda <-- :Channa: : charioteer
 
 note "widowed relatives" as w
 
-:Tissa: .. w
-:Utara: .. w
+w .. :Tissa:
+w .. :Utara:
 
 budda <-- :Maya: : mother
 
@@ -166,8 +166,8 @@ budda <-- Jatila : Mahasetthi
 
 (woman quarters) <<institurion>> as serpentary
 
-serpentary -- :Tissa:
-serpentary -- :Utara:
+:Tissa: -- serpentary
+:Utara: -- serpentary
 serpentary -- :Sanga:
 serpentary -- :Visaka:
 :Mitta: -- serpentary
@@ -177,10 +177,16 @@ serpentary -- :Upasama:
 
 
 she -- serpentary
-aunt -- serpentary : leader
+aunt ---- serpentary : leader
 
 :Amitodhana: -> abuser : brother
 
 :Mantani: --> :Mahanama: : daughter
+
+:Vasabha: <-- :Vidudabha: : son
+:Vasabha: --> regent : married
+:Vidudabha: --> regent : son
+
+
 
 @enduml
