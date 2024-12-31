@@ -1,0 +1,207 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+
+
+'============== поехали ================
+title Mansions of the Moon
+mainframe characters
+
+
+'Dukha I
+
+:Yasodhara: <<protagonist>> as she
+
+:Siddhartha:  as budda
+
+'budda --> she : husband
+
+:Prajapati: as aunt
+she <-- aunt : aunt
+
+:Rahula: as fetter
+she <-- fetter : son
+fetter --> budda  : son
+
+:Devadatta: as devadatta
+
+devadatta --> she: brother
+
+' Froth on the River
+
+:Pamita: as mother 
+
+mother --> she : mother 
+
+:Dandapani: as father 
+
+father --> she : father 
+
+:Maha Kosala: as overlord 
+
+father <-- overlord : overlord
+
+:Prajapati: as aunt
+
+aunt --> budda : stepmother
+aunt --> father : sister
+
+:Sundari Nanda: as halfsister 
+
+halfsister --> aunt : daughter
+
+:Suddhodana: as abuser 
+
+:Pasénadi: as regent 
+regent --> overlord : regent 
+
+
+:Bandhula: --> regent : closest friend 
+:Karayana: --> regent : closest friend 
+
+:Bandhula: --> :Karayana: : uncle 
+
+:Kusuma: as courtesan 
+
+regent --> courtesan : patron 
+
+regent <-- :Ubbiri: : wife
+
+:Bimbisara: as maharaja
+
+:Ubbiri: --> maharaja : sister
+
+:Amitodhana: --> mother : other brother 
+
+:Mahanama: --> :Amitodhana: : son 
+
+:Suddhodana: as abuser 
+
+:Mahanama: --> abuser : successor 
+
+abuser --> budda : father 
+
+she --> :Mitta: : orphaned spinster cousin
+
+:Sumana: <<ex>> 
+:Sumana:  --> abuser : concubine 
+
+:Upasama: --> abuser : concubine 
+
+:Ananda: --> she : cousin 
+(Takkasila) <<location>> 
+(Takkasila)  -- :Ananda: : exile
+
+:Anuruddha: --> she : favorite cousin 
+:Amitodhana: --> :Anuruddha: : father 
+:Mrgi: -- (Takkasila) : exile
+
+:Mrgi: --> :Anuruddha: : mother 
+:Amitodhana: <-- :Mrgi:  : first wife
+
+:Vimala: 
+note bottom: courtesan
+
+
+(Takkasila) -- :Mendaka: 
+:Mendaka: --> :Ananda: : master 
+
+:Ambapali: 
+note bottom: famous curtesan
+
+:Vimala: <-- :Visaka:  : adopted daughter
+
+'(Kapilavastu) <<location>>
+
+'(Kapilavastu) -- abuser
+
+':Vimala: -- (Kapilavastu)
+
+' froth on the river 
+
+(Mudgala) <<location>> as gala 
+
+budda -- gala : rashtrika 
+
+gala -- :Vagantha:  : gambojaka 
+
+:Vagantha: <-- :Rupasiri: : wife 
+
+overlord --> regent : father 
+
+:Nagamunda: --> :Amitodhana: : slave 
+:Vasabha: --> :Nagamunda: :daughter 
+:Vasabha: --> :Mahanama: :daughter 
+
+' Dukkha II
+
+budda <-- :Channa: : charioteer
+
+' A Woman Eaten and Eaten
+'(Kapilavastu) -- :Sonanda: : gatekeeper
+
+note "widowed relatives" as w
+
+w .. :Tissa:
+w .. :Utara:
+
+budda <-- :Maya: : mother
+
+:Sanga: --> abuser : concubine 
+ :Visaka: --> abuser  : concubine
+
+'(Kapilavastu) -- :Jatila: : Mahasetthi
+budda <-- Jatila : Mahasetthi
+'(Kapilavastu) -- :Rakkha: : old brahmin
+
+:Anuruddha:  --> :Bhaddiya:  : friend
+:Kimbila: <-- :Anuruddha: : friend
+:Kaligodha: --> :Bhaddiya: : mother 
+
+:Jatila: <-- :Sirima: : wife 
+
+:Jatila: <-- :Alara Kalama: : guest 
+
+(woman quarters) <<institurion>> as serpentary
+
+:Tissa: -- serpentary
+:Utara: -- serpentary
+serpentary -- :Sanga:
+serpentary -- :Visaka:
+:Mitta: -- serpentary
+
+serpentary -- :Sumana:
+serpentary -- :Upasama:
+
+
+'she --- serpentary
+aunt ---- serpentary : leader
+
+:Amitodhana: -> abuser : brother
+
+:Mantani: --> :Mahanama: : daughter
+
+:Vasabha: <-- :Vidudabha: : son
+:Vasabha: --> regent : married
+:Vidudabha: --> regent : son
+
+budda <-- :Kaludayi: : childhood friend
+
+(invitation mission) as mission <<event>>
+
+abuser -- mission
+
+mission -- :Sukkodana: : missging minister
+mission -- :Dhotodana: : missging minister
+mission -- :Kaludayi:
+
+(Order) <<group>> as follower
+budda -- follower
+follower -- :Maha Kassapa: : senior monk
+
+follower -- :Sariputta: : bhikkhu
+follower -- :Moggallana: : bhikkhu
+
+@enduml
