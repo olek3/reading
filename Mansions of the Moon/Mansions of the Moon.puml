@@ -14,7 +14,7 @@ mainframe characters
 
 :Yasodhara: <<protagonist>> as she
 
-:Siddhartha: <<ex>> as budda
+:Siddhartha:  as budda
 
 'budda --> she : husband
 
@@ -197,7 +197,7 @@ mission -- :Sukkodana: : missging minister
 mission -- :Dhotodana: : missging minister
 mission -- :Kaludayi:
 
-(followers) <<group>> as follower
+(Order) <<group>> as follower
 budda -- follower
 follower -- :Maha Kassapa: : senior monk
 
