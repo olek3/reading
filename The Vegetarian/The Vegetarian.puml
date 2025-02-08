@@ -1,0 +1,23 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+
+title The Vegetarian
+mainframe characters
+
+
+:narrator: as narrator <<protagonist>>
+
+:Yeong-hue: as vegetarian
+note top : The Vegetarian
+
+vegetarian --> narrator : wife
+
+:In-hye: as sister
+
+sister --> vegetarian : sister
+sister --> narrator : sister-in-law
+
+@enduml
