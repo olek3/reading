@@ -20,4 +20,8 @@ vegetarian --> narrator : wife
 sister --> vegetarian : sister
 sister --> narrator : sister-in-law
 
+:Yeong-ho: as brother
+
+brother --> vegetarian : yuonger brother
+
 @enduml
