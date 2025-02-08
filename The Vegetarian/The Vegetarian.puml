@@ -21,6 +21,12 @@ sister --> vegetarian : sister
 
 :Yeong-ho: as brother
 
-brother --> vegetarian : yoгnger brother
+brother --> vegetarian : yoгnger brother 
+
+
+:Ji-woo: as nephew 
+
+nephew --> sister : son
+
 
 @enduml
