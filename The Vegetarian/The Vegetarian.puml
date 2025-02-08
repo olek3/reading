@@ -3,7 +3,8 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 
 !include $stylePath/reading.iuml
-
+skinparam backgroundcolor transparent
+skinparam defaultfontcolor steelblue
 title The Vegetarian
 mainframe characters
 
@@ -18,7 +19,7 @@ vegetarian --> narrator : wife
 :In-hye: as sister
 
 sister --> vegetarian : sister
-sister --> narrator : sister-in-law
+'sister --> narrator : sister-in-law
 
 :Yeong-ho: as brother
 
