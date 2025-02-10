@@ -31,7 +31,10 @@ nephew --> sister : son
 ' Mongolian mark 
 
 (Studio) as studio <<location>> 
+"???" as he <<protagonist>> 
+note bottom : Part II 
 
-narrator -- studio 
+sister --> he : wife 
+he -- studio 
 studio -- :J: 
 @enduml
