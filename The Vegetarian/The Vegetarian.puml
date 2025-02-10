@@ -10,7 +10,7 @@ mainframe characters
 :Mr Cheong: as narrator <<protagonist>>
 
 :Yeong-hue: as vegetarian
-note top : The Vegetarian
+note bottom : The Vegetarian
 
 vegetarian --> narrator : wife
 
@@ -32,7 +32,7 @@ nephew --> sister : son
 
 (Studio) as studio <<location>> 
 "???" as he <<protagonist>> 
-note bottom : Part II 
+note top : Part II
 
 sister --> he : wife 
 he -- studio 
