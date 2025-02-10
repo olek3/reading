@@ -26,7 +26,12 @@ brother --> vegetarian : yoгnger brother
 
 :Ji-woo: as nephew 
 
-nephew --> sister : son
+nephew --> sister : son 
 
+' Mongolian mark 
 
+(Studio) as studio <<location>> 
+
+narrator -- studio 
+studio -- :J: 
 @enduml
