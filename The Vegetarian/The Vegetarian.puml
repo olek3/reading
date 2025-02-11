@@ -38,4 +38,15 @@ note top : Part II
 sister --> he : wife 
 he -- studio 
 studio -- :J: 
+
+(another studio) as mstudio <<location>> 
+
+he -- mstudio 
+
+mstudio - :M: : owner 
+
+he <-- :M: : friend 
+
+vegetarian -- mstudio
+
 @enduml
