@@ -8,10 +8,10 @@ mainframe characters
 
 
 :Mr Cheong: as narrator <<protagonist>>
-note bottom : Part I
+note top : Part I
 
 :Yeong-hue: as vegetarian
-note bottom : The Vegetarian
+note top : The Vegetarian
 
 vegetarian --> narrator : wife
 
@@ -29,10 +29,11 @@ brother --> vegetarian : yoгnger brother
 
 nephew --> sister : son 
 
-' Mongolian mark 
+' Mongolian mark
 
-(Studio) as studio <<location>> 
-"???" as he <<protagonist>> 
+(Studio) as studio <<location>>
+"???" as he <<protagonist>>
+nephew --> he : son
 note top : Part II
 
 sister --> he : wife 
@@ -48,5 +49,11 @@ mstudio - :M: : owner
 he <-- :M: : friend 
 
 vegetarian -- mstudio
+mstudio -- :J:
+
+:P:<<ex>>
+
+:P: --> he
+
 
 @enduml
