@@ -46,7 +46,7 @@ studio -- :J:
 
 he -- mstudio 
 
-mstudio - :M: : owner 
+:M: - mstudio : owner
 
 he <-- :M: : friend 
 
@@ -56,6 +56,11 @@ mstudio -- :J:
 :P:<<ex>>
 
 :P: --> he
+
+(her family) as family <<group>>
+
+family -- sister
+family -- brother
 
 
 @enduml
