@@ -6,6 +6,8 @@
 title The Vegetarian
 mainframe characters
 
+legend : only named characters shown (except brother-in-law)
+
 
 :Mr Cheong: as narrator <<protagonist>>
 note top : Part I
@@ -22,7 +24,7 @@ sister --> vegetarian : sister
 
 :Yeong-ho: as brother
 
-brother --> vegetarian : yoгnger brother 
+brother --> vegetarian : yonger brother
 
 
 :Ji-woo: as nephew 
@@ -32,7 +34,7 @@ nephew --> sister : son
 ' Mongolian mark
 
 (Studio) as studio <<location>>
-"???" as he <<protagonist>>
+:brother-in-law: as he <<protagonist>>
 nephew --> he : son
 note top : Part II
 
