@@ -15,7 +15,7 @@ note top : Part I
 :Yeong-hue: as vegetarian
 note top : The Vegetarian
 
-vegetarian --> narrator : wife
+narrator <-- vegetarian  : wife
 
 :In-hye: as sister <<protagonist>>
 note top : Part III
@@ -30,7 +30,7 @@ brother --> vegetarian : yonger brother
 
 :Ji-woo: as nephew 
 
-nephew --> sister : son 
+sister <-- nephew : son
 
 ' Mongolian mark
 
@@ -52,11 +52,11 @@ he -- mstudio
 he <-- :M: : friend 
 
 vegetarian -- mstudio
-mstudio -- :J:
+:J: - mstudio
 
 :P:<<ex>>
 
-:P: --> he
+he <- :P:
 
 (Kim family) as family <<group>>
 
@@ -68,8 +68,10 @@ family -- brother
 (Ch’ukseong Psychiatric Hospital) <<istitution>> as hospital
 "Dr. Park In-ho" as doctor
 
-vegetarian --- hospital : patient
+vegetarian -- hospital : patient
 
 hospital -- doctor : doctor
+
+hospital -- :Hee-joo: : patient
 
 @enduml
