@@ -17,7 +17,8 @@ note top : The Vegetarian
 
 vegetarian --> narrator : wife
 
-:In-hye: as sister
+:In-hye: as sister <<protagonist>>
+note top : Part III
 
 sister --> vegetarian : sister
 'sister --> narrator : sister-in-law
@@ -46,7 +47,7 @@ studio -- :J:
 
 he -- mstudio 
 
-:M: - mstudio : owner
+:M: -- mstudio : owner
 
 he <-- :M: : friend 
 
@@ -57,10 +58,18 @@ mstudio -- :J:
 
 :P: --> he
 
-(her family) as family <<group>>
+(Kim family) as family <<group>>
 
 family -- sister
 family -- brother
 
+' Flaming trees
+
+(Ch’ukseong Psychiatric Hospital) <<istitution>> as hospital
+"Dr. Park In-ho" as doctor
+
+vegetarian --- hospital : patient
+
+hospital -- doctor : doctor
 
 @enduml
