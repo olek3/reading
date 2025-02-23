@@ -1,0 +1,13 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+title The Story of a Brief Marriage
+mainframe characters
+
+
+:Dinesh: <<protagonist>>
+
+
+@enduml
