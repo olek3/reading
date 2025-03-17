@@ -15,5 +15,8 @@ mainframe characters
 
 :Ganga: --> :Somasundaram: : daughter
 
+:Ganga: -- :Dinesh:
+:Dinesh: -- :Ganga:
+
 
 @enduml
