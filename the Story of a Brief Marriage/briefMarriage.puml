@@ -8,15 +8,17 @@ mainframe characters
 
 
 :Dineshkanthan: as dinesh <<protagonist>> 
+note bottom: Dinesh
 
 :Somasundaram:
 
-:Gangeshwari: as Ganga
+:Gangeshwari: as ganga
+note bottom: Ganga
 
-Ganga --> :Somasundaram: : daughter
+ganga --> :Somasundaram: : daughter
 
-:Ganga: -- :Dinesh:
-:Dinesh: -- :Ganga:
+ganga -- dinesh
+dinesh -- ganga
 
 
 @enduml
