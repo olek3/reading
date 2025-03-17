@@ -7,13 +7,13 @@ title The Story of a Brief Marriage
 mainframe characters
 
 
-:Dinesh: <<protagonist>>
+:Dineshkanthan: as dinesh <<protagonist>> 
 
 :Somasundaram:
 
-:Ganga:
+:Gangeshwari: as Ganga
 
-:Ganga: --> :Somasundaram: : daughter
+Ganga --> :Somasundaram: : daughter
 
 :Ganga: -- :Dinesh:
 :Dinesh: -- :Ganga:
