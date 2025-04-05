@@ -1,0 +1,43 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+title Mister, Mister 
+mainframe characters
+
+
+:Yahya Bas: as yahya <<protagonist>> 
+
+:Estella Stevens: as mother 
+:Mother Sadaf: as sadaf
+:Mother Miriam: as miriam 
+
+sadaf --> mother : doula 
+miriam --> mother : doula 
+
+sadaf ---> yahya : other mother 
+miriam ---> yahya : other mother 
+
+:Sisi Gamal: as uncle 
+uncle --> yahya : uncle 
+
+
+mother --> yahya : mother 
+
+:Marwan Bas: as father 
+
+yahya <-- father : father 
+
+(the House) as house <<instituton>> 
+
+:Mother Aneesa: as aneesa 
+
+aneesa -- house 
+
+house --- mother 
+house -- sadaf 
+house -- miriam
+house -- uncle 
+
+@enduml
