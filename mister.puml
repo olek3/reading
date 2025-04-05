@@ -1,0 +1,14 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+title Mister, Mister 
+mainframe characters
+
+
+:Yahya Bas: as yahya <<protagonist>> 
+
+
+
+@enduml
