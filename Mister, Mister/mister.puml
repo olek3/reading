@@ -7,11 +7,11 @@ title Mister, Mister
 mainframe characters
 
 
-:Yahya Bas: as yahya <<protagonist>> 
+:Yahya Bas: as yahya <<protagonist>> $male_protagonist
 
-:Estella Stevens: as mother 
-:Mother Sadaf: as sadaf
-:Mother Miriam: as miriam 
+:Estella Stevens: as mother $female
+:Mother Sadaf: as sadaf $female
+:Mother Miriam: as miriam  $female
 
 sadaf --> mother : doula 
 miriam --> mother : doula 
@@ -19,25 +19,34 @@ miriam --> mother : doula
 sadaf ---> yahya : other mother 
 miriam ---> yahya : other mother 
 
-:Sisi Gamal: as uncle 
+:Sisi Gamal: as uncle $male
 uncle --> yahya : uncle 
 
 
 mother --> yahya : mother 
 
-:Marwan Bas: as father 
+:Marwan Bas: as father $male
 
 yahya <-- father : father 
 
-(the House) as house <<instituton>> 
+(refuge center for women of low to no means) as house <<instituton>>
 
-:Mother Aneesa: as aneesa 
+:Mother Aneesa: as aneesa $female
 
 aneesa -- house 
 
 house --- mother 
 house -- sadaf 
 house -- miriam
-house -- uncle 
+house -- uncle
+
+:Mother Shahnaz: as shahnaz $female
+:Mother Sofiyya: as sofyiia $female
+
+shahnaz -- house : second floor
+sofyiia -- house : second floor
+
+shahnaz <-> sofyiia : together
+
 
 @enduml
