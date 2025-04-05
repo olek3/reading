@@ -48,5 +48,14 @@ sofyiia -- house : second floor
 
 shahnaz <-> sofyiia : together
 
+:Mother Fareeda: as fareeda $female 
+
+fareeda -- house : down the hall
+
+:Fatima: as fatima $female 
+fatima --> fareeda : sister 
+
+fatima ... house:  vanished long ago 
+
 
 @enduml
