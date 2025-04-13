@@ -61,5 +61,23 @@ note on link: if ever existed
 :Faris: as faris $male
 faris --> aneesa: uncle
 
+(mosque) <<institutuon>> 
+
+:Imam Ghulam: as imam $male 
+
+(boat) <<event>> 
+
+father -- boat 
+uncle -- boat 
+:Hamidullah Sayed: as hamidullah $male
+boat -- hamidullah 
+
+imam -- mosque 
+
+:Abdi: as abdi $male
+:Anas: as anas $male 
+
+mosque -- abdi 
+mosque -- anas
 
 @enduml
