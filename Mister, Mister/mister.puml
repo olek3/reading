@@ -33,7 +33,7 @@ yahya <-- father : father
 
 :Mother Aneesa: as aneesa $female
 
-aneesa --- house
+aneesa -- house
 
 house --- mother 
 house -- sadaf 
@@ -65,17 +65,17 @@ faris --> aneesa: uncle
 
 (boat) <<event>> 
 
-father -- boat 
+boat -- father
 uncle -- boat 
 :Hamidullah Sayed: as hamidullah $male
-boat -- hamidullah 
+boat - hamidullah
 
-imam -- mosque 
+imam - mosque
 
 :Abdi: as abdi $male
 :Anas: as anas $male 
 
-mosque -- abdi 
+mosque -- abdi
 mosque -- anas
 
 (School) <<institution>>
@@ -87,7 +87,9 @@ yahya -- (School)
 (School) -- bully : bully 
 
 :John Muhammad: as muhammad $male 
-muhammad --> miriam : husband 
+muhammad -> miriam : husband
+
+(School) -- imam  : sponsor
 
 
 @enduml
