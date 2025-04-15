@@ -29,7 +29,7 @@ mother --> yahya : mother
 
 yahya <-- father : father 
 
-(refuge center for women of low to no means) as house <<instituton>>
+(refuge center for women of low to no means) as house <<institution>>
 
 :Mother Aneesa: as aneesa $female
 
@@ -61,7 +61,7 @@ note on link: if ever existed
 :Faris: as faris $male
 faris --> aneesa: uncle
 
-(mosque) <<institutuon>> 
+(mosque) <<institution>>
 
 :Imam Ghulam: as imam $male 
 
@@ -79,5 +79,13 @@ imam -- mosque
 
 mosque -- abdi 
 mosque -- anas
+
+(School) <<institution>>
+
+yahya -- (School)
+
+:Craig: as bully $male
+
+(School) -- bully : bully
 
 @enduml
