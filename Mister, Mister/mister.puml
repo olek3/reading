@@ -16,29 +16,29 @@ mainframe characters
 sadaf --> mother : doula 
 miriam --> mother : doula 
 
-sadaf ---> yahya : other mother 
-miriam ---> yahya : other mother 
+sadaf --> yahya : other mother
+miriam --> yahya : other mother
 
 :Sisi Gamal: as uncle $male
-uncle --> yahya : uncle 
+uncle --> yahya : uncle
 
 
 mother --> yahya : mother 
 
 :Marwan Bas: as father $male
 
-yahya <-- father : father 
+father -> yahya : father
 
 (refuge center for women of low to no means) as house <<institution>>
 
 :Mother Aneesa: as aneesa $female
 
-aneesa --- house
+aneesa -- house
 
 house --- mother 
 house -- sadaf 
 house -- miriam
-house -- uncle
+house ---- uncle
 
 :Mother Shahnaz: as shahnaz $female
 :Mother Sofiyya: as sofyiia $female
@@ -53,9 +53,9 @@ shahnaz <-> sofyiia : together
 fareeda -- house : down the hall
 
 :Fatima: as fatima $female 
-fatima --> fareeda : sister 
+fatima -> fareeda : sister
 
-fatima .... house:  vanished long ago
+fatima ... house:  vanished long ago
 note on link: if ever existed
 
 :Faris: as faris $male
@@ -67,18 +67,20 @@ faris --> aneesa: uncle
 
 (boat) <<event>> 
 
-father -- boat 
-uncle -- boat 
+boat -- father
+boat -- uncle
 :Hamidullah Sayed: as hamidullah $male
-boat -- hamidullah 
+hamidullah -- boat
 
 imam -- mosque 
 
 :Abdi: as abdi $male
 :Anas: as anas $male 
 
-mosque -- abdi 
+mosque -- abdi
 mosque -- anas
+
+yahya <-- imam : sponsor
 
 (School) <<institution>>
 
@@ -87,5 +89,8 @@ yahya -- (School)
 :Craig: as bully $male
 
 (School) -- bully : bully
+
+'mother --> father : wife
+'mother <-- father : husband
 
 @enduml
