@@ -29,11 +29,11 @@ mother --> yahya : mother
 
 yahya <-- father : father 
 
-(refuge center for women of low to no means) as house <<instituton>>
+(refuge center for women of low to no means) as house <<institution>>
 
 :Mother Aneesa: as aneesa $female
 
-aneesa --- house
+aneesa -- house
 
 house --- mother 
 house -- sadaf 
@@ -55,11 +55,49 @@ fareeda -- house : down the hall
 :Fatima: as fatima $female 
 fatima --> fareeda : sister 
 
-fatima .... house:  vanished long ago
-note on link: if ever existed
 
 :Faris: as faris $male
 faris --> aneesa: uncle
 
+(mosque) <<institution>>
+
+:Imam Ghulam: as imam $male 
+
+(boat) <<event>> 
+
+boat -- father
+uncle -- boat 
+:Hamidullah Sayed: as hamidullah $male
+boat - hamidullah
+
+imam -- mosque
+
+:Abdi: as abdi $male
+:Anas: as anas $male 
+
+mosque -- abdi
+mosque -- anas
+
+(School) <<institution>>
+
+yahya -- (School)
+
+:Craig: as bully $male
+
+(School) -- bully : bully 
+
+:John Muhammad: as muhammad $male 
+muhammad -> miriam : husband
+
+(School) -- imam  : sponsor
+
+:Mrs Chow: as nurse $female
+(School) -- nurse   : nurse 
+
+:Wayne: as bully2 $male 
+:Gavin: as bully3 $male 
+
+(School) -- bully2 : bully 
+(School) -- bully3 : bully 
 
 @enduml
