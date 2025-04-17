@@ -70,7 +70,7 @@ uncle -- boat
 :Hamidullah Sayed: as hamidullah $male
 boat - hamidullah
 
-imam - mosque
+imam -- mosque
 
 :Abdi: as abdi $male
 :Anas: as anas $male 
@@ -94,5 +94,10 @@ muhammad -> miriam : husband
 :Mrs Chow: as nurse $female
 (School) -- nurse   : nurse 
 
+:Wayne: as bully2 $male 
+:Gavin: as bully3 $male 
+
+(School) -- bully2 : bully 
+(School) -- bully3 : bully 
 
 @enduml
