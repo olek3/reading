@@ -91,5 +91,8 @@ muhammad -> miriam : husband
 
 (School) -- imam  : sponsor
 
+:Mrs Chow: as nurse $female
+(School) -- nurse   : nurse 
+
 
 @enduml
