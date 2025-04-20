@@ -114,6 +114,13 @@ school2 -- peers
 
 peers -- ibrahim: gab 
 peers -- hass : entrepreneur 
-peers -- moazzam : seer
+peers -- moazzam : seer 
+
+:Samir: as samir $male 
+school2 -- samir : Salafi 
+
+:Abdallah: as abdallah $male
+
+father <-- abdallah : friend 
 
 @enduml
