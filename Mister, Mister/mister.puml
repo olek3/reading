@@ -123,4 +123,8 @@ school2 -- samir : Salafi
 
 father <-- abdallah : friend 
 
+:Zenab: as zenab $male 
+
+ibrahim <-- zenab : volunteer 
+
 @enduml
