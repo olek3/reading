@@ -18,8 +18,17 @@ yumshan --> prince : сын
 yalpyng ..> prince: благословил 
 
 
-:Омоль: 
+:Омоль: as omol
 
-note right: вбил кол 
+(Мертвая Парма) as deadParma <<location>>
+(поход в мертвую Парму) as gathering <<event>>
+
+gathering --> deadParma : туда
+prince -- gathering
+yumshan -- gathering
+
+deadParma -- omol : вбил кол
+
+
 
 @enduml
