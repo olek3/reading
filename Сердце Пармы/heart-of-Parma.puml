@@ -51,7 +51,7 @@ rusStan -- poluds
 
 :Полюд: as polud $male 
 
-polud ..> poluds: послал
+poluds <.. polud: послал
 
 :Питирим: as bishop $male
 
@@ -64,14 +64,14 @@ poluds -- uncleVanya
 poluds -- perch
 poluds -- small
 
-:Семка: as semka $male 
+:Семка: as messenger $male
 
-neapolitans -- semka: самый младший, выжил 
+neapolitans -- messenger: самый младший, выжил
 
 :Ероха Смыка: as erokha $male 
 neapolitans -- erokha: давний напарник 
 
-conductor <.. bishop: послал
+conductor <.... bishop: послал
 
 (Чердынь) as cherdyn <<location>> 
 
@@ -140,6 +140,24 @@ anfalov -- esaul: есаул
 horseman --> ermolay: конюх
 
 :Бурмот: as burmot $male 
-burmot --> polud: //ученик//
+polud <-- burmot: //ученик//
+
+(Афкуль) as afkul <<location>>
+:Мансур: as mansur $male
+
+afkul -- mansur : шибан
+
+:Семка-Дура: as messenger $male
+
+messenger <.. mansur : перехватил
+messenger <.. misha : послал с ябедой
+
+:Исур: as isur $male
+
+mansur <-- isur : сын
+
+:Солэ: as sole $female
+sole ..> conductor : спасла
+
 
 @enduml
