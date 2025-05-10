@@ -17,16 +17,11 @@ yumshan --> prince : сын
 
 gathering --> deadParma : туда
 prince -- gathering
-yumshan -- gathering
 
 :Нята: as nyata
 nyata --> prince: конь 
 
-:шаман: as shaman $male 
-
-shaman -- gathering 
-
-(Вышкар) as shamanCity <<institution>> 
+(Вышкар) as shamanCity <<institution>>
 
 shamanCity -- deadParma   
 
@@ -43,7 +38,7 @@ deadParma -- rusStan
 
 :Васька Калина: as conductor $male 
 
-rusStan -- conductor: проводник 
+rusStan -- conductor: проводник
 
 (новгородцы) as neapolitans <<group>> 
 
@@ -56,7 +51,7 @@ rusStan -- poluds
 
 :Полюд: as polud $male 
 
-poluds <. polud: послал 
+polud ..> poluds: послал
 
 :Питирим: as bishop $male
 
@@ -76,16 +71,16 @@ neapolitans -- semka: самый младший, выжил
 :Ероха Смыка: as erokha $male 
 neapolitans -- erokha: давний напарник 
 
-conductor <.. bishop: послал 
+conductor <.. bishop: послал
 
 (Чердынь) as cherdyn <<location>> 
 
-bishop -- cherdyn: епископ 
+bishop -- cherdyn  : епископ
 
 (Усть-Вым) as ustVym <<location>> 
 :Ермолай: as ermolay $male_protagonist 
 
-ustVym -- ermolay: князь 
+ustVym - ermolay: князь
 
 :Пишка: as pishka $male 
 pishka -- neapolitans: выжил 
@@ -93,22 +88,22 @@ pishka -- neapolitans: выжил
 :Гаврила: as gavrila $male
 gavrila -- neapolitans 
 
-:Миша: as misha $male 
-ermolay <-- misha: старший сын 
+:Михаил: as misha $male_protagonist
+misha --> ermolay: старший сын
 (Пермь Великая) as greatParma <<location>> 
-misha --> greatParma: князь 
+misha -- greatParma: князь
 
 :Васька: as vaska $male
 
-ermolay <-- vaska: сын 
+vaska --> ermolay: сын
 
 :Айчейль: as aycheyl $female 
 
-vaska <-- aycheyl: нянька 
-misha <-- aycheyl: нянька
+aycheyl ---> misha : нянька
+aycheyl ---> vaska : нянька
 
 :Степан Рогожа: as centurion $male
-ermolay <-- centurion: сотник 
+ermolay <-- centurion: сотник
 
 (Вычегда) as vychegda <<location>> 
 (Ульяновский монастырь) as monastery <<instutution>> 
@@ -121,30 +116,30 @@ monastery -- iona: настоятель
 
 :Лукашка: as luka $male
 
-luka --> ermolay: кухонный мужик 
+luka --> ermolay: кухонный мужик
 :Танег: as taneg $male 
 
-cherdyn -- taneg: князь 
+taneg -- cherdyn : князь
 
 ermolay ..> taneg: споил 
 
 :Тичерть: as tichert $female 
-tichert --> taneg: дочь 
+taneg <-- tichert : дочь
 
 prince ---> aycheyl: муж 
 
 :Ничейка: as noones $male 
 
-bishop <-- noones: информатор 
+bishop <--- noones: информатор
 
 (Анфаловский городок) as anfalov <<location>> 
 :Кривонос: as esaul $male 
 anfalov -- esaul: есаул 
 
 :Савела: as horseman $male 
-ermolay <-- horseman: конюх 
+horseman --> ermolay: конюх
 
 :Бурмот: as burmot $male 
-burmot --> polud: "ученик" 
+burmot --> polud: //ученик//
 
 @enduml
