@@ -6,27 +6,19 @@
 title Сердце Пармы 
 mainframe characters
 
-:Вагирйома:
 
 :Асыка: as prince $male_protagonist 
 :Юмшан: as yumshan $male
 
 yumshan --> prince : сын 
 
-:Ялпынг: as yalpyng  
-
-
-':Омоль: as omol
-
 (Мертвая Парма) as deadParma <<location>>
 (поход в мертвую Парму) as gathering <<event>>
 
-yalpyng .> gathering: благословил
 gathering --> deadParma : туда
 prince -- gathering
 yumshan -- gathering
 
-'deadParma -- omol : вбил кол
 :Нята: as nyata
 nyata --> prince: конь 
 
