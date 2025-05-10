@@ -8,27 +8,151 @@ mainframe characters
 
 :Вагирйома:
 
-:князь: as prince $male 
+:Асыка: as prince $male_protagonist 
 :Юмшан: as yumshan $male
- 
+
 yumshan --> prince : сын 
 
-:Ялпынг: as yalpyng 
-
-yalpyng ..> prince: благословил 
+:Ялпынг: as yalpyng  
 
 
-:Омоль: as omol
+':Омоль: as omol
 
 (Мертвая Парма) as deadParma <<location>>
 (поход в мертвую Парму) as gathering <<event>>
 
+yalpyng .> gathering: благословил
 gathering --> deadParma : туда
 prince -- gathering
 yumshan -- gathering
 
-deadParma -- omol : вбил кол
+'deadParma -- omol : вбил кол
+:Нята: as nyata
+nyata --> prince: конь 
+
+:шаман: as shaman $male 
+
+shaman -- gathering 
+
+(Вышкар) as shamanCity <<institution>> 
+
+shamanCity -- deadParma   
+
+:Верховный шаман: as pam $male
+
+pam -- shamanCity: Верховный шаман 
+
+(Русская станица) as rusStan <<event>> 
+
+deadParma -- rusStan 
+
+:Демьян Ухват: as demyan $male_protagonist 
 
 
+:Васька Калина: as conductor $male 
+
+rusStan -- conductor: проводник 
+
+(новгородцы) as neapolitans <<group>> 
+
+demyan - neapolitans: предводитель 
+
+rusStan -- neapolitans 
+
+(ратники Полюда) as poluds <<group>> 
+rusStan -- poluds 
+
+:Полюд: as polud $male 
+
+poluds <. polud: послал 
+
+:Питирим: as bishop $male
+
+:дядя Ваня: as uncleVanya $male 
+:Ванюха Окунь: as perch $male
+
+:Ивашка Меньшой: as small $male
+
+poluds -- uncleVanya 
+poluds -- perch
+poluds -- small
+
+:Семка: as semka $male 
+
+neapolitans -- semka: самый младший, выжил 
+
+:Ероха Смыка: as erokha $male 
+neapolitans -- erokha: давний напарник 
+
+conductor <.. bishop: послал 
+
+(Чердынь) as cherdyn <<location>> 
+
+bishop -- cherdyn: епископ 
+
+(Усть-Вым) as ustVym <<location>> 
+:Ермолай: as ermolay $male_protagonist 
+
+ustVym -- ermolay: князь 
+
+:Пишка: as pishka $male 
+pishka -- neapolitans: выжил 
+
+:Гаврила: as gavrila $male
+gavrila -- neapolitans 
+
+:Миша: as misha $male 
+ermolay <-- misha: старший сын 
+(Пермь Великая) as greatParma <<location>> 
+misha --> greatParma: князь 
+
+:Васька: as vaska $male
+
+ermolay <-- vaska: сын 
+
+:Айчейль: as aycheyl $female 
+
+vaska <-- aycheyl: нянька 
+misha <-- aycheyl: нянька
+
+:Степан Рогожа: as centurion $male
+ermolay <-- centurion: сотник 
+
+(Вычегда) as vychegda <<location>> 
+(Ульяновский монастырь) as monastery <<instutution>> 
+
+vychegda -- monastery 
+
+:отец Иона: as iona $male
+
+monastery -- iona: настоятель 
+
+:Лукашка: as luka $male
+
+luka --> ermolay: кухонный мужик 
+:Танег: as taneg $male 
+
+cherdyn -- taneg: князь 
+
+ermolay ..> taneg: споил 
+
+:Тичерть: as tichert $female 
+tichert --> taneg: дочь 
+
+prince ---> aycheyl: муж 
+
+:Ничейка: as noones $male 
+
+bishop <-- noones: информатор 
+
+(Анфаловский городок) as anfalov <<location>> 
+:Кривонос: as esaul $male 
+anfalov -- esaul: есаул 
+
+:Савела: as horseman $male 
+ermolay <-- horseman: конюх 
+
+:Бурмот: as burmot $male 
+burmot --> polud: "ученик" 
 
 @enduml
