@@ -124,7 +124,7 @@ taneg -- cherdyn : князь
 ermolay ..> taneg: споил 
 
 :Тичерть: as tichert $female 
-taneg <-- tichert : дочь
+tichert --> taneg : дочь
 
 prince ---> aycheyl: муж 
 
@@ -163,7 +163,7 @@ sole ..> conductor : спасла
 misha --> mathew: отец 
 mathew <-- tichert: мать 
 
-:Калын: 
-:Дионисий: 
+:Дионисий: as dionisy $male
+iona <-- dionisy : строитель
 
 @enduml
