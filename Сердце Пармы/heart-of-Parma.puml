@@ -159,5 +159,11 @@ mansur <-- isur : сын
 :Солэ: as sole $female
 sole ..> conductor : спасла
 
+:Матвей: as mathew $male 
+misha --> mathew: отец 
+mathew <-- tichert: мать 
+
+:Калын: 
+:Дионисий: 
 
 @enduml
