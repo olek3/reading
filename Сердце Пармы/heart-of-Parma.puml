@@ -12,13 +12,13 @@ mainframe characters
 
 yumshan --> prince : сын 
 
-(Мертвая Парма) as deadParma <<location>>
+(Мертвая Парма /Гляден/) as deadParma <<location>>
 (поход в мертвую Парму) as gathering <<event>>
 
 gathering --> deadParma : туда
 prince -- gathering
 
-:Нята: as nyata
+:Нята: as nyata <<конь>>
 nyata --> prince: конь 
 
 (Вышкар) as shamanCity <<institution>>
@@ -60,7 +60,7 @@ poluds <.. polud: послал
 
 :Ивашка Меньшой: as small $male
 
-poluds -- uncleVanya 
+uncleVanya -- poluds
 poluds -- perch
 poluds -- small
 
@@ -140,7 +140,7 @@ anfalov -- esaul: есаул
 horseman --> ermolay: конюх
 
 :Бурмот: as burmot $male 
-polud <-- burmot: //ученик//
+polud <--- burmot: //ученик//
 
 (Афкуль) as afkul <<location>>
 :Мансур: as mansur $male
@@ -157,7 +157,7 @@ messenger <.. misha : послал с ябедой
 mansur <-- isur : сын
 
 :Солэ: as sole $female
-sole ..> conductor : спасла
+conductor <.. sole : спасла
 
 :Матвей: as mathew $male 
 misha --> mathew: отец 
@@ -165,5 +165,45 @@ mathew <-- tichert: мать
 
 :Дионисий: as dionisy $male
 iona <-- dionisy : строитель
+
+(Крещение) as baptism <<event>>
+
+baptism <- iona : устроил
+
+baptism -- :Пемдан Пянтежский:
+baptism -- :Сойгат Покчинский:
+baptism -- :Керчег Янидорский:
+baptism -- :Колог Пыскорский:  : уже крещеный
+
+:Качаим Искорский: as kachaim $male
+
+kachaim - baptism
+burmot <- kachaim : отец
+
+:Мичкин: as michkin $male
+baptism -- michkin
+
+(Урос) as uros <<location>>
+michkin  -- uros
+
+:Пассэр (Бисерка): as biserka $female
+
+biserka -- baptism
+
+polud --> biserka : взял
+
+:Ветлан: as vetlan $male
+
+vetlan -- baptism
+
+biserka <- vetlan : любит
+
+:слепой сказитель: as blind $male
+
+blind -- baptism
+
+blind -> biserka : отец
+
+
 
 @enduml
