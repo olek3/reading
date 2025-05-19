@@ -204,6 +204,44 @@ blind -- baptism
 
 blind -> biserka : отец
 
+:Ругай: as swear <<кобель>>
 
+misha <-- swear
+
+(За камень) as tovoguls <<event>>
+
+tovoguls -- misha
+
+(Васькина авантюра) as adventure <<event>>
+
+:Зырян: as zyryan $male
+:Васька Скряба: as skryaba
+
+
+adventure --- vaska
+
+adventure -- zyryan
+adventure -- skryaba
+
+(Понил) as ponil <<location>>
+(Вагиль) as vagil <<location>>
+
+ponil <.. adventure : взят
+vagil <.. adventure : взят
+
+:Течик: as techik $male
+techik --> ponil : князек
+
+:Калпак: as kalpak $male
+kalpak --> vagil : князек
+
+:Охрим: as ohrim $male
+ohrim -- adventure : повесился
+
+:Данила Венец: as venec $male
+note top : дьяк из Москвы
+
+:Петька Кочедык: $male
+:Петька Кочедык:  --> tovoguls  : лазутчик
 
 @enduml
