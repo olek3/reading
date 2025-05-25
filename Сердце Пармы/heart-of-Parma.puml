@@ -238,10 +238,12 @@ kalpak --> vagil : князек
 :Охрим: as ohrim $male
 ohrim -- adventure : повесился
 
-:Данила Венец: as venec $male
+:Данила Венец: as venec $male_protagonist 
 note top : дьяк из Москвы
 
 :Петька Кочедык: $male
 :Петька Кочедык:  --> tovoguls  : лазутчик
 
+:Талдак: as taldak $male 
+taldak --> prince : темник 
 @enduml
