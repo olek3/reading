@@ -100,4 +100,31 @@ muhammad -> miriam : husband
 (School) -- bully2 : bully 
 (School) -- bully3 : bully 
 
+(ibn Rabah school) as school2 <<institution>> 
+
+(brorher-peers) as peers <<group>> 
+
+yahya -- school2 
+
+school2 -- peers 
+
+:Ibrahim: as ibrahim $male 
+:Hass: as hass $male 
+:Moazzam: as moazzam $male 
+
+peers -- ibrahim: gab 
+peers -- hass : entrepreneur 
+peers -- moazzam : seer 
+
+:Samir: as samir $male 
+school2 -- samir : Salafi 
+
+:Abdallah: as abdallah $male
+
+father <-- abdallah : friend 
+
+:Zenab: as zenab $male 
+
+ibrahim <-- zenab : volunteer 
+
 @enduml
