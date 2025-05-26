@@ -239,11 +239,69 @@ kalpak --> vagil : князек
 ohrim -- adventure : повесился
 
 :Данила Венец: as venec $male_protagonist 
-note top : дьяк из Москвы
 
 :Петька Кочедык: $male
 :Петька Кочедык:  --> tovoguls  : лазутчик
 
 :Талдак: as taldak $male 
-taldak --> prince : темник 
+taldak --> prince : темник
+
+(Москва) as moscow <<location>>
+moscow -- venec : дьяк
+
+:Антипа: as antipa $male
+antipa -- moscow : дьяк
+
+:Ромодановский: $male
+:Ромодановский: -- moscow : боярин
+:Илюха: $male
+:Илюха: -- moscow : сокольничий
+
+:Ибрагишка: <<цыган>> $male
+:Ибрагишка: -- moscow
+:Пересвет: <<жеребец>>
+:Пересвет: - moscow
+
+:Оксана: <<полячка>> $female
+
+moscow - :Оксана:
+
+(поход на Казань) as KazanTrip <<event>>
+
+:Юрий Дмитровский: as yuri  $male
+:Иван Васильевич: as greatPrince $male
+moscow --- greatPrince : Великий князь
+
+greatPrince <-- yuri : брат
+
+yuri -- KazanTrip : возглавил
+
+:Филофей: $male
+KazanTrip -- :Филофей: : упомянут как-то
+
+:Федор Пестрый Стародубский: as colorful $male
+KazanTrip -- colorful
+
+:Федор Давыдов Вострово: as vostrovo  <<родовитый боярин>> $male
+colorful <--  vostrovo : в подчинении
+
+:Гаврла Нелидов: as nelidov  $male
+nelidov -- (Устюг) : воевода
+(Устюг) <<location>>
+colorful <-- nelidov : передал полк
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @enduml
