@@ -1,0 +1,24 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+title Butter 
+mainframe characters 
+
+:Rika Machida: as rika $female_protagonist 
+:Reiko: as reiko $female 
+
+reiko --> rika: friend 
+
+
+(colleagues) <<group>> 
+rika -- colleagues 
+colleagues -- Kitamura: junior member of stuff 
+
+(Oyamadai) <<location>> 
+Oyamadai -- reiko: lived previously 
+
+:Ryōsuke: as husband $male 
+husband --> reiko : husband 
+@enduml
