@@ -21,4 +21,9 @@ Oyamadai -- reiko: lived previously
 
 :Ryōsuke: as husband $male 
 husband --> reiko : husband 
+
+:Makoto Fujimura: as makoto $male 
+
+rika <-- makoto : boyfriend 
+
 @enduml
