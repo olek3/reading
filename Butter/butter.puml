@@ -24,8 +24,10 @@ husband --> reiko : husband
 
 :Makoto Fujimura: as makoto $male 
 
-rika <-- makoto : boyfriend
-
+rika <-- makoto : boyfriend 
 colleagues - makoto
+
+Misaki $female 
+Misaki -> rika : mother 
 
 @enduml
