@@ -28,10 +28,10 @@ Misaki -> rika : mother
 :Manaki Kajii: as manaki <<suspect>> $female
 
 
-(Le Salon de Miyuko) as salon <<insitution>>
+(Le Salon de Miyuko) as salon <<institution>>
 :Miyuko Sasazuka: as miyuko $female
 
-(French Restaurant Balzac) as balzac <<insitution>>
+(French Restaurant Balzac) as balzac <<institution>>
 
 miyuko -- salon : founder
 
@@ -42,16 +42,20 @@ sasazuka -- balzac : owner
 
 manaki - salon : student
 
-rika -> manaki : //working on?//
+rika -> manaki : working on
 
 :Yoshinori Shinoi: $male
 note top: news agency editor
 
-(Shūmei Weekly) as newspaper <<insitution>>
-rika --> newspaper : journalist
-newspaper -- Kitamura: junior member of stuff
-newspaper - makoto
+(Shūmei Weekly) as magazine <<institution>>
+rika --> magazine : journalist
 
-:Yū Uchimura:
+:Kitamura: $male
+magazine -- Kitamura: junior member of stuff
+magazine - makoto
+
+:Yū Uchimura: as yu $female
+
+magazine -- yu : part-time student
 
 @enduml
