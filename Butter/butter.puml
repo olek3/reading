@@ -3,7 +3,8 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 
 !include $stylePath/reading.iuml
-title Butter 
+
+title Butter
 mainframe characters 
 
 :Rika Machida: as rika $female_protagonist 
@@ -11,12 +12,7 @@ mainframe characters
 
 reiko --> rika: friend 
 
-
-(colleagues) <<group>> 
-rika -- colleagues 
-colleagues -- Kitamura: junior member of stuff 
-
-(Oyamadai) <<location>> 
+(Oyamadai) <<location>>
 Oyamadai -- reiko: lived previously 
 
 :Ryōsuke: as husband $male 
@@ -25,13 +21,12 @@ husband --> reiko : husband
 :Makoto Fujimura: as makoto $male 
 
 rika <-- makoto : boyfriend 
-colleagues - makoto
 
 Misaki $female 
 Misaki -> rika : mother 
 
-:Manaki Kajii: as manaki $female
-note  right : suspect
+:Manaki Kajii: as manaki <<suspect>> $female
+
 
 (Le Salon de Miyuko) as salon <<insitution>>
 :Miyuko Sasazuka: as miyuko $female
@@ -45,11 +40,17 @@ miyuko -- salon : founder
 sasazuka --> miyuko : husband
 sasazuka -- balzac : owner
 
-salon - manaki : student 
+manaki - salon : student
 
-:Yoshinori Shinoi: $male 
-note top: news agency editor 
+rika -> manaki : //working on?//
 
-(Shūmei Weekly) 
+:Yoshinori Shinoi: $male
+note top: news agency editor
+
+(Shūmei Weekly) as newspaper <<insitution>>
+rika --> newspaper : journalist
+newspaper -- Kitamura: junior member of stuff
+newspaper - makoto
+
 
 @enduml
