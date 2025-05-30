@@ -58,4 +58,19 @@ magazine - makoto
 
 magazine -- yu : part-time student
 
+(Kajii's family) as family <<group>>
+
+:grandfather: as grandfather <<unnamed>> $male
+:father: as  father <<unnamed>>  $male
+:mother: as  mother <<unnamed>>  $female
+:sister: as sister <<unnamed>>  $female
+
+grandfather --> father : father
+father -- family : father
+mother -- family : mother
+sister -- family : yonger sister
+
+family -- manaki
+
+
 @enduml
