@@ -30,4 +30,22 @@ colleagues - makoto
 Misaki $female 
 Misaki -> rika : mother 
 
+:Manaki Kajii: as manaki $female
+note  right : suspect
+
+(Le Salon de Miyuko) as salon <<insitution>>
+:Miyuko Sasazuka: as miyuko $female
+
+(French Restaurant Balzac) as balzac <<insitution>>
+
+miyuko -- salon : founder
+
+:Mr Sasazuka: as  sasazuka $male
+
+sasazuka --> miyuko : husband
+sasazuka -- balzac : owner
+
+salon - manaki : student
+
+
 @enduml
