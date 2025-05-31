@@ -45,7 +45,7 @@ manaki - salon : student
 rika -> manaki : working on
 
 :Yoshinori Shinoi: $male
-note top: news agency editor
+note top: news agency editor on TV
 
 (Shūmei Weekly) as magazine <<institution>>
 rika --> magazine : journalist
@@ -72,10 +72,15 @@ sister -- family : yonger sister
 
 family -- manaki
 
-:Mr Yamammura: as yamamura <<victim>> $male
+(victims) <<group>>
 
-manaki --> yamamura : under train
+manaki -- (victims) : suspected
+:Mr Yamammura: as yamamura $male
 
-:Tadanobu Motomatsu: 
+(victims) -- yamamura : under train
+
+:Tadanobu Motomatsu: $male
+(victims) -- :Tadanobu Motomatsu: : sleeping-pills overdose
+
 
 @enduml
