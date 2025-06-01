@@ -1,0 +1,86 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+
+!include $stylePath/reading.iuml
+
+title Butter
+mainframe characters 
+
+:Rika Machida: as rika <<protagonist>> $female_protagonist
+:Reiko: as reiko $female 
+
+reiko --> rika: friend 
+
+(Oyamadai) <<location>>
+Oyamadai -- reiko: lived previously 
+
+:Ryōsuke: as husband $male 
+husband --> reiko : husband 
+
+:Makoto Fujimura: as makoto $male 
+
+rika <-- makoto : boyfriend 
+
+Misaki $female 
+Misaki -> rika : mother 
+
+:Manaki Kajii: as manaki <<suspect>> $female
+
+
+(Le Salon de Miyuko) as salon <<institution>>
+:Miyuko Sasazuka: as miyuko $female
+
+(French Restaurant Balzac) as balzac <<institution>>
+
+miyuko -- salon : founder
+
+:Mr Sasazuka: as  sasazuka $male
+
+sasazuka --> miyuko : husband
+sasazuka -- balzac : owner
+
+manaki - salon : student
+
+rika -> manaki : working on
+
+:Yoshinori Shinoi: $male
+note top: news agency editor on TV
+
+(Shūmei Weekly) as magazine <<institution>>
+rika --> magazine : journalist
+
+:Kitamura: $male
+magazine -- Kitamura: junior member of stuff
+magazine - makoto
+
+:Yū Uchimura: as yu $female
+
+magazine -- yu : part-time student
+
+(Kajii's family) as family <<group>>
+
+:grandfather: as grandfather <<unnamed>> $male
+:father: as  father <<unnamed>>  $male
+:mother: as  mother <<unnamed>>  $female
+:sister: as sister <<unnamed>>  $female
+
+grandfather --> father : father
+father -- family : father
+mother -- family : mother
+sister -- family : yonger sister
+
+family -- manaki
+
+(victims) <<group>>
+
+manaki -- (victims) : suspected
+:Mr Yamammura: as yamamura $male
+
+(victims) -- yamamura : under train
+
+:Tadanobu Motomatsu: $male
+(victims) -- :Tadanobu Motomatsu: : sleeping-pills overdose
+
+
+@enduml
