@@ -44,8 +44,8 @@ manaki - salon : student
 
 rika -> manaki : working on
 
-:Yoshinori Shinoi: $male
-note top: news agency editor on TV
+:Yoshinori Shinoi: as  shinoi $male
+shinoi --> rika : source
 
 (Shūmei Weekly) as magazine <<institution>>
 rika --> magazine : journalist
