@@ -82,5 +82,16 @@ manaki -- (victims) : suspected
 :Tadanobu Motomatsu: $male
 (victims) -- :Tadanobu Motomatsu: : sleeping-pills overdose
 
+:Uncle: as uncle <<unnamed>> $male
+Misaki <-- uncle : little brother
+:Etchan: as aunt $female
+uncle <-- aunt : wife
+
+:Rika's grandfather: as grandpa <<unnamed>> $male
+
+grandpa -> Misaki : father
+grandpa -> uncle : father
+
+
 
 @enduml
