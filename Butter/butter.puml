@@ -4,6 +4,7 @@
 
 !include $stylePath/reading.iuml
 
+'skinparam shadowing false
 title Butter
 mainframe characters 
 
@@ -93,5 +94,10 @@ grandpa -> Misaki : father
 grandpa -> uncle : father
 
 :Momoe Ōyasu: as oyasu $female
+
+oyasu <--- rika : interviewed
+:Famous politician: as politician <<unnamed>> $male
+
+politician--> oyasu : alleged lover
 
 @enduml
