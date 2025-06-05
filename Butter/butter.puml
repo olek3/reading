@@ -92,6 +92,6 @@ uncle <-- aunt : wife
 grandpa -> Misaki : father
 grandpa -> uncle : father
 
-
+:Momoe Ōyasu: as oyasu $female
 
 @enduml
