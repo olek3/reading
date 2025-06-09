@@ -8,6 +8,7 @@ skinparam actor<<dead>>bordercolor gray
 skinparam actor<<unnamed>>fontcolor darkgreen
 skinparam actor<<unnamed>>fontstyle italic
 'skinparam actor<<unnamed>>fontname aapex
+skinparam actor<<dead>>shadowing false
 
 'skinparam shadowing false
 title Butter
