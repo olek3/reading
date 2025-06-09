@@ -4,9 +4,15 @@
 
 !include $stylePath/reading.iuml
 
+skinparam actor<<dead>>bordercolor gray
+skinparam actor<<unnamed>>fontcolor darkgreen
+skinparam actor<<unnamed>>fontstyle italic
+'skinparam actor<<unnamed>>fontname aapex
+
 'skinparam shadowing false
 title Butter
 mainframe characters 
+legend : 32.5%
 
 :Rika Machida: as rika <<protagonist>> $female_protagonist
 :Reiko: as reiko $female 
@@ -48,6 +54,7 @@ rika -> manaki : working on
 :Yoshinori Shinoi: as  shinoi $male
 shinoi --> rika : source
 
+
 (Shūmei Weekly) as magazine <<institution>>
 rika --> magazine : journalist
 
@@ -76,11 +83,11 @@ family -- manaki
 (victims) <<group>>
 
 manaki -- (victims) : suspected
-:Mr Yamammura: as yamamura $male
+:Mr Yamammura: as yamamura <<dead>> $male
 
 (victims) -- yamamura : under train
 
-:Tadanobu Motomatsu: $male
+:Tadanobu Motomatsu: <<dead>> $male
 (victims) -- :Tadanobu Motomatsu: : sleeping-pills overdose
 
 :Uncle: as uncle <<unnamed>> $male
@@ -95,12 +102,25 @@ grandpa -> uncle : father
 
 :Momoe Ōyasu: as oyasu $female
 
+oyasu <-- shinoi : leaked
+
 oyasu <--- rika : interviewed
 :Famous politician: as politician <<unnamed>> $male
 
 politician--> oyasu : alleged lover
 
-:Hisanori Niimi: as niimi $male 
-victims -- niimi : drowned 
+:Hisanori Niimi: as niimi <<dead>>$male
+victims -- niimi : drowned
+
+:Yamamura's sister: as ySister <<unnamed>> $female
+:Yamamura's mother: as yMother <<unnamed>> <<dead>> $female
+
+yamamura <-- ySister : sister
+yamamura <-- yMother : mother
+
+:Rika's father: as rFather <<dead>><<unnamed>> $male
+
+rFather --> Misaki : husband
+
 
 @enduml
