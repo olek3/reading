@@ -121,7 +121,10 @@ yamamura <-- yMother : mother
 
 :Rika's father: as rFather <<dead>><<unnamed>> $male
 
-rFather --> Misaki : husband
+rFather --> Misaki : husband 
 
+:Yoriko Mizushima: as Mizushima $female 
+
+magazin -- Mizushima: former journalist 
 
 @enduml
