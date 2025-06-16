@@ -121,6 +121,6 @@ yamamura <-- yMother : mother
 :Rika's father: as rFather <<dead>><<unnamed>> $male
 
 rFather --> Misaki : husband
-
+:Mrs Tajima: --> reiko : housekeeper 
 
 @enduml
