@@ -16,7 +16,7 @@ mainframe characters
 legend : 32.5%
 
 :Rika Machida: as rika <<protagonist>> $female_protagonist
-:Reiko: as reiko $female 
+:Reiko: as reiko <<protagonist>> $female_protagonist 
 
 reiko --> rika: friend 
 
@@ -128,7 +128,9 @@ rFather --> Misaki : husband
 magazin -- Mizushima: former journalist 
 
 :Mrs Tajima: --> reiko : housekeeper 
-:Melanie: --> reiko : collie
+:Melanie: --> reiko : collie 
+
+reiko --> :Jelly Wizard: : Custard 
 
 @enduml
 
