@@ -184,6 +184,7 @@ hitomi -- salon : left the room
 
 :Chizu: as chizu $female
 salon - chizu : introducing
-
+:Aki: $female 
+Aki -- salon
 
 @enduml
