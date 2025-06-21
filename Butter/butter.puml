@@ -7,7 +7,7 @@
 skinparam actor<<dead>>bordercolor gray
 skinparam actor<<unnamed>>fontcolor darkgreen
 skinparam actor<<unnamed>>fontstyle italic
-'skinparam actor<<unnamed>>fontname aapex
+skinparam actor<<unnamed>>fontname times new roman
 skinparam actor<<dead>>shadowing false
 
 'skinparam shadowing false
@@ -122,9 +122,9 @@ magazine -- Mizushima: former journalist
 
 kanazawa -- reiko : hometown
 
-:Mrs Tajima: --> kanazawa : housekeeper
+:Mrs Tajima: -- kanazawa : housekeeper
 :Melanie: as collie <<pet>> $female
-collie --> kanazawa : Reiko's dog
+collie -- kanazawa : Reiko's dog
 :Reiko's mother: as reikoMother <<unnamed>> $female
 :Reiko's father: as reikoFather <<unnamed>> $male
 
@@ -165,8 +165,8 @@ reiko ..> reikoSalon
 
 :Miyuko Sasazuka: as miyuko $female
 salon -- manaki : student
-reikoSalon --> salon
-salon <-- rikaSalon
+reikoSalon -- salon
+salon -- rikaSalon
 miyuko -- salon : founder
 
 :Mr Sasazuka: as  sasazuka $male
@@ -179,10 +179,10 @@ reikoSalon --> shigemori : refers to
 shigemori <-- rikaSalon : refers to
 
 :Hitomi: as hitomi $female
-hitomi --> salon : left the room
+hitomi -- salon : left the room
 
 :Chizu: as chizu $female
-salon <- chizu : introducing
+salon - chizu : introducing
 
 
 @enduml
