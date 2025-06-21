@@ -13,12 +13,12 @@ skinparam actor<<dead>>shadowing false
 'skinparam shadowing false
 title Butter
 mainframe characters 
-legend : 32.5%
+legend : 83.2%
 
 :Rika Machida: as rika <<protagonist>> $female_protagonist
-:Reiko: as reiko <<protagonist>> $female_protagonist 
+:Reiko Sayama: as reiko <<protagonist>> $female_protagonist
 
-reiko --> rika: friend 
+reiko ---> rika: friend
 
 (Oyamadai) <<location>>
 Oyamadai -- reiko: lived previously 
@@ -36,24 +36,15 @@ Misaki -> rika : mother
 :Manaki Kajii: as manaki <<suspect>> $female
 
 
-(Le Salon de Miyuko) as salon <<institution>>
-:Miyuko Sasazuka: as miyuko $female
 
 (French Restaurant Balzac) as balzac <<institution>>
 
-miyuko -- salon : founder
 
-:Mr Sasazuka: as  sasazuka $male
-
-sasazuka --> miyuko : husband
-sasazuka -- balzac : owner
-
-manaki - salon : student
 
 rika -> manaki : working on
 
 :Yoshinori Shinoi: as  shinoi $male
-shinoi --> rika : source
+rika <-- shinoi  : source
 
 
 (Shūmei Weekly) as magazine <<institution>>
@@ -70,16 +61,16 @@ magazine -- yu : part-time student
 (Kajii's family) as family <<group>>
 
 :grandfather: as grandfather <<unnamed>> $male
-:father: as  father <<unnamed>>  $male
-:mother: as  mother <<unnamed>>  $female
-:sister: as sister <<unnamed>>  $female
+:father: as  father <<unnamed>><<dead>>  $male
+:Masako: as  mother $female
+:Anna Shōji: as sister  $female
 
 grandfather --> father : father
 father -- family : father
 mother -- family : mother
 sister -- family : yonger sister
 
-family -- manaki
+manaki - family
 
 (victims) <<group>>
 
@@ -105,10 +96,10 @@ grandpa -> uncle : father
 
 oyasu <-- shinoi : leaked
 
-oyasu <--- rika : interviewed
+rika --> oyasu : interviewed
 :Famous politician: as politician <<unnamed>> $male
 
-politician--> oyasu : alleged lover
+oyasu <-- politician : alleged future father of baby
 
 :Hisanori Niimi: as niimi <<dead>>$male
 victims -- niimi : drowned
@@ -125,13 +116,73 @@ rFather --> Misaki : husband
 
 :Yoriko Mizushima: as Mizushima $female 
 
-magazin -- Mizushima: former journalist 
+magazine -- Mizushima: former journalist
 
-:Mrs Tajima: --> reiko : housekeeper 
-:Melanie: --> reiko : collie 
+(Kanazawa) as kanazawa <<location>>
 
-reiko --> :Jelly Wizard: : Custard 
+kanazawa -- reiko : hometown
 
-@enduml
+:Mrs Tajima: --> kanazawa : housekeeper
+:Melanie: as collie <<pet>> $female
+collie --> kanazawa : Reiko's dog
+:Reiko's mother: as reikoMother <<unnamed>> $female
+:Reiko's father: as reikoFather <<unnamed>> $male
+
+reikoFather -- kanazawa
+reikoMother -- kanazawa
+
+
+:Jelly Wizard: as fourth $male
+note bottom : aka Shirō Yokota
+
+:Custard: as custard <<avatar>>
+note bottom : aka Sonomi Ikeda
+
+custard <.. reiko
+
+fourth <-- custard : cooked and cleaned
+
+(Niigata) as niigata <<location>>
+
+family - niigata
+
+:Akiyama: as farmer $male
+
+farmer -- niigata
+
+:woman: as farmerWife <<unnamed>> $female
+
+farmerWife --> farmer : assumed wife
+
+:Mariko Iino: as reikoSalon <<avatar>>
+:Kazuko Minami: as rikaSalon <<avatar>>
+
+rikaSalon <.. rika
+
+(Le Salon de Miyuko) as salon <<institution>>
+
+reiko ..> reikoSalon
+
+:Miyuko Sasazuka: as miyuko $female
+salon -- manaki : student
+reikoSalon --> salon
+salon <-- rikaSalon
+miyuko -- salon : founder
+
+:Mr Sasazuka: as  sasazuka $male
+
+sasazuka --> miyuko : husband
+sasazuka -- balzac : owner
+
+:Ms Shigemori: as shigemori $female
+reikoSalon --> shigemori : refers to
+shigemori <-- rikaSalon : refers to
+
+:Hitomi: as hitomi $female
+hitomi --> salon : left the room
+
+:Chizu: as chizu $female
+salon <- chizu : introducing
+
 
 @enduml
