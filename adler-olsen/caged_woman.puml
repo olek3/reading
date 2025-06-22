@@ -6,11 +6,45 @@
 
 title Женщина в клетке
 mainframe characters
-legend : 0%
+legend : 1.9%
 
-:она: as caged $female_protagonist
+:Меретта Люнггор: as caged  $female_protagonist
 
 :Карл Мёрк: as he $male_protagonist
+
+:Вигга: as wife $female
+he <-- wife : в процессе развода
+
+:Харди: as paralized $male
+note bottom: парализованный
+
+:Анкер: as anker <<dead>> $male
+
+(Стрельба) as shooting <<event>>
+
+anker -- shooting
+shooting -- paralized
+shooting -- he
+
+:Таге Баггенсен: as baggensen $male
+
+:Марианна Кох: as secretary $female
+
+caged <-- secretary : секретарша
+
+baggensen <-- secretary : сватала
+
+(Отдел по расследованию убийств) as murders <<institution>>
+
+:Маркус Якобсен: as moira
+
+murders -- moira : начальник
+
+he -- murders
+
+:Ларс Бьёрн: as lars
+
+moira <-- lars : заместитель
 
 
 @enduml
