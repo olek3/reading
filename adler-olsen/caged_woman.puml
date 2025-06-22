@@ -6,7 +6,7 @@
 
 title Женщина в клетке
 mainframe characters
-legend : 2.3%
+legend : 5.2%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -15,12 +15,12 @@ legend : 2.3%
 :Вигга: as wife $female
 he <-- wife : в процессе развода
 
-:Харди: as paralized $male
+:Харди Хеннингсен: as paralized $male
 note bottom: парализованный
 
 :Анкер: as anker <<dead>> $male
 
-(Стрельба) as shooting <<event>>
+(Перестрелка) as shooting <<event>>
 
 anker -- shooting
 shooting -- paralized
@@ -40,14 +40,24 @@ baggensen <-- secretary : сватала
 
 murders -- moira : начальник
 
-he -- murders
 
 :Ларс Бьёрн: as lars
 
 moira <-- lars : заместитель
 
 :Пив Вестергор: as vestegor $female
-note bottom: Датская партия, докладчик по правовой политике
+note bottom:фолькетинг, Датская партия, докладчик по правовой политике
 
+(Отдел Q) as q <<institution>>
+
+murders <|- q : административно подчиняется
+he -- q
+
+:Георг Мадсен: as body <<dead>> $male
+body -- shooting : труп
+
+:Уффе: as brother $male
+
+brother --> caged : брат
 
 @enduml
