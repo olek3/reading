@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 6.9%
+legend : 8.0%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -39,21 +39,21 @@ baggensen <-- secretary : сватала
 
 (Отдел по расследованию убийств) as murders <<institution>>
 
-:Маркус Якобсен: as moira
+:Маркус Якобсен: as moira $male
 
 murders -- moira : начальник
 
 
-:Ларс Бьёрн: as lars
+:Ларс Бьёрн: as lars $male
 
 moira <-- lars : заместитель
 
 :Пив Вестергор: as vestegor $female
-note bottom:фолькетинг, Датская партия, докладчик по правовой политике
+note right: Датская партия, докладчик по правовой политике
 
 (Отдел Q) as q <<institution>>
 
-murders <|- q : административно подчиняется
+q -o murders  : административно подчиняется
 he -- q
 
 :Георг Мадсен: as body <<dead>> $male
@@ -81,5 +81,26 @@ wife <-- new : новый
 home -- he : живет
 stepson --> home : пасынок
 tenant --> home : жилец
+
+(Оперативная группа) as group <<institution>>
+
+group -o murders
+
+:Вигго Бринк: as viggo $male
+:Питер Вестевиг: as piter $male
+
+viggo -- group : начальник
+group -- piter
+
+:девушка: as police_secretary <<unnamed>> $female
+moira <-- police_secretary : секретарша
+
+:Курт Хансен: as mp $male
+note right:  Консервативная партия, бывший вице-комиссар
+
+(Фолькетинг) as volketing <<institution>>
+
+volketing -- mp
+volketing -- vestegor
 
 @enduml
