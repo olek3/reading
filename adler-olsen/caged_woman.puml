@@ -1,0 +1,16 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/reading/iuml"
+
+!include $stylePath/reading.iuml
+
+title Женщина в клетке
+mainframe characters
+legend : 0%
+
+:она: as caged $female_protagonist
+
+:Карл Мёрк: as he $male_protagonist
+
+
+@enduml
