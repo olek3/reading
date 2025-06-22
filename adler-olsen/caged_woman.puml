@@ -72,10 +72,14 @@ wife <-- new : новый
 
 :Мортен Холланн: as tenant $male
 
-tenant --> he : жилец
 
 :Йеспер: as stepson $male
 
-stepson --> he : пасынок
+
+(дом в Рённехольте) as home <<location>>
+
+home -- he : живет
+stepson --> home : пасынок
+tenant --> home : жилец
 
 @enduml
