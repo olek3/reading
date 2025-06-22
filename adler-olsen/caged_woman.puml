@@ -6,7 +6,7 @@
 
 title Женщина в клетке
 mainframe characters
-legend : 1.9%
+legend : 2.3%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -45,6 +45,9 @@ he -- murders
 :Ларс Бьёрн: as lars
 
 moira <-- lars : заместитель
+
+:Пив Вестергор: as vestegor $female
+note bottom: Датская партия, докладчик по правовой политике
 
 
 @enduml
