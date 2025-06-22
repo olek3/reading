@@ -4,9 +4,12 @@
 
 !include $stylePath/reading.iuml
 
+skinparam actor<<unnamed>>fontsize 18
+skinparam actor<<unnamed>>fontcolor forestgreen
+
 title Женщина в клетке
 mainframe characters
-legend : 5.2%
+legend : 5.7%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -59,5 +62,8 @@ body -- shooting : труп
 :Уффе: as brother $male
 
 brother --> caged : брат
+
+:домработница: as help <<unnamed>> $female
+help --> caged : домработница
 
 @enduml
