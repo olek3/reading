@@ -13,7 +13,7 @@ skinparam actor<<dead>>shadowing false
 'skinparam shadowing false
 title Butter
 mainframe characters 
-legend : 98.1%
+legend : 100%
 
 :Rika Machida: as rika <<protagonist>> $female_protagonist
 :Reiko Sayama: as reiko <<protagonist>> $female_protagonist
@@ -190,6 +190,7 @@ Aki -- salon
 :Saya Kamiyama: $female 
 shinoi <-- :Saya Kamiyama: : daughter 
 
-yu <-- :Miki: ; daughter 
+:Miki: $female
+yu <-- :Miki: : daughter
 
 @enduml
