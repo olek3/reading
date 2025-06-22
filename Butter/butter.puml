@@ -185,6 +185,9 @@ hitomi -- salon : left the room
 :Chizu: as chizu $female
 salon - chizu : introducing
 :Aki: $female 
-Aki -- salon
+Aki -- salon 
+
+:Saya Kamiyama: $female 
+shinoi <-- :Saya Kamiyama: : girl
 
 @enduml
