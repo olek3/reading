@@ -16,10 +16,10 @@ legend : 8.0%
 :Карл Мёрк: as he $male_protagonist
 
 :Вигга: as wife $female
-he <-- wife : в процессе развода
+wife --> he : в процессе развода
 
 :Харди Хеннингсен: as paralized $male
-note bottom: парализованный
+note right: парализованный
 
 :Анкер: as anker <<dead>> $male
 
@@ -33,7 +33,7 @@ shooting -- he
 
 :Марианна Кох: as secretary $female
 
-caged <-- secretary : секретарша
+caged <-- secretary : бывшая секретарша
 
 baggensen <-- secretary : сватала
 
@@ -53,7 +53,8 @@ note right: Датская партия, докладчик по правово�
 
 (Отдел Q) as q <<institution>>
 
-q -o murders  : административно подчиняется
+'murders o- q  : административно подчиняется
+q --o murders  : административно подчиняется
 he -- q
 
 :Георг Мадсен: as body <<dead>> $male
@@ -68,7 +69,7 @@ help --> caged : домработница
 
 :любовник: as new <<unnamed>> $male
 
-wife <-- new : новый
+new --> wife : новый
 
 :Мортен Холланн: as tenant $male
 
@@ -84,7 +85,8 @@ tenant --> home : жилец
 
 (Оперативная группа) as group <<institution>>
 
-group -o murders
+murders o- group
+'group -o murders
 
 :Вигго Бринк: as viggo $male
 :Питер Вестевиг: as piter $male
@@ -102,5 +104,17 @@ note right:  Консервативная партия, бывший вице-к
 
 volketing -- mp
 volketing -- vestegor
+
+volketing -- caged
+
+:Сёс Норуп: as secretary2 $female
+
+caged <-- secretary2 : новая секретарша
+volketing -- baggensen
+
+:Дэниель Хейл: $male
+
+paralized -- q
+
 
 @enduml
