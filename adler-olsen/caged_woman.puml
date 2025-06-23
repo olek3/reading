@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 15.9%
+legend : 17.5%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -67,7 +67,7 @@ brother --> caged : брат
 :домработница: as help <<unnamed>> $female
 help --> caged : домработница
 
-:любовник: as new <<unnamed>> $male
+:Хугин: as new  $male
 
 new --> wife : новый
 
