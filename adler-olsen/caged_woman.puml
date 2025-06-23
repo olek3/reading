@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 25.1% (Глава 17)
+legend : 26.6% (Глава 17)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -179,7 +179,7 @@ policeHansen -- murders
 (Убийство велосипедиста) as cyclerMurder <<event>>
 bak -- cyclerMurder : расследует
 
-:свидетельница: as witness <<unnamed>> $female
+:Анализа Квист: as witness  $female
 :велосипедист: as cycler <<unnamed>> $male
 cyclerMurder -- witness : свидетельница
 cyclerMurder -- cycler : труп
