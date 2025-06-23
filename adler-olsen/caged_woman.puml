@@ -49,7 +49,7 @@ murders -- moira : начальник
 moira <-- lars : заместитель
 
 :Пив Вестергор: as vestegor $female
-note right: Датская партия, докладчик по правовой политике
+note left: Датская партия, докладчик по правовой политике
 
 (Отдел Q) as q <<institution>>
 
@@ -64,7 +64,7 @@ body -- shooting : труп
 
 brother --> caged : брат
 
-:Хелле Андерсен: as help <<unnamed>> $female
+:Хелле Андерсен: as help $female
 help --> caged : домработница
 
 :Хугин: as new  $male
@@ -98,12 +98,12 @@ group -- piter
 moira <-- police_secretary : секретарша
 
 :Курт Хансен: as mp $male
-note right:  Консервативная партия, бывший вице-комиссар
+note left:  Консервативная партия, бывший вице-комиссар
 
 (Фолькетинг) as volketing <<institution>>
 
-volketing -- mp
-volketing -- vestegor
+mp -- volketing
+vestegor -- volketing
 
 volketing -- caged
 
@@ -144,7 +144,7 @@ murders -- bak : расследовал в первый раз
 
 (Эгелю) as egelu <<institution>>
 
-brother - egelu : 2007
+egelu -- brother  : 2007
 
 :заведующий: as guardian <<unnamed>> $male
 
@@ -165,5 +165,9 @@ mellers -- peter
 mellers -- erling
 
 peter <-> erling : муж
+
+:принес письмо: as messenger <<unnamed>> $male
+
+messenger --> help : принес письмо
 
 @enduml
