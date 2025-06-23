@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 14.7%
+legend : 15.9%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -140,5 +140,13 @@ q - asad
 :Бак: as bak $male
 
 murders -- bak : расследовал в первый раз
+
+(Эгелю) as egelu <<institution>>
+
+brother - egelu : 2007
+
+:заведующий: as guardian <<unnamed>> $male
+
+guardian -- egelu : заведующий
 
 @enduml
