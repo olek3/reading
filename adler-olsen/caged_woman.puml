@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 17.5%
+legend : 20.8% (Глава 15)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -64,7 +64,7 @@ body -- shooting : труп
 
 brother --> caged : брат
 
-:домработница: as help <<unnamed>> $female
+:Хелле Андерсен: as help <<unnamed>> $female
 help --> caged : домработница
 
 :Хугин: as new  $male
@@ -113,6 +113,7 @@ caged <-- secretary2 : новая секретарша
 volketing -- baggensen
 
 :Дэниель Хейл: $male
+note bottom : лаборант
 
 paralized -- q
 
@@ -148,5 +149,21 @@ brother - egelu : 2007
 :заведующий: as guardian <<unnamed>> $male
 
 guardian -- egelu : заведующий
+
+(дом) as LungornHome <<location>>
+
+caged -- LungornHome
+
+(Мёллер-Хансен) as mellers <<group>>
+
+LungornHome <-- mellers : купили
+
+:Петер: as peter $male
+:Эрлинг: as erling $male
+
+mellers -- peter
+mellers -- erling
+
+peter <-> erling : муж
 
 @enduml
