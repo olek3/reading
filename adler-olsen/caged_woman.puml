@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 8.0%
+legend : 9.6%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -115,6 +115,15 @@ volketing -- baggensen
 :Дэниель Хейл: $male
 
 paralized -- q
+
+:Лиза: as mediumSecretary1 $female
+:темноволосая: as mediumSecretary2 <<unnamed>> $female
+
+q .. mediumSecretary1 : посредник
+q .. mediumSecretary2 : посредник
+
+mediumSecretary1 -- murders : секретарша
+mediumSecretary2 -- murders : секретарша
 
 
 @enduml
