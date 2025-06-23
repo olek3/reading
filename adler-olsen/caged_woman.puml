@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 9.6%
+legend : 9.8%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -124,6 +124,14 @@ q .. mediumSecretary2 : посредник
 
 mediumSecretary1 -- murders : секретарша
 mediumSecretary2 -- murders : секретарша
+
+(клиника спинномозговых повреждений) as clinyc <<institution>>
+
+paralized - clinyc
+
+:Бирта Мартинсен: as birta $female
+
+clinyc - birta : психолог
 
 
 @enduml
