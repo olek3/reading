@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 9.8%
+legend : 11.5%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -19,7 +19,7 @@ legend : 9.8%
 wife --> he : в процессе развода
 
 :Харди Хеннингсен: as paralized $male
-note right: парализованный
+note left: парализованный
 
 :Анкер: as anker <<dead>> $male
 
@@ -127,11 +127,15 @@ mediumSecretary2 -- murders : секретарша
 
 (клиника спинномозговых повреждений) as clinyc <<institution>>
 
-paralized - clinyc
+clinyc - paralized
 
 :Бирта Мартинсен: as birta $female
 
-clinyc - birta : психолог
+birta -clinyc : психолог
+
+:Асад: as asad $male
+
+q - asad
 
 
 @enduml
