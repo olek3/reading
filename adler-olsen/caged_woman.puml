@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 11.5%
+legend : 14.7%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -137,5 +137,8 @@ birta -clinyc : психолог
 
 q - asad
 
+:Бак: as bak $male
+
+murders -- bak : расследовал в первый раз
 
 @enduml
