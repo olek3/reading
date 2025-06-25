@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 26.6% (Глава 17)
+legend : 26.8% (Глава 17)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -183,5 +183,7 @@ bak -- cyclerMurder : расследует
 :велосипедист: as cycler <<unnamed>> $male
 cyclerMurder -- witness : свидетельница
 cyclerMurder -- cycler : труп
+
+cycler <--> :Карло Брандт: : брат 
 
 @enduml
