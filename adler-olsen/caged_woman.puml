@@ -1,0 +1,220 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/reading/iuml"
+
+!include $stylePath/reading.iuml
+
+skinparam actor<<unnamed>>fontsize 18
+skinparam actor<<unnamed>>fontcolor forestgreen
+
+title Женщина в клетке
+mainframe characters
+legend : 33.5% (Глава 21)
+
+:Меретта Люнггор: as caged  $female_protagonist
+
+:Карл Мёрк: as he $male_protagonist
+
+:Вигга: as wife $female
+wife --> he : в процессе развода
+
+:Харди Хеннингсен: as paralized $male
+
+:Анкер: as anker <<dead>> $male
+
+(Перестрелка) as shooting <<event>>
+
+shooting -- anker : убит
+shooting -- paralized : парализован
+shooting -- he : ранен
+
+:Таге Баггенсен: as baggensen $male
+
+:Марианна Кох: as secretary $female
+
+caged <-- secretary : бывшая секретарша
+
+baggensen <-- secretary : сватала
+
+(Отдел по расследованию убийств) as murders <<institution>>
+
+:Маркус Якобсен: as moira $male
+
+murders -- moira : начальник
+
+
+:Ларс Бьёрн: as lars $male
+
+moira <-- lars : заместитель
+
+:Пив Вестергор: as vestegor $female
+note left: Датская партия, докладчик по правовой политике
+
+(Отдел Q) as q <<institution>>
+
+'murders o- q  : административно подчиняется
+q --o murders  : административно подчиняется
+he -- q
+
+:Георг Мадсен: as body <<dead>> $male
+body -- shooting : сразу труп
+
+:Уффе: as brother $male
+
+brother --> caged : брат
+
+:Хелле Андерсен: as help $female
+help --> caged : домработница
+
+:Хугин: as new  $male
+
+new --> wife : новый
+
+:Мортен Холланн: as tenant $male
+
+
+:Йеспер: as stepson $male
+
+
+(дом в Рённехольте) as home <<location>>
+
+home -- he : живет
+stepson --> home : пасынок
+tenant --> home : жилец
+
+(Оперативная группа) as group <<institution>>
+
+murders o- group
+'group -o murders
+
+:Вигго Бринк: as viggo $male
+:Питер Вестевиг: as piter $male
+
+viggo -- group : начальник
+group -- piter
+
+:девушка: as police_secretary <<unnamed>> $female
+moira <-- police_secretary : секретарша
+
+:Курт Хансен: as mp $male
+note left:  Консервативная партия, бывший вице-комиссар
+
+(Фолькетинг) as volketing <<institution>>
+
+mp -- volketing
+vestegor -- volketing
+
+volketing -- caged
+
+:Сёс Норуп: as secretary2 $female
+
+caged <-- secretary2 : новая секретарша
+volketing -- baggensen
+
+:Дэниель Хейл: $male
+note bottom : лаборант
+
+paralized -- q
+
+:Лиза: as mediumSecretary1 $female
+:темноволосая: as mediumSecretary2 <<unnamed>> $female
+
+q .. mediumSecretary1 : посредник
+q .. mediumSecretary2 : посредник
+
+mediumSecretary1 -- murders : секретарша
+mediumSecretary2 -- murders : секретарша
+
+(клиника спинномозговых повреждений) as clinyc <<institution>>
+
+clinyc -- paralized
+
+:Бирта Мартинсен: as birta $female
+
+birta -clinyc : психолог
+
+:Хафез Асад: as asad $male
+
+q - asad
+
+:Бёрге Бак: as bak $male
+
+murders -- bak : расследовал в первый раз
+
+(Эгелю) as egelu <<institution>>
+
+egelu -- brother  : 2007
+
+:заведующий: as guardian <<unnamed>> $male
+
+guardian -- egelu : заведующий
+
+(дом) as LungornHome <<location>>
+
+caged -- LungornHome
+
+(Мёллер-Хансен) as mellers <<group>>
+
+LungornHome <-- mellers : купили
+
+:Петер: as peter $male
+:Эрлинг: as erling $male
+
+mellers -- peter
+mellers -- erling
+
+peter <-> erling : муж
+
+:принес письмо: as messenger <<unnamed>> $male
+
+messenger --> help : принес письмо
+
+:Бенте Хансен: as policeHansen $male
+
+he <-- policeHansen : раньше работал
+policeHansen -- murders
+
+
+(Убийство велосипедиста) as cyclerMurder <<event>>
+bak -- cyclerMurder : расследует
+
+:Анализа Квист: as witness  $female
+:велосипедист: as cycler <<unnamed>> $male
+cyclerMurder -- witness : свидетельница
+cyclerMurder -- cycler : труп
+
+ :Карло Брандт: as rocker $male
+cycler <--> rocker : брат
+
+:фру Сёренсен: as sheWolf $female
+sheWolf -- murders : секретарша
+
+:Мона Ибсен: as shrink $female
+
+murders -- shrink : кризисный психолог
+
+:Карен Мортенсен: as socialWorker $female
+
+socialWorker --> brother : социальная работница (2002)
+
+:Клас Дамгор: as formerBoss $male
+
+bak <-- formerBoss : был начальником
+
+(кафе Банкрот) as bankrupt <<location>>
+
+caged -- bankrupt : посетила
+
+:Жан Ив: as bankruptOwner $male
+
+bankrupt -- bankruptOwner : владелец
+
+:Друг Ива: as prevBankrupt
+bankrupt -- prevBankrupt : предыдущий владелец
+
+bankruptOwner <-> prevBankrupt : друг
+
+:в клетчатой рубашке: -- shooting : стрелок
+:еще один: -- shooting : стрелок
+
+@enduml
