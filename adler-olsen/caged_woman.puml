@@ -19,15 +19,14 @@ legend : 33.5% (Глава 21)
 wife --> he : в процессе развода
 
 :Харди Хеннингсен: as paralized $male
-note left: парализованный
 
 :Анкер: as anker <<dead>> $male
 
 (Перестрелка) as shooting <<event>>
 
-anker -- shooting
-shooting -- paralized
-shooting -- he
+shooting -- anker : убит
+shooting -- paralized : парализован
+shooting -- he : ранен
 
 :Таге Баггенсен: as baggensen $male
 
@@ -58,7 +57,7 @@ q --o murders  : административно подчиняется
 he -- q
 
 :Георг Мадсен: as body <<dead>> $male
-body -- shooting : труп
+body -- shooting : сразу труп
 
 :Уффе: as brother $male
 
@@ -128,7 +127,7 @@ mediumSecretary2 -- murders : секретарша
 
 (клиника спинномозговых повреждений) as clinyc <<institution>>
 
-clinyc - paralized
+clinyc -- paralized
 
 :Бирта Мартинсен: as birta $female
 
@@ -196,7 +195,7 @@ murders -- shrink : кризисный психолог
 
 :Карен Мортенсен: as socialWorker $female
 
-socialWorker --> brother : социальная работница
+socialWorker --> brother : социальная работница (2002)
 
 :Клас Дамгор: as formerBoss $male
 
@@ -209,5 +208,13 @@ caged -- bankrupt : посетила
 :Жан Ив: as bankruptOwner $male
 
 bankrupt -- bankruptOwner : владелец
+
+:Друг Ива: as prevBankrupt
+bankrupt -- prevBankrupt : предыдущий владелец
+
+bankruptOwner <-> prevBankrupt : друг
+
+:в клетчатой рубашке: -- shooting : стрелок
+:еще один: -- shooting : стрелок
 
 @enduml
