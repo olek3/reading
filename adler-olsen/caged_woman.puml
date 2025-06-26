@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 31.7% (Глава 19)
+legend : 33.5% (Глава 21)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -201,5 +201,13 @@ socialWorker --> brother : социальная работница
 :Клас Дамгор: as formerBoss $male
 
 bak <-- formerBoss : был начальником
+
+(кафе Банкрот) as bankrupt <<location>>
+
+caged -- bankrupt : посетила
+
+:Жан Ив: as bankruptOwner $male
+
+bankrupt -- bankruptOwner : владелец
 
 @enduml
