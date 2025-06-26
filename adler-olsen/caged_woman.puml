@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 27.7% (Глава 17)
+legend : 30.0% (Глава 17)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -193,5 +193,13 @@ sheWolf -- murders : секретарша
 :Мона Ибсен: as shrink $female
 
 murders -- shrink : кризисный психолог
+
+:Карен Мортенсен: as socialWorker $female
+
+socialWorker --> brother : социальная работница
+
+:Клас Дамгор: as formerBoss $male
+
+bak <-- formerBoss : был начальником
 
 @enduml
