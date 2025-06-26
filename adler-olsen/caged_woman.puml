@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 26.8% (Глава 17)
+legend : 27.7% (Глава 17)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -184,6 +184,14 @@ bak -- cyclerMurder : расследует
 cyclerMurder -- witness : свидетельница
 cyclerMurder -- cycler : труп
 
-cycler <--> :Карло Брандт: : брат 
+ :Карло Брандт: as rocker $male
+cycler <--> rocker : брат
+
+:фру Сёренсен: as sheWolf $female
+sheWolf -- murders : секретарша
+
+:Мона Ибсен: as shrink $female
+
+murders -- shrink : кризисный психолог
 
 @enduml
