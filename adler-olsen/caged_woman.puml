@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 45.1% (Глава 25)
+legend : 46.5% (Глава 26)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -112,8 +112,8 @@ volketing -- caged
 caged <-- secretary2 : новая секретарша
 volketing -- baggensen
 
-:Дэниель Хейл: $male
-note bottom : лаборант
+:Дэниель Хейл: as heil $male
+
 
 paralized -- q
 
@@ -245,8 +245,20 @@ terje -- nails : расследует
 :Йоргенсен: as local $male
 local -- nails : местный полицейский 
 
-:Билле Антворскоу: 
+:Билле Антворскоу: as mask $male
 
-:Айно Хууринайнен: 
+volketing --- mask : лоббист
+mask <-- heil : работал на
+
+(Интерлаб) as interlab <<institution>>
+
+heil -- interlab : сын основателя
+
+:Айно Хууринайнен: as finnish $female
+
+interlab -- finnish : PR
+
+:Нильс Бак Нильсен: as nils
+interlab -- nils : директор по продажам
 
 @enduml
