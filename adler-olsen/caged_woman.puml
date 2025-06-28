@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 51.3% (Глава 27)
+legend : 51.5% (Глава 27)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -287,7 +287,10 @@ photograph --> caged : специализировался на
 
 :Сюссер Петерсен: as neighbor $female
 
-home -- neighbor : соседка
+neighbor -- home : соседка
 
+:Кенн: as kenn $male
+
+kenn - home : заведует барбекю
 
 @enduml
