@@ -217,14 +217,15 @@ bankruptOwner <-> prevBankrupt : друг
 :в клетчатой рубашке: -- shooting : стрелок
 :еще один: -- shooting : стрелок
 
-:Биргер Ларсен: as birger $mali
+:Биргер Ларсен: as birger $male
 volketing -- birger
 note right : Демократическая партия, зампред
 
 caged <- birger : заместил 
 
-:Вильгельм Норуп:
+:Вильгельм Норуп: 
 :Кая Бранд Норуп:
+:Сорокапятилетняя женщина: 
 
 
 @enduml
