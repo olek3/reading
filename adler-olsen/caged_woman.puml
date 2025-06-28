@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 35.9% (Глава 23)
+legend : 40.6% (Глава 24)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -29,6 +29,7 @@ shooting -- paralized : парализован
 shooting -- he : ранен
 
 :Таге Баггенсен: as baggensen $male
+note right : Партия радикального центра, докладчик
 
 :Марианна Кох: as secretary $female
 
@@ -223,9 +224,16 @@ note right : Демократическая партия, зампред
 
 caged <- birger : заместил 
 
-:Вильгельм Норуп: 
-:Кая Бранд Норуп:
-:Сорокапятилетняя женщина: 
+:Вильгельм Норуп: as norupFater  $male
+:Кая Бранд Норуп: as norupMother  $female
+:Сорокапятилетняя женщина: as norupLove <<unnamed>> $female
+
+secretary2 <-- norupFater : отец
+secretary2 <-- norupMother : мать
+secretary2 <-- norupLove : любовь
+
+:Сигурд Хармс: as guard $male
+murders -- guard : со второго этажа
 
 
 @enduml
