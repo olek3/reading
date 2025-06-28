@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 40.6% (Глава 24)
+legend : 42.5% (Глава 24)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -235,5 +235,14 @@ secretary2 <-- norupLove : любовь
 :Сигурд Хармс: as guard $male
 murders -- guard : со второго этажа
 
+:Терье Плоуг: as terje $male
+
+(убийства гвоздями) as nails <<event>>
+
+nails -- body
+terje -- nails : расследует
+
+:Йоргенсен: as local $male
+local -- nails : местный полицейский
 
 @enduml
