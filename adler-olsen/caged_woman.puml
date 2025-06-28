@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 49.8% (Глава 27)
+legend : 51.3% (Глава 27)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -132,7 +132,7 @@ clinyc -- paralized
 
 :Бирта Мартинсен: as birta $female
 
-birta -clinyc : психолог
+clinyc - birta  : психолог
 
 :Хафез Асад: as asad $male
 
@@ -282,5 +282,12 @@ gossip -- journalist : журналист
 :Йонас Хесс: as photograph
 
 gossip -- photograph : внештатный фотограф
+
+photograph --> caged : специализировался на
+
+:Сюссер Петерсен: as neighbor $female
+
+home -- neighbor : соседка
+
 
 @enduml
