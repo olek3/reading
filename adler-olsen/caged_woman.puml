@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 33.5% (Глава 21)
+legend : 35.9% (Глава 23)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -216,5 +216,11 @@ bankruptOwner <-> prevBankrupt : друг
 
 :в клетчатой рубашке: -- shooting : стрелок
 :еще один: -- shooting : стрелок
+
+:Биргер Ларсен: as birger $mali
+volketing -- birger
+note right : Демократическая партия, зампред
+
+caged <- birger : заместил
 
 @enduml
