@@ -221,6 +221,10 @@ bankruptOwner <-> prevBankrupt : друг
 volketing -- birger
 note right : Демократическая партия, зампред
 
-caged <- birger : заместил
+caged <- birger : заместил 
+
+:Вильгельм Норуп:
+:Кая Бранд Норуп:
+
 
 @enduml
