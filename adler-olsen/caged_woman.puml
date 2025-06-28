@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 47.8% (Глава 26)
+legend : 48.9% (Глава 27)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -272,5 +272,11 @@ caged ---- kidnappers : похитили
 kidnappers -- femaleKidnapper
 kidnappers -- maleKidnapper
 kidnappers -- lasse
+
+:Госсип: as gossip <<institution>>
+
+:Пелле Хюттестев: as journalist $male
+
+gossip -- journalist : журналист
 
 @enduml
