@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 46.5% (Глава 26)
+legend : 47.8% (Глава 26)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -258,7 +258,19 @@ heil -- interlab : сын основателя
 
 interlab -- finnish : PR
 
-:Нильс Бак Нильсен: as nils
+:Нильс Бак Нильсен: as nils $male
 interlab -- nils : директор по продажам
+
+(Похитители) as kidnappers <<group>>
+
+caged ---- kidnappers : похитили
+
+:Женщина: as femaleKidnapper <<unnamed>> $female
+:Мужчина: as maleKidnapper <<unnamed>> $male
+:Лассе: as lasse $male
+
+kidnappers -- femaleKidnapper
+kidnappers -- maleKidnapper
+kidnappers -- lasse
 
 @enduml
