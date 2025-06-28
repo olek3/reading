@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 42.5% (Глава 24)
+legend : 45.1% (Глава 25)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -246,5 +246,7 @@ terje -- nails : расследует
 local -- nails : местный полицейский 
 
 :Билле Антворскоу: 
+
+:Айно Хууринайнен: 
 
 @enduml
