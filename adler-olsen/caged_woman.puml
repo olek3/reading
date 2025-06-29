@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 57.6% (Глава 29)
+legend : 100%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -24,7 +24,7 @@ wife --> he : в процессе развода
 
 (Перестрелка) as shooting <<event>>
 
-shooting -- anker : убит
+anker -- shooting : убит
 shooting -- paralized : парализован
 shooting -- he : ранен
 
@@ -115,8 +115,6 @@ volketing -- baggensen
 :Дэниель Хейл: as heil $male
 
 
-paralized -- q
-
 :Лиза: as mediumSecretary1 $female
 :темноволосая: as mediumSecretary2 <<unnamed>> $female
 
@@ -132,7 +130,7 @@ clinyc -- paralized
 
 :Бирта Мартинсен: as birta $female
 
-clinyc - birta  : психолог
+clinyc -- birta  : психолог
 
 :Хафез Асад: as asad $male
 
@@ -149,6 +147,11 @@ egelu -- brother  : 2007
 :заведующий: as guardian <<unnamed>> $male
 
 guardian -- egelu : заведующий
+
+:старшая медсестра: as nurse <<unnamed>> $female
+
+nurse -- egelu : старшая медсестра
+
 
 (дом) as LungornHome <<location>>
 
@@ -167,6 +170,7 @@ mellers -- erling
 peter <-> erling : муж
 
 :принес письмо: as messenger <<unnamed>> $male
+note left : Лассе
 
 messenger --> help : принес письмо
 
@@ -265,9 +269,10 @@ interlab -- nils : директор по продажам
 
 caged ---- kidnappers : похитили
 
-:Женщина: as femaleKidnapper <<unnamed>> $female
-:Мужчина: as maleKidnapper <<unnamed>> $male
-:Лассе: as lasse $male
+:Улла Йенсен: as femaleKidnapper $female
+:Ханс: as maleKidnapper $male
+:Ларс Хенрик Йенсен: as lasse $male
+note right: aka Атомос, Лассе
 
 kidnappers -- femaleKidnapper
 kidnappers -- maleKidnapper
@@ -293,15 +298,40 @@ neighbor -- home : соседка
 
 kenn - home : заведует барбекю
 
-:Беата Лундгор: 
-:Камилла: 
-Note right : родители Грета и Хеннинг, брат Деннис - сбил Хейга
+:Беата Лундгор: as secretary3 $female
+volketing - secretary3 : секретарша
 
-:Атомос: <<todo>>
-:Йон Расмуссен: <<todo>> 
-:Оле: --> help : husband 
-:Ларс Хенрик Йенсен: 
-:Улла Йенсен:
-:Элисабеты Хойер: 
-:Минну Хеннингсен: 
+:Деннис: as dennis $male
+
+heil <-- dennis : сбил
+
+(Кнудсены) as knudsens <<group>>
+
+:Камилла: as kamilla $female
+:Грета: as greta $female
+:Хеннинг: as henning $male
+
+dennis -- knudsens
+
+knudsens - kamilla : сестра
+knudsens -- greta : мать
+knudsens -- henning : отец
+
+(Годхавн) as godhavn <<institution>>
+
+lasse -- godhavn : содержался
+
+:Йон Расмуссен: as jon $male
+
+godhavn -- jon : работал
+
+:Оле: $male
+:Оле: --> help : husband
+
+
+:Элисабета Хойер: as widow
+widow --> anker : вдова
+
+:Минна Хеннингсен: as wif
+paralized <-- wif : жена
 @enduml
