@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 51.5% (Глава 27)
+legend : 55.6% (Глава 28)
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -293,4 +293,5 @@ neighbor -- home : соседка
 
 kenn - home : заведует барбекю
 
+:Беата Лундгор: 
 @enduml
