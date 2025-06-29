@@ -9,7 +9,7 @@ skinparam actor<<unnamed>>fontcolor forestgreen
 
 title Женщина в клетке
 mainframe characters
-legend : 33.5% (Глава 21)
+legend : 100%
 
 :Меретта Люнггор: as caged  $female_protagonist
 
@@ -24,11 +24,12 @@ wife --> he : в процессе развода
 
 (Перестрелка) as shooting <<event>>
 
-shooting -- anker : убит
+anker -- shooting : убит
 shooting -- paralized : парализован
 shooting -- he : ранен
 
 :Таге Баггенсен: as baggensen $male
+note right : Партия радикального центра, докладчик
 
 :Марианна Кох: as secretary $female
 
@@ -111,10 +112,8 @@ volketing -- caged
 caged <-- secretary2 : новая секретарша
 volketing -- baggensen
 
-:Дэниель Хейл: $male
-note bottom : лаборант
+:Дэниель Хейл: as heil $male
 
-paralized -- q
 
 :Лиза: as mediumSecretary1 $female
 :темноволосая: as mediumSecretary2 <<unnamed>> $female
@@ -131,7 +130,7 @@ clinyc -- paralized
 
 :Бирта Мартинсен: as birta $female
 
-birta -clinyc : психолог
+clinyc -- birta  : психолог
 
 :Хафез Асад: as asad $male
 
@@ -148,6 +147,11 @@ egelu -- brother  : 2007
 :заведующий: as guardian <<unnamed>> $male
 
 guardian -- egelu : заведующий
+
+:старшая медсестра: as nurse <<unnamed>> $female
+
+nurse -- egelu : старшая медсестра
+
 
 (дом) as LungornHome <<location>>
 
@@ -166,6 +170,7 @@ mellers -- erling
 peter <-> erling : муж
 
 :принес письмо: as messenger <<unnamed>> $male
+note left : Лассе
 
 messenger --> help : принес письмо
 
@@ -217,4 +222,116 @@ bankruptOwner <-> prevBankrupt : друг
 :в клетчатой рубашке: -- shooting : стрелок
 :еще один: -- shooting : стрелок
 
+:Биргер Ларсен: as birger $male
+volketing -- birger
+note right : Демократическая партия, зампред
+
+caged <- birger : заместил 
+
+:Вильгельм Норуп: as norupFater  $male
+:Кая Бранд Норуп: as norupMother  $female
+:Сорокапятилетняя женщина: as norupLove <<unnamed>> $female
+
+secretary2 <-- norupFater : отец
+secretary2 <-- norupMother : мать
+secretary2 <-- norupLove : любовь
+
+:Сигурд Хармс: as guard $male
+murders -- guard : со второго этажа
+
+:Терье Плоуг: as terje $male
+
+(убийства гвоздями) as nails <<event>>
+
+nails -- body
+terje -- nails : расследует
+
+:Йоргенсен: as local $male
+local -- nails : местный полицейский 
+
+:Билле Антворскоу: as mask $male
+
+volketing --- mask : лоббист
+mask <-- heil : работал на
+
+(Интерлаб) as interlab <<institution>>
+
+heil -- interlab : сын основателя
+
+:Айно Хууринайнен: as finnish $female
+
+interlab -- finnish : PR
+
+:Нильс Бак Нильсен: as nils $male
+interlab -- nils : директор по продажам
+
+(Похитители) as kidnappers <<group>>
+
+caged ---- kidnappers : похитили
+
+:Улла Йенсен: as femaleKidnapper $female
+:Ханс: as maleKidnapper $male
+:Ларс Хенрик Йенсен: as lasse $male
+note right: aka Атомос, Лассе
+
+kidnappers -- femaleKidnapper
+kidnappers -- maleKidnapper
+kidnappers -- lasse
+
+(Госсип) as gossip <<institution>>
+
+:Пелле Хюттестев: as journalist $male
+
+gossip -- journalist : журналист
+
+:Йонас Хесс: as photograph
+
+gossip -- photograph : внештатный фотограф
+
+photograph --> caged : специализировался на
+
+:Сюссер Петерсен: as neighbor $female
+
+neighbor -- home : соседка
+
+:Кенн: as kenn $male
+
+kenn - home : заведует барбекю
+
+:Беата Лундгор: as secretary3 $female
+volketing - secretary3 : секретарша
+
+:Деннис: as dennis $male
+
+heil <-- dennis : сбил
+
+(Кнудсены) as knudsens <<group>>
+
+:Камилла: as kamilla $female
+:Грета: as greta $female
+:Хеннинг: as henning $male
+
+dennis -- knudsens
+
+knudsens - kamilla : сестра
+knudsens -- greta : мать
+knudsens -- henning : отец
+
+(Годхавн) as godhavn <<institution>>
+
+lasse -- godhavn : содержался
+
+:Йон Расмуссен: as jon $male
+
+godhavn -- jon : работал
+
+:Оле: $male
+:Оле: --> help : husband
+
+
+:Элисабета Хойер: as widow
+widow --> anker : вдова
+
+:Минна Хеннингсен: as wif
+paralized <-- wif : жена
 @enduml
