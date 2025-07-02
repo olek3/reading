@@ -19,6 +19,18 @@ owner -->  jim : owner
 
 tom <--> huck : friends
 
+:Sadie: as sadie $female
+
+(Jim's family) as family <<group>>
+
+jim -- family
+family -- sadie : wife
+
+:Elizabeth: as lizzie
+
+family -- lizzie : daughter
+
+:Judge Thatcher: as judge $male
 
 
 @enduml
