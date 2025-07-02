@@ -1,0 +1,24 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+title James
+mainframe characters
+legend : 2.2% (Chapter 1)
+
+
+:James: as jim  <<narrator>> $male_protagonist
+
+:Miss Watson: as owner $female
+
+owner -->  jim : owner
+
+:Tom Sawer: as tom $male
+:Huckleberry Finn: as huck $male
+
+tom <--> huck : friends
+
+
+
+@enduml
