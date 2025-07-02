@@ -12,9 +12,9 @@ legend : 2.2% (Chapter 1)
 
 :Miss Watson: as owner $female
 
-owner -->  jim : owner
+owner -->  jim : master
 
-:Tom Sawer: as tom $male
+:Tom Sawyer: as tom $male
 :Huckleberry Finn: as huck $male
 
 tom <--> huck : friends
@@ -48,6 +48,9 @@ doris -- fire
 :Old Luke: as luke $male
 
 luke -- fire
+
+:Skinny: as skinny $male
+fire -- skinny
 
 
 @enduml
