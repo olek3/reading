@@ -34,6 +34,20 @@ family -- lizzie : daughter
 
 :Albert: as albert $male
 
-albert --> jim : ???
+
+(Fire outside) as fire <<event>>
+
+fire -- jim
+
+albert -- fire : called Jim
+
+:Doris: as doris $male
+
+doris -- fire
+
+:Old Luke: as luke $male
+
+luke -- fire
+
 
 @enduml
