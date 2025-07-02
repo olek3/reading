@@ -1,0 +1,130 @@
+@startuml
+
+'left to right direction
+skin rose
+skinparam backgroundcolor seashell
+skinparam wrapwidth 100
+left to right direction
+skinparam usecase<<town>>backgroundcolor technology
+skinparam usecase<<cult>>backgroundcolor implementation
+
+' Chapter 1
+
+:Fetter: as fetter #pink
+
+:Mother-of-Glory: as mother
+
+:the Perfect and Kind: as father
+
+
+mother --> fetter : мать
+father --> fetter : отец
+
+(Acusdab) <<town>>
+
+(Acusdab) - mother
+(Acusdab) - fetter : вырос в
+
+' Chapter 3
+:Hejmen: as hejmen
+
+hejmen --> fetter : date
+
+(Luriat) as luriat <<town>>
+
+hejmen -- luriat : родился в
+fetter - luriat : осел в
+
+(Group of Unchosen) as group
+
+fetter -- group
+
+luriat ..> group : <<includes>>
+
+:Koel:
+:Ulpe:
+
+group -- :Koel: : veteran
+group -- :Ulpe: : newcomer
+
+' Chapter 4
+
+group -- :Caduv: : потом пришел
+
+note "с голосом"  as caduvNote
+caduvNote . :Caduv:
+
+' Chapter 7
+
+(Path Above) as above <<cult>>
+(Path Behind) as behind <<cult>>
+above .> behind : <<enemy>>
+behind .> above
+
+above -- father : head of
+behind -- father : former
+
+Salyut -- above : Saint-General
+
+
+' Chapter 8
+:Peroe:
+
+fetter --> :Peroe: : <<impersonates>>
+
+:Peroe: -- (Door Committee )
+
+
+(Door Committee ) -- :Tomarin: : председатель
+:Tomarin: <-- :Siculu: : servant
+
+luriat ...> (Door Committee ) : <<includes>>
+
+(Door Committee ) -- :Gerau: : член
+(Door Committee ) -- :Coema: : член
+
+(researchers) -- :Coema: : mentoring
+(researchers) -- :Pipra:
+
+:Peroe: -- (researchers)
+
+' Chapter 9
+
+:Janno: -- (researchers)
+
+' Chapter 12
+
+:Magellan: -- above : Saint-Errant
+:Vido: -- above : секретарь
+
+:Vido: --> father : любовник
+
+(researchers) -- :Avli:
+
+:Avli: -> :Pipra: : замена
+
+
+:Siculu: <- :Ucalas: : twin sister
+
+:Tomarin: <== :Ucalas: : servant
+
+ 'Chapter 28
+
+:Isla: --> :Salyut: : lay attendant
+
+(Path Unitary) as unitary <<cult>>
+
+unitary -- father : new
+behind --> unitary : joins
+above --> unitary : join
+
+(Acusdab) -- :Ordinary: : ambassador of
+:Ordinary: -- luriat  : ambassador in
+
+:Ordinary: -> mother : lover
+
+behind - :Ripening Wisdom:
+
+fetter <-- :Unfettered: : тень
+
+@enduml
