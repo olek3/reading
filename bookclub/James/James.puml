@@ -32,5 +32,8 @@ family -- lizzie : daughter
 
 :Judge Thatcher: as judge $male
 
+:Albert: as albert $male
+
+albert --> jim : ???
 
 @enduml
