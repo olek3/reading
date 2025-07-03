@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 2.2% (Chapter 1)
+legend : 15.5% (Chapter 6)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -19,20 +19,20 @@ owner -->  jim : master
 
 tom <--> huck : friends
 
-:Sadie: as sadie $female
+:Sadie: as sadie <<slave>> $female
 
 (Jim's family) as family <<group>>
 
 jim -- family
 family -- sadie : wife
 
-:Elizabeth: as lizzie
+:Elizabeth: as lizzie <<slave>> $female
 
 family -- lizzie : daughter
 
 :Judge Thatcher: as judge $male
 
-:Albert: as albert $male
+:Albert: as albert <<slave>> $male
 
 
 (Fire outside) as fire <<event>>
@@ -41,16 +41,64 @@ fire -- jim
 
 albert -- fire : called Jim
 
-:Doris: as doris $male
+:Doris: as doris <<slave>> $male
 
 doris -- fire
 
-:Old Luke: as luke $male
+:Old Luke: as luke <<slave>> $male
 
 luke -- fire
 
-:Skinny: as skinny $male
-fire -- skinny
+:Skinny: as skinny <<slave>> $male
+fire - skinny
+
+(language lesson) as lesson <<event>>
+
+jim -- lesson : gave
+
+lesson -- lizzie
+
+:Virgil: as student1 <<slave>> $male
+:February: as student2 <<slave>> $female
+:January: as student3 <<slave>>
+:Rachel: as student4 <<slave>> $female
+:Glory: as student5 <<slave>> $female
+
+lesson -- student1
+lesson -- student2
+lesson - student3
+student4 -- lesson
+student5 -- lesson
+
+:Finn's father: as father <<unnamed>> <<dead>>$male
+
+huck <-- father : father
+
+:widow Douglas: as widow $female
+
+:Bessie: as bekkie $female
+
+judge <-- bekkie : daughter
+
+'(whites) <<group>>
+'(slaves) <<group>>
+
+huck <--> jim : on the run together
+
+:Polly: as polly $female
+
+tom <-- polly : aunt
+
+:April: as april <<slave>>
+:Cotton: as cotton <<slave>>
+
+(old slaves) as old <<group>>
+
+jim -- old : stolen firewood
+
+april -- old
+old - cotton
+
 
 
 @enduml
