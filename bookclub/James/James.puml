@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 29.6% (Chapter 15)
+legend : 32.6% (Chapter I-18)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -126,5 +126,15 @@ master as master <<unnamed>>
 
 muscular <-- master : stole pencil from
 
+:Harney: as fiance $male
+:Sophia: as bride $female
+
+shepherdsons -- fiance
+grangerfords -- bride
+bride  <-> fiance
+
+:Papa: as papa $male
+
+grangerfords -- papa
 
 @enduml
