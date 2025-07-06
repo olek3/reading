@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 27.7% (Chapter 14)
+legend : 28.8% (Chapter 14)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -113,6 +113,14 @@ four -- muscular
 four -- oldest
 four -- big
 four -- squintyEyes
+
+(Grangerfords) as grangerfords <<group>>
+(Shepherdsons) as shepherdsons <<group>>
+
+muscular -- grangerfords : mentioned
+muscular -- shepherdsons : mentioned
+
+grangerfords <-> shepherdsons : hate
 
 
 @enduml
