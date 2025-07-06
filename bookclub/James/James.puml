@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 27.7% (Chapter 14)
+legend : 32.6% (Chapter I-18)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -104,15 +104,37 @@ old - cotton
 
 jim -- four : met in Illinois
 
-:Young George: as muscular  $male
-:Old George: as oldest  $male
-:Josiah: as big  $male
-:Pierre: as squintyEyes  $male
+:Young George: as muscular <<slave>>  $male
+:Old George: as oldest <<slave>>  $male
+:Josiah: as big  <<slave>> $male
+:Pierre: as squintyEyes <<slave>>  $male
 
 four -- muscular
 four -- oldest
 four -- big
 four -- squintyEyes
 
+(Grangerfords) as grangerfords <<group>>
+(Shepherdsons) as shepherdsons <<group>>
+
+muscular -- grangerfords : mentioned
+muscular -- shepherdsons : mentioned
+
+grangerfords <-> shepherdsons : hate
+
+master as master <<unnamed>>
+
+muscular <-- master : stole pencil from
+
+:Harney: as fiance $male
+:Sophia: as bride $female
+
+shepherdsons -- fiance
+grangerfords -- bride
+bride  <-> fiance
+
+:Papa: as papa $male
+
+grangerfords -- papa
 
 @enduml
