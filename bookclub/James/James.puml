@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 32.6% (Chapter I-18)
+legend : 35.5% (Chapter I-18)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -136,5 +136,16 @@ bride  <-> fiance
 :Papa: as papa $male
 
 grangerfords -- papa
+
+:"Duke" Bridgewater: as duke
+
+
+huck --> duke : saved
+
+widow <--> owner : sisters
+
+:"Dauphin": as dauphin
+
+huck --> dauphin : saved
 
 @enduml
