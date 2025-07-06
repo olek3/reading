@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 15.5% (Chapter 6)
+legend : 27.7% (Chapter 14)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -70,7 +70,7 @@ lesson - student3
 student4 -- lesson
 student5 -- lesson
 
-:Finn's father: as father <<unnamed>> <<dead>>$male
+:Pap: as father <<unnamed>> <<dead>>$male
 
 huck <-- father : father
 
@@ -99,6 +99,20 @@ jim -- old : stolen firewood
 april -- old
 old - cotton
 
+
+(Four black men) as four <<group>>
+
+jim -- four : met in Illinois
+
+:Young George: as muscular  $male
+:Old George: as oldest  $male
+:Josiah: as big  $male
+:Pierre: as squintyEyes  $male
+
+four -- muscular
+four -- oldest
+four -- big
+four -- squintyEyes
 
 
 @enduml
