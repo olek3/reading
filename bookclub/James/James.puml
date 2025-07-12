@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 65.0% (Chapter II-2)
+legend : 67.0% (Chapter II-3)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -195,5 +195,15 @@ hole -- constable : constable
 :Old Man Henderson: as henderson $male
 
 hole -- henderson : holds sawmill
+
+:Luke: as anotherLuke <<slave>> $male
+:Sammy: as sammy <<slave>> $male
+:Rainbo: as rainbow <<slave>> $male
+
+henderson --> anotherLuke : owns
+henderson --> sammy : owns
+henderson --> rainbow : owns
+
+
 
 @enduml
