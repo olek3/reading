@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 35.5% (Chapter I-18)
+legend : 57.7% (Chapter I-30)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -23,12 +23,12 @@ tom <--> huck : friends
 
 (Jim's family) as family <<group>>
 
-jim -- family
+family -- jim
 family -- sadie : wife
 
 :Elizabeth: as lizzie <<slave>> $female
 
-family -- lizzie : daughter
+lizzie -- family : daughter
 
 :Judge Thatcher: as judge $male
 
@@ -54,7 +54,7 @@ fire - skinny
 
 (language lesson) as lesson <<event>>
 
-jim -- lesson : gave
+lesson --- jim : gave
 
 lesson -- lizzie
 
@@ -85,7 +85,7 @@ judge <-- bekkie : daughter
 
 huck <--> jim : on the run together
 
-:Polly: as polly $female
+:Aunt Polly: as polly $female
 
 tom <-- polly : aunt
 
@@ -94,10 +94,10 @@ tom <-- polly : aunt
 
 (old slaves) as old <<group>>
 
-jim -- old : stolen firewood
+jim --- old : stolen firewood for
 
-april -- old
-old - cotton
+old -- april
+old -- cotton
 
 
 (Four black men) as four <<group>>
@@ -147,5 +147,36 @@ widow <--> owner : sisters
 :"Dauphin": as dauphin
 
 huck --> dauphin : saved
+
+:Easter: as blacksmith <<slave>> $male
+
+jim <--- blacksmith : chained up
+
+:Mr Wiley: as wiley $male
+
+blacksmith <-- wiley : owner
+
+:Daniel Decatur Emmett: as emmet $male
+
+wiley --> emmet : bought Jim
+
+(Virginia Minstrels) as minstrels <<group>>
+
+emmet -- minstrels : leader
+
+:Cassidy: as cassidy $male
+
+minstrels -- cassidy : trombone
+
+:Norman: as norman $male
+minstrels -- norman : drums
+
+:just Polly: as spectator
+
+minstrels - spectator : spectator
+
+:all white man: as pollyFather <<unnamed>> $male
+spectator <-- pollyFather : father
+
 
 @enduml
