@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 58.8% (Chapter I-31)
+legend : 64.0% (Chapter II-2)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -185,5 +185,11 @@ clarinet -- minstrels : clarinet
 :good lawman: as nephew <<unnamed>> $male
 
 pollyFather <-- nephew : nephew
+
+(Bluebird Hole) as hole <<location>>
+
+:Frank McHart: as constable $male
+
+hole -- constable : constable
 
 @enduml
