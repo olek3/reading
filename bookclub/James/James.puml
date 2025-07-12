@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 58.2% (Chapter I-31)
+legend : 58.8% (Chapter I-31)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -175,12 +175,15 @@ minstrels -- norman : drums
 
 minstrels - spectator : spectator
 
-:all white man: as pollyFather <<unnamed>> $male
+:fat all white man: as pollyFather <<unnamed>> $male
 spectator <-- pollyFather : father
 
 :Big Mike: as clarinet $male
 
 clarinet -- minstrels : clarinet
 
+:good lawman: as nephew <<unnamed>> $male
+
+pollyFather <-- nephew : nephew
 
 @enduml
