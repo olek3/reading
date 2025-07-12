@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 57.7% (Chapter I-30)
+legend : 58.2% (Chapter I-31)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -50,7 +50,7 @@ doris -- fire
 luke -- fire
 
 :Skinny: as skinny <<slave>> $male
-fire - skinny
+skinny - fire
 
 (language lesson) as lesson <<event>>
 
@@ -177,6 +177,10 @@ minstrels - spectator : spectator
 
 :all white man: as pollyFather <<unnamed>> $male
 spectator <-- pollyFather : father
+
+:Big Mike: as clarinet $male
+
+clarinet -- minstrels : clarinet
 
 
 @enduml
