@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 64.0% (Chapter II-2)
+legend : 65.0% (Chapter II-2)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -191,5 +191,9 @@ pollyFather <-- nephew : nephew
 :Frank McHart: as constable $male
 
 hole -- constable : constable
+
+:Old Man Henderson: as henderson $male
+
+hole -- henderson : holds sawmill
 
 @enduml
