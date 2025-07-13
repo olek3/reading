@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 97.4% (Chapter III-10)
+legend : 98.2% (Chapter III-10)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -226,5 +226,17 @@ jim --> hopkins : killed
 
 cornfield -- april2
 cornfield -- holly
+
+(Graham's place men) as men <<location>>
+
+:Morris: <<slave>> $male
+:Harvey: <<slave>> $male
+:Llewelyn: <<slave>> $male
+:Buck: <<slave>> $male
+
+Morris -- men
+Harvey -- men
+men -- Llewelyn
+men -- Buck
 
 @enduml
