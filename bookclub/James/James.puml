@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 98.2% (Chapter III-10)
+legend : 100%
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -238,5 +238,10 @@ Morris -- men
 Harvey -- men
 men -- Llewelyn
 men -- Buck
+
+cornfield ...> men
+hole ...> boat
+
+boat ...> cornfield
 
 @enduml
