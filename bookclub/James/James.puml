@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 88.5% (Chapter III-5)
+legend : 90.1% (Chapter III-6)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -206,5 +206,6 @@ henderson --> rainbow : owns
 
 :Corey: $male
 :Brock: as brock <<slave>> $male
-:Katie: $female 
+:Katie: <<slave>> $female 
+:Hopkins: $male 
 @enduml
