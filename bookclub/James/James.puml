@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 94.0% (Chapter III-9)
+legend : 97.4% (Chapter III-10)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -72,7 +72,7 @@ student5 -- lesson
 
 :Pap: as father <<unnamed>> <<dead>>$male
 
-huck <-- father : father
+huck <-- father : legally father
 
 :widow Douglas: as widow $female
 
@@ -219,6 +219,12 @@ katie <- hopkins  : raped
 
 jim --> hopkins : killed
 
+(Corn field) as cornfield <<location>>
 
+:April: as april2 <<slave>> $male
+:Holly: as holly <<slave>> $female
+
+cornfield -- april2
+cornfield -- holly
 
 @enduml
