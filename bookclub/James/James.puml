@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 35.5% (Chapter I-18)
+legend : 100%
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -23,12 +23,12 @@ tom <--> huck : friends
 
 (Jim's family) as family <<group>>
 
-jim -- family
+family -- jim
 family -- sadie : wife
 
 :Elizabeth: as lizzie <<slave>> $female
 
-family -- lizzie : daughter
+lizzie -- family : daughter
 
 :Judge Thatcher: as judge $male
 
@@ -50,11 +50,11 @@ doris -- fire
 luke -- fire
 
 :Skinny: as skinny <<slave>> $male
-fire - skinny
+skinny - fire
 
 (language lesson) as lesson <<event>>
 
-jim -- lesson : gave
+lesson --- jim : gave
 
 lesson -- lizzie
 
@@ -72,7 +72,7 @@ student5 -- lesson
 
 :Pap: as father <<unnamed>> <<dead>>$male
 
-huck <-- father : father
+huck <-- father : legally father
 
 :widow Douglas: as widow $female
 
@@ -85,7 +85,7 @@ judge <-- bekkie : daughter
 
 huck <--> jim : on the run together
 
-:Polly: as polly $female
+:Aunt Polly: as polly $female
 
 tom <-- polly : aunt
 
@@ -94,10 +94,10 @@ tom <-- polly : aunt
 
 (old slaves) as old <<group>>
 
-jim -- old : stolen firewood
+jim --- old : stolen firewood for
 
-april -- old
-old - cotton
+old -- april
+old -- cotton
 
 
 (Four black men) as four <<group>>
@@ -147,5 +147,101 @@ widow <--> owner : sisters
 :"Dauphin": as dauphin
 
 huck --> dauphin : saved
+
+:Easter: as blacksmith <<slave>> $male
+
+jim <--- blacksmith : chained up
+
+:Mr Wiley: as wiley $male
+
+blacksmith <-- wiley : owner
+
+:Daniel Decatur Emmett: as emmet $male
+
+wiley --> emmet : bought Jim
+
+(Virginia Minstrels) as minstrels <<group>>
+
+emmet -- minstrels : leader
+
+:Cassidy: as cassidy $male
+
+minstrels -- cassidy : trombone
+
+:Norman: as norman $male
+minstrels -- norman : drums
+
+:just Polly: as spectator
+
+minstrels - spectator : spectator
+
+:fat all white man: as pollyFather <<unnamed>> $male
+spectator <-- pollyFather : father
+
+:Big Mike: as clarinet $male
+
+clarinet -- minstrels : clarinet
+
+:good lawman: as nephew <<unnamed>> $male
+
+pollyFather <-- nephew : nephew
+
+(Bluebird Hole) as hole <<location>>
+
+:Frank McHart: as constable $male
+
+hole -- constable : constable
+
+:Old Man Henderson: as henderson $male
+
+hole -- henderson : holds sawmill
+
+:Luke: as anotherLuke <<slave>> $male
+:Sammy: as sammy <<slave>> <<dead>> $female
+:Rainbo: as rainbow <<slave>> $male
+
+henderson --> anotherLuke : owns
+henderson --> sammy : owns
+henderson --> rainbow : owns
+
+
+(Steamboat) as boat <<location>><<institution>>
+:Corey: $male
+:Brock: as brock <<slave>> $male
+
+boat -- brock : coal guy
+brock <-- Corey : supposedly master
+
+:Katie: as katie <<slave>> $female
+:Hopkins: as hopkins <<dead>> $male
+
+katie <- hopkins  : raped
+
+jim --> hopkins : killed
+
+(Corn field) as cornfield <<location>>
+
+:April: as april2 <<slave>> $male
+:Holly: as holly <<slave>> $female
+
+cornfield -- april2
+cornfield -- holly
+
+(Graham's place men) as men <<location>>
+
+:Morris: <<slave>> $male
+:Harvey: <<slave>> $male
+:Llewelyn: <<slave>> $male
+:Buck: <<slave>> $male
+
+Morris -- men
+Harvey -- men
+men -- Llewelyn
+men -- Buck
+
+cornfield ...> men
+hole ...> boat
+
+boat ...> cornfield
 
 @enduml
