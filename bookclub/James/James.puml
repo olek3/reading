@@ -5,7 +5,7 @@
 
 title James
 mainframe characters
-legend : 90.1% (Chapter III-6)
+legend : 94.0% (Chapter III-9)
 
 
 :James: as jim  <<narrator>> $male_protagonist
@@ -204,8 +204,21 @@ henderson --> anotherLuke : owns
 henderson --> sammy : owns
 henderson --> rainbow : owns
 
+
+(Steamboat) as boat <<location>><<institution>>
 :Corey: $male
 :Brock: as brock <<slave>> $male
-:Katie: <<slave>> $female 
-:Hopkins: $male 
+
+boat -- brock : coal guy
+brock <-- Corey : supposedly master
+
+:Katie: as katie <<slave>> $female
+:Hopkins: as hopkins <<dead>> $male
+
+katie <- hopkins  : raped
+
+jim --> hopkins : killed
+
+
+
 @enduml
