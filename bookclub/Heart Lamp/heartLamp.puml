@@ -1,0 +1,25 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+title Heart Lamp by Banu Mushtaq
+mainframe characters
+legend : 0% (Stone Slabs for Shaista Mahal)
+
+
+package "Stone Slabs for Shaista Mahal"  {
+
+    :I: as i $female_protagonist
+    :Mujahid: as mujahid $male
+
+
+    i <-- mujahid : home person
+
+}
+
+
+@enduml
+
+
+
