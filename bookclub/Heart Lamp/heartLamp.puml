@@ -24,6 +24,7 @@ package "Stone Slabs for Shaista Mahal"  {
     Cheluva --> i : help? 
     
     (Ahmed family) as ahmeds <<group>> 
+    ahmeds --> ahmed 
     :Shaista: $female 
     Shaista -- ahmeds : wife 
     
