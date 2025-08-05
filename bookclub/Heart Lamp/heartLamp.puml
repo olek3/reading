@@ -19,7 +19,7 @@ package "Stone Slabs for Shaista Mahal"  {
     :Iftikhar Ahmed: as ahmed $male 
     mujahid <-- ahmed : new aquaintance 
     
-    :Cheluva: 
+    :Cheluva: $male
     
     Cheluva --> i : help? 
 
