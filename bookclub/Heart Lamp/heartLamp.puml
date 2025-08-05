@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 0% (Stone Slabs for Shaista Mahal)
+legend : 1.5% (Stone Slabs for Shaista Mahal)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -18,6 +18,10 @@ package "Stone Slabs for Shaista Mahal"  {
     
     :Iftikhar Ahmed: as ahmed $male 
     mujahid <-- ahmed : new aquaintance 
+    
+    :Cheluva: 
+    
+    Cheluva --> i : help? 
 
 }
 
