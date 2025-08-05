@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 1.5% (Stone Slabs for Shaista Mahal)
+legend : 1.9% (Stone Slabs for Shaista Mahal)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -22,6 +22,13 @@ package "Stone Slabs for Shaista Mahal"  {
     :Cheluva: $male
     
     Cheluva --> i : help? 
+    
+    (Ahmed family) as ahmeds <<group>> 
+    :Shaista: $female 
+    Shaista -- ahmeds : wife 
+    
+    :Asifa: $female 
+    ahmeds <-- Asifa : eldest daughter 
 
 }
 
