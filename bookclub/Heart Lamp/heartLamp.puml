@@ -10,11 +10,14 @@ legend : 0% (Stone Slabs for Shaista Mahal)
 
 package "Stone Slabs for Shaista Mahal"  {
 
-    :I: as i $female_protagonist
+    :I: as i <<narrator>> $female_protagonist
     :Mujahid: as mujahid $male
 
 
-    i <-- mujahid : home person
+    i <-- mujahid : home person 
+    
+    :Iftikhar Ahmed: as ahmed $male 
+    mujahid <-- ahmed : new aquaintance 
 
 }
 
