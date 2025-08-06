@@ -71,7 +71,7 @@ jameelaHusband --> jameela
 :young man: as sakeenaCompany <<unnamed>> $male 
 
 arifa <-- sakeena : eldest sister-in-law 
-sakeena <-- sakeenaCompany : accompanied 
+sakeena <-- sakeenaCompany : son 
 
 }
 
