@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 12.7% (Fire Rain)
+legend : 17.2% (Black Cobras)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -48,62 +48,100 @@ package "Stone Slabs for Shaista Mahal"  {
 }
 
 package "Fire Rain" {
-(mosque) <<institution>> 
-:Usman Saheb: as usman $male_protagonist 
+    (mosque) <<institution>>
+    :Usman Saheb: as usman $male_protagonist
 
-:Arifa: as arifa $female 
+    :Arifa: as arifa $female
 
-:Ansar: as ansar $male
+    :Ansar: as ansar $male
 
-mosque -- usman : mutawali 
-usman <-- arifa : wife 
+    mosque -- usman : mutawali
+    usman <-- arifa : wife
 
-ansar -> usman : son
-ansar -> arifa : son
-'usman <- ansar : son
-'arifa <- ansar : son
+    ansar -> usman : son
+    ansar -> arifa : son
+    'usman <- ansar : son
+    'arifa <- ansar : son
 
-:Jameela: as jameela $female 
-:husband: as jameelaHusband <<unnamed>> $male
+    :Jameela: as jameela $female
+    :husband: as jameelaHusband <<unnamed>> $male
 
-usman <- jameela  : youngest sister
-jameelaHusband --> jameela 
+    usman <- jameela  : youngest sister
+    jameelaHusband --> jameela
 
-:Sakeena: as sakeena $female
-:Syed Abrar: as sakeenaCompany $male 
+    :Sakeena: as sakeena $female
+    :Syed Abrar: as sakeenaCompany $male
 
-usman <-- sakeena : eldest sister 
-sakeena <-- sakeenaCompany : son 
+    usman <-- sakeena : eldest sister
+    sakeena <-- sakeenaCompany : son
 
-:Dawood: $male 
+    :Dawood: $male
 
-Dawood --> usman : right-hand man 
+    Dawood --> usman : right-hand man
 
-(supplicants) <<group>> 
+    (supplicants) <<group>>
 
-:Saabjaan: $male 
+    :Saabjaan: $male
 
-usman -- supplicants : sees 
+    usman -- supplicants : sees
 
-supplicants -- Saabjaan : daughter's wedding 
+    supplicants -- Saabjaan : daughter's wedding
 
-sakeena - supplicants : son's employment
+    sakeena - supplicants : son's employment
 
-:Nisar: <<dead>> $male 
- Nisar -- mosque  : committed to paint
+    :Nisar: <<dead>> $male
+     Nisar -- mosque  : committed to paint
 
-:Umar: $male 
+    :Umar: $male
 
- Umar <--> Nisar: somehow related
+     Umar <--> Nisar: somehow related
 
-:Shankar: -- mosque  : troublemaker
+    :Shankar: -- mosque  : troublemaker
 
-:DC: <<unnamed>> $male
+    :DC: <<unnamed>> $male
 
-:DC: <--- usman : addressed
-
+    :DC: <--- usman : addressed
 }
 
+package "Black Cobras" {
+
+    (madrasa) <<institution>>
+    :Tarannum: as tarannum  $female
+    :Rafiya: as rafiya $female
+
+    tarannum <-- rafiya : mother
+
+    :Hasina: as hasina $female
+    :Hasina's mother: as hasinaMother <<unnamed>> $female
+
+    hasina <-- hasinaMother : mother
+
+    :Rafi: as rafi $male
+    :Waseema: as waseema $female
+
+    rafi <-- waseema : mother
+
+    :Hamid: as hamid $male
+    :Hamid's mother: as hamidMother <<unnamed>> $female
+
+    hamid <-- hamidMother : mother
+
+    madrasa -- rafi
+    madrasa -- hamid
+
+    :Majida: as majida $female
+    :Abdul Khader: as abdul $male
+    majida <-- abdul : fater
+
+    :Amina: as amina $female
+    abdul <-- amina : wife?
+
+    :Yakub: as yakub $male
+
+    abdul <-- yakub : ??? deputy?
+
+
+}
 
 @enduml
 
