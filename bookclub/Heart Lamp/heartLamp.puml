@@ -58,13 +58,15 @@ package "Fire Rain" {
 mosque -- usman : mutawali 
 usman <-- arifa : wife 
 
-usman <- ansar : son 
-arifa <- ansar : son 
+ansar -> usman : son
+ansar -> arifa : son
+'usman <- ansar : son
+'arifa <- ansar : son
 
 :Jameela: as jameela $female 
 :husband: as jameelaHusband <<unnamed>> $male
 
-jameela -> usman : youngest sister 
+usman <- jameela  : youngest sister
 jameelaHusband --> jameela 
 
 :Sakeena: as sakeena $female
@@ -85,16 +87,16 @@ usman -- supplicants : sees
 
 supplicants -- Saabjaan : daughter's wedding 
 
-sakeena -- supplicants : son's employment 
+sakeena - supplicants : son's employment
 
 :Nisar: <<dead>> $male 
-mosque - Nisar  : committed to paint 
+ Nisar -- mosque  : committed to paint
 
 :Umar: $male 
 
-Nisar <--> Umar: somehow related 
+ Umar <--> Nisar: somehow related
 
-mosque -- :Shankar: : troublemaker 
+:Shankar: -- mosque  : troublemaker
 
 :DC: <<unnamed>> $male 
 
