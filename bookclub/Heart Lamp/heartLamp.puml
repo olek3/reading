@@ -29,12 +29,12 @@ package "Stone Slabs for Shaista Mahal"  {
     Shaista -- ahmeds : wife 
     
     :Asifa: $female 
-    ahmeds <-- Asifa : eldest daughter 
+    ahmeds <- Asifa : eldest daughter 
     
- ahmeds <--    :Sallu: : a child 
- ahmeds <-- :Immu:  : a child
-ahmeds <-- :Naveen:  : a child
-ahmeds <-- :Kamal:  : a child
+	 ahmeds <--    :Sallu: : a child 
+	 ahmeds <-- :Immu:  : a child
+ 	ahmeds <-- :Naveen:  : a child
+	 ahmeds <-- :Kamal:  : a child
 
 }
 
