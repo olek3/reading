@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 7.7% (Stone Slabs for Shaista Mahal)
+legend : 7.9% (Stone Slabs for Shaista Mahal)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -44,6 +44,23 @@ package "Stone Slabs for Shaista Mahal"  {
 	
 	 :amma: as mother <<unnamed>> <<dead>> $female 
 	mother -> i : mother 
+
+}
+
+package "Fire Rain" {
+(mosque) <<institution>> 
+:Usman Saheb: as usman $male_protagonist 
+
+:Arifa: as arifa $female 
+
+:Ansar: as ansar $male
+
+mosque -- usman : mutawali 
+usman <-- arifa : wife 
+
+usman <- ansar : son 
+arifa <- ansar : son
+
 
 }
 
