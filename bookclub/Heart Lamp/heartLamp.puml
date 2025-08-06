@@ -10,7 +10,7 @@ legend : 1.9% (Stone Slabs for Shaista Mahal)
 
 package "Stone Slabs for Shaista Mahal"  {
 
-    :I: as i <<narrator>> $female_protagonist
+    :Zeenat: as i <<narrator>> $female_protagonist
     :Mujahid: as mujahid $male
 
 
@@ -30,6 +30,11 @@ package "Stone Slabs for Shaista Mahal"  {
     
     :Asifa: $female 
     ahmeds <-- Asifa : eldest daughter 
+    
+ ahmeds <--    :Sallu: : a child 
+ ahmeds <-- :Immu:  : a child
+ahmeds <-- :Naveen:  : a child
+ahmeds <-- :Kamal:  : a child
 
 }
 
