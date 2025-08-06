@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 10.3% (Fire Rain)
+legend : 10.9% (Fire Rain)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -68,9 +68,9 @@ jameela -> usman : youngest sister
 jameelaHusband --> jameela 
 
 :Sakeena: as sakeena $female
-:young man: as sakeenaCompany <<unnamed>> $male 
+:Syed Abrar: as sakeenaCompany $male 
 
-arifa <-- sakeena : eldest sister-in-law 
+usman <- sakeena : eldest sister 
 sakeena <-- sakeenaCompany : son 
 
 }
