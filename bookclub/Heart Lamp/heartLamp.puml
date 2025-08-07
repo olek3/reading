@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 19.3% (Black Cobras)
+legend : 25.1% (A decision of the Heart)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -141,7 +141,7 @@ package "Black Cobras" {
     hasinaMother <-- yakub : husband
 
     :younger sister: as hasinaSister1 <<unnamed>> $female
-    :Munny: as hasinaSister2  $female
+    :Munny: as hasinaSister2  <<dead>> $female
 
     hasinaSister1 --> hasina : younger sister
     hasinaSister2 --> hasina : younger sister
@@ -152,10 +152,26 @@ package "Black Cobras" {
     zulekha <-- hasinaMother : worked for
     zulekha <-- zulekhaHusband : husband 
     
-    :Hanifa Chikkamma: $female 
+    :Hanifa Chikkamma: $female
+    :Naseema: $female
 
+    :Qazi: $male
+    :daugher-in-law: as qaziInLaw <<unnamed>> $female
 
+    Qazi <-- qaziInLaw : daugher-in-law
 
+    :another Asifa: as asifa2 $female
+
+    :Amina's mother: as aminaMother <<unnamed>> $female
+
+    amina <-- aminaMother : mother
+
+}
+
+package "A decision of the Heart" {
+    :Yusuf: as yusuf $male
+    :mother: as yusufMother <<unnamed>> $female
+    yusuf <-- yusufMother : mother
 }
 
 @enduml
