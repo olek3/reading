@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 17.2% (Black Cobras)
+legend : 19.1% (Black Cobras)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -112,7 +112,7 @@ package "Black Cobras" {
     tarannum <-- rafiya : mother
 
     :Hasina: as hasina $female
-    :Hasina's mother: as hasinaMother <<unnamed>> $female
+    :Aashraf: as hasinaMother  $female_protagonist
 
     hasina <-- hasinaMother : mother
 
@@ -131,14 +131,27 @@ package "Black Cobras" {
 
     :Majida: as majida $female
     :Abdul Khader: as abdul $male
-    majida <-- abdul : fater
+    majida <-- abdul : father
 
     :Amina: as amina $female
-    abdul <-- amina : wife?
+    abdul <-- amina : wife
 
     :Yakub: as yakub $male
 
-    abdul <-- yakub : ??? deputy?
+    hasinaMother <-- yakub : husband
+
+    :younger sister: as hasinaSister1 <<unnamed>> $female
+    :Munny: as hasinaSister2  $female
+
+    hasinaSister1 --> hasina : younger sister
+    hasinaSister2 --> hasina : younger sister
+
+    :Zulekha Begum: as zulekha $female
+    :Zuleha husband: as zulekhaHusband <<unnamed>> $male
+
+    zulekha <-- hasinaMother : worked for
+    zulekha <-- zulekhaHusband : husband
+
 
 
 }
