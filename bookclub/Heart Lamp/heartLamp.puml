@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 19.1% (Black Cobras)
+legend : 19.3% (Black Cobras)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -150,7 +150,9 @@ package "Black Cobras" {
     :Zuleha husband: as zulekhaHusband <<unnamed>> $male
 
     zulekha <-- hasinaMother : worked for
-    zulekha <-- zulekhaHusband : husband
+    zulekha <-- zulekhaHusband : husband 
+    
+    :Hanifa Chikkamma: $female 
 
 
 
