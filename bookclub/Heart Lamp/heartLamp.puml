@@ -208,8 +208,8 @@ package "A decision of the Heart" {
     grooms -- gafar
     gafar <-- roshmi : daugher
 
-    (wedding guests) as guests <<group>>
-    guests - yusuf : brought in
+    (neghbours) as guests <<group>>
+    guests - akhila : brought in
 
     :Buden Saab: $male
     guests -- :Buden Saab: : from the shop
