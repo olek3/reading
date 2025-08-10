@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 25.9% (A decision of the Heart)
+legend : 30.3% (A decision of the Heart)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -185,6 +185,13 @@ package "A decision of the Heart" {
     munna --> akhila : son
     babu --> akhila : son
     chotu --> akhila : son
+
+    :Hayat Khan: as hayat $male
+    yusuf <-- hayat : marriage broker
+    (grooms) <<group>>
+    hayat -- grooms : searched
+    :Hashim Saab: $male
+    grooms -- :Hashim Saab:
 }
 
 @enduml
