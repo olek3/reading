@@ -169,11 +169,11 @@ package "Black Cobras" {
 }
 
 package "A decision of the Heart" {
-    :Yusuf: as yusuf $male
-    :Mehaboob Bi: as yusufMother  $female
+    :Yusuf: as yusuf $male_protagonist
+    :Mehaboob Bi: as yusufMother  $female_protagonist
     yusuf <-- yusufMother : mother
 
-    :Akhila: as akhila $female
+    :Akhila: as akhila $female_protagonist
     akhila --> yusuf : wife
 
     :Raja: as raja $male
@@ -206,7 +206,7 @@ package "A decision of the Heart" {
     :Abdul Ghaffar: as gafar $male
     :Roshmi: as roshmi $female
     grooms -- gafar
-    gafar <-- rohsmi : daugher
+    gafar <-- roshmi : daugher
 
     (wedding guests) as guests <<group>>
     guests - yusuf : brought in
