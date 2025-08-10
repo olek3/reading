@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 30.3% (A decision of the Heart)
+legend : 30.6% (A decision of the Heart)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -192,6 +192,18 @@ package "A decision of the Heart" {
     hayat -- grooms : searched
     :Hashim Saab: $male
     grooms -- :Hashim Saab:
+
+    :Kareem Khan: as womaniser $male
+
+    :Razak: as peanatSeller $male
+    :wife: as peanatSellerWife <<unnamed>> <<mentioned>> $female
+
+    womaniser --> peanatSellerWife : seduced
+    peanatSeller -> womaniser : caught
+    peanatSeller <-- peanatSellerWife : wife
+    grooms -- womaniser
+
+
 }
 
 @enduml
