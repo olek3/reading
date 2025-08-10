@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 30.9% (A decision of the Heart)
+legend : 33.6% (A decision of the Heart)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -208,7 +208,21 @@ package "A decision of the Heart" {
     grooms -- gafar
     gafar <-- rohsmi : daugher
 
+    (wedding guests) as guests <<group>>
+    guests - yusuf : brought in
 
+    :Buden Saab: $male
+    guests -- :Buden Saab: : from the shop
+    :Salar Saab: $male
+    guests -- :Salar Saab: : from the two-storeyed house
+
+    :Begum: as begum $female
+    :Councillor Mohammed: as mohammed <<mentioned>> $male
+    guests -- begum
+    begum --> mohammed : wife
+
+    :Hafiza Bi: as hafiza $female
+    hafiza - guests : mohalla's old woman
 }
 
 @enduml
