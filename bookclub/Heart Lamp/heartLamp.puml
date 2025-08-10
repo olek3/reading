@@ -227,6 +227,8 @@ package "A decision of the Heart" {
 
 package "Red Lungi" {
 :Razia: as razia $female_proragonist 
+:Latif Ahmad: as latif $male 
+razia <-- latif : husband 
 }
 
 @enduml
