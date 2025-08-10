@@ -225,6 +225,10 @@ package "A decision of the Heart" {
     hafiza - guests : mohalla's old woman
 }
 
+package "Red Lungi" {
+:Razia: as razia $female_proragonist 
+}
+
 @enduml
 
 
