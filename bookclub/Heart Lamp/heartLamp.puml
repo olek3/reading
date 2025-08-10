@@ -147,7 +147,7 @@ package "Black Cobras" {
     hasinaSister2 --> hasina : younger sister
 
     :Zulekha Begum: as zulekha $female
-    :Zuleha husband: as zulekhaHusband <<unnamed>> $male
+    :Zuleha husband: as zulekhaHusband <<unnamed>><<mentioned>> $male
 
     zulekha <-- hasinaMother : worked for
     zulekha <-- zulekhaHusband : husband 
@@ -170,8 +170,11 @@ package "Black Cobras" {
 
 package "A decision of the Heart" {
     :Yusuf: as yusuf $male
-    :mother: as yusufMother <<unnamed>> $female
+    :Mehaboob Bi: as yusufMother  $female
     yusuf <-- yusufMother : mother
+
+    :Akhila: as akhila $female
+    akhila --> yusuf : wife
 }
 
 @enduml
