@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 33.6% (A decision of the Heart)
+legend : 37.1% (Red Lungi)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -226,11 +226,31 @@ package "A decision of the Heart" {
 }
 
 package "Red Lungi" {
-:Razia: as razia $female_proragonist 
-:Latif Ahmad: as latif $male 
-razia <-- latif : husband 
+    :Razia: as razia $female_proragonist
+    :Latif Ahmad: as latif $male
+    razia <-- latif : husband
 
-:Hussain: as hussain $male 
+    :Hussain: as hussain $male
+
+    (help) <<group>>
+    (help) - razia
+    :Amina: as aminaCook $female
+    aminaCook --> help : cook
+    :Arif: $male
+
+    Arif --> aminaCook : son
+
+    :worker: as worker <<unnamed>> $male
+    :Farid: as farid $male
+
+    farid --> worker : son
+    worker --> help : worker
+
+    :Samad: $male
+    :Samad: --> razia : son
+
+
+
 
 }
 
