@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 42.8% (Heart Lamp)
+legend : 43.0% (Heart Lamp)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -290,6 +290,13 @@ package "Heart Lamp" {
 
     mehrunFather -> mehrun : father
     mehrun <- mehrunMother : mother
+
+    :Eldest Brother wife: as mehrunBrotherWife <<unnamed>> $female
+    mehrunBrother <-- mehrunBrotherWife : wife
+
+    :Amaan's wife: as amaanWife <<unnamed>> $female
+    amaanWife --> amaan : wife
+
 
 
 }
