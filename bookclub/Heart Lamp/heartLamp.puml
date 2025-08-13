@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 37.9% (Red Lungi)
+legend : 40.1% (Red Lungi)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -233,7 +233,7 @@ package "Red Lungi" {
     :Hussain: as hussain $male
 
     (help) <<group>>
-    (help) - razia
+    (help) -- razia
     :Amina: as aminaCook $female
     aminaCook --> help : cook
     :Arif: $male
@@ -247,7 +247,7 @@ package "Red Lungi" {
     worker --> help : worker
 
     :Samad: $male
-    :Samad: --> razia : son
+    :Samad: --> razia : eldest son
 
     (khatna) <<event>>
 
@@ -256,6 +256,16 @@ package "Red Lungi" {
 
     khatna -- Ibrahim : special guest
     khatna -- Abbas : volunteer
+
+    :Subhan: $male
+    :Subhan: -- khatna : cryed
+
+    :Sami: $male
+    :Sami: -- khatna : another volunteer
+
+    :Dr Prakash: as surgeon $male
+
+    surgeon --> :Samad: : curcumcised
 
 
 }
