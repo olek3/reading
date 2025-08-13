@@ -280,10 +280,18 @@ package "Heart Lamp" {
  :Athige: as athige $female 
  mehrun <-- athige : her eldest 
  
- :Mother: <<unnamed>> $female
- :Father: <<unnamed>> $male
- :Eldest brother: <<unnamed>> $male
- :Atif: 
+ :Mother: as mehrunMother <<unnamed>> $female
+ :Father: as mehrunFather <<unnamed>> $male
+ :Eldest brother: as mehrunBrother <<unnamed>> $male
+ :Atif: as atif $male
+
+ mehrun <-- mehrunBrother : eldest brother
+ mehrun <-- atif : younger brother
+
+ mehrunFather -> mehrun : father
+ mehrun <- mehrunMother : mother
+
+
 }
 
 @enduml
