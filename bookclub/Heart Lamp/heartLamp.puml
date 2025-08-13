@@ -270,26 +270,26 @@ package "Red Lungi" {
 
 }
 package "Heart Lamp" {
- :Mehrun: as mehrun $female_protagonist 
- :Rabia: as rabia $female 
- rabia --> mehrun : niece 
- :Amaan: as amaan $male 
- amaan -> rabia : father 
- amaan --> mehrun : second eldest brother 
- 
- :Athige: as athige $female 
- mehrun <-- athige : her eldest 
- 
- :Mother: as mehrunMother <<unnamed>> $female
- :Father: as mehrunFather <<unnamed>> $male
- :Eldest brother: as mehrunBrother <<unnamed>> $male
- :Atif: as atif $male
+    :Mehrun: as mehrun $female_protagonist
+    :Rabia: as rabia $female
+    rabia --> mehrun : niece
+    :Amaan: as amaan $male
+    amaan -> rabia : father
+    amaan --> mehrun : second eldest brother
 
- mehrun <-- mehrunBrother : eldest brother
- mehrun <-- atif : younger brother
+    :Athige: as athige $female
+    mehrun <-- athige : her eldest
 
- mehrunFather -> mehrun : father
- mehrun <- mehrunMother : mother
+    :Mother: as mehrunMother <<unnamed>> $female
+    :Father: as mehrunFather <<unnamed>> $male
+    :Eldest brother: as mehrunBrother <<unnamed>> $male
+    :Atif: as atif $male
+
+    mehrun <-- mehrunBrother : eldest brother
+    mehrun <-- atif : younger brother
+
+    mehrunFather -> mehrun : father
+    mehrun <- mehrunMother : mother
 
 
 }
