@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 40.1% (Red Lungi)
+legend : 42.8% (Heart Lamp)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -268,6 +268,22 @@ package "Red Lungi" {
     surgeon --> :Samad: : curcumcised
 
 
+}
+package "Heart Lamp" {
+ :Mehrun: as mehrun $female_protagonist 
+ :Rabia: as rabia $female 
+ rabia --> mehrun : niece 
+ :Amaan: as amaan $male 
+ amaan -> rabia : father 
+ amaan --> mehrun : second eldest brother 
+ 
+ :Athige: as athige $female 
+ mehrun <-- athige : her eldest 
+ 
+ :Mother: <<unnamed>> $female
+ :Father: <<unnamed>> $male
+ :Eldest brother: <<unnamed>> $male
+ :Atif: 
 }
 
 @enduml
