@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 49.8% (High-Heeled Shoe)
+legend : 50.0% (High-Heeled Shoe)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -329,6 +329,8 @@ package "High-Heeled Shoe" {
     :Asifa: as shoeAsifa $female 
     nayaz <-- shoeAsifa : wife 
     mehaboob <- shoeNaseema : wife 
+    :Munni: as shoeMunni $female 
+    mehaboob <-- shoeMunni : daughter 
 }
 
 
