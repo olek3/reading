@@ -315,7 +315,10 @@ package "Heart Lamp" {
 
     :nurse: <<unnamed>> $female
 
-    nurse <-- inayat : gone off with
+    nurse <-- inayat : gone off with 
+    
+    :Salma: as salma $female 
+    mehrunFamily -- salma : daughter 
 
 
 }
