@@ -319,7 +319,7 @@ package "Heart Lamp" {
 }
 
 package "High-Heeled Shoe" {
-    :Nayaz Khan: as nayaz
+    :Nayaz Khan: as nayaz $male
 }
 
 
