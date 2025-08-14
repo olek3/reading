@@ -271,34 +271,51 @@ package "Red Lungi" {
 }
 package "Heart Lamp" {
     :Mehrun: as mehrun $female_protagonist
+
+    (Parent's house) as mehrunParents <<group>>
+    (family) as mehrunFamily <<group>>
+
+    mehrunParents -- mehrun
+    mehrun -- mehrunFamily
+
     :Rabia: as rabia $female
-    rabia --> mehrun : niece
     :Amaan: as amaan $male
-    amaan -> rabia : father
-    amaan --> mehrun : second eldest brother
+    rabia <-- amaan : father
+    amaan --> mehrunParents  : second eldest brother
 
     :Athige: as athige $female
-    mehrun <-- athige : her eldest
+    mehrunFamily -- athige : her eldest
 
     :Mother: as mehrunMother <<unnamed>> $female
     :Father: as mehrunFather <<unnamed>> $male
     :Eldest brother: as mehrunBrother <<unnamed>> $male
     :Atif: as atif $male
 
-    mehrun <-- mehrunBrother : eldest brother
-    mehrun <-- atif : younger brother
+    mehrunBrother -- mehrunParents : eldest brother
+    atif -- mehrunParents : younger brother
 
-    mehrunFather -> mehrun : father
-    mehrun <- mehrunMother : mother
+    mehrunFather -> mehrunParents : father
+    mehrunParents <- mehrunMother : mother
 
     :Eldest Brother wife: as mehrunBrotherWife <<unnamed>> $female
-    mehrunBrother <-- mehrunBrotherWife : wife
+    mehrunBrotherWife --> mehrunBrother : wife
 
     :Amaan's wife: as amaanWife <<unnamed>> $female
     amaanWife --> amaan : wife
 
-    :Inayat: as inayat $male
-    inayat --> mehrun : husband?
+    :Inayat: as inayat  $male
+    mehrunFamily . inayat  : <<ex>> husband
+
+    :baby: as mehrunBaby <<unnamed>> $female
+
+    mehrunFamily -- mehrunBaby : daugher
+
+    :Farook: $male
+    note bottom: ???
+
+    :nurse: <<unnamed>> $female
+
+    nurse <-- inayat : gone off with
 
 
 }
