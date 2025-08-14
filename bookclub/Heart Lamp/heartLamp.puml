@@ -319,7 +319,13 @@ package "Heart Lamp" {
 }
 
 package "High-Heeled Shoe" {
-    :Nayaz Khan: as nayaz $male
+    :Nayaz Khan: as nayaz $male_protagonist 
+    :Mehaboob Khan: as mehaboob $male 
+    mehaboob --> nayaz : brother 
+    :Naseema: as shoeNaseema $female 
+    shoeNaseema --> nayaz : sister-in-law 
+    :Rajeeva: as rajeeva $female 
+    nayaz <-- rajeeva : colleague 
 }
 
 
