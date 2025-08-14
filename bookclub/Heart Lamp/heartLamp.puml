@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 43.1% (Heart Lamp)
+legend : 48.5% (High-Heeled Shoe)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -304,7 +304,7 @@ package "Heart Lamp" {
     amaanWife --> amaan : wife
 
     :Inayat: as inayat  $male
-    mehrunFamily . inayat  : <<ex>> husband
+    mehrunFamily . inayat  : husband
 
     :baby: as mehrunBaby <<unnamed>> $female
 
@@ -315,13 +315,13 @@ package "Heart Lamp" {
 
     :nurse: <<unnamed>> $female
 
-    nurse <-- inayat : gone off with 
-    
-    :Salma: as salma $female 
-    mehrunFamily -- salma : daughter 
-
-
+    nurse <-- inayat : gone off with
 }
+
+package "High-Heeled Shoe" {
+    :Nayaz Khan: as nayaz
+}
+
 
 @enduml
 
