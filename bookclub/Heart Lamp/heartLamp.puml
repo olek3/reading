@@ -344,6 +344,7 @@ package "Soft Whispers" {
  :Abbajaan:
  :Ajji: as grandmother $female 
  me <-- grandmother : grandmother 
+ note on link : son's daughter 
  :Ajja: as grandfather $male 
  
 }
