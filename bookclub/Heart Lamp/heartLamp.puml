@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 57.9% (Soft Whispers)
+legend : 58.1% (Soft Whispers)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -334,10 +334,13 @@ package "High-Heeled Shoe" {
 }
 
 package "Soft Whispers" {
- :me: as me $female_protagonist 
+ :me: as me <<unnamed>> $female_protagonist 
  :Abid: $male 
  :Mujawar: <<unnamed>> $male
  Abid --> Mujawar : son 
+ :Ammi: as ammi <<unnamed>> $female 
+ 
+ me --> ammi : daughter 
  
 }
 
