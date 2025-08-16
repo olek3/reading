@@ -334,6 +334,10 @@ package "High-Heeled Shoe" {
 }
 
 package "Soft Whispers" {
+ :me: as me $female_protagonist 
+ :Abid: $male 
+ :Mujawar: <<unnamed>> $male
+ Abid --> Mujawar : son 
  
 }
 
