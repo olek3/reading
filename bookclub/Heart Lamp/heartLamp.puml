@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 50.0% (High-Heeled Shoe)
+legend : 57.9% (Soft Whispers)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -333,6 +333,9 @@ package "High-Heeled Shoe" {
     mehaboob <-- shoeMunni : daughter 
 }
 
+package "Soft Whispers" {
+ 
+}
 
 @enduml
 
