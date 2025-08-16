@@ -341,6 +341,9 @@ package "Soft Whispers" {
  :Ammi: as ammi <<unnamed>> $female 
  
  me --> ammi : daughter 
+ :Abbajaan:
+ :Ajji: as grandmother $female 
+ me <-- grandmother : grandmother 
  
 }
 
