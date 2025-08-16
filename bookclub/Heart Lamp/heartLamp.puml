@@ -346,6 +346,7 @@ package "Soft Whispers" {
  me <-- grandmother : grandmother 
  note on link : son's daughter 
  :Ajja: as grandfather $male 
+ me <-- :Athe: : eldest 
  
 }
 
