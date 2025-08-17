@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 58.1% (Soft Whispers)
+legend : 59.2% (Soft Whispers)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -334,20 +334,36 @@ package "High-Heeled Shoe" {
 }
 
 package "Soft Whispers" {
- :me: as me <<unnamed>> $female_protagonist 
- :Abid: $male 
- :Mujawar: <<unnamed>> $male
- Abid --> Mujawar : son 
- :Ammi: as ammi <<unnamed>> $female 
- 
- me --> ammi : daughter 
- :Abbajaan:
- :Ajji: as grandmother $female 
- me <-- grandmother : grandmother 
- note on link : son's daughter 
- :Ajja: as grandfather $male 
- me <-- :Athe: : eldest 
- 
+    :me: as me <<unnamed>> $female_protagonist
+    :Abid: as abid $male
+    :Mujawar: as mujawar <<unnamed>> $male
+    abid --> mujawar : son
+    :Ammi: as ammi <<unnamed>> $female
+
+    me --> ammi : daughter
+    :Abbajaan:
+
+
+    ' me -- theVillage : grandparent's village
+
+    :Ajji: as grandmother <<unnamed>> $female
+    ' theVillage -- grandmother : grandmother
+    :Ajja: as grandfather <<unnamed>> $male
+    ' note on link : son's daughter
+    ' theVillage -- grandfather : grandfather
+    me  <-- :Athe: : eldest
+
+    :Asiya Athe: as asiya $female
+    :Noori Athe: as noori
+
+    :father: as meFather <<unnamed>> $male
+
+    me <-- meFather : father
+
+    meFather --> grandfather : son
+    meFather --> grandmother : son
+    :Ghani: $male
+
 }
 
 @enduml
