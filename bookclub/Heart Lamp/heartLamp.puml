@@ -341,12 +341,10 @@ package "Soft Whispers" {
     :Ammi: as ammi <<unnamed>> $female
 
     me --> ammi : daughter
-    :Abbajaan:
-
 
     ' me -- theVillage : grandparent's village
 
-    :Ajji: as grandmother <<unnamed>> $female
+    :Jamaal Bi: as grandmother <<Ajji>> $female
     ' theVillage -- grandmother : grandmother
     :Ajja: as grandfather <<unnamed>> $male
     ' note on link : son's daughter
@@ -354,9 +352,9 @@ package "Soft Whispers" {
     me  <-- :Athe: : eldest
 
     :Asiya Athe: as asiya $female
-    :Noori Athe: as noori
+    :Noori Athe: as noori $female
 
-    :father: as meFather <<unnamed>> $male
+    :Abbajaan: as meFather <<unnamed>> $male
 
     me <-- meFather : father
 
@@ -364,6 +362,9 @@ package "Soft Whispers" {
     meFather --> grandmother : son
     :Ghani: $male
     :Hamid: as lampHamid $male 
+    :Jaffar Baba: as jaffar $male 
+    grandmother <-- jaffar : sibling 
+    
 }
 
 @enduml
