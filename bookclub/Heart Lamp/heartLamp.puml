@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 59.2% (Soft Whispers)
+legend : 61% (Soft Whispers)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -361,14 +361,16 @@ package "Soft Whispers" {
     meFather --> grandfather : son
     meFather --> grandmother : son
     :Ghani: $male
-    :Hamid: as lampHamid $male 
-    :Jaffar Baba: as jaffar $male 
-    grandmother <-- jaffar : sibling 
-    :Qasim Bi: as qasim $female 
+    :Hamid: as lampHamid $male
+    :Jaffar Baba: as jaffar $male
+    grandmother <-- jaffar : sibling
+    :Qasim Bi: as qasim $female
     grandmother <-- qasim : between
-    jaffar <- qasim : between 
+    jaffar <- qasim : between
     :Safiya: $female
-    
+    :Safiya: <==> me : ??
+
+
 }
 
 @enduml
