@@ -363,7 +363,7 @@ package "Soft Whispers" {
     meFather --> grandfather : son
     meFather --> grandmother : son
     :Ghani: $male
-
+    :Hamid: as lampHamid $male 
 }
 
 @enduml
