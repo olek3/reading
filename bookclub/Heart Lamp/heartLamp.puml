@@ -364,6 +364,9 @@ package "Soft Whispers" {
     :Hamid: as lampHamid $male 
     :Jaffar Baba: as jaffar $male 
     grandmother <-- jaffar : sibling 
+    :Qasim Bi: as qasim $female 
+    grandmother <-- qasim : between
+    jaffar <- qasim : between
     
 }
 
