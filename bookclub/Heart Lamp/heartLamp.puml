@@ -369,6 +369,9 @@ package "Soft Whispers" {
     jaffar <- qasim : between
     :Safiya: $female
     :Safiya: <==> me : ??
+    :unnamed: as shanbhogInLaw <<unamed>> $female
+    :Shanbhog: <-- shanbhogInLaw : daughter-in-law 
+    
 
 
 }
