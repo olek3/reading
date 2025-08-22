@@ -373,6 +373,8 @@ package "Soft Whispers" {
     :Shanbhog: <-- shanbhogInLaw : daughter-in-law 
     
     :Rehman Chikkappa: as rehman $male
+    :Zubeida: as zubeida $female 
+    rehman <-- zubeida : wife 
 
 
 }
