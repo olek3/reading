@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 67.1% (A Taste of Heaven)
+legend : 68.3% (A Taste of Heaven)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -393,7 +393,7 @@ package "A Taste of Heaven" {
 
     (Government secondary school) as school <<institution>>
 
-    saadat -- school : Urdu teacher
+   school -- saadat : Urdu teacher
 
     sameem -> saadat : wife
 
@@ -414,6 +414,13 @@ package "A Taste of Heaven" {
 
     arif <-- arifWife : wife
     saadat <-- arif : brother
+    
+    :Saadat's mother: as saadatMother <<unnamed>> $female 
+:Saadat's father: as saadatFather <<unnamed>> $male 
+    :Bi Dadi: as saadatAunt <<unnamed>> $female 
+    saadat <-- saadatFather : father
+        saadat <-- saadatMother : mother 
+        saadatFather <-- saadatAunt : younger sister
 
 }
 
