@@ -427,7 +427,7 @@ package "A Taste of Heaven" {
 package "The shroud" {
 :Shaziya: as shaziya $female_protagonist 
 :Shaziya's mother: as shaziyaMother <<unamed>> $female 
-
+shaziya <-- shaziyaMother: mother 
 }
 
 @enduml
