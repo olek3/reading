@@ -381,7 +381,7 @@ package "Soft Whispers" {
 }
 
 package "A Taste of Heaven" {
-    :Sameem Banu: as sameem $female_protagonist
+    :Sameem Banu: as sameem $female
 
     (family) as sameemFamily <<group>>
 
@@ -417,7 +417,7 @@ package "A Taste of Heaven" {
     
     :Saadat's mother: as saadatMother <<unnamed>> $female 
 :Saadat's father: as saadatFather <<unnamed>> $male 
-    :Bi Dadi: as saadatAunt <<unnamed>> $female 
+    :Bi Dadi: as saadatAunt <<unnamed>> $female_protagonist
     saadat <-- saadatFather : father
         saadat <-- saadatMother : mother 
         saadatFather <-- saadatAunt : younger sister
