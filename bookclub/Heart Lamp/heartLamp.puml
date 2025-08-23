@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 68.3% (A Taste of Heaven)
+legend : 74.0% (The shroud)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -421,13 +421,16 @@ package "A Taste of Heaven" {
     saadat <-- saadatFather : father
         saadat <-- saadatMother : mother 
         saadatFather <-- saadatAunt : younger sister
-
+:husband: as biDadiHusband <<unnamed>> <<dead>> $male 
+saadatAunt <-- biDadiHusband : husband 
 }
 
 package "The shroud" {
 :Shaziya: as shaziya $female_protagonist 
 :Shaziya's mother: as shaziyaMother <<unamed>> $female 
 shaziya <-- shaziyaMother: mother 
+:Farman:
+: husband: as shaziyaHusband <<unnamed>> $male
 }
 
 @enduml
