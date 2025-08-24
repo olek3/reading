@@ -9,7 +9,7 @@ show <<current>>
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 74.3% (The shroud)
+legend : 74.6% (The shroud)
 
 
 package "Stone Slabs for Shaista Mahal"  <<finished>> {
@@ -434,15 +434,17 @@ package "The shroud" <<current>> {
     :Shaziya's mother: as shaziyaMother <<unamed>> $female
     shaziya <-- shaziyaMother: mother
     :Farman: as farman $male
-    : husband: as shaziyaHusband <<mentioned>> <<unnamed>> $male
+    :Subhan: as shaziyaHusband <<mentioned>> $male
     :Altaf: $male
-    note top : messenger
+
     shaziya <-- farman: son
     shaziya <-- shaziyaHusband: husband
 
-    :Yaseen Bua: as yaseen $female
+    :Yaseen Bua: as yaseen <<dead>> $female
 
     yaseen --> shaziya : gave shroud
+
+    Altaf --> yaseen : son
 }
 
 @enduml
