@@ -429,8 +429,12 @@ package "The shroud" {
 :Shaziya: as shaziya $female_protagonist 
 :Shaziya's mother: as shaziyaMother <<unamed>> $female 
 shaziya <-- shaziyaMother: mother 
-:Farman:
-: husband: as shaziyaHusband <<unnamed>> $male
+:Farman: as farman $male
+: husband: as shaziyaHusband <<mentioned>> <<unnamed>> $male
+:Altaf: $male 
+note top : messenger 
+shaziya <-- farman: son
+shaziya <-- shaziyaHusband: husband 
 }
 
 @enduml
