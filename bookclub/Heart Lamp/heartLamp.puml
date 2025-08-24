@@ -5,7 +5,7 @@
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 74.0% (The shroud)
+legend : 74.1% (The shroud)
 
 
 package "Stone Slabs for Shaista Mahal"  {
@@ -416,25 +416,25 @@ package "A Taste of Heaven" {
     saadat <-- arif : brother
     
     :Saadat's mother: as saadatMother <<unnamed>> $female 
-:Saadat's father: as saadatFather <<unnamed>> $male 
+    :Saadat's father: as saadatFather <<unnamed>> $male
     :Bi Dadi: as saadatAunt <<unnamed>> $female_protagonist
     saadat <-- saadatFather : father
-        saadat <-- saadatMother : mother 
-        saadatFather <-- saadatAunt : younger sister
-:husband: as biDadiHusband <<unnamed>> <<dead>> $male 
-saadatAunt <-- biDadiHusband : husband 
+    saadat <-- saadatMother : mother
+    saadatFather <-- saadatAunt : younger sister
+    :husband: as biDadiHusband <<unnamed>> <<dead>> $male
+    saadatAunt <-- biDadiHusband : husband
 }
 
 package "The shroud" {
-:Shaziya: as shaziya $female_protagonist 
-:Shaziya's mother: as shaziyaMother <<unamed>> $female 
-shaziya <-- shaziyaMother: mother 
-:Farman: as farman $male
-: husband: as shaziyaHusband <<mentioned>> <<unnamed>> $male
-:Altaf: $male 
-note top : messenger 
-shaziya <-- farman: son
-shaziya <-- shaziyaHusband: husband 
+    :Shaziya: as shaziya $female_protagonist
+    :Shaziya's mother: as shaziyaMother <<unamed>> $female
+    shaziya <-- shaziyaMother: mother
+    :Farman: as farman $male
+    : husband: as shaziyaHusband <<mentioned>> <<unnamed>> $male
+    :Altaf: $male
+    note top : messenger
+    shaziya <-- farman: son
+    shaziya <-- shaziyaHusband: husband
 }
 
 @enduml
