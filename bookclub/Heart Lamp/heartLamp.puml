@@ -3,12 +3,16 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 !include $stylePath/reading.iuml
 
+skinparam package<<current>>backgroundcolor technology
+
+show <<current>>
+
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 74.1% (The shroud)
+legend : 74.3% (The shroud)
 
 
-package "Stone Slabs for Shaista Mahal"  {
+package "Stone Slabs for Shaista Mahal"  <<finished>> {
 
     :Zeenat: as i <<narrator>> $female_protagonist
     :Mujahid: as mujahid $male
@@ -47,7 +51,7 @@ package "Stone Slabs for Shaista Mahal"  {
 
 }
 
-package "Fire Rain" {
+package "Fire Rain"  <<finished>> {
     (mosque) <<institution>>
     :Usman Saheb: as usman $male_protagonist
 
@@ -103,7 +107,7 @@ package "Fire Rain" {
     :DC: <--- usman : addressed
 }
 
-package "Black Cobras" {
+package "Black Cobras" <<finished>> {
 
     (madrasa) <<institution>>
     :Tarannum: as tarannum  $female
@@ -168,7 +172,7 @@ package "Black Cobras" {
 
 }
 
-package "A decision of the Heart" {
+package "A decision of the Heart" <<finished>> {
     :Yusuf: as yusuf $male_protagonist
     :Mehaboob Bi: as yusufMother  $female_protagonist
     yusuf <-- yusufMother : mother
@@ -225,7 +229,7 @@ package "A decision of the Heart" {
     hafiza - guests : mohalla's old woman
 }
 
-package "Red Lungi" {
+package "Red Lungi" <<finished>> {
     :Razia: as razia $female_proragonist
     :Latif Ahmad: as latif $male
     razia <-- latif : husband
@@ -269,7 +273,7 @@ package "Red Lungi" {
 
 
 }
-package "Heart Lamp" {
+package "Heart Lamp" <<finished>> {
     :Mehrun: as mehrun $female_protagonist
 
     (Parent's house) as mehrunParents <<group>>
@@ -318,7 +322,7 @@ package "Heart Lamp" {
     nurse <-- inayat : gone off with
 }
 
-package "High-Heeled Shoe" {
+package "High-Heeled Shoe" <<finished>> {
     :Nayaz Khan: as nayaz $male_protagonist 
     :Mehaboob Khan: as mehaboob $male 
     mehaboob --> nayaz : brother 
@@ -333,7 +337,7 @@ package "High-Heeled Shoe" {
     mehaboob <-- shoeMunni : daughter 
 }
 
-package "Soft Whispers" {
+package "Soft Whispers" <<finished>> {
     :me: as me <<unnamed>> $female_protagonist
     :Abid: as abid $male
     :Mujawar: as mujawar <<unnamed>> $male
@@ -380,7 +384,7 @@ package "Soft Whispers" {
     asiyaDaughter --> asiya : daughter 
 }
 
-package "A Taste of Heaven" {
+package "A Taste of Heaven" <<finished>> {
     :Sameem Banu: as sameem $female
 
     (family) as sameemFamily <<group>>
@@ -425,7 +429,7 @@ package "A Taste of Heaven" {
     saadatAunt <-- biDadiHusband : husband
 }
 
-package "The shroud" {
+package "The shroud" <<current>> {
     :Shaziya: as shaziya $female_protagonist
     :Shaziya's mother: as shaziyaMother <<unamed>> $female
     shaziya <-- shaziyaMother: mother
@@ -435,6 +439,10 @@ package "The shroud" {
     note top : messenger
     shaziya <-- farman: son
     shaziya <-- shaziyaHusband: husband
+
+    :Yaseen Bua: as yaseen $female
+
+    yaseen --> shaziya : gave shroud
 }
 
 @enduml
