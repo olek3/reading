@@ -1,0 +1,468 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+skinparam package<<current>>backgroundcolor technology
+
+show <<current>>
+
+title Heart Lamp by Banu Mushtaq
+mainframe characters
+legend : 77.7% (The Shroud)
+
+
+package "Stone Slabs for Shaista Mahal"  <<finished>> {
+
+    :Zeenat: as i <<narrator>> $female_protagonist
+    :Mujahid: as mujahid $male
+
+
+    i <-- mujahid : home person 
+    
+    :Iftikhar Ahmed: as ahmed $male 
+    mujahid <-- ahmed : new aquaintance 
+    
+    :Cheluva: $male
+    
+    Cheluva --> i : help? 
+    
+    (Ahmed family) as ahmeds <<group>> 
+    ahmed -- ahmeds
+    :Shaista: <<dead>> $female 
+    Shaista -- ahmeds : wife 
+    
+    :woman: <<unnamed>> $female 
+    woman -- ahmeds : new wife 
+    
+    :Asifa: $female 
+    ahmeds - Asifa : eldest daughter 
+    
+	 ahmeds --    :Sallu: : a child 
+	 ahmeds -- :Immu:  : a child
+ 	ahmeds -- :Naveen:  : a child
+	 ahmeds -- :Kamal:  : a child 
+	
+	:baby: <<unnamed>> $male 
+	baby - ahmeds : newborn 
+	
+	 :amma: as mother <<unnamed>> <<dead>> $female 
+	mother -> i : mother 
+
+}
+
+package "Fire Rain"  <<finished>> {
+    (mosque) <<institution>>
+    :Usman Saheb: as usman $male_protagonist
+
+    :Arifa: as arifa $female
+
+    :Ansar: as ansar $male
+
+    mosque -- usman : mutawali
+    usman <-- arifa : wife
+
+    ansar -> usman : son
+    ansar -> arifa : son
+    'usman <- ansar : son
+    'arifa <- ansar : son
+
+    :Jameela: as jameela $female
+    :husband: as jameelaHusband <<unnamed>> $male
+
+    usman <- jameela  : youngest sister
+    jameelaHusband --> jameela
+
+    :Sakeena: as sakeena $female
+    :Syed Abrar: as sakeenaCompany $male
+
+    usman <-- sakeena : eldest sister
+    sakeena <-- sakeenaCompany : son
+
+    :Dawood: $male
+
+    Dawood --> usman : right-hand man
+
+    (supplicants) <<group>>
+
+    :Saabjaan: $male
+
+    usman -- supplicants : sees
+
+    supplicants -- Saabjaan : daughter's wedding
+
+    sakeena - supplicants : son's employment
+
+    :Nisar: <<dead>> $male
+     Nisar -- mosque  : committed to paint
+
+    :Umar: $male
+
+     Umar <--> Nisar: somehow related
+
+    :Shankar: -- mosque  : troublemaker
+
+    :DC: <<unnamed>> $male
+
+    :DC: <--- usman : addressed
+}
+
+package "Black Cobras" <<finished>> {
+
+    (madrasa) <<institution>>
+    :Tarannum: as tarannum  $female
+    :Rafiya: as rafiya $female
+
+    tarannum <-- rafiya : mother
+
+    :Hasina: as hasina $female
+    :Aashraf: as hasinaMother  $female_protagonist
+
+    hasina <-- hasinaMother : mother
+
+    :Rafi: as rafi $male
+    :Waseema: as waseema $female
+
+    rafi <-- waseema : mother
+
+    :Hamid: as hamid $male
+    :Hamid's mother: as hamidMother <<unnamed>> $female
+
+    hamid <-- hamidMother : mother
+
+    madrasa -- rafi
+    madrasa -- hamid
+
+    :Majida: as majida $female
+    :Abdul Khader: as abdul $male
+    majida <-- abdul : father
+
+    :Amina: as amina $female
+    abdul <-- amina : wife
+
+    :Yakub: as yakub $male
+
+    hasinaMother <-- yakub : husband
+
+    :younger sister: as hasinaSister1 <<unnamed>> $female
+    :Munny: as hasinaSister2  <<dead>> $female
+
+    hasinaSister1 --> hasina : younger sister
+    hasinaSister2 --> hasina : younger sister
+
+    :Zulekha Begum: as zulekha $female
+    :Zuleha husband: as zulekhaHusband <<unnamed>><<mentioned>> $male
+
+    zulekha <-- hasinaMother : worked for
+    zulekha <-- zulekhaHusband : husband 
+    
+    :Hanifa Chikkamma: $female
+    :Naseema: $female
+
+    :Qazi: $male
+    :daugher-in-law: as qaziInLaw <<unnamed>> $female
+
+    Qazi <-- qaziInLaw : daugher-in-law
+
+    :another Asifa: as asifa2 $female
+
+    :Amina's mother: as aminaMother <<unnamed>> $female
+
+    amina <-- aminaMother : mother
+
+}
+
+package "A decision of the Heart" <<finished>> {
+    :Yusuf: as yusuf $male_protagonist
+    :Mehaboob Bi: as yusufMother  $female_protagonist
+    yusuf <-- yusufMother : mother
+
+    :Akhila: as akhila $female_protagonist
+    akhila --> yusuf : wife
+
+    :Raja: as raja $male
+    :Munna: as munna $male
+    :Babu: as babu $male
+    :Chotu: as chotu $male
+
+    raja --> akhila : son
+    munna --> akhila : son
+    babu --> akhila : son
+    chotu --> akhila : son
+
+    :Hayat Khan: as hayat $male
+    yusuf <-- hayat : marriage broker
+    (grooms) <<group>>
+    hayat -- grooms : searched
+    :Hashim Saab: $male
+    grooms -- :Hashim Saab:
+
+    :Kareem Khan: as womaniser $male
+
+    :Razak: as peanatSeller $male
+    :wife: as peanatSellerWife <<unnamed>> <<mentioned>> $female
+
+    womaniser --> peanatSellerWife : seduced
+    peanatSeller -> womaniser : caught
+    peanatSeller <-- peanatSellerWife : wife
+    grooms -- womaniser
+
+    :Abdul Ghaffar: as gafar $male
+    :Roshmi: as roshmi $female
+    grooms -- gafar
+    gafar <-- roshmi : daugher
+
+    (neghbours) as guests <<group>>
+    guests - akhila : brought in
+
+    :Buden Saab: $male
+    guests -- :Buden Saab: : from the shop
+    :Salar Saab: $male
+    guests -- :Salar Saab: : from the two-storeyed house
+
+    :Begum: as begum $female
+    :Councillor Mohammed: as mohammed <<mentioned>> $male
+    guests -- begum
+    begum --> mohammed : wife
+
+    :Hafiza Bi: as hafiza $female
+    hafiza - guests : mohalla's old woman
+}
+
+package "Red Lungi" <<finished>> {
+    :Razia: as razia $female_proragonist
+    :Latif Ahmad: as latif $male
+    razia <-- latif : husband
+
+    :Hussain: as hussain $male
+
+    (help) <<group>>
+    (help) -- razia
+    :Amina: as aminaCook $female
+    aminaCook --> help : cook
+    :Arif:  $male
+
+    Arif --> aminaCook : son
+
+    :worker: as worker <<unnamed>> $male
+    :Farid: as farid $male
+
+    farid --> worker : son
+    worker --> help : worker
+
+    :Samad: $male
+    :Samad: --> razia : eldest son
+
+    (khatna) <<event>>
+
+    :Ibrahim: $male
+    :Abbas: $male
+
+    khatna -- Ibrahim : special guest
+    khatna -- Abbas : volunteer
+
+    :Subhan: $male
+    :Subhan: -- khatna : cryed
+
+    :Sami: $male
+    :Sami: -- khatna : another volunteer
+
+    :Dr Prakash: as surgeon $male
+
+    surgeon --> :Samad: : curcumcised
+
+
+}
+package "Heart Lamp" <<finished>> {
+    :Mehrun: as mehrun $female_protagonist
+
+    (Parent's house) as mehrunParents <<group>>
+    (family) as mehrunFamily <<group>>
+
+    mehrunParents -- mehrun
+    mehrun -- mehrunFamily
+
+    :Rabia: as rabia $female
+    :Amaan: as amaan $male
+    rabia <-- amaan : father
+    amaan --> mehrunParents  : second eldest brother
+
+    :Athige: as athige $female
+    mehrunFamily -- athige : her eldest
+
+    :Mother: as mehrunMother <<unnamed>> $female
+    :Father: as mehrunFather <<unnamed>> $male
+    :Eldest brother: as mehrunBrother <<unnamed>> $male
+    :Atif: as atif $male
+
+    mehrunBrother -- mehrunParents : eldest brother
+    atif -- mehrunParents : younger brother
+
+    mehrunFather -> mehrunParents : father
+    mehrunParents <- mehrunMother : mother
+
+    :Eldest Brother wife: as mehrunBrotherWife <<unnamed>> $female
+    mehrunBrotherWife --> mehrunBrother : wife
+
+    :Amaan's wife: as amaanWife <<unnamed>> $female
+    amaanWife --> amaan : wife
+
+    :Inayat: as inayat  $male
+    mehrunFamily . inayat  : husband
+
+    :baby: as mehrunBaby <<unnamed>> $female
+
+    mehrunFamily -- mehrunBaby : daugher
+
+    :Farook: $male
+    note bottom: ???
+
+    :nurse: <<unnamed>> $female
+
+    nurse <-- inayat : gone off with
+}
+
+package "High-Heeled Shoe" <<finished>> {
+    :Nayaz Khan: as nayaz $male_protagonist 
+    :Mehaboob Khan: as mehaboob $male 
+    mehaboob --> nayaz : brother 
+    :Naseema: as shoeNaseema $female 
+    shoeNaseema --> nayaz : sister-in-law 
+    :Rajeeva: as rajeeva $female 
+    nayaz <-- rajeeva : colleague 
+    :Asifa: as shoeAsifa $female 
+    nayaz <-- shoeAsifa : wife 
+    mehaboob <- shoeNaseema : wife 
+    :Munni: as shoeMunni $female 
+    mehaboob <-- shoeMunni : daughter 
+}
+
+package "Soft Whispers" <<finished>> {
+    :me: as me <<unnamed>> $female_protagonist
+    :Abid: as abid $male
+    :Mujawar: as mujawar <<unnamed>> $male
+    abid --> mujawar : son
+    :Ammi: as ammi <<unnamed>> $female
+
+    me --> ammi : daughter
+
+    ' me -- theVillage : grandparent's village
+
+    :Jamaal Bi: as grandmother <<Ajji>> $female
+    ' theVillage -- grandmother : grandmother
+    :Ajja: as grandfather <<unnamed>> $male
+    ' note on link : son's daughter
+    ' theVillage -- grandfather : grandfather
+    me  <-- :Athe: : eldest
+
+    :Asiya Athe: as asiya $female
+    :Noori Athe: as noori $female
+
+    :Abbajaan: as meFather <<unnamed>> $male
+
+    me <-- meFather : father
+
+    meFather --> grandfather : son
+    meFather --> grandmother : son
+    :Ghani: $male
+    :Hamid: as lampHamid $male
+    :Jaffar Baba: as jaffar $male
+    grandmother <-- jaffar : sibling
+    :Qasim Bi: as qasim $female
+    grandmother <-- qasim : between
+    jaffar <- qasim : between
+    :Safiya: $female
+    :Safiya: <=> me : ?? is it her?
+    :unnamed: as shanbhogInLaw <<unamed>> $female
+    :Shanbhog: <-- shanbhogInLaw : daughter-in-law 
+    
+    :Rehman Chikkappa: as rehman $male
+    :Zubeida: as zubeida $female 
+    rehman <-- zubeida : wife 
+    
+    :daughter: as asiyaDaughter <<unnamed>> $female 
+    asiyaDaughter --> asiya : daughter 
+}
+
+package "A Taste of Heaven" <<finished>> {
+    :Sameem Banu: as sameem $female
+
+    (family) as sameemFamily <<group>>
+
+     sameemFamily -- sameem
+
+    :Saadat: as saadat $male
+
+    sameemFamily -- saadat
+
+    (Government secondary school) as school <<institution>>
+
+   school -- saadat : Urdu teacher
+
+    sameem -> saadat : wife
+
+    :Azeem: as azeem $male
+
+    azeem -- sameemFamily : eldest child
+
+    :Aseeema: as aseema $female
+    :Sana: as sana $female
+
+    aseema -- sameemFamily : daughter
+    sana -- sameemFamily : yuongest daughter
+
+    :Arif: as arif $male
+
+    sameem <-- arif : youngest brother-in-law
+    :Arif's wife: as arifWife <<unnamed>> $female
+
+    arif <-- arifWife : wife
+    saadat <-- arif : brother
+    
+    :Saadat's mother: as saadatMother <<unnamed>> $female 
+    :Saadat's father: as saadatFather <<unnamed>> $male
+    :Bi Dadi: as saadatAunt <<unnamed>> $female_protagonist
+    saadat <-- saadatFather : father
+    saadat <-- saadatMother : mother
+    saadatFather <-- saadatAunt : younger sister
+    :husband: as biDadiHusband <<unnamed>> <<dead>> $male
+    saadatAunt <-- biDadiHusband : husband
+}
+
+package "The shroud" <<current>> {
+    :Shaziya: as shaziya $female_protagonist
+    :Shaziya's mother: as shaziyaMother <<unamed>> $female
+    shaziya <-- shaziyaMother: mother
+    :Farman: as farman $male
+    :Subhan: as shaziyaHusband  $male
+    :Altaf: $male
+
+    shaziya <-- farman: son
+    shaziya <-- shaziyaHusband: husband
+
+    :Yaseen Bua: as yaseen <<dead>> $female
+
+    yaseen --> shaziya : gave shroud
+
+    Altaf --> yaseen : son
+
+    :husband: as yaseenHusband <<dead>> <<mentioned>> $male
+
+    yaseenHusband ..> yaseen : husband
+    :daughter: as yaseenDaughter <<unnamed>> $female
+    yaseenDaughter --> yaseen : daughter 
+    
+    :Zainab: $female 
+
+    (Haji) <<event>>
+
+    shaziya -- (Haji)
+    (Haji) -- shaziyaHusband
+
+    :Zainab: -- (Haji) : stealing water
+}
+
+@enduml
+
+
+
