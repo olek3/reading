@@ -442,7 +442,7 @@ package "The shroud" <<current>> {
 
     :Yaseen Bua: as yaseen <<dead>> $female
 
-    yaseen --> shaziya : gave shroud
+    yaseen --> shaziya : asked for shroud (a.k.a. kafan)
 
     Altaf --> yaseen : son
 
