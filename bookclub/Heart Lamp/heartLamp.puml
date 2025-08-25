@@ -434,7 +434,7 @@ package "The shroud" <<current>> {
     :Shaziya's mother: as shaziyaMother <<unamed>> $female
     shaziya <-- shaziyaMother: mother
     :Farman: as farman $male
-    :Subhan: as shaziyaHusband <<mentioned>> $male
+    :Subhan: as shaziyaHusband  $male
     :Altaf: $male
 
     shaziya <-- farman: son
@@ -453,7 +453,13 @@ package "The shroud" <<current>> {
     yaseenDaughter --> yaseen : daughter 
     
     :Zainab: $female 
-    note bottom: stealing water 
+
+    (Haji) <<event>>
+
+    shaziya -- (Haji)
+    (Haji) -- shaziyaHusband
+
+    :Zainab: -- (Haji) : stealing water
 }
 
 @enduml
