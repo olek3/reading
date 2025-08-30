@@ -9,7 +9,7 @@ show <<current>>
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 85.7% (The Arabic Teacher and Gobi Manchuri)
+legend : 86.5% (The Arabic Teacher and Gobi Manchuri)
 
 
 package "Stone Slabs for Shaista Mahal"  <<finished>> {
@@ -507,8 +507,14 @@ package "The Arabic Teacher and Gobi Manchuri" <<current>> {
 
     :sister-in-law: as asarabicInlaw <<unnamed>> $female
 
-    asarabicInlaw --> arabicProtagoinst : sister-
+    asarabicInlaw --> arabicProtagoinst : sister-in-law
 
+    :Abdoul Subhan: as oldClient $male
+
+    oldClient --> arabicProtagoinst : old client
+
+    :Saleema Jaan: as oldCook $female
+    arabicProtagoinst <-- oldCook : previous(?) cook
 
 } 
 
