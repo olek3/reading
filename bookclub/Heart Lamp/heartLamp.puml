@@ -9,7 +9,7 @@ show <<current>>
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 86.5% (The Arabic Teacher and Gobi Manchuri)
+legend : 88.7% (The Arabic Teacher and Gobi Manchuri)
 
 
 package "Stone Slabs for Shaista Mahal"  <<finished>> {
@@ -515,8 +515,13 @@ package "The Arabic Teacher and Gobi Manchuri" <<current>> {
 
     :Saleema Jaan: as oldCook $female
     arabicProtagoinst <-- oldCook : previous(?) cook
-
+:wife: 
+:her brother: 
 } 
+
+package "Be a Woman Once, Oh Lord" {
+
+}
 
 @enduml
 
