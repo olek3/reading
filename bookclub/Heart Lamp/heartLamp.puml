@@ -3,13 +3,14 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 !include $stylePath/reading.iuml
 
+scale max 8192*8192
 skinparam package<<current>>backgroundcolor technology
 
 show <<current>>
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 77.7% (The Shroud)
+legend : 100%
 
 
 package "Stone Slabs for Shaista Mahal"  <<finished>> {
@@ -429,7 +430,7 @@ package "A Taste of Heaven" <<finished>> {
     saadatAunt <-- biDadiHusband : husband
 }
 
-package "The shroud" <<current>> {
+package "The shroud" <<finished>> {
     :Shaziya: as shaziya $female_protagonist
     :Shaziya's mother: as shaziyaMother <<unamed>> $female
     shaziya <-- shaziyaMother: mother
@@ -442,7 +443,7 @@ package "The shroud" <<current>> {
 
     :Yaseen Bua: as yaseen <<dead>> $female
 
-    yaseen --> shaziya : gave shroud
+    yaseen --> shaziya : asked for shroud (a.k.a. kafan)
 
     Altaf --> yaseen : son
 
@@ -460,6 +461,89 @@ package "The shroud" <<current>> {
     (Haji) -- shaziyaHusband
 
     :Zainab: -- (Haji) : stealing water
+    
+    :Saba: as saba $female
+    :Saba's mother: as sabaMother $female
+
+    farman <-- saba : wife
+    saba <-- sabaMother : mother
+}
+
+package "The Arabic Teacher and Gobi Manchuri" <<finished>> {
+    :I: as arabicProtagoinst <<narrator>> $female_protagonist
+    :husband: as arabicHusband <<unnamed>> $male
+    (Husband's family) as husbandFamily <<group>>
+
+    :Asiya: as daughter1  $female
+    :Aamina: as daughter2  $female
+
+    husbandFamily -- arabicHusband
+    arabicHusband --> arabicProtagoinst : husband
+
+    arabicProtagoinst <-- daughter1 : daughter
+    arabicProtagoinst <-- daughter2 : daughter
+
+    :Imaad: as imaad $male
+
+    imaad -> arabicProtagoinst : younger brother
+
+    (Colleauges) <<group>>
+
+    arabicProtagoinst - (Colleauges)
+
+    :Gowri: as gowri $female
+    :Vivek: as vivek $male
+
+    gowri -- (Colleauges)
+    vivek -- (Colleauges)
+
+    :Hazrat: as teacher $male
+
+    daughter1 <-- teacher : teacher
+    daughter2 <-- teacher : teacher
+
+    :cook: <<unnamed>>
+
+    arabicProtagoinst <-- cook : cook
+
+    :sister-in-law: as asarabicInlaw <<unnamed>> $female
+
+    asarabicInlaw --> arabicProtagoinst : sister-in-law
+
+    :Abdoul Subhan: as oldClient $male
+
+    oldClient --> arabicProtagoinst : old client
+
+    :Saleema Jaan: as oldCook $female
+    arabicProtagoinst <-- oldCook : previous(?) cook
+    :wife: $female
+    :her brother: as arabicBrother $male
+     arabicProtagoinst <-- arabicBrother : came to
+     arabicBrother --> wife : brother
+     teacher -> wife : married at last
+} 
+
+package "Be a Woman Once, Oh Lord" <<finished>> {
+    :Protagonist: as lordProtagoinst <<unnamed>> $female_protagonist
+
+    :Amma: as lordMother <<unnamed>> <<dead>> $female
+    :Appa: as lordFather <<unnamed>> $male
+    :He: as lordHusband <<unnamed>> $male
+    :daughter: as lordDaughter <<unnamed>> $female
+    :boy: as lordBoy <<unnamed>> $male
+    :new girl: as lordGirl <<unnamed>> $female
+
+    lordMother --> lordProtagoinst : mother
+    lordFather --> lordProtagoinst : fater
+    lordProtagoinst <--- lordHusband : husband
+
+    lordProtagoinst --> lordDaughter : daughter
+    lordProtagoinst --> lordBoy : son
+
+    lordDaughter <-- lordHusband : daughter
+    lordBoy <-- lordHusband : son
+
+    lordHusband --> lordGirl : second wife
 }
 
 @enduml
