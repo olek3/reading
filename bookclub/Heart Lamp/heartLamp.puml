@@ -3,13 +3,14 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 !include $stylePath/reading.iuml
 
+scale max 8192*8192
 skinparam package<<current>>backgroundcolor technology
 
 show <<current>>
 
 title Heart Lamp by Banu Mushtaq
 mainframe characters
-legend : 88.7% (The Arabic Teacher and Gobi Manchuri)
+legend : 100%
 
 
 package "Stone Slabs for Shaista Mahal"  <<finished>> {
@@ -468,7 +469,7 @@ package "The shroud" <<finished>> {
     saba <-- sabaMother : mother
 }
 
-package "The Arabic Teacher and Gobi Manchuri" <<current>> {
+package "The Arabic Teacher and Gobi Manchuri" <<finished>> {
     :I: as arabicProtagoinst <<narrator>> $female_protagonist
     :husband: as arabicHusband <<unnamed>> $male
     (Husband's family) as husbandFamily <<group>>
@@ -515,12 +516,34 @@ package "The Arabic Teacher and Gobi Manchuri" <<current>> {
 
     :Saleema Jaan: as oldCook $female
     arabicProtagoinst <-- oldCook : previous(?) cook
-:wife: 
-:her brother: 
+    :wife: $female
+    :her brother: as arabicBrother $male
+     arabicProtagoinst <-- arabicBrother : came to
+     arabicBrother --> wife : brother
+     teacher -> wife : married at last
 } 
 
-package "Be a Woman Once, Oh Lord" {
+package "Be a Woman Once, Oh Lord" <<finished>> {
+    :Protagonist: as lordProtagoinst <<unnamed>> $female_protagonist
 
+    :Amma: as lordMother <<unnamed>> <<dead>> $female
+    :Appa: as lordFather <<unnamed>> $male
+    :He: as lordHusband <<unnamed>> $male
+    :daughter: as lordDaughter <<unnamed>> $female
+    :boy: as lordBoy <<unnamed>> $male
+    :new girl: as lordGirl <<unnamed>> $female
+
+    lordMother --> lordProtagoinst : mother
+    lordFather --> lordProtagoinst : fater
+    lordProtagoinst <--- lordHusband : husband
+
+    lordProtagoinst --> lordDaughter : daughter
+    lordProtagoinst --> lordBoy : son
+
+    lordDaughter <-- lordHusband : daughter
+    lordBoy <-- lordHusband : son
+
+    lordHusband --> lordGirl : second wife
 }
 
 @enduml
