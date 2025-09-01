@@ -48,6 +48,7 @@ package "A Self-Driving Car's thoughts" <<current>> <<things happen>> {
     :Indian truck: as truck 
     :German car: as german
     truck --> german : overtaking
+    Car <-- truck : blocking path
 }
 
 package "The Colonials" <<not started>><<nothing happens>> {
