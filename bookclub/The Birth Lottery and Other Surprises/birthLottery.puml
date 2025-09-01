@@ -1,0 +1,101 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+title The Birth Lottery and Other Surprises by Shenan Karunatilaka 
+mainframe characters
+legend:  0% (A Self-Driving Car's thoughts)
+
+'If you like stories with twists, try
+'Short Eats
+'Easy Tiger
+'Black Jack
+'Second Person
+'Baby Monitor
+
+package "Hugs" <<not started>><<things happen>> {
+
+}
+
+package "test" <<not started>> <<things happen>> {
+}
+
+
+package "No. One. Cares." <<not started>> <<things happen>> {
+
+}
+
+
+package "Love Pentangle" <<not started>> <<things happen>> {
+
+}
+
+package "Small Miracles" <<not started>> <<things happen>> {
+
+}
+
+package "Endthology" <<not started>> <<things happen>> {
+
+}
+
+package "Prison Riot" <<not started>> <<things happen>> {
+
+}
+
+package "A Self-Driving Car's thoughts" <<current>> <<things happen>> {
+    :Car: <<narrator>>
+    :Indian truck: as truck 
+    :German car: as german
+    truck --> german : overtaking
+}
+
+package "The Colonials" <<not started>><<nothing happens>> {
+}
+
+package "Staring at Sunsets" <<not started>><<nothing happens>> {
+}
+
+package "Malini" <<not started>><<nothing happens>> {
+}
+
+package "Ceylon Teas" <<not started>><<nothing happens>> {
+}
+
+package "This Thing" <<not started>><<nothing happens>> {
+}
+
+package "The Eyes" <<not started>><<force worldview>> {
+}
+
+package "Ceylon Islands" <<not started>><<force worldview>> {
+}
+
+package "Stale News" <<not started>><<force worldview>> {
+}
+
+package "Time Machine" <<not started>><<God>> {
+}
+
+package "If You’re Sad" <<not started>><<God>> {
+}
+
+package "Djibouti" <<not started>><<God>> {
+}
+
+package "Losing Bet" <<not started>><<God>> {
+}
+
+package "1969 Game" <<not started>><<Godless>> {
+}
+
+package "Assassin’s" <<not started>><<Godless>> {
+}
+
+package "Bodhi and Sattva" <<not started>><<Godless>> {
+}
+
+package "The Birth Lottery" <<not started>> <<hated>> {
+}
+
+@enduml
