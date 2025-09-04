@@ -5,28 +5,57 @@
 
 title The Birth Lottery and Other Surprises by Shenan Karunatilaka 
 mainframe characters
-legend:  5.5% (Easy Tiger)
+legend:  5.5% (Short Eats)
 
-'If you like stories with twists, try
-'Short Eats
-'Easy Tiger
-'Black Jack
-'Second Person
-'Baby Monitor 
+package "Short Eats" <<current>><<twists>> {
+}
+package "Black Jack" <<not started>><<twists>> {
+}
+package "Second Person" <<not started>><<twists>> {
+}
+package "Baby Monitor " <<not started>><<twists>> {
+}
 
-package "Easy Tiger" <<current>> <<twists>>{
-:Jegan: $male 
+package "Easy Tiger" <<finished>> <<twists>>{
+:Jegan: $male_protagonist
 :Nilakshi: $female 
-:Sulee: $female
-:Appa: 
-:sister:
+:Sulee: $female_protagonist
+:Appa: <<unnamed>><<mentioned>> $male
+:sister: <<unnamed>><<mentioned>> $female
 
-:Mikel: $male
-:Loku Nenda: $female
-:Appachchi: 
-:Manique: 
-:Malla: 
+Jegan <-- Appa : Appa
+Jegan <-- sister : sister
+
+:Loku Nenda: as nenda  <<mentioned>> $female
+:Appachchi: <<mentioned>> <<unnamed>> $male
+
+Sulee <-- Appachchi : relative
+Appachchi --> Jegan : got letter
+
+nenda --> Sulee : relative in Kandi
+
+:Mikel: <<mentioned>> $male
+:Manique: <<mentioned>>
+:Malla: <<mentioned>>
+
 :Mohan: $male
+Mohan --> Sulee : railway clerk
+
+Sulee <--> Jegan : text each other
+Jegan <- Nilakshi : lover
+
+(family) <<group>>
+(children) <<group>>
+(children) -- (family)
+
+Sulee -- (family) : wife
+(family) -- Jegan : husband
+
+Mikel - (children)
+Malla -- (children)
+(children) -- Manique
+
+
 }
 
 package "Hugs" <<not started>><<things happen>> {
@@ -58,22 +87,33 @@ package "Prison Riot" <<not started>> <<things happen>> {
 
 }
 
-package "A Self-Driving Car's thoughts" <<current>> <<things happen>> {
-    :Car: <<narrator>>
+package "A Self-Driving Car's thoughts" <<finished>> <<things happen>> {
+    :Car: <<narrator>> <<protagonist>>
     :Indian truck: as truck 
     :German car: as german
     truck --> german : overtaking
-    Car <-- truck : blocking path 
-   :Passenger: $female
-   :Truck Driver: as truckDriver 
-   :Truck Passenger: as truckPassenger 
-   :Stockbroker: $male
-   (Bus stand) as busStand <<location>> 
-   :Doctor: 
-:Teacher: $female
-:Beggar: 
-:School Van: 
-(rubbish dump) <<location>>
+    Car <- truck : blocking path
+    :Passenger: $female
+    :Truck Driver: as truckDriver 
+    :Truck Passenger: as truckPassenger
+    truckDriver --> truck : human driver
+    truckPassenger --> truck : passenger
+    :Stockbroker: $male
+    (Bus stand) as busStand <<location>> 
+    :Doctor: 
+    :Teacher: $female
+    :Beggar: 
+    :School Van: as van
+    van -> Car : behind
+    (rubbish dump) <<location>>
+    note right: 7 stray cats and 4 stray dogs
+    Car -- (rubbish dump) : to the right
+    busStand -- Car : to the left
+    Doctor -- busStand
+    Beggar -- busStand
+    Teacher -- busStand
+    german <-- Stockbroker : human driver
+    Car <-- Passenger
 }
 
 package "The Colonials" <<not started>><<nothing happens>> {
