@@ -1,0 +1,5 @@
+@startuml
+!include https://raw.githubusercontent.com/olek3/reading/refs/heads/club/birth-lottery/bookclub/The%20Birth%20Lottery%20and%20Other%20Surprises/birthLottery.puml
+@enduml
+
+

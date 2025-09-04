@@ -5,9 +5,16 @@
 
 title The Birth Lottery and Other Surprises by Shenan Karunatilaka 
 mainframe characters
-legend:  5.5% (Short Eats)
+legend:  5.6% (Short Eats)
 
 package "Short Eats" <<current>><<twists>> {
+    (cancer ward) <<institution>> as ward
+    :He: as he $male_protagonist
+    :his wife: as hisWife $female
+
+    ward - he
+    he <-- hisWife
+
 }
 package "Black Jack" <<not started>><<twists>> {
 }
