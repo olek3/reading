@@ -5,14 +5,29 @@
 
 title The Birth Lottery and Other Surprises by Shenan Karunatilaka 
 mainframe characters
-legend:  0% (A Self-Driving Car's thoughts)
+legend:  5.5% (Easy Tiger)
 
 'If you like stories with twists, try
 'Short Eats
 'Easy Tiger
 'Black Jack
 'Second Person
-'Baby Monitor
+'Baby Monitor 
+
+package "Easy Tiger" <<current>> <<twists>>{
+:Jegan: $male 
+:Nilakshi: $female 
+:Sulee: $female
+:Appa: 
+:sister:
+
+:Mikel: $male
+:Loku Nenda: $female
+:Appachchi: 
+:Manique: 
+:Malla: 
+:Mohan: $male
+}
 
 package "Hugs" <<not started>><<things happen>> {
 
@@ -48,7 +63,17 @@ package "A Self-Driving Car's thoughts" <<current>> <<things happen>> {
     :Indian truck: as truck 
     :German car: as german
     truck --> german : overtaking
-    Car <-- truck : blocking path
+    Car <-- truck : blocking path 
+   :Passenger: $female
+   :Truck Driver: as truckDriver 
+   :Truck Passenger: as truckPassenger 
+   :Stockbroker: $male
+   (Bus stand) as busStand <<location>> 
+   :Doctor: 
+:Teacher: $female
+:Beggar: 
+:School Van: 
+(rubbish dump) <<location>>
 }
 
 package "The Colonials" <<not started>><<nothing happens>> {
