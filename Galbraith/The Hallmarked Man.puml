@@ -7,12 +7,20 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 0% ()
+legend : 0% (Part One / 1)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
 :Robin Elacott: as robin $female_protagonist
 
+(Agency) <<institution>>
+
+
+strike -- (Agency) : owner & founder
+robin -- (Agency) : partner
+
+:Ryan Murphy: as murphy $male
+murphy --> robin : boyfriend
 
 
 @enduml
