@@ -1,0 +1,18 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 8192*8192
+
+title The Hallmarked man
+mainframe characters
+legend : 0% ()
+
+
+:Cormoran Blue Strike: as strike $male_protagonist
+:Robin Elacott: as robin $female_protagonist
+
+
+
+@enduml
