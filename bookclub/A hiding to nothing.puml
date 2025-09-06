@@ -1,0 +1,55 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 8192*8192
+
+title A hiding to Nothing by Chhimi Tenduf-La
+mainframe characters
+legend : p. 16 (two)
+
+:Neja Pinto: as neja $female 
+:mother-in-law: as motherInLaw <<unnamed>> $female 
+:Ramesh: as husband <<unnamed>> $male 
+:Devin: as son $male 
+:Johnny Dias: as Johnny $male 
+
+neja <-- motherInLaw : mother-in-law 
+neja <-- husband : husband 
+neja <-- son : son 
+son <-- Johnny : swimming coach 
+
+(party) <<event>> 
+
+party -- neja 
+
+:Rohan Ratnasiri: as rohan $male 
+rohan -- party: deputy minister 
+
+:Cassandra: $female 
+:Avanti: $female 
+
+Cassandra -- party: school mum 
+Avanti-- party: school mum 
+
+:bucket hat man: as bucketHat <<unnamed>> $male 
+:hijab woman: as hijab <<unnamed>> 
+
+son <-- bucketHat : kidnapped 
+son <-- hijab : kidnapped 
+
+(Neja's family when 13) as family13 <<group>> 
+
+family13 - neja 
+
+:Appa: <<unnamed>> $male
+:Ammi: <<unnamed>> $female 
+:Aunty Dilly: as aunty <<mentioned>> $female 
+family13 -- Appa 
+family13 -- Ammi 
+aunty -- family13 
+
+
+
+@enduml
