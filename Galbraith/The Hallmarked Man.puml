@@ -22,5 +22,8 @@ robin -- (Agency) : partner
 :Ryan Murphy: as murphy $male
 murphy --> robin : boyfriend
 
+:Lucy: $female 
+Lucy --> strike : sister 
+
 
 @enduml
