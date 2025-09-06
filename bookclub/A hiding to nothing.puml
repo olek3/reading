@@ -7,11 +7,11 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 20 (four)
+legend : p. 22 (four)
 
 :Neja Pinto: as neja $female 
 :mother-in-law: as motherInLaw <<unnamed>> $female
-note right : Loku Madam?
+note left : Loku Madam?
 :Ramesh: as husband  $male
 :Devin: as son $male 
 :Johnny Dias: as Johnny $male 
@@ -40,17 +40,30 @@ Avanti-- party: school mum
 son <-- bucketHat : kidnapped 
 son <-- hijab : kidnapped 
 
-(Neja's family when 13) as family13 <<group>> 
+"Sri Lanka, 2007" - neja
 
-family13 - neja 
+package  "Sri Lanka, 2007"  {
+    (Neja's family when 13) as family13 <<group>>
 
-:Appa: <<unnamed>> $male
-:Ammi: <<unnamed>> $female 
-:Aunty Dilly: as aunty <<mentioned>> $female 
-family13 -- Appa 
-family13 -- Ammi 
-aunty -- family13 
-neja <-- Johnny : what?
+
+    :Appa: <<unnamed>> $male
+    :Ammi: <<unnamed>> $female
+    :Aunty Dilly: as aunty <<mentioned>> $female
+    family13 -- Appa
+    family13 -- Ammi
+    aunty -- family13
+    neja <-- Johnny : what?
+
+    (school) <<institution>>
+    :Gamage: $female
+    :Priyath: <<mentioned>> $male
+    :Priyath's brother: as priyathBrother <<mentioned>> <<unnamed>> $male
+    Priyath <-- priyathBrother : brother
+    school -- Gamage : Principal
+    Gamage --> priyathBrother : expelled
+}
+
+
 
 
 @enduml
