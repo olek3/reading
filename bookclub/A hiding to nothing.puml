@@ -7,11 +7,11 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 30 (six)
+legend : p. 50 (nine)
 
 :Neja Pinto: as neja $female 
 :mother-in-law: as motherInLaw <<unnamed>> $female
-note left : Loku Madam?
+note right : Loku Madam?
 :Ramesh: as husband  $male
 :Devin: as son $male 
 :Johnny Dias: as Johnny $male 
@@ -44,8 +44,8 @@ package  "Sri Lanka, 2007"  {
     (Neja's family when 13) as family13 <<group>>
 
 
-    :Appa: <<unnamed>> $male
-    :Ammi: <<unnamed>> $female
+    :Appa: <<unnamed>> <<dead>> $male
+    :Ammi: <<unnamed>><<dead>> $female
     :Aunty Dilly: as aunty <<mentioned>> $female
     family13 -- Appa
     family13 -- Ammi
@@ -74,10 +74,15 @@ son -- kidnapping
 oldman - kidnapping : met after
 
 package "Sri Lanka, Sharja and London 2009 - 2015" {
+   (Ammi's parents) as najaGrands <<group>>
 }
 
-"Sri Lanka, Sharja and London 2009 - 2015" - neja
+neja -- "Sri Lanka, Sharja and London 2009 - 2015"
 
+Ammi <-- najaGrands : parents
+
+:Durham: <<mentioned>> $male
+Durham <-- husband: mentioned
 
 
 @enduml
