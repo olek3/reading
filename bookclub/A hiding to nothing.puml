@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 22 (four)
+legend : p. 29 (five)
 
 :Neja Pinto: as neja $female 
 :mother-in-law: as motherInLaw <<unnamed>> $female
@@ -37,8 +37,6 @@ Avanti-- party: school mum
 :bucket hat man: as bucketHat <<unnamed>> $male 
 :hijab woman: as hijab <<unnamed>> 
 
-son <-- bucketHat : kidnapped 
-son <-- hijab : kidnapped 
 
 "Sri Lanka, 2007" - neja
 
@@ -63,6 +61,17 @@ package  "Sri Lanka, 2007"  {
     Gamage --> priyathBrother : expelled
 }
 
+
+(kidnapping) <<event>>
+
+(kidnapping) <-- hijab : kidnapped
+(kidnapping) <-- bucketHat : kidnapped
+
+son -- kidnapping
+
+:Gamini: as oldman  $male
+
+oldman - kidnapping : met after
 
 
 
