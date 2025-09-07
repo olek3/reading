@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 55 (nine)
+legend : p. 72 (thirteen)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -100,5 +100,20 @@ motherInLaw <-- fatherInLaw : husband
 former ..> motherInLaw : former husband
 
 husband --> former : son and heir
+
+package "London, 2016" {
+    :Tanisha Whitney Wanikgesekera: as tanisha $female
+    :Pakistani cricketer: as cricketer $male
+    cricketer <-- tanisha : sleeps with
+}
+
+tanisha --> husband : bride
+
+:Camilla: $female
+former <-- :Camilla: : new wife
+:another son: as rameshBrother <<unnamed>> $male
+
+former <-- rameshBrother : son
+
 
 @enduml
