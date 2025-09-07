@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 29 (five)
+legend : p. 30 (six)
 
 :Neja Pinto: as neja $female 
 :mother-in-law: as motherInLaw <<unnamed>> $female
@@ -72,6 +72,11 @@ son -- kidnapping
 :Gamini: as oldman  $male
 
 oldman - kidnapping : met after
+
+package "Sri Lanka, Sharja and London 2009 - 2015" {
+}
+
+"Sri Lanka, Sharja and London 2009 - 2015" - neja
 
 
 
