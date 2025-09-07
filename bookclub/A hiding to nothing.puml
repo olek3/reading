@@ -7,16 +7,16 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 52 (nine)
+legend : p. 55 (nine)
 
-:Neja Pinto: as neja $female 
+:Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
 
 :Ramesh: as husband  $male
 :Devin: as son $male 
 :Johnny Dias: as Johnny $male 
 
-neja <-- motherInLaw : mother-in-law 
+neja <- motherInLaw : mother-in-law
 husband --> neja  : husband
 neja <-- son : son 
 son <-- Johnny : swimming coach 
@@ -94,5 +94,11 @@ motherInLaw <-- Popeye : works for
 :husband: as fatherInLaw <<unnamed>> $male
 
 motherInLaw <-- fatherInLaw : husband
+
+:Loku Madam's former: as former <<unnamed>> $male
+
+former ..> motherInLaw : former husband
+
+husband --> former : son and heir
 
 @enduml
