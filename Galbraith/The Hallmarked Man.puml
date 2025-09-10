@@ -30,4 +30,21 @@ Ted --> strike : uncle
 :Decima Mullins: as decima $female
 Agency -- decima : client 
 
+(Delamore Lodge) as delamore <<location>> 
+decima -- delamore : lives 
+
+:Valentine Longcaster: as Valentine <<mentioned>> $male
+decima <-- Valentine : brother 
+
+ :Charlotte Campbell: as Charlotte <<dead>> <<mentioned>> $female 
+ Charlotte --> strike : <<ex>>
+ 
+ :Sacha Legard: as Sacha $male 
+ 
+ decima <-- Sacha : involved 
+ 
+ :body: $male 
+ 
+ decima --> body : whants to know 
+ 
 @enduml
