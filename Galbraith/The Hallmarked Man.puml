@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 0% (Part One / 1)
+legend : 1.2% (Part One / 2)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -37,14 +37,17 @@ decima -- delamore : lives
 decima <-- Valentine : brother 
 
  :Charlotte Campbell: as Charlotte <<dead>> <<mentioned>> $female 
- Charlotte --> strike : <<ex>>
- 
+
+strike <-- Charlotte : <<ex>>
+
  :Sacha Legard: as Sacha $male 
  
- decima <-- Sacha : involved 
- 
+ Sacha --> decima  : involved
+ Charlotte <-- Sacha : half brother
+
  :body: $male 
  
- decima --> body : whants to know 
+ decima --> body : whants to know
+
  
 @enduml
