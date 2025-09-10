@@ -24,6 +24,10 @@ murphy --> robin : boyfriend
 
 :Lucy: $female 
 Lucy --> strike : sister 
+:Ted: <<dead>> $male 
+Ted --> strike : uncle 
 
+:Decima Mullins: as decima $female
+Agency -- decima : client 
 
 @enduml
