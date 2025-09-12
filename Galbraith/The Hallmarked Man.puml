@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 1.2% (Part One / 2)
+legend : 2.1% (Part One / 2)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -22,7 +22,7 @@ robin -- (Agency) : partner
 :Ryan Murphy: as murphy $male
 murphy --> robin : boyfriend
 
-:Lucy: $female 
+:Lucy: $female
 Lucy --> strike : sister 
 :Ted: <<dead>> $male 
 Ted --> strike : uncle 
@@ -31,7 +31,7 @@ Ted --> strike : uncle
 Agency -- decima : client 
 
 (Delamore Lodge) as delamore <<location>> 
-decima -- delamore : lives 
+decima -- delamore : hides in
 
 :Valentine Longcaster: as Valentine <<mentioned>> $male
 decima <-- Valentine : brother 
@@ -42,25 +42,54 @@ strike <-- Charlotte : <<ex>>
 
  :Sacha Legard: as Sacha $male 
  
- Sacha --> decima  : involved
  Charlotte <-- Sacha : half brother
 
- :body: $male 
+ :William Wright: as body <<dead>> $male
  
  decima --> body : whants to know 
- 
- :William Wright: 
- :Jason Knowles: 
- :Sir Daniel Gayle: 
- note right: his daughter works for decima 
- :Lion: 
- :Jeff Whittaker: 
- :Lead: 
- :‘Rupert Peter Bernard Christian Fleetwood: as rupe
+
+ (Ramsay Silver) as silver <<institution>>
+
+ body -- silver : worked at
+
+(The Happy Carrot) as carrot <<institution>>
+
+carrot -- decima : owns
+
+:Gayle: $female
+Gayle -- carrot : "maître d’"
+
+
+ :Jason Knowles: as Jason $male
+ body ..> Jason  : falsely identified as
+
+ :Sir Daniel Gayle: as sirDaniel $male
+sirDaniel <-- Gayle : daughter
+
+ :Lion: $male
+ Lion --> decima : baby
+
+ :Jeff Whittaker: as Whittaker $male
+ :Leda: <<dead>> $female
+  Leda --> strike : mother
+  Whittaker --> Leda : murdered
+
+:Rupert Peter Bernard Christian Fleetwood: as rupe  $male
+rupe -> decima : husband(?)
+rupe ..> body : suspected by Decima
 Sacha --> rupe: cousin 
-:Veronica: 
-:Peter: 
-:Zac: 
-:Dredge: 
+
+:Veronica: <<dead>> $female
+:Peter:  <<dead>> $male
+
+Veronica --> rupe : mother
+Peter --> rupe : father
+
+:Zac: $male
+
+rupe <-- Zac : housemate
+:Dredge: $male
+
+Zac --> Dredge : owed
  
 @enduml
