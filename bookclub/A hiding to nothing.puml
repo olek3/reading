@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 84 (sixteen)
+legend : p. 91 (seventeen)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -19,7 +19,7 @@ legend : p. 84 (sixteen)
 neja <- motherInLaw : mother-in-law
 husband --> neja  : husband
 neja <-- son : son 
-son <-- Johnny : swimming coach 
+Johnny --> son : swimming coach
 
 (party) <<event>> 
 
@@ -106,7 +106,8 @@ package "London, 2016" {
     :Pakistani cricketer: as cricketer $male
     cricketer <-- tanisha : sleeps with
     :Dr Haksar: as doctor $male
-
+    :Dev Banerjee: as Dev $male
+    Dev --> doctor : works for
     doctor <.. husband : Ravi Ponniah
     doctor <..neja : Nita Ponniah
 }
@@ -122,5 +123,11 @@ former <-- rameshBrother : son
 
 son <- surrogate : surrogate mother
 
+:Mercy Mbangwa: as Mercy $female
+(Brithish High Comission) as comission <<institution>>
+Mercy -- comission
+:Chinthika Balasuria: <<mentioned>>
+husband --> :Chinthika Balasuria: : doesn't live the beach
+kidnapping -- Mercy : came after
 
 @enduml
