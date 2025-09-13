@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 107 (nineteen)
+legend : p. 127 (Twenty-three)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -121,7 +121,7 @@ former <-- :Camilla: : new wife
 former <-- rameshBrother : son
 :Satya Basu: as surrogate $female
 
-son <- surrogate : surrogate mother
+son <-- surrogate : surrogate mother
 
 :Mercy Mbangwa: as Mercy $female
 (Brithish High Comission) as comission <<institution>>
@@ -138,5 +138,16 @@ Johnny -- lodge : works for
 lodge -- Boange
 :Receptionist: <<unnamed>> $male
 lodge -- Receptionist
+
+:Amish: $male
+Amish --> surrogate : son
+
+:Satya's Father: as surrogateFather <<mentioned>><<unnamed>>$male
+
+surrogate <-- surrogateFather : kicked out
+
+:Rupert Mason: as Mason $male
+motherInLaw <-- Mason : soon-to-be fourth husband
+
 
 @enduml
