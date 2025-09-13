@@ -91,5 +91,9 @@ rupe <-- Zac : housemate
 :Dredge: $male
 
 Zac --> Dredge : owed
+
+:Anjelica Wallner: as aunt $female 
+
+rupe <-- aunt : aunt 
  
 @enduml
