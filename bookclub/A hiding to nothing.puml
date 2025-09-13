@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 91 (seventeen)
+legend : p. 107 (nineteen)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -28,7 +28,7 @@ party -- neja
 :Rohan Ratnasiri: as rohan $male 
 rohan -- party: deputy minister 
 
-:Cassandra: $female 
+:Cassandra Beyonce Wanikgesekera: $female
 :Avanti: $female 
 
 Cassandra -- party: school mum 
@@ -71,7 +71,7 @@ son -- kidnapping
 
 :Gamini: as oldman  $male
 
-oldman - kidnapping : met after
+kidnapping - oldman : met after
 
 package "Sri Lanka, Sharja and London 2009 - 2015" {
    (Ammi's parents) as nejaGrands <<group>>
@@ -129,5 +129,14 @@ Mercy -- comission
 :Chinthika Balasuria: <<mentioned>>
 husband --> :Chinthika Balasuria: : doesn't live the beach
 kidnapping -- Mercy : came after
+
+(Monsoon Lodge) as lodge <<institution>>
+
+Johnny -- lodge : works for
+
+:Mrs Boange: as Boange $female
+lodge -- Boange
+:Receptionist: <<unnamed>> $male
+lodge -- Receptionist
 
 @enduml
