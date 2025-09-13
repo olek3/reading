@@ -108,6 +108,6 @@ Dino --> Valentine: father
 :Ned Legard: $male 
 note right: второй отчим Шарлотты, отец актера, дядя руперта 
  
- :Kim Cochran: as Kim $male 
+ :Kim Cochran: as Kim $female 
  Agency -- Kim : latest hire 
 @enduml
