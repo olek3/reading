@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 4.1% (Part One / 6)
+legend : 4.2 (Part One / 6)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -108,4 +108,6 @@ Dino --> Valentine: father
 :Ned Legard: $male 
 note right: второй отчим Шарлотты, отец актера, дядя руперта 
  
+ :Kim Cochran: as Kim $male 
+ Agency -- Kim : latest hire 
 @enduml
