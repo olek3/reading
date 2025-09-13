@@ -103,5 +103,7 @@ Linda --> robin : mother
 mrButler --> robin : Surgeon 
 :Tara: $female 
 Tara --> Charlotte: mother 
+:Dino: $male 
+Dino --> Valentine: father 
  
 @enduml
