@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 2.1% (Part One / 2)
+legend : 3.9% (Part One / 6)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -15,7 +15,7 @@ legend : 2.1% (Part One / 2)
 
 (Agency) <<institution>>
 
-
+'Strike and Ellacott Detective
 strike -- (Agency) : owner & founder
 robin -- (Agency) : partner
 
@@ -98,5 +98,10 @@ rupe <-- aunt : aunt
 
 :Linda: $female 
 Linda --> robin : mother 
+
+:Mr Butler: as mrButler $male
+mrButler --> robin : Surgeon 
+:Tara: $female 
+Tara --> Charlotte: mother 
  
 @enduml
