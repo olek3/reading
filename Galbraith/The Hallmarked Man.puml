@@ -95,5 +95,8 @@ Zac --> Dredge : owed
 :Anjelica Wallner: as aunt $female 
 
 rupe <-- aunt : aunt 
+
+:Linda: $female 
+Linda --> robin : mother 
  
 @enduml
