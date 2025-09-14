@@ -112,7 +112,7 @@ Ned --> rupe : uncle
 
  :Kim Cochran: as Kim $female 
  Agency -- Kim : latest hire 
- (Plug case) as plugCase <<event>>
+ (Plug case) as plugCase <<project>>
  plugCase -- Agency : side case
  :Plug: <<unnamed>> $male
  :Plug's uncle: as plugUncle <<unnamed>> $male
