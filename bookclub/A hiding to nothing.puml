@@ -5,6 +5,7 @@
 
 scale max 8192*8192
 
+
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
 legend : p. 127 (Twenty-three)
@@ -13,7 +14,7 @@ legend : p. 127 (Twenty-three)
 :Loku Madam: as motherInLaw  $female
 
 :Ramesh: as husband  $male
-:Devin: as son $male 
+:Devin: as son <<victim>> $male
 :Johnny Dias: as Johnny $male 
 
 neja <- motherInLaw : mother-in-law
@@ -101,15 +102,34 @@ former ..> motherInLaw : former husband
 
 husband --> former : son and heir
 
-package "London, 2016" {
+package "London, 2016/2017" {
+    :Nita Ponniah: as Nita <<alias>> $female
+    :Ravi Ponniah: as Ravi <<alias>> $male
     :Tanisha Whitney Wanikgesekera: as tanisha $female
     :Pakistani cricketer: as cricketer <<unnamed>> $male
     cricketer <-- tanisha : sleeps with
     :Dr Haksar: as doctor $male
     :Dev Banerjee: as Dev $male
     Dev --> doctor : works for
-    doctor <.. husband : Ravi Ponniah
-    doctor <..neja : Nita Ponniah
+    doctor <-- Ravi : negotiate
+    Ravi .. husband
+    doctor <-- Nita : negotiate
+    Nita ..neja
+    :Jigme: $male
+    Jigme --> Nita : offered cigarettes
+
+    :Satya Basu: as surrogate $female
+    :Amish: $male
+    Amish --> surrogate : son
+
+    surrogate --> Nita : surrogate mother
+
+    :Satya's Father: as surrogateFather <<mentioned>><<unnamed>>$male
+
+    surrogate <-- surrogateFather : kicked out
+
+    doctor <- surrogate : negotiate through
+
 }
 
 tanisha --> husband : bride
@@ -119,15 +139,12 @@ former <-- :Camilla: : new wife
 :another son: as rameshBrother <<unnamed>> $male
 
 former <-- rameshBrother : son
-:Satya Basu: as surrogate $female
-
-son <-- surrogate : surrogate mother
 
 :Mercy Mbangwa: as Mercy $female
 (Brithish High Comission) as comission <<institution>>
 Mercy -- comission
 :Chinthika Balasuria: <<mentioned>>
-husband --> :Chinthika Balasuria: : doesn't live the beach
+husband --> :Chinthika Balasuria: : doesn't like the beach
 kidnapping -- Mercy : came after
 
 (Monsoon Lodge) as lodge <<institution>>
@@ -139,15 +156,12 @@ lodge -- Boange
 :Receptionist: <<unnamed>> $male
 lodge -- Receptionist
 
-:Amish: $male
-Amish --> surrogate : son
 
-:Satya's Father: as surrogateFather <<mentioned>><<unnamed>>$male
-
-surrogate <-- surrogateFather : kicked out
 
 :Rupert Mason: as Mason $male
 motherInLaw <-- Mason : soon-to-be fourth husband
+
+
 
 
 @enduml
