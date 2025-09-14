@@ -29,7 +29,7 @@ party -- neja
 :Rohan Ratnasiri: as rohan $male 
 rohan -- party: deputy minister 
 
-:Cassandra Beyonce Wanikgesekera: $female
+:Cassandra Beyonce Wanikgesekera: as Cassandra $female
 :Avanti: $female 
 
 Cassandra -- party: school mum 
