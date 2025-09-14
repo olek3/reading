@@ -3,3 +3,4 @@
 
 ## The Hallmarked man
 ![The Hallmarked man](https://www.plantuml.com/plantuml/png/FOin3i8m302_0WCZCOAD3y32nWVSnCHH7QTo7F7zPkfqEftkN3JAI7HYzwq_0Gp_8HVdiOnE5fiwgOVOAZIXzG56c8hcoLy7dj8Xeoo6ym56aOgsKhfML7WTuSjqkT_UHvxoGGtRgB83)
+![The Hallmarked man](https://www.plantuml.com/plantuml/svg/FOin3i8m302_0WCZCOAD3y32nWVSnCHH7QTo7F7zPkfqEftkN3JAI7HYzwq_0Gp_8HVdiOnE5fiwgOVOAZIXzG56c8hcoLy7dj8Xeoo6ym56aOgsKhfML7WTuSjqkT_UHvxoGGtRgB83)
