@@ -8,7 +8,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 140 (Twenty-five)
+legend : p. 144 (Twenty-six)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -161,6 +161,8 @@ lodge -- Receptionist
 :Rupert Mason: as Mason $male
 motherInLaw <-- Mason : soon-to-be fourth husband
 
+:boy: as masonBoy $male
+Mason --> masonBoy : suspected relationship
 
 
 
