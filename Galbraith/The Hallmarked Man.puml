@@ -13,9 +13,9 @@ legend : 4.7% (Part One / 6)
 :Cormoran Blue Strike: as strike $male_protagonist
 :Robin Elacott: as robin $female_protagonist
 
-(Agency) <<institution>>
+(Strike and Ellacott Detective Agency) as Agency <<institution>>
 
-'Strike and Ellacott Detective
+
 strike -- (Agency) : owner & founder
 robin -- (Agency) : partner
 
@@ -23,18 +23,18 @@ robin -- (Agency) : partner
 murphy --> robin : boyfriend
 
 :Lucy: $female
-Lucy --> strike : sister 
-:Ted: <<dead>> $male 
+Lucy -> strike : sister
+:Edward Nancarrow a.k.a. Ted: as Ted <<dead>> $male
 Ted --> strike : uncle 
 
 :Decima Mullins: as decima $female
-Agency -- decima : client 
+Agency ------ decima : client
 
 (Delamore Lodge) as delamore <<location>> 
 decima -- delamore : hides in
 
 :Valentine Longcaster: as Valentine <<mentioned>> $male
-decima <-- Valentine : brother 
+Valentine --> decima  : brother
 
  :Charlotte Campbell: as Charlotte <<dead>> <<mentioned>> $female 
 
@@ -70,7 +70,7 @@ sirDaniel <-- Gayle : daughter
  Lion --> decima : baby
 
  :Jeff Whittaker: as Whittaker $male
- :Leda: <<dead>> $female
+ :Leda a.k.a. Peggy: as Leda <<dead>> $female
   Leda --> strike : mother
   Whittaker --> Leda : murdered
 
@@ -102,17 +102,33 @@ Linda --> robin : mother
 :Mr Butler: as mrButler $male
 mrButler --> robin : Surgeon 
 :Tara: $female 
-Tara --> Charlotte: mother 
+Charlotte <- Tara: mother
 :Dino: $male 
-Dino --> Valentine: father 
-:Ned Legard: $male 
-note right: второй отчим Шарлотты, отец актера, дядя руперта 
- 
+Dino --> Valentine: father
+:Ned Legard: as Ned $male
+Ned -> Charlotte : second stepfater
+Ned --> Sacha : father
+Ned --> rupe : uncle
+
  :Kim Cochran: as Kim $female 
  Agency -- Kim : latest hire 
- (Plug) 
- Agency -- Plug : side case 
- note right: дядя нанял маму доят, есть сын 
- :Dave Polworth: 
- :Trevik Nancarrow: 
+ (Plug case) as plugCase <<event>>
+ plugCase -- Agency : side case
+ :Plug: <<unnamed>> $male
+ :Plug's uncle: as plugUncle <<unnamed>> $male
+ :Plug's mother: as plugMother <<unnamed>> $female
+ :Plug's son: as plugSon <<mentioned>> <unnamed>> $male
+ Plug -- plugCase : suspect
+ plugUncle -- plugCase : client
+ plugUncle -> Plug : uncle
+ plugMother --> Plug : mother
+ plugSon --> Plug : son
+
+ :Dave Polworth: as Dave $male
+ :Trevik Nancarrow: as grandFater <<dead>> $male
+ grandFater --> Ted : father
+
+ Dave --> strike : childhood friend
+
+ Tara -> Dino : <<ex>> husbanc
 @enduml
