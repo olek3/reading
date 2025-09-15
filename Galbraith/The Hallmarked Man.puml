@@ -130,5 +130,10 @@ Ned --> rupe : uncle
 
  Dave --> strike : childhood friend
 
- Tara -> Dino : <<ex>> husbanc
+ Tara -> Dino : <<ex>> husband 
+ 
+:Rowntree: <<pet>> <<dead>> 
+
+Rowntree --> Linda: family Labrador 
+
 @enduml
