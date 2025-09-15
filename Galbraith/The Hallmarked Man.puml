@@ -44,7 +44,7 @@ strike <-- Charlotte : <<ex>>
  
  Charlotte <-- Sacha : half brother
 
- :William Wright: as body <<dead>> $male
+ :William Wright: as body <<dead>><<alias>> $male
  
  decima --> body : whants to know 
 
@@ -61,7 +61,7 @@ Gayle -- carrot : "maître d’"
 
 
  :Jason Knowles: as Jason $male
- body ..> Jason  : falsely identified as
+ body .. Jason  : falsely identified as
 
  :Sir Daniel Gayle: as sirDaniel $male
 sirDaniel <-- Gayle : daughter
@@ -76,7 +76,7 @@ sirDaniel <-- Gayle : daughter
 
 :Rupert Peter Bernard Christian Fleetwood: as rupe  $male
 rupe -> decima : husband(?)
-rupe ..> body : suspected by Decima
+rupe .. body : suspected by Decima
 Sacha --> rupe: cousin 
 
 :Veronica: <<dead>> $female
@@ -116,8 +116,8 @@ Ned --> rupe : uncle
  plugCase -- Agency : side case
  :Plug: <<unnamed>> $male
  :Plug's uncle: as plugUncle <<unnamed>> $male
- :Plug's mother: as plugMother <<unnamed>> $female
- :Plug's son: as plugSon <<mentioned>> <unnamed>> $male
+ :Plug's mother: as plugMother <<unnamed>> <<victim>> $female
+ :Plug's son: as plugSon <<mentioned>> <<unnamed>> $male
  Plug -- plugCase : suspect
  plugUncle -- plugCase : client
  plugUncle -> Plug : uncle
@@ -135,5 +135,11 @@ Ned --> rupe : uncle
 :Rowntree: <<pet>> <<dead>> 
 
 Rowntree --> Linda: family Labrador 
+:Dad: as robinDad <<unnamed>> $male 
+robinDad --> robin : dad 
+Rowntree --> robinDad: family Labrador 
+
+:Kenneth Ramsay: as Ramsay $male 
+silver -- Ramsay: owner 
 
 @enduml
