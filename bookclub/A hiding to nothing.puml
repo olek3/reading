@@ -1,0 +1,169 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 8192*8192
+
+
+title A hiding to Nothing by Chhimi Tenduf-La
+mainframe characters
+legend : p. 144 (Twenty-six)
+
+:Neja Pinto: as neja $female_protagonist
+:Loku Madam: as motherInLaw  $female
+
+:Ramesh: as husband  $male
+:Devin: as son <<victim>> $male
+:Johnny Dias: as Johnny $male 
+
+neja <- motherInLaw : mother-in-law
+husband --> neja  : husband
+neja <-- son : son 
+Johnny --> son : swimming coach
+
+(party) <<event>> 
+
+party -- neja 
+
+:Rohan Ratnasiri: as rohan $male 
+rohan -- party: deputy minister 
+
+:Cassandra Beyonce Wanikgesekera: as Cassandra $female
+:Avanti: $female 
+
+Cassandra -- party: school mum 
+Avanti-- party: school mum 
+
+:bucket hat man: as bucketHat <<unnamed>> $male 
+:hijab "woman": as hijab <<unnamed>>
+
+
+"Sri Lanka, 2007" - neja
+
+package  "Sri Lanka, 2007"  {
+    (Neja's family when 13) as family13 <<group>>
+
+
+    :Appa: <<unnamed>> <<dead>> $male
+    :Ammi: <<unnamed>><<dead>> $female
+    :Aunty Dilly: as aunty <<mentioned>> $female
+    family13 -- Appa
+    family13 -- Ammi
+    aunty -- family13
+    neja <-- Johnny : what?
+
+    (school) <<institution>>
+    :Gamage: $female
+    :Priyath: <<mentioned>> $male
+    :Priyath's brother: as priyathBrother <<mentioned>> <<unnamed>> $male
+    Priyath <-- priyathBrother : brother
+    school -- Gamage : Principal
+    Gamage --> priyathBrother : expelled
+}
+
+
+(kidnapping) <<event>>
+
+(kidnapping) <-- hijab : kidnapped
+(kidnapping) <-- bucketHat : kidnapped
+
+son -- kidnapping
+
+:Gamini: as oldman  $male
+
+kidnapping - oldman : met after
+
+package "Sri Lanka, Sharja and London 2009 - 2015" {
+   (Ammi's parents) as nejaGrands <<group>>
+   :Neja's grandfather: as grandFather <<unnamed>>
+   nejaGrands -- grandFather : father
+
+}
+
+neja -- "Sri Lanka, Sharja and London 2009 - 2015"
+
+Ammi <-- nejaGrands : parents
+
+:Durham: <<mentioned>> $male
+Durham <-- husband: mentioned
+
+:Popeye: $male
+
+motherInLaw <-- Popeye : works for
+
+:husband: as fatherInLaw <<unnamed>> $male
+
+motherInLaw <-- fatherInLaw : husband
+
+:Loku Madam's former: as former <<unnamed>> $male
+
+former ..> motherInLaw : former husband
+
+husband --> former : son and heir
+
+package "London, 2016/2017" {
+    :Nita Ponniah: as Nita <<alias>> $female
+    :Ravi Ponniah: as Ravi <<alias>> $male
+    :Tanisha Whitney Wanikgesekera: as tanisha $female
+    :Pakistani cricketer: as cricketer <<unnamed>> $male
+    cricketer <-- tanisha : sleeps with
+    :Dr Haksar: as doctor $male
+    :Dev Banerjee: as Dev $male
+    Dev --> doctor : works for
+    doctor <-- Ravi : negotiate
+    Ravi .. husband
+    doctor <-- Nita : negotiate
+    Nita ..neja
+    :Jigme: $male
+    Jigme --> Nita : offered cigarettes
+
+    :Satya Basu: as surrogate $female
+    :Amish: $male
+    Amish --> surrogate : son
+
+    surrogate --> Nita : surrogate mother
+
+    :Satya's Father: as surrogateFather <<mentioned>><<unnamed>>$male
+
+    surrogate <-- surrogateFather : kicked out
+
+    doctor <- surrogate : negotiate through
+
+}
+
+tanisha --> husband : bride
+
+:Camilla: $female
+former <-- :Camilla: : new wife
+:another son: as rameshBrother <<unnamed>> $male
+
+former <-- rameshBrother : son
+
+:Mercy Mbangwa: as Mercy $female
+(Brithish High Comission) as comission <<institution>>
+Mercy -- comission
+:Chinthika Balasuria: <<mentioned>>
+husband --> :Chinthika Balasuria: : doesn't like the beach
+kidnapping -- Mercy : came after
+
+(Monsoon Lodge) as lodge <<institution>>
+
+Johnny -- lodge : works for
+
+:Mrs Boange: as Boange $female
+lodge -- Boange
+:Receptionist: <<unnamed>> $male
+lodge -- Receptionist
+
+
+
+:Rupert Mason: as Mason $male
+motherInLaw <-- Mason : soon-to-be fourth husband
+
+:boy: as masonBoy $male
+Mason --> masonBoy : suspected relationship
+
+
+
+@enduml
