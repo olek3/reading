@@ -8,7 +8,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 171 (Thirty-one)
+legend : p. 182 (Thirty-three)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -131,6 +131,13 @@ package "London, 2016/2017" {
     doctor <- surrogate : negotiate through 
     :Rohit: $male 
     Rohit --> surrogate: Uber driver? 
+    
+    :Kanishka: <<mentioned>> $male 
+    :boyfriend: as surrogateBoyfriend <<mentioned>> <<unnamed>> $male
+    
+    Kanishka <-- surrogate: meant to marry 
+    surrogate --> surrogateBoyfriend: <<ex>> 
+    
 
 }
 
