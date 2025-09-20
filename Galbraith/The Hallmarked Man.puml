@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 6.1% (Part One / 7)
+legend : 6.2% (Part One / 7)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -142,9 +142,16 @@ Rowntree --> robinDad: family Labrador
 :Kenneth Ramsay: as Ramsay $male 
 silver -- Ramsay: owner
 
-(Arsehole) <<project>> 
-:Mr A (Arsehole): as asshole $male 
-:ex wife: 
- :Dominic Culpepper: 
+(Arsehole) <<project>> <<todo>> 
+:Mr A (Arsehole): as asshole <<todo>> $male 
+:ex wife: <<todo>> 
+ :Dominic Culpepper: <<todo>> 
+ 
+ :Wardle: <<todo>> 
+: Layborn: <<todo>> 
+:Anstis: <<todo>> 
+:Vanessa Ekwensi: <<todo>> 
+:Albie Simpson-White: as Albie <<todo>> $male 
+note right : one of Fleetwood’s friends, a bloke called Albie Simpson-White,’ said Strike. ‘He’s a waiter at Decima’s father’s club, Dino’s
 
 @enduml
