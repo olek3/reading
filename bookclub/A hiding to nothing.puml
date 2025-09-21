@@ -8,7 +8,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 205 (Thirty-seven)
+legend : p. 206 (Thirty-seven)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -176,6 +176,13 @@ Mason --> masonBoy : suspected relationship
 :Diluk Desnighe: as Diluk $male
 
 lodge -- Diluk : kayak coach
+
+:boss: <<unnamed>>
+:man: <<unnamed>>
+husband --> boss : owes 2 000 000
+boss --> man : boss
+man --> Johnny : met
+
 
 
 @enduml
