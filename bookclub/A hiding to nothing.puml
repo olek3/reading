@@ -22,20 +22,19 @@ husband --> neja  : husband
 neja <---- son : son
 Johnny --> son : swimming coach
 
-(party) <<event>> 
+(Member's night) as party <<event>>
 
-party --- neja
 
-:Rohan Ratnasiri: as rohan $male 
-rohan -- party: deputy minister 
+:Rohan Ratnasiri: as rohan $male
+party -- rohan: deputy minister
 
 :Cassandra Beyonce Wanikgesekera: as Cassandra $female
-:Avanti: $female 
+:Avanti: $female
 
-Cassandra -- party: school mum 
-Avanti-- party: school mum 
+party -- Cassandra : school mum
+party -- Avanti: school mum
 
-:bucket hat man: as bucketHat <<unnamed>> $male 
+:bucket hat man: as bucketHat <<unnamed>> $male
 :hijab "woman": as hijab <<unnamed>>
 
 
@@ -128,16 +127,16 @@ package "London, 2016/2017" {
 
     surrogate <-- surrogateFather : kicked out
 
-    doctor <- surrogate : negotiate through 
-    :Rohit: $male 
-    Rohit --> surrogate: Uber driver? 
-    
-    :Kanishka: <<mentioned>> $male 
+    doctor <- surrogate : negotiate through
+    :Rohit: $male
+    Rohit --> surrogate: Uber driver?
+
+    :Kanishka: <<mentioned>> $male
     :boyfriend: as surrogateBoyfriend <<mentioned>> <<unnamed>> $male
-    
-    Kanishka <-- surrogate: meant to marry 
-    surrogate --> surrogateBoyfriend: <<ex>> 
-    
+
+    Kanishka <-- surrogate: meant to marry
+    surrogate --> surrogateBoyfriend: <<ex>>
+
 
 }
 
@@ -163,8 +162,9 @@ Johnny -- lodge : works for
 :Mrs Boange: as Boange $female
 lodge -- Boange
 :Receptionist: <<unnamed>> $male
-lodge -- Receptionist
+lodge -- Receptionist : receptionist
 
+lodge -- party
 
 
 :Rupert Mason: as Mason $male
