@@ -8,7 +8,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 206 (Thirty-seven)
+legend : p. 216 (Thirty-nine)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -183,6 +183,14 @@ husband --> boss : owes 2 000 000
 boss --> man : boss
 man --> Johnny : met
 
+(Palace by the sea) as Palace <<institution>>
 
+Johnny -- Palace : hiding
+
+:Cassandra's husband: as cassandraHusband <<unnamed>> $male
+
+cassandraHusband --> Cassandra : husband
+
+Palace -- cassandraHusband : seen
 
 @enduml
