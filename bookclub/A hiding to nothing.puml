@@ -8,7 +8,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 182 (Thirty-three)
+legend : p. 205 (Thirty-seven)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -19,12 +19,12 @@ legend : p. 182 (Thirty-three)
 
 neja <- motherInLaw : mother-in-law
 husband --> neja  : husband
-neja <-- son : son 
+neja <---- son : son
 Johnny --> son : swimming coach
 
 (party) <<event>> 
 
-party -- neja 
+party --- neja
 
 :Rohan Ratnasiri: as rohan $male 
 rohan -- party: deputy minister 
@@ -81,7 +81,7 @@ package "Sri Lanka, Sharja and London 2009 - 2015" {
 
 }
 
-neja -- "Sri Lanka, Sharja and London 2009 - 2015"
+neja --- "Sri Lanka, Sharja and London 2009 - 2015"
 
 Ammi <-- nejaGrands : parents
 
@@ -173,6 +173,9 @@ motherInLaw <-- Mason : soon-to-be fourth husband
 :boy: as masonBoy $male
 Mason --> masonBoy : suspected relationship
 
+:Diluk Desnighe: as Diluk $male
+
+lodge -- Diluk : kayak coach
 
 
 @enduml
