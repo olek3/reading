@@ -8,7 +8,7 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 216 (Thirty-nine)
+legend : p. 253 (Forty-four)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -106,7 +106,7 @@ package "London, 2016/2017" {
     :Ravi Ponniah: as Ravi <<alias>> $male
     :Tanisha Whitney Wanikgesekera: as tanisha $female
     :Pakistani cricketer: as cricketer <<unnamed>> $male
-    cricketer <-- tanisha : sleeps with
+    cricketer <--- tanisha : sleeps with
     :Dr Haksar: as doctor $male
     :Dev Banerjee: as Dev $male
     Dev --> doctor : works for
@@ -114,14 +114,14 @@ package "London, 2016/2017" {
     Ravi .. husband
     doctor <-- Nita : negotiate
     Nita ..neja
-    :Jigme: $male
+    :Jigme: <<alias>> $male
     Jigme --> Nita : offered cigarettes
 
     :Satya Basu: as surrogate $female
     :Amish: $male
     Amish --> surrogate : son
 
-    surrogate --> Nita : surrogate mother
+    surrogate ---> Nita : surrogate mother
 
     :Satya's Father: as surrogateFather <<mentioned>><<unnamed>>$male
 
@@ -132,7 +132,7 @@ package "London, 2016/2017" {
     Rohit --> surrogate: Uber driver?
 
     :Kanishka: <<mentioned>> $male
-    :boyfriend: as surrogateBoyfriend <<mentioned>> <<unnamed>> $male
+    :Jojo: as surrogateBoyfriend <<mentioned>> $male
 
     Kanishka <-- surrogate: meant to marry
     surrogate --> surrogateBoyfriend: <<ex>>
@@ -192,5 +192,7 @@ Johnny -- Palace : hiding
 cassandraHusband --> Cassandra : husband
 
 Palace -- cassandraHusband : seen
+
+surrogateBoyfriend .. Jigme
 
 @enduml
