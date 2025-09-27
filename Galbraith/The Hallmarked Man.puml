@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 7.4% (Part One / 10)
+legend : 7.8% (Part One / 11)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -189,5 +189,6 @@ note right: Murphy ex
 :Glaswegian Barclay: <<todo>> $male
  :Shah: <<todo>> $male 
  :Midge Greenstreet: <<todo>> $female 
+ :Shanker: <<todo>> $male
 
 @enduml
