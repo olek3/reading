@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 7.2% (Part One / 10)
+legend : 7.4% (Part One / 10)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -185,5 +185,7 @@ Vanessa -- police : Robin
 
 :Lizzie: <<todo>> $female 
 note right: Murphy ex 
+
+:Glaswegian Barclay: <<todo>> $male
 
 @enduml
