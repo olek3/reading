@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 6.2% (Part One / 7)
+legend : 7.2% (Part One / 10)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -167,7 +167,7 @@ rupe <-----> Albie : friend
 body <-- Truman : investigated
 
 
-:Pat:  $female
+:Pat Chauncey: as Pat $female
 Agency -- Pat : secretary
 
 (Acquaintances in the Police) as police <<group>>
