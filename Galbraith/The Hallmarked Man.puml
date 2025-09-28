@@ -198,6 +198,8 @@ Agency -- Shah : short and good-looking
 :Midge Greenstreet: as Midge $female
 Midge - Agency
 :Shanker: $male
- strike <- Shanker : childhood friend
-
+ strike <- Shanker : childhood friend 
+ 
+ :Graham "Hardy" Hardacre: as Hardy <<todo>> $male
+note right: military colleague, mason 
 @enduml
