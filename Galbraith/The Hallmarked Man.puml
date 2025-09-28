@@ -13,14 +13,14 @@ legend : 7.8% (Part One / 11)
 :Cormoran Blue Strike: as strike $male_protagonist
 :Robin Elacott: as robin $female_protagonist
 
-(Strike and Ellacott Detective Agency) as Agency <<institution>>
+(Strike and Elacott Detective Agency) as Agency <<institution>>
 
 
 strike -- (Agency) : owner & founder
 robin -- (Agency) : partner
 
 :Ryan Murphy: as murphy $male
-murphy --> robin : boyfriend
+murphy -> robin : boyfriend
 
 :Lucy: $female
 Lucy -> strike : sister
@@ -46,7 +46,7 @@ strike <-- Charlotte : <<ex>>
 
  :William Wright: as body <<dead>><<alias>> $male
  
- decima --> body : whants to know 
+ decima --> body : wants to know
 
  (Ramsay Silver) as silver <<institution>>
 
@@ -106,7 +106,7 @@ Charlotte <- Tara: mother
 :Dino: $male 
 Dino --> Valentine: father
 :Ned Legard: as Ned $male
-Ned -> Charlotte : second stepfater
+Ned -> Charlotte : second stepfather
 Ned --> Sacha : father
 Ned --> rupe : uncle
 
@@ -125,8 +125,8 @@ Ned --> rupe : uncle
  plugSon --> Plug : son
 
  :Dave Polworth: as Dave $male
- :Trevik Nancarrow: as grandFater <<dead>> $male
- grandFater --> Ted : father
+ :Trevik Nancarrow: as grandFather <<dead>> $male
+ grandFather --> Ted : father
 
  Dave --> strike : childhood friend
 
@@ -155,11 +155,11 @@ Arsehole -- assholeEx  : subject
 
 :Mullins(?): as decimaFather $male
 decima <-- decimaFather : father
-(Dino's club) as Dinos <<inistitution>>
+(Dino's club) as Dinos <<institution>>
 decimaFather -- Dinos : owner
 
 :Albie Simpson-White: as Albie  $male
-'note right : one of Fleetwood’s friends, a bloke called Albie Simpson-White,’ said Strike. ‘He’s a waiter at Decima’s father’s club, Dino’s
+
 Dinos -- Albie : waiter
 rupe <-----> Albie : friend
 
@@ -183,12 +183,17 @@ police -- Anstis
 
 Vanessa -- police : Robin
 
-:Lizzie: <<todo>> $female 
+:Lizzie: <<todo>> $female  /' todo Lizzie '/
 note right: Murphy ex 
 
-:Glaswegian Barclay: <<todo>> $male
- :Shah: <<todo>> $male 
- :Midge Greenstreet: <<todo>> $female 
- :Shanker: <<todo>> $male
+:Glaswegian Barclay: as Barclay  $male
+Agency - Barclay : subcontractor
+
+:Shah: <<todo>> $male  /' todo Shah '/
+:Midge Greenstreet: <<todo>> $female  /' TODO Midge Greenstreet '/
+:Shanker: $male
+
+
+ strike <- Shanker : childhood friend
 
 @enduml
