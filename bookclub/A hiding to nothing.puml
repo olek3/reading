@@ -8,7 +8,6 @@ scale max 8192*8192
 
 title A hiding to Nothing by Chhimi Tenduf-La
 mainframe characters
-legend : p. 144 (Twenty-six)
 
 :Neja Pinto: as neja $female_protagonist
 :Loku Madam: as motherInLaw  $female
@@ -19,23 +18,22 @@ legend : p. 144 (Twenty-six)
 
 neja <- motherInLaw : mother-in-law
 husband --> neja  : husband
-neja <-- son : son 
+neja <---- son : son
 Johnny --> son : swimming coach
 
-(party) <<event>> 
+(Member's night) as party <<event>>
 
-party -- neja 
 
-:Rohan Ratnasiri: as rohan $male 
-rohan -- party: deputy minister 
+:Rohan Ratnasiri: as rohan $male
+party -- rohan: deputy minister
 
 :Cassandra Beyonce Wanikgesekera: as Cassandra $female
-:Avanti: $female 
+:Avanti: $female
 
-Cassandra -- party: school mum 
-Avanti-- party: school mum 
+party -- Cassandra : school mum
+party -- Avanti: school mum
 
-:bucket hat man: as bucketHat <<unnamed>> $male 
+:bucket hat man: as bucketHat <<unnamed>> $male
 :hijab "woman": as hijab <<unnamed>>
 
 
@@ -81,7 +79,7 @@ package "Sri Lanka, Sharja and London 2009 - 2015" {
 
 }
 
-neja -- "Sri Lanka, Sharja and London 2009 - 2015"
+neja --- "Sri Lanka, Sharja and London 2009 - 2015"
 
 Ammi <-- nejaGrands : parents
 
@@ -107,7 +105,7 @@ package "London, 2016/2017" {
     :Ravi Ponniah: as Ravi <<alias>> $male
     :Tanisha Whitney Wanikgesekera: as tanisha $female
     :Pakistani cricketer: as cricketer <<unnamed>> $male
-    cricketer <-- tanisha : sleeps with
+    cricketer <--- tanisha : sleeps with
     :Dr Haksar: as doctor $male
     :Dev Banerjee: as Dev $male
     Dev --> doctor : works for
@@ -115,20 +113,29 @@ package "London, 2016/2017" {
     Ravi .. husband
     doctor <-- Nita : negotiate
     Nita ..neja
-    :Jigme: $male
+    :Jigme: <<alias>> $male
     Jigme --> Nita : offered cigarettes
 
     :Satya Basu: as surrogate $female
     :Amish: $male
     Amish --> surrogate : son
 
-    surrogate --> Nita : surrogate mother
+    surrogate ---> Nita : surrogate mother
 
     :Satya's Father: as surrogateFather <<mentioned>><<unnamed>>$male
 
     surrogate <-- surrogateFather : kicked out
 
     doctor <- surrogate : negotiate through
+    :Rohit: $male
+    Rohit --> surrogate: Uber driver?
+
+    :Kanishka: <<mentioned>> $male
+    :Jojo: as surrogateBoyfriend <<mentioned>> $male
+
+    Kanishka <-- surrogate: meant to marry
+    surrogate --> surrogateBoyfriend: <<ex>>
+
 
 }
 
@@ -154,8 +161,9 @@ Johnny -- lodge : works for
 :Mrs Boange: as Boange $female
 lodge -- Boange
 :Receptionist: <<unnamed>> $male
-lodge -- Receptionist
+lodge -- Receptionist : receptionist
 
+lodge -- party
 
 
 :Rupert Mason: as Mason $male
@@ -164,6 +172,26 @@ motherInLaw <-- Mason : soon-to-be fourth husband
 :boy: as masonBoy $male
 Mason --> masonBoy : suspected relationship
 
+:Diluk Desnighe: as Diluk $male
 
+lodge -- Diluk : kayak coach
+
+:boss: <<unnamed>>
+:man: <<unnamed>>
+husband --> boss : owes 2 000 000
+boss --> man : boss
+man --> Johnny : met
+
+(Palace by the sea) as Palace <<institution>>
+
+Johnny -- Palace : hiding
+
+:Cassandra's husband: as cassandraHusband <<unnamed>> $male
+
+cassandraHusband --> Cassandra : husband
+
+Palace -- cassandraHusband : seen
+
+surrogateBoyfriend .. Jigme
 
 @enduml
