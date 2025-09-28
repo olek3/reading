@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 7.8% (Part One / 11)
+legend : 8.0% (Part One / 11)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -200,6 +200,6 @@ Midge - Agency
 :Shanker: $male
  strike <- Shanker : childhood friend 
  
- :Graham "Hardy" Hardacre: as Hardy <<todo>> $male
-note right: military colleague, mason 
+ :Graham "Hardy" Hardacre: as Hardy $male
+Hardy --> strike : military colleague, mason
 @enduml
