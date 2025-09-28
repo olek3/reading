@@ -20,7 +20,7 @@ strike -- (Agency) : owner & founder
 robin -- (Agency) : partner
 
 :Ryan Murphy: as murphy $male
-murphy -> robin : boyfriend
+murphy --> robin : boyfriend
 
 :Lucy: $female
 Lucy -> strike : sister
@@ -28,7 +28,11 @@ Lucy -> strike : sister
 Ted --> strike : uncle 
 
 :Decima Mullins: as decima $female
-Agency ------ decima : client
+
+(Decima's case) as mainCase <<project>>
+ Agency --- mainCase
+
+mainCase ----- decima : client
 
 (Delamore Lodge) as delamore <<location>> 
 decima -- delamore : hides in
@@ -183,14 +187,16 @@ police -- Anstis
 
 Vanessa -- police : Robin
 
-:Lizzie: <<todo>> $female  /' todo Lizzie '/
-note right: Murphy ex 
+:Lizzie:  $female
 
+Lizzie ..> murphy : <<ex>> wife
 :Glaswegian Barclay: as Barclay  $male
-Agency - Barclay : subcontractor
+Agency - Barclay
 
-:Shah: <<todo>> $male  /' todo Shah '/
-:Midge Greens  treet: <<todo>> $female  /' TODO Midge Greenstreet '/
+:Shah:  $male
+Agency -- Shah : short and good-looking
+:Midge Greenstreet: as Midge $female
+Midge - Agency
 :Shanker: $male
  strike <- Shanker : childhood friend
 
