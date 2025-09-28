@@ -192,8 +192,6 @@ Agency - Barclay : subcontractor
 :Shah: <<todo>> $male  /' todo Shah '/
 :Midge Greens  treet: <<todo>> $female  /' TODO Midge Greenstreet '/
 :Shanker: $male
-
-
  strike <- Shanker : childhood friend
 
 @enduml
