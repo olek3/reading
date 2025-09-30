@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 9.2% (Part One / 12)
+legend : 9.2% (Part One / 13)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -215,5 +215,8 @@ Powell <-- powellGrandmother : grandmother (adopted)
 body .. Niall : reported by wife
 Niall <-- niallMother : mother
 Niall <-- niallWife : wife
+
+:Lynden Knowles: as Lynden $male
+Jason <-- Lynden : uncle
 
 @enduml
