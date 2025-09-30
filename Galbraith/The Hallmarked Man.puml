@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 8.0% (Part One / 11)
+legend : 9.2% (Part One / 12)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -202,4 +202,18 @@ Midge - Agency
  
  :Graham "Hardy" Hardacre: as Hardy $male
 Hardy --> strike : military colleague, mason
+
+:Tyler Powerll: as Powerll $male
+:Grandmother: as powellGrandmother <<unnamed>>  $female
+body .. Powell : grandmother called
+
+Powell <-- powellGrandmother : grandmother (adopted)
+:Niall Semple: as Niall $male
+:Mother: as niallMother <<unnamed>> <<dead>> $female
+:Wife: as niallWife <<unnamed>> $female
+
+body .. Niall : reported by wife
+Niall <-- niallMother : mother
+Niall <-- niallWife : wife
+
 @enduml
