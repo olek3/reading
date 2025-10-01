@@ -16,8 +16,8 @@ legend : 9.2% (Part One / 13)
 (Strike and Elacott Detective Agency) as Agency <<institution>>
 
 
-strike -- (Agency) : owner & founder
-robin -- (Agency) : partner
+strike --- (Agency) : owner & founder
+robin --- (Agency) : partner
 
 :Ryan Murphy: as murphy $male
 murphy --> robin : boyfriend
@@ -106,11 +106,11 @@ Linda --> robin : mother
 :Mr Butler: as mrButler $male
 mrButler --> robin : Surgeon 
 :Tara: $female 
-Charlotte <- Tara: mother
+Charlotte <-- Tara  : mother
 :Dino: $male 
 Dino --> Valentine: father
 :Ned Legard: as Ned $male
-Ned -> Charlotte : second stepfather
+Charlotte <-- Ned  : second stepfather
 Ned --> Sacha : father
 Ned --> rupe : uncle
 
@@ -134,7 +134,7 @@ Ned --> rupe : uncle
 
  Dave --> strike : childhood friend
 
- Tara -> Dino : <<ex>> husband 
+ Tara --> Dino : <<ex>> husband
  
 :Rowntree: <<pet>> <<dead>> 
 
@@ -154,7 +154,7 @@ Arsehole -- asshole : client
 :Arsehole's ex wife: as assholeEx $female
 Arsehole -- assholeEx  : subject
  :Dominic Culpepper: as Culpepper $male
- assholeEx -- Culpepper : suspected in having affair
+ Culpepper -- assholeEx  : suspected in having affair
 
 
 :Mullins(?): as decimaFather $male
@@ -172,7 +172,7 @@ body <-- Truman : investigated
 
 
 :Pat Chauncey: as Pat $female
-Agency -- Pat : secretary
+Pat -- Agency : secretary
 
 (Acquaintances in the Police) as police <<group>>
 police -- Agency
@@ -218,5 +218,9 @@ Niall <-- niallWife : wife
 
 :Lynden Knowles: as Lynden $male
 Jason <-- Lynden : uncle
+
+:Greg: $male
+
+Greg -> Lucy : husband
 
 @enduml
