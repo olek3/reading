@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 13.9% (Part two / 16)
+legend : 14.5% (Part two / 16)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -235,6 +235,7 @@ note right: sister-in-law – my wife’s sister
 body --> Osgood : sent email 
 
 :Farah Navabi: <<todo>> $female
-
+:Nina Lascelles: <<todo>> $female
+:Ray: <<todo>> $male
 
 @enduml
