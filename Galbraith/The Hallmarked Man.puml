@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 14.5% (Part two / 16)
+legend : 14.9% (Part two / 17)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -65,7 +65,7 @@ Gayle -- carrot : "maître d’"
 
 
  :Jason Knowles: as Jason $male
- body .. Jason  : identified by police
+ body .... Jason  : identified by police
 
  :Sir Daniel Gayle: as sirDaniel $male
 sirDaniel <-- Gayle : daughter
@@ -160,12 +160,12 @@ Arsehole -- assholeEx  : subject
 :Mullins(?): as decimaFather $male
 decima <-- decimaFather : father
 (Dino's club) as Dinos <<institution>>
-decimaFather -- Dinos : owner
+Dinos -- decimaFather  : owner
 
 :Albie Simpson-White: as Albie  $male
 
-Dinos -- Albie : waiter
-rupe <-----> Albie : friend
+Albie -- Dinos : waiter
+rupe <--> Albie : friend
 
 :DCI Malcom Truman: as Truman $male
 body <-- Truman : investigated
@@ -224,18 +224,50 @@ Jason <-- Lynden : uncle
 Greg -> Lucy : husband 
 
 ' first talk to Ramsay 
-:Pamela Bullen-Driscoll: as Pamela <<todo>> $female 
-note right: sister-in-law – my wife’s sister 
-:Rachel: <<todo>> $female 
-:John Auclair: <<todo>> $male 
-(Bullen by birth.) <<todo>> 
-:Geoffrey: <<todo>> 
-:Jim Todd: as Jim <<todo>> $male
-:Osgood: <<todo>> 
+:Pamela Bullen-Driscoll: as Pamela $female
+:Rachel:  $female
+Ramsay <-- Rachel : wife
+Rachel <-- Pamela : sister
+
+:John Auclair: as Auclair $male
+silver <-- Auclair : customer (important collector)
+(Bullen & Co) as BullenCo <<institution>>
+:Bullen: $male
+Rachel <-- Bullen : father
+Pamela <- Bullen : father
+Bullen -- BullenCo : owned
+:Geoffrey (?)Driscoll: as Geoffrey  $male
+Pamela <-- Geoffrey : husband
+
+:Laura: $female
+silver --- Laura : works
+
+:Jim Todd: as Jim  $male
+silver -- Jim : cleaner
+
+:Osgood:
 body --> Osgood : sent email 
 
-:Farah Navabi: <<todo>> $female
-:Nina Lascelles: <<todo>> $female
-:Ray: <<todo>> $male 
-:Fergus Robertson: <<todo>> $male 
+(Patterson agency) as Patterson <<institution>>
+Agency --- Patterson :competing
+:Mitch Patterson: as Mitch $male
+Mitch -- Patterson : owner
+
+:Farah Navabi: as Farah $female
+Patterson -- Farah
+
+:Nina Lascelles: as Nina $female
+Nina --> Culpepper : sister
+
+:Ray:  $male
+Kim <-- Ray : <<ex>>
+
+:Fergus Robertson: as Robertson $male
+Culpepper -> Robertson : jealous
+:Lady Violet: as Violet  $female
+Culpepper <-- Violet : wife
+Violet -> assholeEx : having affair
+
+
+
 @enduml
