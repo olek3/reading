@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 14.9% (Part two / 17)
+legend : 15.1% (Part two / 17)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -268,6 +268,12 @@ Culpepper -> Robertson : jealous
 Culpepper <-- Violet : wife
 Violet -> assholeEx : having affair
 
+:Tasha: $female 
 
+Tasha --> Midge : partner 
 
+(Strike's exes) as exes <<todo>> <<group>> /' todo Strike's exes '/
+note left : Ciara, the model? Elin, the radio presenter? Lorelei, owner of a vintage clothing store? Madeleine, the jewellery designer? Bijou, the lawyer? 
+
+exes -- strike
 @enduml
