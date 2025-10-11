@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 15.1% (Part two / 17)
+legend : 15.4% (Part two / 18)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -42,14 +42,13 @@ Valentine --> decima  : brother
 
  :Charlotte Campbell: as Charlotte <<dead>> <<mentioned>> $female 
 
-strike <-- Charlotte : <<ex>>
 
- :Sacha Legard: as Sacha $male 
- 
+ :Sacha Legard: as Sacha $male
+
  Charlotte <-- Sacha : half brother
 
  :William Wright: as body <<dead>><<alias>> $male
- 
+
  decima --> body : wants to know
 
  (Ramsay Silver) as silver <<institution>>
@@ -81,7 +80,7 @@ sirDaniel <-- Gayle : daughter
 :Rupert Peter Bernard Christian Fleetwood: as rupe  $male
 rupe -> decima : husband(?)
 rupe .. body : suspected by Decima
-Sacha --> rupe: cousin 
+Sacha --> rupe: cousin
 
 :Veronica: <<dead>> $female
 :Peter:  <<dead>> $male
@@ -96,26 +95,26 @@ rupe <-- Zac : housemate
 
 Zac --> Dredge : owed
 
-:Anjelica Wallner: as aunt $female 
+:Anjelica Wallner: as aunt $female
 
-rupe <-- aunt : aunt 
+rupe <-- aunt : aunt
 
-:Linda: $female 
-Linda --> robin : mother 
+:Linda: $female
+Linda --> robin : mother
 
 :Mr Butler: as mrButler $male
-mrButler --> robin : Surgeon 
-:Tara: $female 
+mrButler --> robin : Surgeon
+:Tara: $female
 Charlotte <-- Tara  : mother
-:Dino: $male 
+:Dino: $male
 Dino --> Valentine: father
 :Ned Legard: as Ned $male
 Charlotte <-- Ned  : second stepfather
 Ned --> Sacha : father
 Ned --> rupe : uncle
 
- :Kim Cochran: as Kim $female 
- Agency -- Kim : latest hire 
+ :Kim Cochran: as Kim $female
+ Agency -- Kim : latest hire
  (Plug case) as plugCase <<project>>
  plugCase -- Agency : side case
  :Plug: <<unnamed>> $male
@@ -135,20 +134,20 @@ Ned --> rupe : uncle
  Dave --> strike : childhood friend
 
  Tara --> Dino : <<ex>> husband
- 
-:Rowntree: <<pet>> <<dead>> 
 
-Rowntree --> Linda: family Labrador 
-:Dad: as robinDad <<unnamed>> $male 
-robinDad --> robin : dad 
-Rowntree --> robinDad: family Labrador 
+:Rowntree: <<pet>> <<dead>>
 
-:Kenneth Ramsay: as Ramsay $male 
+Rowntree --> Linda: family Labrador
+:Dad: as robinDad <<unnamed>> $male
+robinDad --> robin : dad
+Rowntree --> robinDad: family Labrador
+
+:Kenneth Ramsay: as Ramsay $male
 silver -- Ramsay: owner
 
 (Arsehole) <<project>>
 
-Agency --- Arsehole : another case
+Agency -- Arsehole : another case
 :Mr A (Arsehole): as asshole  $male
 Arsehole -- asshole : client
 :Arsehole's ex wife: as assholeEx $female
@@ -198,8 +197,8 @@ Agency -- Shah : short and good-looking
 :Midge Greenstreet: as Midge $female
 Midge - Agency
 :Shanker: $male
- strike <- Shanker : childhood friend 
- 
+ strike <- Shanker : childhood friend
+
  :Graham "Hardy" Hardacre: as Hardy $male
 Hardy --> strike : military colleague, mason
 
@@ -221,9 +220,9 @@ Jason <-- Lynden : uncle
 
 :Greg: $male
 
-Greg -> Lucy : husband 
+Greg -> Lucy : husband
 
-' first talk to Ramsay 
+' first talk to Ramsay
 :Pamela Bullen-Driscoll: as Pamela $female
 :Rachel:  $female
 Ramsay <-- Rachel : wife
@@ -246,12 +245,12 @@ silver --- Laura : works
 silver -- Jim : cleaner
 
 :Osgood:
-body --> Osgood : sent email 
+body --> Osgood : sent email
 
 (Patterson agency) as Patterson <<institution>>
 Agency --- Patterson :competing
 :Mitch Patterson: as Mitch $male
-Mitch -- Patterson : owner
+Patterson -- Mitch  : owner
 
 :Farah Navabi: as Farah $female
 Patterson -- Farah
@@ -265,15 +264,27 @@ Kim <-- Ray : <<ex>>
 :Fergus Robertson: as Robertson $male
 Culpepper -> Robertson : jealous
 :Lady Violet: as Violet  $female
-Culpepper <-- Violet : wife
-Violet -> assholeEx : having affair
+Culpepper -- Violet : wife
+Violet--> assholeEx : having affair
 
-:Tasha: $female 
+:Tasha: $female
 
-Tasha --> Midge : partner 
+Tasha --> Midge : partner
 
-(Strike's exes) as exes <<todo>> <<group>> /' todo Strike's exes '/
-note left : Ciara, the model? Elin, the radio presenter? Lorelei, owner of a vintage clothing store? Madeleine, the jewellery designer? Bijou, the lawyer? 
+(Strike's exes) as exes <<group>>
+exes -- Charlotte
+:Ciara: <<mentioned>> $female
+Ciara -- exes : coocoo's nest (the model)
+exes -- Nina : book
+:Elin: <<mentioned>> $female
+Elin - exes
+:Lorelei: <<mentioned>> $female
+Lorelei -- exes : owner of a vintage closing store
+:Madeleine: <<mentioned>> $female
+exes -- Madeleine  : the jewellery designer
+:Bijou: $female
+exes - Bijou : lawer
 
-exes -- strike
+
+strike .. exes : <<ex>>
 @enduml
