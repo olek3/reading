@@ -293,8 +293,12 @@ body -- stGeorge : lived at
 
 :Wright's neighbour: as wrightNeighbour <<unnamed>> $female
 :Daz: $male
+:small boy: as smallBoy <<unnamed>> $male
 
 stGeorge -- wrightNeighbour : neighbour
 wrightNeighbour <--  Daz : room fellow
+wrightNeighbour -->  smallBoy: mother
+
+
 
 @enduml
