@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 15.4% (Part two / 18)
+legend : 15.5% (Part two / 18)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -287,4 +287,14 @@ exes - Bijou : lawer
 
 
 strike .. exes : <<ex>>
+
+(St George St.) as stGeorge <<location>>
+body -- stGeorge : lived at
+
+:Wright's neighbour: as wrightNeighbour <<unnamed>> $female
+:Daz: $male
+
+stGeorge -- wrightNeighbour : neighbour
+wrightNeighbour <--  Daz : room fellow
+
 @enduml
