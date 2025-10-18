@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 15.5% (Part two / 18)
+legend : 16.1% (Part two / 18)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -288,6 +288,8 @@ exes - Bijou : lawer
 
 strike .. exes : <<ex>>
 
+
+' visti to St George St.
 (St George St.) as stGeorge <<location>>
 body -- stGeorge : lived at
 
@@ -299,12 +301,21 @@ stGeorge -- wrightNeighbour : neighbour
 wrightNeighbour <--  Daz : room fellow
 wrightNeighbour -->  smallBoy: mother
 
-:Hussein Mohamed: as Hussein <<todo>> $male 
-:wife: <<todo>> 
-:daughter: <<todo>> 
+:Hussein Mohamed: as Hussein  $male
+:wife: as hussainWife <<unnamed>> $female
+:daughter: as hussainDaughter <<unnamed>> $female
 
-:visitor1: <<todo>> 
+stGeorge -- Hussein : <<ex>> neighbor who recognized
+Hussein <-- hussainDaughter : cripled daugher
+Hussein <-- hussainWife : wife
+
+:girl: as visitor1 <<unnamed>> $female
 note right: She looked foreign. Like, maybe Pakistani, but light. Black ’air, really long. An’ wearing a pink top wiv flowers on it,’ she added, and she looked pleased to have remembered it. ‘An’ she was carryin’ a suitcase.’
-:visitor2: <<todo>> 
+
+:a guy: as visitor2 <<unnamed>> $male
 note right: guy wiv curly ’air goin’ up the stairs, an’ ’e ’ad an empty suitcase an’ all, an’ ’e looked back at me when I come out into the ’all an’ ’e was wearing sunglasses, indoors. ’E looked a real twat.’
+
+stGeorge -- visitor1
+stGeorge -- visitor2
+
 @enduml
