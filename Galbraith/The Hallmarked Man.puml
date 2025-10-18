@@ -293,7 +293,7 @@ body -- stGeorge : lived at
 
 : Mandy: as wrightNeighbour  $female
 :Daz: $male
-:small boy: as smallBoy <<unnamed>> $male
+:Clint: as smallBoy $male
 
 stGeorge -- wrightNeighbour : neighbour
 wrightNeighbour <--  Daz : room fellow
