@@ -301,6 +301,6 @@ wrightNeighbour -->  smallBoy: mother
 
 :Hussein Mohamed: as Hussein <<todo>> $male 
 :wife: <<todo>> 
-;daughter: <<todo>> 
+:daughter: <<todo>> 
 
 @enduml
