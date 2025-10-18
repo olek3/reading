@@ -299,6 +299,8 @@ stGeorge -- wrightNeighbour : neighbour
 wrightNeighbour <--  Daz : room fellow
 wrightNeighbour -->  smallBoy: mother
 
-:Hussein 
+:Hussein Mohamed: as Hussein <<todo>> $male 
+:wife: <<todo>> 
+;daughter: <<todo>> 
 
 @enduml
