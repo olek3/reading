@@ -291,7 +291,7 @@ strike .. exes : <<ex>>
 (St George St.) as stGeorge <<location>>
 body -- stGeorge : lived at
 
-:Wright's neighbour: as wrightNeighbour <<unnamed>> $female
+: Mandy: as wrightNeighbour  $female
 :Daz: $male
 :small boy: as smallBoy <<unnamed>> $male
 
