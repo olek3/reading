@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 17.4% (Part two / 20)
+legend : 17.6% (Part two / 20)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -321,5 +321,6 @@ stGeorge -- visitor2
 :Ritalinda: <<todo>> $female 
 '20
 :Tilly: <<todo>> $female
+:Oz: <<todo>> 
 
 @enduml
