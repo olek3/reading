@@ -318,9 +318,13 @@ note right: guy wiv curly ’air goin’ up the stairs, an’ ’e ’ad an empt
 stGeorge -- visitor1
 stGeorge -- visitor2
 
-:Ritalinda: <<todo>> $female 
+:Ritalinda:  <<mentioned>> $female
+body --> Ritalinda : said to mention
+
 '20
-:Tilly: <<todo>> $female
-:Oz: <<todo>> 
+:Tilly: $female
+Tilly --> Pat : great-granddaughter
+:Oz: <<alias>>  $male
+Osgood <-- Oz : impersontates
 
 @enduml
