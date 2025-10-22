@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-19.6% (Part two / 21)
+20.7% (Part two / 23)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -121,7 +121,7 @@ Ned --> rupe : uncle
  :Plug: <<unnamed>> $male
  :Plug's uncle: as plugUncle <<unnamed>> $male
  :Plug's mother: as plugMother <<unnamed>> <<victim>> $female
- :Plug's son: as plugSon <<mentioned>> <<unnamed>> $male
+ :Plug's son: as plugSon <<unnamed>> $male
  Plug -- plugCase : suspect
  plugUncle -- plugCase : client
  plugUncle -> Plug : uncle
@@ -338,5 +338,18 @@ Alyssa <-- Angel : older daughter
 :Barnaby:
 
 Jason --> Barnaby : gone to
+
+(Two-Times) <<project>>
+
+Agency -- (Two-Times)
+
+:Two-Times: as 2times <<unnamed>> $male
+
+(Two-Times) -- 2times : regular
+
+:Mrs Two-Times: as 2timesWife <<unnamed>> $female
+
+2times <-- 2timesWife : wife
+
 
 @enduml
