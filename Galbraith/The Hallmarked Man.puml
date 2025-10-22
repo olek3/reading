@@ -71,7 +71,7 @@ Gayle -- carrot : "maître d’"
 sirDaniel <-- Gayle : daughter
 
  :Lion: $male
- Lion --> decima : baby
+ Lion -> decima : baby
 
  :Jeff Whittaker: as Whittaker $male
  :Leda a.k.a. Peggy: as Leda <<dead>> $female
@@ -350,6 +350,9 @@ Agency -- (Two-Times)
 :Mrs Two-Times: as 2timesWife <<unnamed>> $female
 
 2times <-- 2timesWife : wife
+
+:Andrew Honbold: as Honbold <<mentioned>> $male
+Patterson ...> Honbold : bugged barrister
 
 
 @enduml
