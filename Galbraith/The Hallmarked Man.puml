@@ -7,7 +7,7 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 17.6% (Part two / 20)
+legend : 19.3% (Part two / 21)
 
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -306,14 +306,14 @@ wrightNeighbour -->  smallBoy: mother
 :daughter: as hussainDaughter <<unnamed>> $female
 
 stGeorge -- Hussein : <<ex>> neighbor who recognized
-Hussein <-- hussainDaughter : cripled daugher
+Hussein <-- hussainDaughter : crippled daughter
 Hussein <-- hussainWife : wife
 
 :girl: as visitor1 <<unnamed>> $female
-note right: She looked foreign. Like, maybe Pakistani, but light. Black ’air, really long. An’ wearing a pink top wiv flowers on it,’ she added, and she looked pleased to have remembered it. ‘An’ she was carryin’ a suitcase.’
+note right: She looked foreign. Like, maybe Pakistani, but light. Black ’air, really long. An’ wearing a pink top wiv flowers on it
 
 :a guy: as visitor2 <<unnamed>> $male
-note right: guy wiv curly ’air goin’ up the stairs, an’ ’e ’ad an empty suitcase an’ all, an’ ’e looked back at me when I come out into the ’all an’ ’e was wearing sunglasses, indoors. ’E looked a real twat.’
+note right: guy wiv curly ’air an’ ’e was wearing sunglasses, indoors. ’E looked a real twat
 
 stGeorge -- visitor1
 stGeorge -- visitor2
@@ -326,5 +326,13 @@ body --> Ritalinda : said to mention
 Tilly --> Pat : great-granddaughter
 :Oz: <<alias>>  $male
 Osgood <-- Oz : impersontates
+
+'21
+:Alyssa: $female
+Shanker <-- Alyssa : gf
+
+:Angel: $female
+Alyssa <-- Angel : older daughter
+
 
 @enduml
