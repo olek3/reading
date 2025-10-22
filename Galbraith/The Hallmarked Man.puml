@@ -7,8 +7,9 @@ scale max 8192*8192
 
 title The Hallmarked man
 mainframe characters
-legend : 19.3% (Part two / 21)
-
+legend
+19.6% (Part two / 21)
+end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
 :Robin Elacott: as robin $female_protagonist
@@ -334,5 +335,8 @@ Shanker <-- Alyssa : gf
 :Angel: $female
 Alyssa <-- Angel : older daughter
 
+:Barnaby:
+
+Jason --> Barnaby : gone to
 
 @enduml
