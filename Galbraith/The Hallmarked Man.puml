@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-21.0% (Part two / 23)
+21.1% (Part two / 23)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -204,7 +204,7 @@ Midge - Agency
 Hardy --> strike : military colleague, mason
 
 :Tyler Powell: as Powell $male
-:Grandmother: as powellGrandmother <<unnamed>>  $female
+:Dilys: as powellGrandmother   $female
 body .. Powell : grandmother called
 
 Powell <-- powellGrandmother : grandmother (adopted)
