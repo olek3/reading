@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-21.1% (Part two / 23)
+22.2% (Part two / 24)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -357,4 +357,8 @@ Patterson ...> Honbold : bugged barrister
 :Lord Oliver Branfoot: <<todo>> 
 :Miss Jones: <<todo>> 
 :Powell grandniece:  <<todo>> 
+'24 
+(Gibsons) <<todo>> 
+:Larry McGee: <<todo>>
+
 @enduml
