@@ -36,7 +36,7 @@ Ted --> strike : uncle
 mainCase ----- decima : client
 
 (Delamore Lodge) as delamore <<location>> 
-decima -- delamore : hides in
+decima - delamore  : hides in
 
 :Valentine Longcaster: as Valentine <<mentioned>> $male
 Valentine --> decima  : brother
@@ -91,10 +91,10 @@ Peter --> rupe : father
 
 :Zac: $male
 
-rupe <-- Zac : housemate
+Zac -> rupe  : housemate
 :Dredge: $male
 
-Zac --> Dredge : owed
+Dredge <- Zac  : owed
 
 :Anjelica Wallner: as aunt $female
 
@@ -160,7 +160,7 @@ Arsehole -- assholeEx  : subject
 :Mullins(?): as decimaFather $male
 decima <-- decimaFather : father
 (Dino's club) as Dinos <<institution>>
-Dinos -- decimaFather  : owner
+decimaFather - Dinos   : owner
 
 :Albie Simpson-White: as Albie  $male
 
@@ -354,11 +354,21 @@ Agency -- (Two-Times)
 :Andrew Honbold: as Honbold <<mentioned>> $male
 Patterson ...> Honbold : bugged barrister
 
-:Lord Oliver Branfoot: <<todo>> 
-:Miss Jones: <<todo>> 
-:Powell grandniece:  <<todo>> 
-'24 
-(Gibsons) <<todo>> 
-:Larry McGee: <<todo>>
+'23
+:Lord Oliver Branfoot: as Branfoot  $male
+Culpepper --> Branfoot : interviewed
+
+:Miss Jones: as missJones <<mentioned>> $female
+Agency ... missJones : <<ex>> client long ago
+
+:Powell great-niece: as powellGrandniece <<unnamed>>
+powellGrandmother --> powellGrandniece : great-aunt
+
+'24
+(Gibsons) <<institution>>
+:Larry McGee: as Larry $male
+Gibsons . Larry : <<ex>> delivery guy
+Larry -> silver: delivered
+
 
 @enduml
