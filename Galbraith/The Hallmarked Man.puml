@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-22.2% (Part two / 24)
+23.0% (Part two / 25)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -369,6 +369,7 @@ powellGrandmother --> powellGrandniece : great-aunt
 :Larry McGee: as Larry $male
 Gibsons . Larry : <<ex>> delivery guy
 Larry -> silver: delivered
-
-
+' 25 
+:Diana: <<todo>> 
+:Charlie Carter: <<todo>> 
 @enduml
