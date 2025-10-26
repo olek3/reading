@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-23.4% (Part two / 25)
+24.2% (Part two / 26)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -375,4 +375,7 @@ Larry -> silver: delivered
 :Bradley: <<todo>>
 :Dave: <<todo>>
 :Hassan:  <<todo>>
+' 26 
+:Angela Darwish: <<todo>>
+:Ralph Lawrence: <<todo>>
 @enduml
