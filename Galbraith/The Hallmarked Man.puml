@@ -367,18 +367,38 @@ powellGrandmother --> powellGrandniece : great-aunt
 '24
 (Gibsons) <<institution>>
 :Larry McGee: as Larry $male
-Gibsons . Larry : <<ex>> delivery guy
-Larry -> silver: delivered
+Gibsons .. Larry : <<ex>> delivery guy
+Larry --> silver: delivered
 ' 25 
-:Diana: <<todo>> 
-:Charlie Carter: <<todo>> 
-:Bradley: <<todo>>
-:Dave: <<todo>>
-:Hassan:  <<todo>>
+:Diana Boadu: as Diana $female
+Diana - Gibsons : some boss
+
+:Charlie Carter: as Carter $male
+Carter -- Gibsons : Head of Deliveries
+
+:Bradley: $male
+Bradley -- Gibsons  : security guy
+
+:Dave: as driverDave $male
+Gibsons -- driverDave : driver
+Larry -> driverDave : ditched
+
+:Hassan:  $male
+Gibsons -- Hassan : had stag party
+
 ' 26 
-:Angela Darwish: <<todo>>
-:Ralph Lawrence: <<todo>>
-:Griff: <<todo>>
-:Mucky Ricci: <<todo>>
+:Angela Darwish: as Darwish <<mentioned>> $female
+
+:Ralph Lawrence: as Lawrence $male
+Niall <-- Lawrence : warned about
+Lawrence --> Darwish : common aquantance with Strike
+
+'27
+:Griff: $male
+Powell <-- Griff : friend
+
+'28
+:Mucky Ricci: as Mucky <<mentioned>> $male
+Mucky <-- strike : mentioned
 
 @enduml
