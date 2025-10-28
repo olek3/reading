@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-26.9% (Part two / 29)
+27.0% (Part two / 29)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -139,9 +139,10 @@ Ned --> rupe : uncle
 :Rowntree: <<pet>> <<dead>>
 
 Rowntree --> Linda: family Labrador
-:Dad: as robinDad <<unnamed>> $male
+:Michael: as robinDad  $male
 robinDad --> robin : dad
 Rowntree --> robinDad: family Labrador
+:Betty: <<todo>>
 
 :Kenneth Ramsay: as Ramsay $male
 silver -- Ramsay: owner
