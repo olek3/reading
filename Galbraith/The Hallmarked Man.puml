@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-27.0% (Part two / 29)
+27.8% (Part two / 30)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -98,7 +98,7 @@ Dredge <- Zac  : owed
 
 :Anjelica Wallner: as aunt $female
 
-rupe <-- aunt : aunt
+aunt --> rupe : aunt
 
 :Linda: $female
 Linda --> robin : mother
@@ -142,7 +142,10 @@ Rowntree --> Linda: family Labrador
 :Michael: as robinDad  $male
 robinDad --> robin : dad
 Rowntree --> robinDad: family Labrador
-:Betty: <<todo>>
+
+:Betty: <<pet>>
+Betty --> Linda: new labrador
+Betty --> robinDad: new labrador
 
 :Kenneth Ramsay: as Ramsay $male
 silver -- Ramsay: owner
@@ -158,10 +161,9 @@ Arsehole -- assholeEx  : subject
  Culpepper -- assholeEx  : suspected in having affair
 
 
-:Mullins(?): as decimaFather $male
-decima <-- decimaFather : father
+decima <-- Dino : father
 (Dino's club) as Dinos <<institution>>
-decimaFather - Dinos   : owner
+Dino - Dinos   : owner
 
 :Albie Simpson-White: as Albie  $male
 
@@ -403,6 +405,19 @@ Powell <-- Griff : friend
 Mucky <-- strike : mentioned
 
 '29 
-:Lina: <<todo>> 
-:Annabel: <<todo>> 
+:Lina: <<mentioned>> $female
+Dinos - Lina : Albie's friend
+
+:Annabel: $female
+Annabel --> robin : niece
+
+'30
+
+:Tish: $female
+Zac <-- Tish: <<ex>> girlfriend
+
+:Cosima: $female
+
+Dino <-- Cosima : youngest daughter
+
 @enduml
