@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-31.7% (Part three / 33)
+32.0% (Part three / 34)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -430,5 +430,6 @@ Dino <-- Cosima : youngest daughter
 :Sarah:<<todo>>
 :Jenny:<<todo>>
 :Stephen:<<todo>>
+:Martin:  <<todo>>
 
 @enduml
