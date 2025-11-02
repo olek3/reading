@@ -8,7 +8,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-29.1% (Part two / 32)
+30.7% (Part three / 33)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -421,6 +421,8 @@ Zac <-- Tish: <<ex>> girlfriend
 Dino <-- Cosima : youngest daughter
 
 '32 
-:Candy: <<todo>> 
+:Candy: <<todo>>
+'33
+:Sofia Medina: <<todo>>
 
 @enduml
