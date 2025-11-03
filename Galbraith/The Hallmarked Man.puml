@@ -5,6 +5,7 @@
 
 scale max 8192*8192
 
+
 title The Hallmarked man
 mainframe characters
 legend
@@ -15,6 +16,10 @@ end legend
 :Robin Elacott: as robin $female_protagonist
 
 (Strike and Elacott Detective Agency) as Agency <<institution>>
+
+
+(Masham) <<location>>
+Masham -- robin : from
 
 
 strike --- (Agency) : owner & founder
@@ -101,7 +106,7 @@ Dredge <- Zac  : owed
 aunt --> rupe : aunt
 
 :Linda: $female
-Linda --> robin : mother
+Linda -- Masham : mother
 
 :Mr Butler: as mrButler $male
 mrButler --> robin : Surgeon
@@ -134,18 +139,17 @@ Ned --> rupe : uncle
 
  Dave --> strike : childhood friend
 
- Tara --> Dino : <<ex>> husband
+ Tara --> Dino $ex husband
 
 :Rowntree: <<pet>> <<dead>>
 
-Rowntree --> Linda: family Labrador
+Rowntree --- Masham $ex family Labrador
 :Michael: as robinDad  $male
-robinDad --> robin : dad
-Rowntree --> robinDad: family Labrador
+robinDad -- Masham : dad
 
 :Betty: <<pet>>
-Betty --> Linda: new labrador
-Betty --> robinDad: new labrador
+Betty --- Masham : new labrador
+
 
 :Kenneth Ramsay: as Ramsay $male
 silver -- Ramsay: owner
@@ -192,7 +196,7 @@ Vanessa -- police : Robin
 
 :Lizzie:  $female
 
-Lizzie ..> murphy : <<ex>> wife
+Lizzie --> murphy $ex wife
 :Glaswegian Barclay: as Barclay  $male
 Agency - Barclay
 
@@ -263,7 +267,7 @@ Patterson -- Farah
 Nina --> Culpepper : sister
 
 :Ray:  $male
-Kim <-- Ray : <<ex>>
+Kim <-- Ray <<ex>>
 
 :Fergus Robertson: as Robertson $male
 Culpepper -> Robertson : jealous
@@ -290,7 +294,7 @@ exes -- Madeleine  : the jewellery designer
 exes - Bijou : lawer
 
 
-strike .. exes : <<ex>>
+strike -- exes  $ex
 
 
 ' visti to St George St.
@@ -309,12 +313,11 @@ wrightNeighbour -->  smallBoy: mother
 :wife: as hussainWife <<unnamed>> $female
 :daughter: as hussainDaughter <<unnamed>> $female
 
-stGeorge -- Hussein : <<ex>> neighbor who recognized
+stGeorge -- Hussein $ex neighbor who recognized
 Hussein <-- hussainDaughter : crippled daughter
 Hussein <-- hussainWife : wife
 
 :girl: as visitor1 <<unnamed>> $female
-note right: She looked foreign. Like, maybe Pakistani, but light. Black ’air, really long. An’ wearing a pink top wiv flowers on it
 
 :a guy: as visitor2 <<unnamed>> $male
 note right: guy wiv curly ’air an’ ’e was wearing sunglasses, indoors. ’E looked a real twat
@@ -362,7 +365,7 @@ Patterson ...> Honbold : bugged barrister
 Culpepper --> Branfoot : interviewed
 
 :Miss Jones: as missJones <<mentioned>> $female
-Agency ... missJones : <<ex>> client long ago
+Agency --- missJones $ex client long ago
 
 :Powell great-niece: as powellGrandniece <<unnamed>>
 powellGrandmother --> powellGrandniece : great-aunt
@@ -370,7 +373,7 @@ powellGrandmother --> powellGrandniece : great-aunt
 '24
 (Gibsons) <<institution>>
 :Larry McGee: as Larry $male
-Gibsons .. Larry : <<ex>> delivery guy
+Gibsons .. Larry $ex delivery guy
 Larry --> silver: delivered
 ' 25 
 :Diana Boadu: as Diana $female
@@ -409,27 +412,47 @@ Mucky <-- strike : mentioned
 Dinos - Lina : Albie's friend
 
 :Annabel: $female
-Annabel --> robin : niece
+Annabel -- Masham : niece
 
 '30
 
 :Tish: $female
-Zac <-- Tish: <<ex>> girlfriend
+Zac <-- Tish $ex girlfriend
 
 :Cosima: $female
 
 Dino <-- Cosima : youngest daughter
 
 '32 
-:Candy: <<todo>>
+:Candy: $female
+Candy <- Culpepper : presented
+
 '33
-:Sofia Medina: <<todo>>
-:Gretchen Schiff: <<todo>>
-'34 family reunion 
-:Matthew: <<todo>>
-:Sarah:<<todo>>
-:Jenny:<<todo>>
-:Stephen:<<todo>>
-:Martin:  <<todo>>
+:Sofia Medina: as Medina $female
+visitor1 <.. Medina : looked like
+
+:Gretchen Schiff: as Gretchen $female
+Medina <-- Gretchen : roommate
+
+'34 family reunion
+
+
+:Matthew: $male 
+Matthew --> robin $ex husband
+
+:Sarah: $female
+Sarah --> Matthew : second wife
+
+:Stephen: $male
+Stephen -- Masham : brother
+
+:Jenny: $female
+Jenny --> Stephen : wife
+
+:Jonathan: $male
+Jonathan -- Masham : youngest brother
+
+:Martin:  $male
+Martin -- Masham : third sibling
 
 @enduml
