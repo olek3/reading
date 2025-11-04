@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-35.1% (Part three / 38)
+35.6% (Part three / 39)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -467,5 +467,5 @@ Martin -- Masham : third sibling
 :Dick de Lion: <<todo>>
 
 '39 
-:Carmen: 
+:Carmen: <<todo>>
 @enduml
