@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-35.0% (Part three / 38)
+35.1% (Part three / 38)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -461,4 +461,7 @@ Martin -- Masham : third sibling
 '38
 :Jack: <<todo>>
 :Sir Victor Lambert: <<todo>>
+
+:Jeffrey Archer: <<todo>>
+:Savile:  <<todo>>
 @enduml
