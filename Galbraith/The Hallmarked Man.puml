@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-32.0% (Part three / 34)
+34.9% (Part three / 38)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -456,5 +456,9 @@ Jonathan -- Masham : youngest brother
 Martin -- Masham : third sibling 
 
 :Nick: <<todo>>
+
+
+'38
+:Jack: <<todo>>
 
 @enduml
