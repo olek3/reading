@@ -16,10 +16,10 @@ end legend
 :Robin Elacott: as robin $female_protagonist
 
 (Strike and Elacott Detective Agency) as Agency <<institution>>
-
+(Old cases) as old <<project>>
 
 (Masham) <<location>>
-Masham -- robin : from
+Masham --- robin : from
 
 
 strike --- (Agency) : owner & founder
@@ -96,10 +96,10 @@ Peter --> rupe : father
 
 :Zac: $male
 
-Zac -> rupe  : housemate
+rupe <-- Zac  : housemate
 :Dredge: $male
 
-Dredge <- Zac  : owed
+Dredge <-- Zac  : owed
 
 :Anjelica Wallner: as aunt $female
 
@@ -109,7 +109,7 @@ aunt --> rupe : aunt
 Linda -- Masham : mother
 
 :Mr Butler: as mrButler $male
-mrButler --> robin : Surgeon
+mrButler ---> robin : Surgeon
 :Tara: $female
 Charlotte <-- Tara  : mother
 :Dino: $male
@@ -117,7 +117,7 @@ Dino --> Valentine: father
 :Ned Legard: as Ned $male
 Charlotte <-- Ned  : second stepfather
 Ned --> Sacha : father
-Ned --> rupe : uncle
+Ned -----> rupe : uncle
 
  :Kim Cochran: as Kim $female
  Agency -- Kim : latest hire
@@ -137,7 +137,7 @@ Ned --> rupe : uncle
  :Trevik Nancarrow: as grandFather <<dead>> $male
  grandFather --> Ted : father
 
- Dave --> strike : childhood friend
+ strike <-- Dave : childhood friend
 
  Tara --> Dino $ex husband
 
@@ -167,7 +167,7 @@ Arsehole -- assholeEx  : subject
 
 decima <-- Dino : father
 (Dino's club) as Dinos <<institution>>
-Dino - Dinos   : owner
+Dino -- Dinos   : owner
 
 :Albie Simpson-White: as Albie  $male
 
@@ -326,7 +326,7 @@ stGeorge -- visitor1
 stGeorge -- visitor2
 
 :Ritalinda:  <<mentioned>> $female
-body --> Ritalinda : said to mention
+Ritalinda <-- body  : said to mention
 
 '20
 :Tilly: $female
@@ -365,7 +365,7 @@ Patterson ...> Honbold : bugged barrister
 Culpepper --> Branfoot : interviewed
 
 :Miss Jones: as missJones <<mentioned>> $female
-Agency --- missJones $ex client long ago
+old -- missJones : client long ago
 
 :Powell great-niece: as powellGrandniece <<unnamed>>
 powellGrandmother --> powellGrandniece : great-aunt
@@ -373,7 +373,7 @@ powellGrandmother --> powellGrandniece : great-aunt
 '24
 (Gibsons) <<institution>>
 :Larry McGee: as Larry $male
-Gibsons .. Larry $ex delivery guy
+Gibsons ... Larry $ex delivery guy
 Larry --> silver: delivered
 ' 25 
 :Diana Boadu: as Diana $female
@@ -387,7 +387,7 @@ Bradley -- Gibsons  : security guy
 
 :Dave: as driverDave $male
 Gibsons -- driverDave : driver
-Larry -> driverDave : ditched
+driverDave <-- Larry : ditched
 
 :Hassan:  $male
 Gibsons -- Hassan : had stag party
@@ -405,11 +405,11 @@ Powell <-- Griff : friend
 
 '28
 :Mucky Ricci: as Mucky <<mentioned>> $male
-Mucky <-- strike : mentioned
+old -- Mucky : mentioned
 
 '29 
 :Lina: <<mentioned>> $female
-Dinos - Lina : Albie's friend
+Lina -- Dinos : Albie's friend
 
 :Annabel: $female
 Annabel -- Masham : niece
@@ -455,17 +455,28 @@ Jonathan -- Masham : youngest brother
 :Martin:  $male
 Martin -- Masham : third sibling 
 
-:Nick: <<todo>>
+:Nick: <<mentioned>> $male
+Nick --> strike : old fried
 
 
 '38
-:Jack: <<todo>>
-:Sir Victor Lambert: <<todo>>
+:Jack: $male
+strike <-- Jack : favourite nephew
 
-:Jeffrey Archer: <<todo>>
-:Savile:  <<todo>>
-:Dick de Lion: <<todo>>
+:Sir Victor Lambert: as Lambert $male
+Branfoot <-- Lambert : affiliated
+Lambert ----- silver : visited
+:Jeffrey Archer: <<mentioned>> $male
+:Savile:  <<mentioned>>
+
+:Dick de Lion: as Dick  $male
+Dick .. body : named in cipher message
 
 '39 
-:Carmen: <<todo>>
+:Carmen:  $female
+
+Carmen --> Martin : wife or gf
+
+Agency -- old $ex but mentioned
+
 @enduml
