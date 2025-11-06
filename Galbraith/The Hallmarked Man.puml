@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-35.6% (Part three / 39)
+35.9% (Part three / 39)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -440,7 +440,7 @@ Medina <-- Gretchen : roommate
 :Matthew: $male 
 Matthew --> robin $ex husband
 
-:Sarah: $female
+:Sarah Shadlock: as Sarah $female
 Sarah --> Matthew : second wife
 
 :Stephen: $male
