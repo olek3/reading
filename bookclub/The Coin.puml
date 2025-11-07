@@ -1,0 +1,57 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 8192*8192
+
+
+title The Coin by Yasmin Zaher
+mainframe characters
+
+
+legend: 3.7% (Chapter 3)
+
+:I: $female_protagonist
+(New York) as newYork <<location>>
+
+I -- newYork : recently moved to
+
+(Franklin) <<institution>>
+
+I -- Franklin : teacher
+
+(Havana) <<location>>
+
+:Sasha:  $male
+Havana -- Sasha  : vacation
+I -- Havana : vacation
+
+:colleague: <<unnamed>>
+
+:Aisha: $female
+
+Franklin -- Aisha : headmistress
+
+Aisha <-- colleague : friend
+Sasha <-- colleague : colleague
+
+(Palestine) <<location>>
+
+Palestine -- I : left
+
+(boys) <<group>>
+
+Franklin -- boys : students
+
+:Sal: $male
+boys -- Sal
+
+:Jay: $male
+boys -- Jay
+
+:Leonard: $male
+boys -- Leonard
+
+
+@enduml
