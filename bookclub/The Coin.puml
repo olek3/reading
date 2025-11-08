@@ -10,22 +10,24 @@ title The Coin by Yasmin Zaher
 mainframe characters
 
 
-legend: 3.7% (Chapter 3)
+legend
+7.9% (Chapter 6)
+end legend
 
 :I: $female_protagonist
 (New York) as newYork <<location>>
 
 I -- newYork : recently moved to
 
-(Franklin) <<institution>>
+(Franklin school) as Franklin <<institution>>
 
 I -- Franklin : teacher
 
-(Havana) <<location>>
+(vacation in Havana) as Havana <<event>>
 
 :Sasha:  $male
-Havana -- Sasha  : vacation
-I -- Havana : vacation
+Havana -- Sasha
+I -- Havana
 
 :colleague: <<unnamed>>
 
