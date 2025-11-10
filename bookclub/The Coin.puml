@@ -55,12 +55,20 @@ boys -- Jay
 :Leonard: $male
 boys -- Leonard
 
-:father: <<todo>>
-:mother: <<todo>>
-:brother: <<todo>>
+:father: <<unnamed>> <<dead>> $male
+father --> I : father
 
-:Leonard's mother: <<todo>>
+:mother: <<unnamed>> <<dead>> $female
+mother --> I : mother
 
-:Carl: <<todo>>
+:brother: <<unnamed>> $male
+brother -> I : brother
+
+:Leonard's mother: as leoMother <<unnamed>> $female
+Leonard <-- leoMother : mother
+
+:Carl: $male
+
+boys - Carl
 
 @enduml
