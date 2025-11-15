@@ -11,7 +11,7 @@ mainframe characters
 
 
 legend
-21.6% (Chapter 18)
+25.4% (Chapter 23)
 end legend
 
 :I: $female_protagonist
@@ -70,5 +70,16 @@ Leonard <-- leoMother : mother
 :Carl: $male
 
 boys - Carl
+
+:homeless: <<unnamed>> $male
+
+I <- homeless : took coat
+
+:Ahmed: $male
+:Elijah: $male
+
+Ahmed -- boys
+Elijah -- boys
+
 
 @enduml
