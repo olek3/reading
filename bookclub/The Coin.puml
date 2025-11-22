@@ -11,7 +11,7 @@ mainframe characters
 
 
 legend
-39.8% (Chapter 38)
+43.8% (Chapter 41)
 end legend
 
 :I: $female_protagonist
@@ -102,6 +102,6 @@ committee -- Curls
 :Rawda: $female
 
 Curls --> Rawda : brought
-
+:Dominic: <<todo>>
 
 @enduml
