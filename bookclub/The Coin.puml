@@ -11,7 +11,7 @@ mainframe characters
 
 
 legend
-34.4% (Chapter 32)
+39.8% (Chapter 38)
 end legend
 
 :I: $female_protagonist
@@ -82,8 +82,26 @@ Ahmed -- boys
 Elijah -- boys
 
 '29 
-:Matthew: <<todo>>
-:Gregory: <<todo>>
-:uncle: <<unnamed>> <<todo>>
+:Matthew: $male
+Franklin -- Matthew : math teacher
+
+:Gregory: $male
+Franklin -- Gregory : chemistry teacher
+
+:uncle: <<unnamed>> $male
+
+uncle --> I : uncle
+
+'38
+(Executive Committee) as committee <<institution>>
+Aisha -- committee
+
+:Curls: $female
+committee -- Curls
+
+:Rawda: $female
+
+Curls --> Rawda : brought
+
 
 @enduml
