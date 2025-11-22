@@ -67,7 +67,7 @@ brother -> I : brother
 :Leonard's mother: as leoMother <<unnamed>> $female
 Leonard <-- leoMother : mother
 
-:Carl: $male
+:Carl Yu: as Carl $male
 
 boys - Carl
 
