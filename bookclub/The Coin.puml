@@ -11,7 +11,7 @@ mainframe characters
 
 
 legend
-48.8% (Chapter 45)
+56.7.8% (Chapter 50)
 end legend
 
 :I: $female_protagonist
@@ -92,7 +92,8 @@ Franklin -- Gregory : chemistry teacher
 
 uncle --> I : uncle
 
-:Sofia: <<todo>>
+:Sofia: $female
+I -- Sofia : neighbour
 
 '38
 (Executive Committee) as committee <<institution>>
@@ -105,15 +106,34 @@ committee -- Curls
 
 Curls --> Rawda : brought 
 '41
-:Dominic: <<todo>>
+:Dominic: $male
+Dominic <-- Trenchcoat : made friends with the waiter
 
-'43 
-:Gini Ladlock: <<todo>>
-:Ivan: <<todo>>
 
-:Charlie: 
-:Paul:
-:Eid Mubarak :
+'43
+
+(Scheme) <<project>>
+
+:Gini Ladlock: as Gini $male
+Trenchcoat -- Scheme
+Gini -- Scheme : driver
+
+:Ivan: $male
+
+Scheme <- Ivan  : sceme together
+
+
+:Charlie:  $male
+
+Scheme -- Charlie : sales associate
+:Paul: $male
+Scheme -- Paul : store manager
+:Eid Mubarak: as Mubarak $male
+Scheme -- Mubarak : salesman
+
 '50
-:Kurt:
+:Kurt: $male
+
+I <-- Kurt : sex in hotel
+
 @enduml
