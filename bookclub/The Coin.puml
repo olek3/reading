@@ -11,7 +11,7 @@ mainframe characters
 
 
 legend
-56.7.8% (Chapter 50)
+57.3% (Chapter 51)
 end legend
 
 :I: $female_protagonist
@@ -135,5 +135,8 @@ Scheme -- Mubarak : salesman
 :Kurt: $male
 
 I <-- Kurt : sex in hotel
+
+'51 
+:Cecile:
 
 @enduml
