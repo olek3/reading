@@ -11,7 +11,7 @@ mainframe characters
 
 
 legend
-63.9% (Chapter 59)
+74.0% (Chapter 67)
 end legend
 
 :I: $female_protagonist
@@ -58,7 +58,7 @@ boys -- Leonard
 :father: <<unnamed>> <<dead>> $male
 father --> I : father
 
-:mother: <<unnamed>> <<dead>> $female
+:Nuha: as mother <<dead>> $female
 mother --> I : mother
 
 :brother: <<unnamed>> $male
