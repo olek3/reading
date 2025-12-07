@@ -11,7 +11,7 @@ mainframe characters
 
 
 legend
-82.7% (Chapter 76)
+98.6% (Chapter 93)
 end legend
 
 :I: $female_protagonist
@@ -167,5 +167,9 @@ Stew -- garbage : driver
 '76 
 :Mr. Nelson: as Nelson $male
 Leonard <-- Nelson : father
+
+'96 
+:Officer Conley: as Conley 
+I --> Conley : imagined 
 
 @enduml
