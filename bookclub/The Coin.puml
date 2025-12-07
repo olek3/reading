@@ -21,7 +21,7 @@ I -- newYork : recently moved to
 
 (Franklin school) as Franklin <<institution>>
 
-I -- Franklin : teacher
+I --- Franklin : teacher
 
 (vacation in Havana) as Havana <<event>>
 
@@ -64,7 +64,7 @@ mother --> I : mother
 :brother: <<unnamed>> $male
 brother -> I : brother
 
-:Leonard's mother: as leoMother <<unnamed>> $female
+:Leonard's mother: as leoMother <<unnamed>> <<mentioned>> $female
 Leonard <-- leoMother : mother
 
 :Carl Yu: as Carl $male
@@ -73,7 +73,7 @@ boys - Carl
 
 :Trenchcoat: <<unnamed>> $male
 
-I <- Trenchcoat : took coat
+I <-- Trenchcoat : took coat
 
 :Ahmed: $male
 :Elijah: $male
@@ -137,24 +137,35 @@ Scheme -- Mubarak : salesman
 I <-- Kurt : sex in hotel
 
 '51 
-:Cecile:
-
+:Cecile:  $female
+Scheme --- Cecile : sales associate
 '57 
-(The Dandies)
-'59 
-:Felix:
+(The Dandies) as dandies <<group>>
+Leonard -- dandies
+Sal -- dandies
 
+'59 
+:Felix: $male
+Felix - boys
 '68 
-:Texas Salim:
+:Texas Salim: as Salim $male
+Curls <-- Salim : father
 
 '70 
-:Lauren: 
-:Maria:
+:Lauren: $female
+Franklin - Lauren : receptionist
+
+:Maria: $female
+Maria -- Franklin : cleaner
 
 '71 
-:Stew:
+:Stew: $male
+(Garbage men) as garbage <<institution>>
+garbage --> I : came
+Stew -- garbage : driver
 
 '76 
-:Mr. Nelson:
+:Mr. Nelson: as Nelson $male
+Leonard <-- Nelson : father
 
 @enduml
