@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-35.9% (Part three / 39)
+36.6% (Part three / 40)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -477,6 +477,10 @@ Dick .. body : named in cipher message
 
 Carmen --> Martin : wife or gf
 
-Agency -- old $ex but mentioned
+Agency -- old $ex but mentioned 
+
+'40
+:Adam: $male 
+Adam --> strike: youngest nephew 
 
 @enduml
