@@ -1,0 +1,171 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 8192*8192
+
+
+title The Coin by Yasmin Zaher
+mainframe characters
+
+
+:I: $female_protagonist
+(New York) as newYork <<location>>
+
+I -- newYork : recently moved to
+
+(Franklin school) as Franklin <<institution>>
+
+I --- Franklin : teacher
+
+(vacation in Havana) as Havana <<event>>
+
+:Sasha:  $male
+Havana -- Sasha
+I -- Havana
+
+:colleague: <<unnamed>>
+
+:Aisha: $female
+
+Franklin -- Aisha : headmistress
+
+Aisha <-- colleague : friend
+Sasha <-- colleague : colleague
+
+(Palestine) <<location>>
+
+Palestine -- I : left
+
+(boys) <<group>>
+
+Franklin -- boys : students
+
+:Sal Ando: as Sal $male
+boys -- Sal
+
+:Jay Jenkins: as Jay $male
+boys -- Jay
+
+:Leonard: $male
+boys -- Leonard
+
+:father: <<unnamed>> <<dead>> $male
+father --> I : father
+
+:Nuha: as mother <<dead>> $female
+mother --> I : mother
+
+:brother: <<unnamed>> $male
+brother -> I : brother
+
+:Leonard's mother: as leoMother <<unnamed>> <<mentioned>> $female
+Leonard <-- leoMother : mother
+
+:Carl Yu: as Carl $male
+
+boys - Carl
+
+:Trenchcoat: <<unnamed>> $male
+
+I <-- Trenchcoat : took coat
+
+:Ahmed: $male
+:Elijah: $male
+
+Ahmed -- boys
+Elijah -- boys
+
+'29 
+:Matthew: $male
+Franklin -- Matthew : math teacher
+
+:Gregory: $male
+Franklin -- Gregory : chemistry teacher
+
+:uncle: <<unnamed>> $male
+
+uncle --> I : uncle
+
+:Sofia: $female
+I -- Sofia : neighbour
+
+'38
+(Executive Committee) as committee <<institution>>
+Aisha -- committee
+
+:Curls: $female
+committee -- Curls
+
+:Rawda: $female
+
+Curls --> Rawda : brought 
+'41
+:Dominic: $male
+Dominic <-- Trenchcoat : made friends with the waiter
+
+
+'43
+
+(Scheme) <<project>>
+
+:Gini Ladlock: as Gini $male
+Trenchcoat -- Scheme
+Gini -- Scheme : driver
+
+:Ivan: $male
+
+Scheme <- Ivan  : sceme together
+
+
+:Charlie:  $male
+
+Scheme -- Charlie : sales associate
+:Paul: $male
+Scheme -- Paul : store manager
+:Eid Mubarak: as Mubarak $male
+Scheme -- Mubarak : salesman
+
+'50
+:Kurt: $male
+
+I <-- Kurt : sex in hotel
+
+'51 
+:Cecile:  $female
+Scheme --- Cecile : sales associate
+'57 
+(The Dandies) as dandies <<group>>
+Leonard -- dandies
+Sal -- dandies
+
+'59 
+:Felix: $male
+Felix - boys
+'68 
+:Texas Salim: as Salim $male
+Curls <-- Salim : father
+
+'70 
+:Lauren: $female
+Franklin - Lauren : receptionist
+
+:Maria: $female
+Maria -- Franklin : cleaner
+
+'71 
+:Stew: $male
+(Garbage men) as garbage <<institution>>
+garbage --> I : came
+Stew -- garbage : driver
+
+'76 
+:Mr. Nelson: as Nelson $male
+Leonard <-- Nelson : father
+
+'96 
+:Officer Conley: as Conley 
+I --> Conley : imagined 
+
+@enduml
