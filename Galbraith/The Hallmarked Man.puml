@@ -485,5 +485,9 @@ Adam --> strike: youngest nephew
 :Marguerite: <<todo>> $female 
 :Luke: $male 
 Luke --> strike: eldest and least favourite nephew
+(Christmas party) as Christmas <<event>> 
+Christmas -- Lucy 
+:Hector: $male 
+Hector -- Christmas: lactose intolerant 
 
 @enduml
