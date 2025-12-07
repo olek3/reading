@@ -483,5 +483,7 @@ Agency -- old $ex but mentioned
 :Adam: $male 
 Adam --> strike: youngest nephew 
 :Marguerite: <<todo>> $female 
+:Luke: $male 
+Luke --> strike: eldest and least favourite nephew
 
 @enduml
