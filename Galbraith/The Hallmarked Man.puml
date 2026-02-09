@@ -29,7 +29,7 @@ robin --- (Agency) : partner
 murphy --> robin : boyfriend
 
 :Lucy: $female
-Lucy -> strike : sister
+Lucy --> strike : sister
 :Edward Nancarrow a.k.a. Ted: as Ted <<dead>> $male
 Ted --> strike : uncle 
 
@@ -228,7 +228,7 @@ Jason <-- Lynden : uncle
 
 :Greg: $male
 
-Greg -> Lucy : husband
+Greg --> Lucy : husband
 
 ' first talk to Ramsay
 :Pamela Bullen-Driscoll: as Pamela $female
@@ -416,7 +416,7 @@ Annabel -- Masham : niece
 
 '30
 
-:Tish Benton: $female
+:Tish Benton: as Tish $female
 Zac <-- Tish $ex girlfriend
 
 :Cosima: $female
@@ -482,10 +482,11 @@ Agency -- old $ex but mentioned
 '40
 :Adam: $male
 Adam --> strike: youngest nephew
-:Marguerite: <<todo>> $female
+:Marguerite:  $female
 :Luke: $male
 Luke --> strike: eldest and least favourite nephew
 (Christmas party) as Christmas <<event>>
+Marguerite -- Christmas
 Christmas -- Lucy
 :Hector: $male
 Hector -- Christmas: lactose intolerant
