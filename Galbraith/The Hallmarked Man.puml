@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-36.6% (Part three / 40)
+39.9% (Part four / 44)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -416,7 +416,7 @@ Annabel -- Masham : niece
 
 '30
 
-:Tish: $female
+:Tish Benton: $female
 Zac <-- Tish $ex girlfriend
 
 :Cosima: $female
