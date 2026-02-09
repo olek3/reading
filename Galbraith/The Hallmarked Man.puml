@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-35.9% (Part three / 39)
+39.9% (Part four / 44)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -94,7 +94,7 @@ Sacha --> rupe: cousin
 Veronica --> rupe : mother
 Peter --> rupe : father
 
-:Zac: $male
+:Zacharias Lorimer: as Zac $male
 
 rupe <-- Zac  : housemate
 :Dredge: $male
@@ -416,7 +416,7 @@ Annabel -- Masham : niece
 
 '30
 
-:Tish: $female
+:Tish Benton: $female
 Zac <-- Tish $ex girlfriend
 
 :Cosima: $female
@@ -478,5 +478,16 @@ Dick .. body : named in cipher message
 Carmen --> Martin : wife or gf
 
 Agency -- old $ex but mentioned
+
+'40
+:Adam: $male
+Adam --> strike: youngest nephew
+:Marguerite: <<todo>> $female
+:Luke: $male
+Luke --> strike: eldest and least favourite nephew
+(Christmas party) as Christmas <<event>>
+Christmas -- Lucy
+:Hector: $male
+Hector -- Christmas: lactose intolerant
 
 @enduml
