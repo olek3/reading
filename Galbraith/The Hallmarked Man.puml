@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-39.9% (Part four / 44)
+44.7% (Part four / 51)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -494,5 +494,11 @@ Hector -- Christmas: lactose intolerant
 
 Oz <-- Sapphire: wrote 
 Osgood <-- Sapphire: wrote 
+
+'51 
+
+:Ottolie: <<todo>> $female 
+
+Ottolie -> Bijou : daughter
 
 @enduml
