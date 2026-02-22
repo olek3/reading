@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-44.9% (Part four / 52)
+46.2% (Part four / 56)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -507,5 +507,11 @@ Ottolie -> Bijou : daughter
 babyBarnaby --> Jenny : son 
 :Katie: <<todo>> $female 
 Katie --> robin: cousin 
+
+'56 
+:Ilsa Herbert: as Ilsa <<todo>> $female 
+:Benjy: <<todo>> $male 
+Benjy --> Ilsa: son
+
 
 @enduml
