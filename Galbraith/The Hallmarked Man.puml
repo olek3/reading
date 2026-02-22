@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-44.7% (Part four / 51)
+44.9% (Part four / 52)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -341,7 +341,7 @@ Shanker <-- Alyssa : gf
 :Angel: $female
 Alyssa <-- Angel : older daughter
 
-:Barnaby:
+:Barnaby: as Barnaby
 
 Jason --> Barnaby : gone to
 
@@ -499,6 +499,13 @@ Osgood <-- Sapphire: wrote
 
 :Ottolie: <<todo>> $female 
 
-Ottolie -> Bijou : daughter
+Ottolie -> Bijou : daughter 
+
+'52
+
+:Barnaby: as babyBarnaby <<todo>> $male 
+babyBarnaby --> Jenny : son 
+:Katie: <<todo>> $female 
+Katie --> robin: cousin 
 
 @enduml
