@@ -22,6 +22,9 @@ end legend
 Isa -- (brothers)
 (brothers) -- Hendrik
 
+:Sebastian: <<todo>> $male
+
+Hendrik <-- Sebastian : son?
 
 
 @enduml
