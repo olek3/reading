@@ -29,7 +29,7 @@ robin --- (Agency) : partner
 murphy --> robin : boyfriend
 
 :Lucy: $female
-Lucy -> strike : sister
+Lucy --> strike : sister
 :Edward Nancarrow a.k.a. Ted: as Ted <<dead>> $male
 Ted --> strike : uncle 
 
@@ -84,7 +84,7 @@ sirDaniel <-- Gayle : daughter
   Whittaker --> Leda : murdered
 
 :Rupert Peter Bernard Christian Fleetwood: as rupe  $male
-rupe -> decima : husband(?)
+rupe ---> decima : husband(?)
 rupe .. body : suspected by Decima
 Sacha --> rupe: cousin
 
@@ -253,7 +253,7 @@ silver --- Laura : works
 silver -- Jim : cleaner
 
 :Calvin Osgood: as Osgood $male
-body --> Osgood : sent email
+body ---> Osgood : sent email
 
 (Patterson agency) as Patterson <<institution>>
 Agency --- Patterson :competing
@@ -416,7 +416,7 @@ Annabel -- Masham : niece
 
 '30
 
-:Tish Benton: $female
+:Tish Benton: as Tish $female
 Zac <-- Tish $ex girlfriend
 
 :Cosima: $female
@@ -466,8 +466,11 @@ strike <-- Jack : favourite nephew
 :Sir Victor Lambert: as Lambert $male
 Branfoot <-- Lambert : affiliated
 Lambert ----- silver : visited
-:Jeffrey Archer: <<mentioned>> $male
+:Jeffrey Archer: as Archer <<mentioned>> $male
 :Savile:  <<mentioned>>
+
+Archer <... strike : mentioned
+Savile <... strike : mentioned
 
 :Dick de Lion: as Dick  $male
 Dick .. body : named in cipher message
@@ -482,36 +485,40 @@ Agency -- old $ex but mentioned
 '40
 :Adam: $male 
 Adam --> strike: youngest nephew 
-:Marguerite: <<todo>> $female 
-:Luke: $male 
+:Marguerite:  $female
+
+:Luke: $male
 Luke --> strike: eldest and least favourite nephew
-(Christmas party) as Christmas <<event>> 
-Christmas -- Lucy 
+(Christmas party) as Christmas <<event>>
+Marguerite -- Christmas
+Christmas -- Lucy
 :Hector: $male 
 Hector -- Christmas: lactose intolerant 
 
-:Sapphire Neagle: as Sapphire <<todo>> $female
+:Sapphire Neagle: as Sapphire  $female
 
-Oz <-- Sapphire: wrote 
+Oz <- Sapphire: wrote
 Osgood <-- Sapphire: wrote 
 
 '51 
 
-:Ottolie: <<todo>> $female 
+:Ottolie: $female
 
-Ottolie -> Bijou : daughter 
+ Bijou <- Ottolie : daughter
 
 '52
 
-:Barnaby: as babyBarnaby <<todo>> $male 
+:Barnaby: as babyBarnaby $male
 babyBarnaby --> Jenny : son 
-:Katie: <<todo>> $female 
+:Katie: $female
 Katie --> robin: cousin 
 
 '56 
-:Ilsa Herbert: as Ilsa <<todo>> $female 
-:Benjy: <<todo>> $male 
+:Ilsa Herbert: as Ilsa $female
+:Benjy: $male
 Benjy --> Ilsa: son
+
+Ilsa ---> strike : old friend
 
 
 @enduml
