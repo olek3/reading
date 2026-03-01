@@ -1,0 +1,27 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 8192*8192
+
+
+title The Safekeep by Yael van der Wouden
+
+mainframe characters
+legend
+0% (PART I: The Netherlands, 1961 / Chapter 1)
+end legend
+
+:Isabel: as Isa $female_protagonist
+
+(brothers) <<group>>
+
+:Hendrik: $male
+
+Isa -- (brothers)
+(brothers) -- Hendrik
+
+
+
+@enduml
