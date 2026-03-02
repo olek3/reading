@@ -22,11 +22,11 @@ end legend
 Isa -- (brothers)
 (brothers) -- Hendrik
 
-:Sebastian: <<todo>> $male
+:Sebastian:  $male
 
 Hendrik <-- Sebastian : son?
 
-:Sebastian's mother: as sebaMother <<todo>><<unnamed>>  $female
+:Sebastian's mother: as sebaMother <<unnamed>>  $female
 
 Sebastian <-- sebaMother : mother
 
