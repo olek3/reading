@@ -20,7 +20,9 @@ end legend
 :Hendrik: $male
 
 Isa -- (brothers)
-(brothers) -- Hendrik
+(brothers) -- Hendrik 
+
+:Neelke: <<todo>>
 
 :Sebastian:  $male
 
@@ -28,6 +30,11 @@ Hendrik <-- Sebastian : son?
 
 :Sebastian's mother: as sebaMother <<unnamed>>  $female
 
-Sebastian <-- sebaMother : mother
+Sebastian <-- sebaMother : mother 
+
+:Mother: <<todo>> <<dead>> 
+
+:Johan: <<todo>>
+
 
 @enduml
