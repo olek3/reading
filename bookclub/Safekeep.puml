@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-3.9% (PART I: The Netherlands, 1961 / Chapter 1)
+5.4% (PART I: The Netherlands, 1961 / Chapter 1)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -60,5 +60,9 @@ sebaMother -- Paris
 :Eva: $female
 
 Eva --> Louis : gf
+
+:Maurice: $male
+Maurice -- Louis : roommate
+
 
 @enduml
