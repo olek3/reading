@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-5.4% (PART I: The Netherlands, 1961 / Chapter 1)
+9.6% (PART I: The Netherlands, 1961 / Chapter 2)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -63,6 +63,24 @@ Eva --> Louis : gf
 
 :Maurice: $male
 Maurice -- Louis : roommate
+
+'2
+(Van den Berg family) as vanDenBerg <<group>>
+
+vanDenBerg -- Johan
+
+:Johan's mother: as johanMother <<unnamed>> $female
+johanMother -- vanDenBerg
+
+(Hoijers) <<group>><<mentioned>>
+
+Hoijers <.. johanMother : mentioned
+
+:Nelis: <<mentioned>> $male
+:Nelis's wife: as nelisWife <<mentioned>> <<unnamed>> $female
+
+nelisWife --> Nelis : wife
+Nelis --> Louis : colleague
 
 
 @enduml
