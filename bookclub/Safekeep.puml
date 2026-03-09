@@ -10,19 +10,21 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-0% (PART I: The Netherlands, 1961 / Chapter 1)
+1.8% (PART I: The Netherlands, 1961 / Chapter 1)
 end legend
 
 :Isabel: as Isa $female_protagonist
 
-(brothers) <<group>>
+(family) <<group>>
 
 :Hendrik: $male
 
-Isa -- (brothers)
-(brothers) -- Hendrik 
+Isa -- family
+Hendrik -- family : younger%n()brother
 
-:Neelke: <<todo>>
+:Neelke: $female
+
+Neelke --> Isa : maid
 
 :Sebastian:  $male
 
@@ -32,12 +34,23 @@ Hendrik <-- Sebastian : son?
 
 Sebastian <-- sebaMother : mother 
 
-:Mother: <<todo>> <<dead>> 
+:Mother: <<dead>> <<unnamed>> $female
+family -- Mother
 
-:Johan: <<todo>>
+:Father: <<dead>> <<unnamed>> $male
+family -- Father
 
-:Father: <<todo>>
-:Karel: <<todo>>
+:Johan: $male
 
+Johan --> Isa : visits
+
+:Karel: $male
+family -- Karel : uncle
+
+:Karel's wife: as kareWife <<unnamed>> $female
+Karel <-- kareWife
+
+:Louis: $male
+Louis -- family : elder%n()brother
 
 @enduml
