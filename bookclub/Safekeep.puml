@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-13.7% (PART I: The Netherlands, 1961 / Chapter 3)
+14.6% (PART I: The Netherlands, 1961 / Chapter 3)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -85,7 +85,15 @@ Nelis --> Louis : colleague
 :Silke: $female
 Silke --> Isa : classmate
 
-Silke <-> Neelke : sister
+Silke <-> Neelke : sister 
 
+
+:Rian: $female 
+
+Mother <-- Rian : old friend 
+
+(Assen) <<location>> 
+
+Rian -- Assen
 
 @enduml
