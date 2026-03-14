@@ -96,4 +96,10 @@ Mother <-- Rian : old friend
 
 Rian -- Assen
 
+:Haasje: <<pet>> <<dead>> 
+
+Haasje --> Isa $ex dog 
+
+
+
 @enduml
