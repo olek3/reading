@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-23.5% (PART I: The Netherlands, 1961 / Chapter 5)
+27.0% (PART I: The Netherlands, 1961 / Chapter 5)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -99,7 +99,9 @@ Rian -- Assen
 :Haasje: <<pet>> <<dead>> 
 
 Haasje --> Isa $ex dog 
+:Willy: <<mentioned>> $male 
 
+Willy <-- Johan : colleague with a boat 
 
 
 @enduml
