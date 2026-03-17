@@ -108,4 +108,8 @@ Willy <-- Johan : colleague with a boat
 
 Edwin --> Hendrik : piano tutor 
 
+:Cora: $female
+
+family -- Cora: Great-Aunt
+
 @enduml
