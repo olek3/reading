@@ -57,9 +57,9 @@ Louis -- family : elder%n()brother
 
 sebaMother -- Paris
 
-:Eva de Haas: as Eva $female
+:Eva de Haas: as Eva $female_protagonist
 
-Eva --> Louis : gf
+Eva ----> Louis : gf
 
 :Maurice: $male
 Maurice -- Louis : roommate
@@ -112,32 +112,71 @@ Edwin --> Hendrik : piano tutor
 
 family -- Cora: Great-Aunt
 
-:Mary: <<todo>>
+:Mary: $female
+Mary --> Louis : new girl
+
 'part III
-:Tante Malcha: <<todo>> 
-:Esther: as Mum <<todo>>
-:Basje: <<todo>> 
-:Geertje: <<todo>> 
+:Tante Malcha: as Malcha $female
+Malcha --> Eva : aunt
 
-:Jan: <<todo>> 
+(Eva's family) as evasFamily <<group>>
 
-:Mark: <<todo>>
-:Shula: <<todo>> 
-:Lola: <<todo>>
+:Esther: as Mum <<dead>> $female
+Mum -- evasFamily : mother
 
-:Uncle Shimon: as Shimon <<todo>> 
-:Papa: <<todo>> 
+evasFamily ---- Eva
 
-:Rita: <<todo>> 
+(Eva's friends) as evasFriends <<group>>
 
-Mum <-- Rita: cousin 
+evasFriends -- Eva
 
-:De Leeuw: <<todo>>
+:Basje: $female
+Basje --> evasFriends : worked together
 
-:Miriam: <<todo>>
+:Geertje:
+Geertje --> Eva : found guy
 
-:Fred: <<todo>> $female
+:Jan: <<mentioned>> $male
+Jan ----> Eva : superior
 
-:Daantje: :<<todo>> $female
+(Eva's exes) as evasLovers <<group>>
+evasLovers - Eva $ex .
+
+:Mark: $male
+Mark -- evasLovers : donkey
+
+:Shula: $female
+:Lola: $female
+
+Shula -- evasFriends
+Lola -- evasFriends
+
+:Uncle Shimon: as Shimon $male
+Shimon -- evasFamily : uncle
+
+:Papa: $male
+Papa -- evasFamily : dad
+
+:Rita: $female
+Rita --> Mum : cousin
+
+:De Leeuw: as deLeeuw $male
+deLeeuw -- evasLovers : smell like pickles & brine
+
+:Miriam: $female
+Miriam --> Shula : friend
+
+:Fred:  $female
+Fred -- evasLovers : first girl
+
+:Daantje: <<mentioned>> $female
+Daantje ----> Eva : loan
+
+'Eva ===== Isa
+
+:Geytele:
+
+Eva <-- Geytele : got hiding in '43
+ Geytele --> Maurice : cousin
 
 @enduml
