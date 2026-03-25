@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-73.3% (PART III / Chapter 12)
+73.4% (PART III / Chapter 12)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -133,5 +133,7 @@ family -- Cora: Great-Aunt
 Mum <-- Rita: cousin 
 
 :De Leeuw: <<todo>>
+
+:Miriam: <<todo>>
 
 @enduml
