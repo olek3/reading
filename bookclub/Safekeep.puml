@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-69.6% (PART II / Chapter 11)
+71.0% (PART III / Chapter 12)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -57,7 +57,7 @@ Louis -- family : elder%n()brother
 
 sebaMother -- Paris
 
-:Eva: $female
+:Eva de Haas: as Eva $female
 
 Eva --> Louis : gf
 
@@ -113,5 +113,8 @@ Edwin --> Hendrik : piano tutor
 family -- Cora: Great-Aunt
 
 :Mary: <<todo>>
+'part III
+:Tante Malcha: <<todo>> 
+:mom: <<todo>>
 
 @enduml
