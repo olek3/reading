@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-34.6% (PART II / Chapter 6)
+69.6% (PART II / Chapter 11)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -111,5 +111,7 @@ Edwin --> Hendrik : piano tutor
 :Cora: $female
 
 family -- Cora: Great-Aunt
+
+:Mary: <<todo>>
 
 @enduml
