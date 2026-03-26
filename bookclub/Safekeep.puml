@@ -10,7 +10,7 @@ title The Safekeep by Yael van der Wouden
 
 mainframe characters
 legend
-78. 8% (PART III / Chapter 12)
+79. 4% (PART III / Chapter 12)
 end legend
 
 :Isabel: as Isa $female_protagonist
@@ -180,6 +180,9 @@ Eva <-- Geytele : got hiding in '43
  Geytele --> Maurice : cousin
  
  :Martijn: $male 
- Martijn -- evasLovers: Mmmmmmm
+ Martijn -- evasLovers: Mmmmmmm 
+ 
+ :Uncle Avrum: as Avrum <<mentioned>> $male 
+ Avrum -- evasFamily: uncle 
 
 @enduml
