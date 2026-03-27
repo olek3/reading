@@ -9,9 +9,6 @@ scale max 8192*8192
 title The Safekeep by Yael van der Wouden
 
 mainframe characters
-legend
-88. 2% (PART III / Chapter 13)
-end legend
 
 :Isabel: as Isa $female_protagonist
 
@@ -19,7 +16,7 @@ end legend
 
 :Hendrik: $male
 
-Isa -- family
+Isa -- family : family
 Hendrik -- family : younger%n()brother
 
 :Neelke: $female
@@ -57,7 +54,7 @@ Louis -- family : elder%n()brother
 
 sebaMother -- Paris
 
-:Eva de Haas: as Eva $female_protagonist
+:Eva: $female_protagonist
 
 Eva ----> Louis : gf
 
@@ -117,14 +114,14 @@ Mary --> Louis : new girl
 
 'part III
 :Tante Malcha: as Malcha $female
-Malcha --> Eva : aunt
 
-(Eva's family) as evasFamily <<group>>
+(de Haas) as evasFamily <<group>>
+Malcha -- evasFamily : aunt
 
 :Esther: as Mum <<dead>> $female
 Mum -- evasFamily : mother
 
-evasFamily ---- Eva
+evasFamily ---- Eva : family
 
 (Eva's friends) as evasFriends <<group>>
 
@@ -137,7 +134,7 @@ Basje --> evasFriends : worked together
 Geertje --> Eva : found guy
 
 :Jan: <<mentioned>> $male
-Jan ----> Eva : superior
+Eva <-- Jan : superior
 
 (Eva's exes) as evasLovers <<group>>
 evasLovers - Eva $ex .
@@ -154,7 +151,7 @@ Lola -- evasFriends
 :Uncle Shimon: as Shimon $male
 Shimon -- evasFamily : uncle
 
-:Papa: $male
+:Papa: <<unnamed>><<dead>> $male
 Papa -- evasFamily : dad
 
 :Rita: $female
@@ -170,7 +167,7 @@ Miriam --> Shula : friend
 Fred -- evasLovers : first girl
 
 :Daantje: <<mentioned>> $female
-Daantje ----> Eva : loan
+Daantje ---> Eva : loan
 
 'Eva ===== Isa
 
