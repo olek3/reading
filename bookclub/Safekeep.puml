@@ -1,0 +1,188 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 8192*8192
+
+
+title The Safekeep by Yael van der Wouden
+
+mainframe characters
+
+:Isabel: as Isa $female_protagonist
+
+(Den Brave) as family <<group>>
+
+:Hendrik: $male
+
+Isa -- family : family
+Hendrik -- family : younger%n()brother
+
+:Neelke: $female
+
+Neelke --> Isa : maid
+
+:Sebastian:  $male
+
+Hendrik <-- Sebastian : bf
+
+:Sebastian's mother: as sebaMother <<unnamed>>  $female
+
+Sebastian <-- sebaMother : mother 
+
+:Mother: <<dead>> <<unnamed>> $female
+family -- Mother
+
+:Father: <<dead>> <<unnamed>> $male
+family -- Father
+
+:Johan: $male
+
+Johan --> Isa : neighbor
+
+:Karel: $male
+family -- Karel : uncle
+
+:Karel's wife: as kareWife <<unnamed>> $female
+Karel <-- kareWife
+
+:Louis: $male
+Louis -- family : elder%n()brother
+
+(Paris) <<location>>
+
+sebaMother -- Paris
+
+:Eva: $female_protagonist
+
+Eva ----> Louis : gf
+
+:Maurice: $male
+Maurice -- Louis : roommate
+
+'2
+(Van den Berg family) as vanDenBerg <<group>>
+
+vanDenBerg -- Johan
+
+:Johan's mother: as johanMother <<unnamed>> $female
+johanMother -- vanDenBerg
+
+(Hoijers) <<group>><<mentioned>>
+
+Hoijers <.. johanMother : mentioned
+
+:Nelis: <<mentioned>> $male
+:Nelis's wife: as nelisWife <<mentioned>> <<unnamed>> $female
+
+nelisWife --> Nelis : wife
+Nelis --> Louis : colleague
+
+:Silke: $female
+Silke --> Isa : classmate
+
+Silke <-> Neelke : sister 
+
+
+:Rian: $female 
+
+Mother <-- Rian : old friend 
+
+(Assen) <<location>> 
+
+Rian -- Assen
+
+:Haasje: <<pet>> <<dead>> 
+
+Isa <-- Haasje $ex dog
+
+:Willy: <<mentioned>> $male
+
+Willy <-- Johan : colleague with a boat 
+
+:Edwin: $male 
+
+Edwin --> Hendrik : piano tutor 
+
+:Cora: $female
+
+family -- Cora: Great-Aunt
+
+:Mary: $female
+Mary --> Louis : new girl
+
+'part III
+:Tante Malcha: as Malcha $female
+
+(de Haas) as evasFamily <<group>>
+Malcha -- evasFamily : aunt
+
+:Esther: as Mum <<dead>> $female
+Mum -- evasFamily : mother
+
+evasFamily ---- Eva : family
+
+(Eva's friends) as evasFriends <<group>>
+
+evasFriends -- Eva
+
+:Basje: $female
+Basje --> evasFriends : worked together
+
+:Geertje:
+Geertje --> Eva : found guy
+
+:Jan: <<mentioned>> $male
+Eva <-- Jan : superior
+
+(Eva's exes) as evasLovers <<group>>
+evasLovers - Eva $ex .
+
+:Mark: $male
+Mark -- evasLovers : donkey
+
+:Shula: $female
+:Lola: $female
+
+Shula -- evasFriends
+Lola -- evasFriends
+
+:Uncle Shimon: as Shimon $male
+Shimon -- evasFamily : uncle
+
+:Papa: <<unnamed>><<dead>> $male
+Papa -- evasFamily : dad
+
+:Rita: $female
+Rita --> Mum : cousin
+
+:De Leeuw: as deLeeuw $male
+deLeeuw -- evasLovers : smell like pickles & brine
+
+:Miriam: $female
+Miriam --> Shula : friend
+
+:Fred:  $female
+Fred -- evasLovers : first girl
+
+:Daantje: <<mentioned>> $female
+Daantje ---> Eva : loan
+
+'Eva ===== Isa
+
+:Geytele:
+
+Eva <-- Geytele : got hiding in '43
+ Geytele --> Maurice : cousin
+ 
+ :Martijn: $male 
+ Martijn -- evasLovers: Mmmmmmm 
+ 
+ :Uncle Avrum: as Avrum <<mentioned>> $male 
+ Avrum -- evasFamily: uncle 
+ 
+ :Bas van der Laan: as Bas $male 
+ Bas --> Neelke: bf
+
+@enduml
