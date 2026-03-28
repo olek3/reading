@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-46.2% (Part four / 56)
+47.3% (Part five / 57)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -520,5 +520,6 @@ Benjy --> Ilsa: son
 
 Ilsa ---> strike : old friend
 
+:Reata Lindvall: <<todo>>
 
 @enduml
