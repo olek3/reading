@@ -520,6 +520,17 @@ Benjy --> Ilsa: son
 
 Ilsa ---> strike : old friend
 
-:Reata Lindvall: <<todo>>
+:Reata Lindvall: as Reata <<dead>> $female
+Reata ---> Ritalinda : could be
+
+:Ellas Maes: as Maes $male
+
+Maes --> Reata : partner
+
+:Jolanda: $female
+
+Jolanda --> Reata : daughter
+
+
 
 @enduml
