@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-47.3% (Part five / 57)
+47.9% (Part five / 58)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -203,9 +203,9 @@ Agency - Barclay
 :Shah:  $male
 Agency -- Shah : short and good-looking
 :Midge Greenstreet: as Midge $female
-Midge - Agency
+Midge -- Agency
 :Shanker: $male
- strike <- Shanker : childhood friend
+ strike <-- Shanker : childhood friend
 
  :Graham "Hardy" Hardacre: as Hardy $male
 Hardy --> strike : military colleague, mason
@@ -291,10 +291,10 @@ Lorelei -- exes : owner of a vintage closing store
 :Madeleine: <<mentioned>> $female
 exes -- Madeleine  : the jewellery designer
 :Bijou: $female
-exes - Bijou : lawer
+exes -- Bijou : lawer
 
 
-strike -- exes  $ex
+strike --- exes  $ex
 
 
 ' visti to St George St.
@@ -456,7 +456,7 @@ Jonathan -- Masham : youngest brother
 Martin -- Masham : third sibling 
 
 :Nick: <<mentioned>> $male
-Nick --> strike : old fried
+Nick --> strike : old friend
 
 
 '38
@@ -504,7 +504,7 @@ Osgood <-- Sapphire: wrote
 
 :Ottolie: $female
 
- Bijou <- Ottolie : daughter
+ Bijou <-- Ottolie : daughter
 
 '52
 
@@ -531,6 +531,20 @@ Maes --> Reata : partner
 
 Jolanda --> Reata : daughter
 
+:Percy: $male
+Nina <-- Percy : groom
+
+:Nina's friend: as ninaFriend <<unnamed>> $female
+
+Nina <-- ninaFriend : bridesmaid
+
+ninaFriend --- old
+
+'58
+
+:Tia Thompson: as Tia $female
+
+Sapphire <- Tia : friend
 
 
 @enduml
