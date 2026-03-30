@@ -552,6 +552,9 @@ ninaFriend --- old
 :Tia Thompson: as Tia $female
 
 Sapphire <- Tia : friend
+'59 
 
+:Mr Semple: as naillFather $male 
+Naill <-- naillFather: father
 
 @enduml
