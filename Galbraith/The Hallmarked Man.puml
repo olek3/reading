@@ -223,12 +223,12 @@ body .. Niall : reported by wife
 Niall <-- niallMother : mother
 Niall <-- niallWife : wife 
 
-:ginger haired: as jadePartner $male 
+:ginger haired: as jade partner <<unnamed>> $male 
 
-nialWife <-- jadePartner: partner? 
+niallWife <-- jadePartner: partner? 
 
 :Pom Pom: as pomPom <<pet>> $male 
-nialWife <-- pomPom: dog
+niallWife <-- pomPom: dog
 
 :Lynden Knowles: as Lynden $male
 Jason <-- Lynden : uncle
