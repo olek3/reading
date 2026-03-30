@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-48.4% (Part five / 59)
+48.6% (Part five / 59)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -221,7 +221,14 @@ Powell <-- powellGrandmother : grandmother (adopted)
 
 body .. Niall : reported by wife
 Niall <-- niallMother : mother
-Niall <-- niallWife : wife
+Niall <-- niallWife : wife 
+
+:ginger haired: as jadePartner $male 
+
+nialWife <-- jadePartner: partner? 
+
+:Pom Pom: as pomPom <<pet>> $male 
+nialWife <-- pomPom: dog
 
 :Lynden Knowles: as Lynden $male
 Jason <-- Lynden : uncle
