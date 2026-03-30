@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-48.6% (Part five / 59)
+49.0% (Part five / 59)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -223,7 +223,7 @@ body .. Niall : reported by wife
 Niall <-- niallMother : mother
 Niall <-- niallWife : wife 
 
-:ginger haired: as jade partner <<unnamed>> $male 
+:ginger haired: as jadePartner <<unnamed>> $male
 
 niallWife <-- jadePartner: partner? 
 
@@ -556,5 +556,8 @@ Sapphire <- Tia : friend
 
 :Mr Semple: as naillFather $male 
 Naill <-- naillFather: father
+
+Penny $female
+Dave <--Penny : wife
 
 @enduml
