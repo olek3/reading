@@ -1,0 +1,20 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+
+title Hot Butter Cuttlefish by Ashok Ferrey
+
+mainframe characters
+
+legend: p 2/260 (1)
+
+:I: <<protagoinst>>
+
+:Arthur: $male
+
+I <-- Arthur : customer
+
+
+@enduml
