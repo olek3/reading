@@ -541,7 +541,7 @@ Jolanda --> Reata : daughter
 :Percy: $male
 Nina <-- Percy : groom
 
-:Nina's friend: as ninaFriend <<unnamed>> $female
+:Ginger Moustache: as ninaFriend <<unnamed>> $female
 
 Nina <-- ninaFriend : bridesmaid
 
