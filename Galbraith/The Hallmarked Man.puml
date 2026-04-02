@@ -555,14 +555,13 @@ Sapphire <- Tia : friend
 '59 
 
 :Mr Semple: as naillFather $male 
-Niall <-- naillFather: father
+Naill <-- naillFather: father
 
 Penny $female
 Dave <--Penny : wife
 
-:Ben: <<dead>> $male
-Niall <-- Ben : best friend
+:Ben: <<todo>> 
+note right: Niall's friend, dead 
 
-niallWife <- Lawrence : took note
 
 @enduml
