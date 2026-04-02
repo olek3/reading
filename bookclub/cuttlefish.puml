@@ -8,13 +8,16 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-legend: p 2/260 (1)
+legend: p 3/260 (1)
 
-:I: <<protagoinst>>
+:I: $male_protagonist
 
 :Arthur: $male
 
 I <-- Arthur : customer
 
+:Fiona: <<mentioned>> $female
+
+Fiona  --> I $ex unclear
 
 @enduml
