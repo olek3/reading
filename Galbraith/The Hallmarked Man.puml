@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-49.4% (Part five / 59)
+51.9% (Part five / 65)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -99,7 +99,7 @@ Peter --> rupe : father
 rupe <-- Zac  : housemate
 :Dredge: $male
 
-Dredge <-- Zac  : owed
+Zac --> Dredge  : owed
 
 :Anjelica Wallner: as aunt $female
 
@@ -564,5 +564,9 @@ Dave <--Penny : wife
 Niall <-- Ben : best friend
 
 niallWife <- Lawrence : took note
+
+:Mullins: $male
+
+decima <-- Mullins $ex husband
 
 @enduml
