@@ -34,7 +34,7 @@ Arthur <-- Chanchalla : ballet student
 
 Arthur --> Kamala : employer
 
-:Fritzi: <<pet>>
+:Fritzi: <<pet>> $male
 
 Fritzi --> I : dog
 
