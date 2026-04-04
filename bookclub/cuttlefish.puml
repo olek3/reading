@@ -8,7 +8,7 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 9
+!$page = 14
 !$pages = 260
 !$progress =$page*1000/$pages
 !$progress = $progress / 10 + "." + %mod( $progress , 10)
@@ -36,6 +36,11 @@ Arthur --> Kamala : employer
 
 :Fritzi: <<pet>> $male
 
-Fritzi --> I : dog
+Fritzi --> I : dog 
+
+:Achi: $female 
+
+Kamala <-- Achi: grandmother
+
 
 @enduml
