@@ -8,14 +8,13 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 8
+!$page = 9
 !$pages = 260
 !$progress =$page*1000/$pages
 !$progress = $progress / 10 + "." + %mod( $progress , 10)
-!$chapter = 1
-!$legend =  "p " +  $page+"/"+$pages + " ["+ $progress+"%] (Chapter "+$chapter+")"
+!$chapter = 2
 
-legend: $legend
+legend: p $page/$pages $progress% (Chapter $chapter/27)
 
 :I: $male_protagonist
 
@@ -34,5 +33,9 @@ Arthur <-- Chanchalla : ballet student
 :Kamala: $female
 
 Arthur --> Kamala : employer
+
+:Fritzi: <<pet>>
+
+Fritzi --> I : dog
 
 @enduml
