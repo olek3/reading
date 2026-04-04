@@ -8,16 +8,31 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-legend: p 5/260 (1)
+!$page = 8
+!$pages = 260
+!$progress =$page*1000/$pages
+!$progress = $progress / 10 + "." + %mod( $progress , 10)
+!$chapter = 1
+!$legend =  "p " +  $page+"/"+$pages + " ["+ $progress+"%] (Chapter "+$chapter+")"
+
+legend: $legend
 
 :I: $male_protagonist
 
 :Arthur Reginald de Fonseca: as Arthur $male
 
-I <-- Arthur : customer
+I <-- Arthur : client
 
 :Fiona: <<mentioned>> $female
 
 Fiona  --> I $ex unclear
+
+:Chanchalla:
+
+Arthur <-- Chanchalla : ballet student
+
+:Kamala: $female
+
+Arthur --> Kamala : employer
 
 @enduml
