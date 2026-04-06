@@ -569,6 +569,7 @@ niallWife <- Lawrence : took note
 
 decima <-- Mullins $ex husband 
 
+' Griff interview 
 
 :Faber Whitehead: as Whitehead $male 
 Griff --> Whitehead: mentioned 
@@ -582,6 +583,14 @@ Powell <-- AnneMarie: gf
 :Hugo: $male 
 
 Whitehead <-- Hugo: son 
-AnneMarie --> Hugo: fell for
+AnneMarie --> Hugo: fell for 
+
+:Ivor: $male 
+
+Powell <-- Ivor: father 
+
+:Gill: $female 
+Ivor <-- Gill: second wife 
+
 
 @enduml
