@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-51.9% (Part five / 65)
+52.9% (Part five / 66)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -567,6 +567,10 @@ niallWife <- Lawrence : took note
 
 :Mullins: $male
 
-decima <-- Mullins $ex husband
+decima <-- Mullins $ex husband 
+
+
+:Faber Whitehead: as Whitehead $male 
+Griff --> Whitehead: mentioned 
 
 @enduml
