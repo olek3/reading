@@ -3,7 +3,7 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 !include $stylePath/reading.iuml
 
-scale max 8192*8192
+scale max 16384*16384
 
 
 title The Hallmarked man
@@ -577,6 +577,11 @@ Griff --> Whitehead: mentioned
 Griff <-- Chloe: daughter 
 
 :Anne-Marie: as AnneMarie $female 
-Powell <-- AnneMarie: gf
+Powell <-- AnneMarie: gf 
+
+:Hugo: $male 
+
+Whitehead <-- Hugo: son 
+AnneMarie --> Hugo: fell for
 
 @enduml
