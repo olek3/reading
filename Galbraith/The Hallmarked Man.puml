@@ -9,7 +9,7 @@ scale max 8192*8192
 title The Hallmarked man
 mainframe characters
 legend
-53.0% (Part five / 66)
+53.2% (Part five / 66)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -575,5 +575,8 @@ Griff --> Whitehead: mentioned
 
 :Chloe: $female 
 Griff <-- Chloe: daughter 
+
+:Anne-Marie: as AnneMarie $female 
+Powell <-- AnneMarie: gf
 
 @enduml
