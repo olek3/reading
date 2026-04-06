@@ -9,7 +9,7 @@ scale max 16384*16384
 title The Hallmarked man
 mainframe characters
 legend
-53.2% (Part five / 66)
+53.5% (Part five / 67)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -591,6 +591,11 @@ Powell <-- Ivor: father
 
 :Gill: $female 
 Ivor <-- Gill: second wife 
+
+' dylis 
+
+:Wynn Jones: as Wynn $male 
+Powell <--> Wynn: friends
 
 
 @enduml
