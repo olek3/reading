@@ -1,20 +1,23 @@
+
 @startuml
 
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 !include $stylePath/reading.iuml
 
+!function $paperbook_legend($page,$pages,$chapter,$chapters)
+!$progress =$page*1000/$pages
+!$progress = $progress / 10 + "." + %mod( $progress , 10)
+!return "p " +$page + "/" + $pages + " " + $progress + " (Chapter"+$chapter + "/"+ $chapters+")"
+!end function
 
 title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
 !$page = 21
-!$pages = 260
-!$progress =$page*1000/$pages
-!$progress = $progress / 10 + "." + %mod( $progress , 10)
 !$chapter = 3
 
-legend: p $page/$pages $progress% (Chapter $chapter/27)
+legend: $paperbook_legend($page,260,$chapter,27)
 
 :Malik: as I <<narrator>> $male_protagonist
 
@@ -32,7 +35,7 @@ Arthur <-- Chanchalla : ballet student
 
 :Kamala: $female
 
-Arthur --> Kamala : employer
+Arthur --> Kamala : ? employer
 
 :Fritzi: <<pet>> $male
 
