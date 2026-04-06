@@ -4,6 +4,8 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 !include $stylePath/reading.iuml
 
+'skinparam backgroundcolor #191a1c
+
 !function $paperbook_legend($page,$pages,$chapter,$chapters)
 !$progress =$page*1000/$pages
 !$progress = $progress / 10 + "." + %mod( $progress , 10)
@@ -11,6 +13,7 @@
 !end function
 
 title Hot Butter Cuttlefish by Ashok Ferrey
+
 
 mainframe characters
 
