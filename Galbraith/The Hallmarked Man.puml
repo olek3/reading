@@ -9,7 +9,7 @@ scale max 16384*16384
 title The Hallmarked man
 mainframe characters
 legend
-55.7% (Part five / 69)
+56.2% (Part five / 69)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -597,9 +597,10 @@ Ivor <-- Gill: second wife
 :Wynn Jones: as Wynn $male 
 Powell <--> Wynn: friends 
 
+' 69 fyola interview 
 :Fiona Freeman: <<todo>> 
 :Fyola Fay: <<todo>>
 :Craig Wheaton: <<todo>>
-
+:Danny: <<todo>> ' dick de lion
 
 @enduml
