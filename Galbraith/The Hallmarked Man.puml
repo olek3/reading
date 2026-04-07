@@ -70,7 +70,7 @@ Gayle -- carrot : "maître d’"
 
 
  :Jason Knowles: as Jason $male
- body .... Jason  : identified by police
+ body ... Jason  : identified by police
 
  :Sir Daniel Gayle: as sirDaniel $male
 sirDaniel <-- Gayle : daughter
@@ -175,7 +175,8 @@ Albie -- Dinos : waiter
 rupe <--> Albie : friend
 
 :DCI Malcom Truman: as Truman $male
-body <-- Truman : investigated
+'body <-- Truman : investigated
+Truman --> body : investigated
 
 
 :Pat Chauncey: as Pat $female
@@ -219,7 +220,7 @@ Powell <-- powellGrandmother : grandmother (adopted)
 :Mother: as niallMother <<unnamed>> <<dead>> $female
 :Jade: as niallWife $female
 
-body .. Niall : reported by wife
+body ... Niall : reported by wife
 Niall <-- niallMother : mother
 Niall <-- niallWife : wife 
 
@@ -244,7 +245,7 @@ Ramsay <-- Rachel : wife
 Rachel <-- Pamela : sister
 
 :John Auclair: as Auclair $male
-silver <-- Auclair : customer (important collector)
+silver <- Auclair : customer (important collector)
 (Bullen & Co) as BullenCo <<institution>>
 :Bullen: $male
 Rachel <-- Bullen : father
@@ -254,16 +255,16 @@ Bullen -- BullenCo : owned
 Pamela <-- Geoffrey : husband
 
 :Laura: $female
-silver --- Laura : works
+Laura - silver : works
 
 :Jim Todd: as Jim  $male
-silver -- Jim : cleaner
+Jim  -- silver : cleaner
 
 :Calvin Osgood: as Osgood $male
-body ---> Osgood : sent email
+body ----> Osgood : sent email
 
 (Patterson agency) as Patterson <<institution>>
-Agency --- Patterson :competing
+Agency -- Patterson :competing
 :Mitch Patterson: as Mitch $male
 Patterson -- Mitch  : owner
 
@@ -327,7 +328,7 @@ Hussein <-- hussainWife : wife
 :girl: as visitor1 <<unnamed>> $female
 
 :a guy: as visitor2 <<unnamed>> $male
-note right: guy wiv curly ’air an’ ’e was wearing sunglasses, indoors. ’E looked a real twat
+visitor2 ..> Osgood : could be
 
 stGeorge -- visitor1
 stGeorge -- visitor2
@@ -350,7 +351,7 @@ Alyssa <-- Angel : older daughter
 
 :Barnaby: as Barnaby
 
-Jason --> Barnaby : gone to
+Jason --> Barnaby : """gone to"""
 
 (Two-Times) <<project>>
 
@@ -374,7 +375,7 @@ Culpepper --> Branfoot : interviewed
 :Miss Jones: as missJones <<mentioned>> $female
 old -- missJones : client long ago
 
-:Powell great-niece: as powellGrandniece <<unnamed>>
+:Powell great-niece: as powellGrandniece <<unnamed>> $female
 powellGrandmother --> powellGrandniece : great-aunt
 
 '24
@@ -558,7 +559,7 @@ Sapphire <- Tia : friend
 Niall <-- naillFather: father
 
 Penny $female
-Dave <--Penny : wife
+Dave <-Penny : wife
 
 :Ben: <<dead>> $male
 Niall <-- Ben : best friend
@@ -577,17 +578,17 @@ Griff --> Whitehead: mentioned
 :Chloe: $female 
 Griff <-- Chloe: daughter 
 
-:Anne-Marie: as AnneMarie $female 
+:Anne-Marie: as AnneMarie <<dead>> $female
 Powell <-- AnneMarie: gf 
 
-:Hugo: $male 
+:Hugo: <<dead>> $male
 
 Whitehead <-- Hugo: son 
 AnneMarie --> Hugo: fell for 
 
 :Ivor: $male 
 
-Powell <-- Ivor: father 
+Powell <--- Ivor: father
 
 :Gill: $female 
 Ivor <-- Gill: second wife 
@@ -595,26 +596,31 @@ Ivor <-- Gill: second wife
 ' dylis 
 
 :Wynn Jones: as Wynn $male 
-Powell <--> Wynn: friends 
+Powell <-> Wynn: friends
 
 ' 69 fyola interview 
 :Fiona Freeman: as Fiona $female
 :Fyola Fay: <<alias>> as Fyola $female
 
-Fiona <- Fyola : scenic name
+Fiona <. Fyola : scenic name
 'Fyola -> Fiona : scenic name
 
 :Craig Wheaton: as Craig $male
 
 :Danny: $male
 
-Fiona --> Danny : wrote cipher message
+Fiona --> Danny : wrote cipher message about
 
-Danny <-- Dick : scenic name
+Danny <.. Dick : scenic name
 
-Craig --> Dick
-Fyola <-- Craig
+Craig --> Dick : producer
+Fyola <-- Craig : producer
 
 Branfoot --> Craig : orphanage patron
+
+(Winston Churchill lodge) as lodge <<institution>>
+
+Branfoot -- lodge : moved to
+lodge --- Truman : member
 
 @enduml
