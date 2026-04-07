@@ -365,7 +365,7 @@ Agency -- (Two-Times)
 2times <-- 2timesWife : wife
 
 :Andrew Honbold: as Honbold <<mentioned>> $male
-Patterson ...> Honbold : bugged barrister
+Patterson ..> Honbold : bugged barrister
 
 '23
 :Lord Oliver Branfoot: as Branfoot  $male
@@ -479,7 +479,7 @@ Lambert ----- silver : visited
 Archer <... strike : mentioned
 Savile <... strike : mentioned
 
-:Dick de Lion: as Dick  $male
+:Dick de Lion: <<alias>> as Dick  $male
 Dick .. body : named in cipher message
 
 '39 
@@ -528,7 +528,7 @@ Benjy --> Ilsa: son
 Ilsa ---> strike : old friend
 
 :Reata Lindvall: as Reata <<dead>>  $female
-Reata ---> Ritalinda : could be
+Reata --> Ritalinda : could be
 
 :Ellas Maes: as Maes $male
 
@@ -598,9 +598,23 @@ Ivor <-- Gill: second wife
 Powell <--> Wynn: friends 
 
 ' 69 fyola interview 
-:Fiona Freeman: <<todo>> 
-:Fyola Fay: <<todo>>
-:Craig Wheaton: <<todo>>
-:Danny: <<todo>> ' dick de lion
+:Fiona Freeman: as Fiona $female
+:Fyola Fay: <<alias>> as Fyola $female
+
+Fiona <- Fyola : scenic name
+'Fyola -> Fiona : scenic name
+
+:Craig Wheaton: as Craig $male
+
+:Danny: $male
+
+Fiona --> Danny : wrote cipher message
+
+Danny <-- Dick : scenic name
+
+Craig --> Dick
+Fyola <-- Craig
+
+Branfoot --> Craig : orphanage patron
 
 @enduml
