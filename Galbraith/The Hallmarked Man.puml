@@ -223,7 +223,7 @@ body .. Niall : reported by wife
 Niall <-- niallMother : mother
 Niall <-- niallWife : wife 
 
-:ginger haired: as jadePartner <<unnamed>> $male
+:Ginger Moustache: as jadePartner <<unnamed>> $male
 
 niallWife <-- jadePartner: partner? 
 
@@ -541,7 +541,7 @@ Jolanda --> Reata : daughter
 :Percy: $male
 Nina <-- Percy : groom
 
-:Ginger Moustache: as ninaFriend <<unnamed>> $female
+:Nina's friend: as ninaFriend <<unnamed>> $female
 
 Nina <-- ninaFriend : bridesmaid
 
