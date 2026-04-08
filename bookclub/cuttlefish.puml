@@ -57,7 +57,7 @@ Biju --> MP : son
 
 :Natasha: $female
 
-Natasha --> Biju : wife
+Natasha --> MP : wife
 
 I <-- Natasha : client
 
