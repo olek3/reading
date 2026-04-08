@@ -17,7 +17,7 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 27
+!$page = 29
 !$chapter = 3
 
 legend: $paperbook_legend($page,260,$chapter,27)
@@ -34,7 +34,7 @@ Fiona  --> I $ex wife
 
 :Chanchalla:
 
-Arthur <-- Chanchalla : ballet student
+Arthur <- Chanchalla : ballet student
 
 :Kamala: $female
 
@@ -57,6 +57,10 @@ Biju --> MP : son
 
 :Natasha: $female
 
-Biju <-- Natasha : wife
+Natasha --> Biju : wife
+
+I <-- Natasha : client
+
+I ..> Chanchalla : train
 
 @enduml
