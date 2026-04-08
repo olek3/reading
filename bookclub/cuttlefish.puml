@@ -9,7 +9,7 @@
 !function $paperbook_legend($page,$pages,$chapter,$chapters)
 !$progress =$page*1000/$pages
 !$progress = $progress / 10 + "." + %mod( $progress , 10)
-!return "p " +$page + "/" + $pages + " " + $progress + " (Chapter"+$chapter + "/"+ $chapters+")"
+!return "p " +$page + "/" + $pages + " " + $progress + "% (Chapter"+$chapter + "/"+ $chapters+")"
 !end function
 
 title Hot Butter Cuttlefish by Ashok Ferrey
@@ -17,7 +17,7 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 21
+!$page = 25
 !$chapter = 3
 
 legend: $paperbook_legend($page,260,$chapter,27)
@@ -38,7 +38,7 @@ Arthur <-- Chanchalla : ballet student
 
 :Kamala: $female
 
-Arthur --> Kamala : ? employer
+Arthur <-- Kamala : maid
 
 :Fritzi: <<pet>> $male
 
@@ -48,5 +48,11 @@ Fritzi --> I : dog
 
 Kamala <-- Achi: grandmother
 
+:Biju: $male
+
+:MP: <<unnamed>> <<mentioned>> $male
+
+Kamala <-- Biju : second cousin
+Biju --> MP : son
 
 @enduml
