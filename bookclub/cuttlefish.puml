@@ -65,12 +65,12 @@ I ..> Chanchalla : train
 
 :Mrs Dabare: as Dabare $female
 
-Chanchalla <-- Dabare : mother 
+Chanchalla <-- Dabare : mother
 
-(concert) <<event>> 
+(concert) <<event>>
 
-:Razak: 
+:Razak:
 concert - Arthur : organizer
-concert -- Razak: costumes 
+concert -- Razak: costumes
 
 @enduml
