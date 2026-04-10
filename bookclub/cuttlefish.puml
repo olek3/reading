@@ -65,7 +65,13 @@ I ..> Chanchalla : train
 
 :Mrs Dabare: as Dabare $female
 
-Chanchalla <-- Dabare : mother
+Chanchalla <-- Dabare : mother 
+
+(concert) <<event>> 
+
+:Razak: 
+concert - Arthur : organizer
+concert -- Razak: costumes 
 
 (concert) <<event>>
 
