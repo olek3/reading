@@ -32,7 +32,7 @@ I <-- Arthur : client
 
 Fiona  --> I $ex wife
 
-:Chanchalla:
+:Chanchalla: $female
 
 Arthur <- Chanchalla : ballet student
 
@@ -70,7 +70,7 @@ Chanchalla <-- Dabare : mother
 (concert) <<event>> 
 
 :Razak: 
-Arthur -- concert: organizer 
+concert - Arthur : organizer
 concert -- Razak: costumes 
 
 @enduml
