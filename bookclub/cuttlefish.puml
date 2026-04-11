@@ -65,8 +65,8 @@ MP <- Natasha : wife
 
 I <-- Natasha : client
 
-'I ..> Chanchalla : train
-Chanchalla <.. I : train
+'I ..> Chanchalla : trains
+Chanchalla <.. I : trains
 
 :Mrs Dabare: as Dabare $female
 
