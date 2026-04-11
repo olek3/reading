@@ -17,7 +17,7 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 37
+!$page = 42
 !$chapter = 4
 
 legend: $paperbook_legend($page,260,$chapter,27)
@@ -53,8 +53,10 @@ Kamala <-- Achi: grandmother
 
 :MP: <<unnamed>> <<mentioned>> $male
 
-Kamala <-- Biju : second cousin
-Biju --> MP : son
+'Kamala <-- Biju : second cousin
+Biju --> Kamala : second cousin
+'Biju --> MP : son
+MP <-- Biju  : son
 
 :Natasha: $female
 
@@ -74,12 +76,25 @@ Dabare --> Chanchalla : mother
 (concert) <<event>> 
 
 :Razak: 
-concert - Arthur : organizer
-concert -- Razak: costumes 
+'concert - Arthur : organizer
+Arthur -- concert : organizer
+concert -- Razak: costumes
 
 :Anton: $male
 
 'concert -- Anton : premices security guard
 Anton -- concert  : premices security guard
+
+(Kamala's friends) as friends <<group>>
+
+Kamala -- friends
+
+:Maya: $female
+:Savithri: $female
+:Lalani: $female
+
+friends -- Maya
+friends -- Savithri
+friends -- Lalani
 
 @enduml
