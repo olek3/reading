@@ -17,8 +17,8 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 42
-!$chapter = 4
+!$page = 49
+!$chapter = 6
 
 legend: $paperbook_legend($page,260,$chapter,27)
 
@@ -68,7 +68,7 @@ I <-- Natasha : client
 'I ..> Chanchalla : trains
 Chanchalla <.. I : trains
 
-:Mrs Dabare: as Dabare $female
+:Selina Dabare: as Dabare $female
 
 'Chanchalla <-- Dabare : mother
 Dabare --> Chanchalla : mother
