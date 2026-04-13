@@ -17,7 +17,7 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 49
+!$page = 51
 !$chapter = 6
 
 legend: $paperbook_legend($page,260,$chapter,27)
@@ -96,5 +96,13 @@ Kamala -- friends
 friends -- Maya
 friends -- Savithri
 friends -- Lalani
+
+(Kalabola) <<location>>
+Kalabola --- I
+:Mr Yung: as Yung $male
+:Mrs Ha: as Ha $female
+
+Yung -- Kalabola
+Ha -- Kalabola
 
 @enduml
