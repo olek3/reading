@@ -9,7 +9,7 @@ scale max 16384*16384
 title The Hallmarked man
 mainframe characters
 legend
-56.2% (Part five / 69)
+57.7% (Part five / 70)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -300,6 +300,7 @@ Lorelei -- exes : owner of a vintage closing store
 exes -- Madeleine  : the jewellery designer
 :Bijou: $female
 exes -- Bijou : lawer
+'Bijou - exes  : lawer
 
 
 strike --- exes  $ex
@@ -513,6 +514,7 @@ Osgood <-- Sapphire: wrote
 :Ottolie: $female
 
  Bijou <-- Ottolie : daughter
+'Ottolie --> Bijou : daughter
 
 '52
 
@@ -621,6 +623,21 @@ Branfoot --> Craig : orphanage patron
 (Winston Churchill lodge) as lodge <<institution>>
 
 Branfoot -- lodge : moved to
-lodge --- Truman : member
+lodge --- Truman : member 
+
+
+'70
+
+:Colin Pepper: as Pepper <<mentioned>>  $male
+Pepper <.. Bijou : mentioned
+
+:Iverson:  $female
+
+(New police team) as newTeam <<group>>
+
+newTeam --> body : investigates
+
+Iverson -- newTeam
+
 
 @enduml
