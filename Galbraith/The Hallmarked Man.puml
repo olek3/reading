@@ -9,7 +9,7 @@ scale max 16384*16384
 title The Hallmarked man
 mainframe characters
 legend
-57.7% (Part five / 70)
+58% (Part five / 71)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -638,6 +638,18 @@ Pepper <.. Bijou : mentioned
 newTeam --> body : investigates
 
 Iverson -- newTeam
+
+:Liam: $male 
+Liam --> Wardle: son
+
+:Dirk: $male 
+Dirk --> Martin: son 
+Dirk -> Carmen: son 
+
+
+'71 
+:Zeta: $female
+Powell --> Zeta : abused
 
 
 @enduml
