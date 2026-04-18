@@ -51,7 +51,7 @@ Kamala <-- Achi: grandmother
 
 :Biju: $male
 
-:MP: <<unnamed>> <<mentioned>> $male
+:MP: <<unnamed>> <<mentioned>> <<dead>> $male
 
 'Kamala <-- Biju : second cousin
 Biju --> Kamala : second cousin
@@ -60,13 +60,13 @@ MP <-- Biju  : son
 
 :Natasha: $female
 
-Natasha --> MP : wife
-'MP <- Natasha : wife
+Natasha --> Biju : wife
+'Biju <- Natasha : wife
 
 I <-- Natasha : client
 
 'I ..> Chanchalla : trains
-Chanchalla <.. I : trains
+Chanchalla <-- I : trains
 
 :Selina Dabare: as Dabare $female
 
@@ -113,7 +113,7 @@ Savithri <-- Acushla : sister
 'arthurMother -> Arthur : mother
 Arthur <-- arthurMother  : mother
 
-arthurMother --> Kamala : hired
+arthurMother ..> Kamala : hired
 
 
 @enduml
