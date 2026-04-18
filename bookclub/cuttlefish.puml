@@ -17,8 +17,8 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 77
-!$chapter = 8
+!$page = 84
+!$chapter = 9
 
 legend: $paperbook_legend($page,260,$chapter,27)
 
