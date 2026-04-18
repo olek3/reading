@@ -102,8 +102,8 @@ Kalabola --- I
 :Mr Yung: as Yung $male
 :Mrs Ha: as Ha $female
 
-Yung -- Kalabola
-Ha -- Kalabola
+Yung -- Kalabola: hole in the wall eatery 
+Ha -- Kalabola: eatery 
 
 :Acushla: $female
 Savithri <-- Acushla : sister
@@ -113,7 +113,9 @@ Savithri <-- Acushla : sister
 'arthurMother -> Arthur : mother
 Arthur <-- arthurMother  : mother
 
-arthurMother ..> Kamala : hired
+arthurMother ..> Kamala : hired 
 
+:Raju: $male 
+Raju -- Kalabola : ice cream shop 
 
 @enduml
