@@ -118,4 +118,7 @@ arthurMother ..> Kamala : hired
 :Raju: $male 
 Raju -- Kalabola : ice cream shop 
 
+:Gile: $male 
+I <-- Gile: client 
+
 @enduml
