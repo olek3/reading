@@ -17,8 +17,8 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 84
-!$chapter = 9
+!$page = 95
+!$chapter = 10
 
 legend: $paperbook_legend($page,260,$chapter,27)
 
@@ -58,7 +58,7 @@ Biju --> Kamala : second cousin
 'Biju --> MP : son
 MP <-- Biju  : son
 
-:Natasha: $female
+:Natasha Pilimathalawa: as Natasha <<dead>> $female
 
 Natasha --> Biju : wife
 'Biju <- Natasha : wife
