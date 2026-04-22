@@ -22,9 +22,9 @@ mainframe characters
 
 legend: $paperbook_legend($page,260,$chapter,27)
 
-:Malik: as I <<narrator>> $male_protagonist
+:Malik: as I <<narrator>> $male
 
-:Arthur Reginald de Fonseca: as Arthur $male
+:Arthur Reginald de Fonseca: as Arthur $male_protagonist
 
 I <-- Arthur : client
 
@@ -37,7 +37,7 @@ Fiona  --> I $ex wife
 'Arthur <-- Chanchalla : ballet student
 Chanchalla ---> Arthur : ballet student
 
-:Kamala: $female
+:Kamala: $female_protagonist
 
 Arthur <-- Kamala : maid
 
