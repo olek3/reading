@@ -130,6 +130,8 @@ water - Acushla
 Wadugodapitiya - water
 
 '128
+
+(Angoda Hospital) <<institution>> <<todo>>
 :Matron Alice: <<todo>> $female
 
 @enduml
