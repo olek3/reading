@@ -131,7 +131,10 @@ Wadugodapitiya - water
 
 '128
 
-(Angoda Hospital) <<institution>> <<todo>>
-:Matron Alice: <<todo>> $female
+(Angoda Hospital) as Hospital <<institution>> 
+:Matron Alice: as Alice $female
+
+Hospital - Kamala 
+Hospital -- Alice
 
 @enduml
