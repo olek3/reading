@@ -129,5 +129,12 @@ water - Acushla
 
 Wadugodapitiya - water
 
+'128
+
+(Angoda Hospital) as Hospital <<institution>> 
+:Matron Alice: as Alice $female
+
+Hospital - Kamala 
+Hospital -- Alice
 
 @enduml
