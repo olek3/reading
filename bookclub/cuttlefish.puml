@@ -17,7 +17,7 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 137
+!$page = 140
 !$chapter = 15
 
 legend: $paperbook_legend($page,260,$chapter,27)
@@ -118,8 +118,8 @@ arthurMother ..> Kamala : hired
 :Raju: $male 
 Raju - Kalabola : ice cream shop
 
-:Gile: $male 
-I <- Gile: client
+:Giles: $male
+I <- Giles: client
 
 (Ceylon Water Board) as water <<institution>>
 
@@ -136,5 +136,25 @@ Wadugodapitiya - water
 
 Hospital - Kamala 
 Hospital -- Alice
+
+(Miracle Water Shoot) as shoot <<event>>
+
+shoot - Hospital
+:Sukanya: $female
+
+Sukanya - shoot : Directror-cum-DOP
+
+:Patient: as AD1 <<unnamed>> $female
+:Patient: as AD2 <<unnamed>> $female
+:Patient: as wardrobe <<unnamed>> $female
+:Patient: as makeup <<unnamed>> $female
+
+AD1 -- shoot : First AD
+AD2 -- shoot : Second AD
+shoot -- wardrobe : Wardrobe
+shoot -- makeup : Hair and Make-up
+
+
+
 
 @enduml
