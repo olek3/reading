@@ -22,8 +22,8 @@ end legend
 Masham --- robin : from
 
 
-strike --- (Agency) : owner & founder
-robin --- (Agency) : partner
+strike --- Agency : owner & founder
+robin --- Agency : partner
 
 :Ryan Murphy: as murphy $male
 murphy --> robin : boyfriend
