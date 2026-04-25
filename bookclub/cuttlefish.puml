@@ -17,8 +17,8 @@ title Hot Butter Cuttlefish by Ashok Ferrey
 
 mainframe characters
 
-!$page = 140
-!$chapter = 15
+!$page = 234
+!$chapter = 25
 
 legend: $paperbook_legend($page,260,$chapter,27)
 
@@ -75,7 +75,7 @@ Dabare --> Chanchalla : mother
 
 (concert) <<event>> 
 
-:Razak: 
+:Razak: $male
 'concert - Arthur : organizer
 Arthur -- concert : organizer
 concert -- Razak: costumes
@@ -154,7 +154,13 @@ AD2 -- shoot : Second AD
 shoot -- wardrobe : Wardrobe
 shoot -- makeup : Hair and Make-up
 
+(Klassy Kottu Kafé ) as Klassy <<institution>>
 
+Kalabola -- Klassy
+
+:Siripala: $male
+
+Siripala - Klassy : manager
 
 
 @enduml
