@@ -9,7 +9,7 @@ scale max 16384*16384
 title The Hallmarked man
 mainframe characters
 legend
-58% (Part five / 71)
+60.5% (Part five / 73)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -257,7 +257,7 @@ Pamela <-- Geoffrey : husband
 :Laura: $female
 Laura - silver : works
 
-:Jim Todd: as Jim  $male
+:Jim Todd: as Jim <<alias>>  $male
 Jim  -- silver : cleaner
 
 :Calvin Osgood: as Osgood $male
@@ -563,7 +563,7 @@ Niall <-- naillFather: father
 Penny $female
 Dave <-Penny : wife
 
-:Ben: <<dead>> $male
+:Ben Liddell: as Ben <<dead>> $male
 Niall <-- Ben : best friend
 
 niallWife <- Lawrence : took note
@@ -580,7 +580,7 @@ Griff --> Whitehead: mentioned
 :Chloe: $female 
 Griff <-- Chloe: daughter 
 
-:Anne-Marie: as AnneMarie <<dead>> $female
+:Anne-Marie Morgan: as AnneMarie <<dead>> $female
 Powell <-- AnneMarie: gf 
 
 :Hugo: <<dead>> $male
@@ -651,5 +651,14 @@ Dirk -> Carmen: son
 :Zeta: $female
 Powell --> Zeta : abused
 
+'73 
+:Todd Jameson: as Todd $male
+
+Todd ..> Jim
+:Jim Philpott: as Philpott $male
+Todd ..> Philpott : by mother's maiden name
+
+:Clarissa: $female
+Albie -> Clarissa : met
 
 @enduml
