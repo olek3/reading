@@ -1,3 +1,3 @@
 @startuml
-!include https://raw.githubusercontent.com/olek3/reading/refs/heads/club/safekeep/bookclub/Safekeep.puml
+!include https://raw.githubusercontent.com/olek3/reading/refs/heads/club/cuttlefish/bookclub/cuttlefish.puml
 @enduml

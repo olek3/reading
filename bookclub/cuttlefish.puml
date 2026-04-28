@@ -1,0 +1,155 @@
+
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+'skinparam backgroundcolor #191a1c
+
+
+title Hot Butter Cuttlefish by Ashok Ferrey
+
+mainframe characters
+
+:Malik: as I <<narrator>> $male
+
+:Arthur Reginald de Fonseca: as Arthur $male_protagonist
+
+I <-- Arthur : client
+
+:Fiona: <<mentioned>> $female
+
+Fiona  --> I $ex wife
+
+:Chanchalla: $female
+
+'Arthur <-- Chanchalla : ballet student
+Chanchalla ---> Arthur : ballet student
+
+:Kamala: $female_protagonist
+
+Arthur <-- Kamala : housekeeper
+
+:Fritzi: <<pet>> $male
+
+Fritzi --> I : dog 
+
+:Achi: $female 
+
+Kamala <-- Achi: grandmother
+
+:Biju: $male
+
+:MP: <<unnamed>> <<mentioned>> <<dead>> $male
+
+'Kamala <-- Biju : second cousin
+Biju --> Kamala : second cousin
+'Biju --> MP : son
+MP <-- Biju  : son
+
+:Natasha Pilimathalawa: as Natasha <<dead>> $female
+
+Natasha --> Biju : wife
+'Biju <- Natasha : wife
+
+I <-- Natasha : client
+
+'I ..> Chanchalla : trains
+Chanchalla <-- I : trains
+
+:Selina Dabare: as Dabare $female
+
+'Chanchalla <-- Dabare : mother
+Dabare --> Chanchalla : mother
+
+(concert) <<event>> 
+
+:Razak: $male
+'concert - Arthur : organizer
+Arthur -- concert : organizer
+concert -- Razak: costumes
+
+:Anton: $male
+
+'concert -- Anton : premices security guard
+Anton -- concert  : premices security guard
+
+(Kamala's friends) as friends <<group>>
+
+Kamala -- friends
+
+:Maya: $female
+:Savithri: $female
+:Lalani: $female
+
+friends -- Maya
+friends -- Savithri
+friends -- Lalani
+
+(Kalabola) <<location>>
+Kalabola - I
+:Mr Yung: as Yung $male
+:Mrs Ha: as Ha $female
+
+Yung -- Kalabola: hole in the wall eatery 
+Ha -- Kalabola: eatery 
+
+:Acushla: $female
+Savithri <-- Acushla : sister
+
+:Mrs de Fonseca: as arthurMother <<dead>> $female
+
+'arthurMother -> Arthur : mother
+Arthur <-- arthurMother  : mother
+
+arthurMother ..> Kamala : hired 
+
+:Raju: $male 
+Raju - Kalabola : ice cream shop
+
+:Giles: $male
+I <- Giles: client
+
+(Ceylon Water Board) as water <<institution>>
+
+water - Acushla
+
+:Mrs Wadugodapitiya: as Wadugodapitiya $female
+
+Wadugodapitiya - water
+
+'128
+
+(Angoda Hospital) as Hospital <<institution>> 
+:Matron Alice: as Alice $female
+
+Hospital - Kamala 
+Hospital -- Alice
+
+(Miracle Water Shoot) as shoot <<event>>
+
+shoot - Hospital
+:Sukanya: $female
+
+Sukanya - shoot : Directror-cum-DOP
+
+:Patient: as AD1 <<unnamed>> $female
+:Patient: as AD2 <<unnamed>> $female
+:Patient: as wardrobe <<unnamed>> $female
+:Patient: as makeup <<unnamed>> $female
+
+AD1 -- shoot : First AD
+AD2 -- shoot : Second AD
+shoot -- wardrobe : Wardrobe
+shoot -- makeup : Hair and Make-up
+
+(Klassy Kottu Kafé ) as Klassy <<institution>>
+
+Kalabola -- Klassy
+
+:Siripala: $male
+
+Siripala - Klassy : manager
+
+
+@enduml
