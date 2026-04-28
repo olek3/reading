@@ -6,21 +6,10 @@
 
 'skinparam backgroundcolor #191a1c
 
-!function $paperbook_legend($page,$pages,$chapter,$chapters)
-!$progress =$page*1000/$pages
-!$progress = $progress / 10 + "." + %mod( $progress , 10)
-!return "p " +$page + "/" + $pages + " " + $progress + "% (Chapter"+$chapter + "/"+ $chapters+")"
-!end function
 
 title Hot Butter Cuttlefish by Ashok Ferrey
 
-
 mainframe characters
-
-!$page = 234
-!$chapter = 25
-
-legend: $paperbook_legend($page,260,$chapter,27)
 
 :Malik: as I <<narrator>> $male
 
