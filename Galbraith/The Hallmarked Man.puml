@@ -3,13 +3,13 @@
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
 !include $stylePath/reading.iuml
 
-scale max 16384*16384
+scale max 65536*65536
 
 
 title The Hallmarked man
 mainframe characters
 legend
-60.5% (Part five / 73)
+73.7% (Part eight / 93)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -350,7 +350,7 @@ Shanker <-- Alyssa : gf
 :Angel: $female
 Alyssa <-- Angel : older daughter
 
-:Barnaby: as Barnaby
+(Barnaby) as Barnaby <<location>>
 
 Jason --> Barnaby : """gone to"""
 
@@ -604,7 +604,7 @@ Powell <-> Wynn: friends
 :Fiona Freeman: as Fiona $female
 :Fyola Fay: <<alias>> as Fyola $female
 
-Fiona <. Fyola : scenic name
+Fiona <.. Fyola : scenic name
 'Fyola -> Fiona : scenic name
 
 :Craig Wheaton: as Craig $male
@@ -660,5 +660,27 @@ Todd ..> Philpott : by mother's maiden name
 
 :Clarissa: $female
 Albie -> Clarissa : met
+
+
+'Sark 
+:Richard de Leon: as Richard  $male
+(Clos de Camille) as Camille  <<location>>
+:Helen Platt: as Helen  $female
+
+'Danny <-- Richard : brother
+Richard --> Danny : brother
+Camille -- Danny : works on Sark
+Helen -- Camille : owner
+
+'88 
+:Nancy:  $female
+:Rena: $female
+Ben <-- Rena : sister
+
+Nancy --> Todd : mother
+
+:Marco Ricci: $male
+
+(Barnaby) -- Marco : disclosed
 
 @enduml
