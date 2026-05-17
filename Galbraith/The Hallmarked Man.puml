@@ -9,7 +9,7 @@ scale max 65536*65536
 title The Hallmarked man
 mainframe characters
 legend
-73.7% (Part eight / 93)
+73.9% (Part eight / 93)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -682,5 +682,9 @@ Nancy --> Todd : mother
 :Marco Ricci: $male
 
 (Barnaby) -- Marco : disclosed
+
+'93
+:Northmore: $male
+Northmore -- newTeam
 
 @enduml
