@@ -9,7 +9,7 @@ scale max 65536*65536
 title The Hallmarked man
 mainframe characters
 legend
-73.9% (Part eight / 93)
+82.5% (Part eight / 102)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -679,12 +679,18 @@ Ben <-- Rena : sister
 
 Nancy --> Todd : mother
 
-:Marco Ricci: $male
+:Marco Ricci: as Marco $male
 
 (Barnaby) -- Marco : disclosed
 
 '93
 :Northmore: $male
 Northmore -- newTeam
+
+
+:Lucinda: $female
+:Harvey: $male
+Whitehead <-- Lucinda : wife
+Whitehead <-- Harvey : elder son
 
 @enduml
