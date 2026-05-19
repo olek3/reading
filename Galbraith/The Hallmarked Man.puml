@@ -9,7 +9,7 @@ scale max 65536*65536
 title The Hallmarked man
 mainframe characters
 legend
-84.1% (Part eight / 105)
+86.0% (Part nine / 107)
 end legend
 
 :Cormoran Blue Strike: as strike $male_protagonist
@@ -694,4 +694,7 @@ Whitehead <-- Lucinda : wife
 Whitehead <-- Harvey : elder son
 
 :Wade King: <<todo>>
+
+:Austin H: :<<todo>> 
+
 @enduml
