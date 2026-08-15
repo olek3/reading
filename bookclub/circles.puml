@@ -1,4 +1,3 @@
-
 @startuml
 
 !$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
@@ -9,12 +8,12 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 7.4%
+legend 15.7%
 
 mainframe characters
 
 
-:Матильда: as matilda $female
+:Матилда Форестье: as matilda $female
 
 :Шарль Рейе: as charles $male
 
@@ -49,5 +48,26 @@ police -- margelon : молодой сотрудник
 
 adamberg -> castro : нарисовал шарж
 
+(круги) as circles <<project>>
+
+circles -- adamberg 
+
+:Рене Веркор-Лори: as Rene $male 
+
+Rene -- circles : психиатр 
+
+:Кристиана: as Cristiana $female
+
+Cristiana --> adamberg : письмо
+
+:Камилла: as Camilla $female
+
+Camilla <-- adamberg $ex
+
+:Ричард Третий: as monkey <<pet>> $male
+
+monkey --> Camilla : обезьянка 
+
+matilda -> police : обратилась 
 
 @enduml
