@@ -9,7 +9,7 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 5.2%
+legend 5.7%
 
 mainframe characters
 
@@ -22,12 +22,16 @@ mainframe characters
 note top: комиссар
 matilda --> charles : встретила слепого
 
-:убитый: as body $male
+:торговец текстилем: as body <<dead>> $male
 
 adamberg --> body : расследует
 
 :Патрис Верн: as patris $male
 
 body <-- patris : пасынок
+
+:Адриен Данглар: as danglar $male
+
+adamberg <-- danglar : инспектор
 
 @enduml
