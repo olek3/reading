@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 15.7%
+legend 22.8%
 
 mainframe characters
 
@@ -17,7 +17,7 @@ mainframe characters
 
 :Шарль Рейе: as charles $male
 
-:Жан-Батист "леший" Адамберг: as adamberg $male
+:Жан-Батист "леший" Адамберг: as adamberg $male_protagonist
 matilda --> charles : встретила слепого
 
 :торговец текстилем: as body <<dead>> $male
@@ -69,5 +69,15 @@ Camilla <-- adamberg $ex
 monkey --> Camilla : обезьянка 
 
 matilda -> police : обратилась 
+
+:Конти: as conti $male
+
+police -- conti : фотограф 
+
+:Клеманс Вальмон: as clemance $female
+
+clemance --> matilda : работает у
+
+
 
 @enduml
