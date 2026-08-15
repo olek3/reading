@@ -9,7 +9,7 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 5.7%
+legend 6.8%
 
 mainframe characters
 
@@ -33,5 +33,8 @@ body <-- patris : пасынок
 :Адриен Данглар: as danglar $male
 
 adamberg <-- danglar : инспектор
+
+:Флоранс: as florance $female
+note top : тоже в полиции?
 
 @enduml
