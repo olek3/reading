@@ -1,0 +1,23 @@
+
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+skinparam backgroundcolor #191a1c
+
+
+title Фред Варгас Человек, рисующий синие круги
+
+legend 2.9%
+
+mainframe characters
+
+
+:Матильда: as matilda $female_protagonist
+
+:Шарль Рейе: as charles $male
+
+matilda --> charles : встретила слепого
+
+@enduml
