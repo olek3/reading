@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 22.8%
+legend 27.0%
 
 mainframe characters
 
@@ -68,7 +68,14 @@ Camilla <-- adamberg $ex
 
 monkey --> Camilla : обезьянка 
 
-matilda -> police : обратилась 
+matilda ---> police : обратилась
+
+:Мадлена Шатлен: as madlena <<dead>> $female
+:Делиль: as delil $male
+
+delil -- police : инспектор
+
+madlena -- circles : убитая
 
 :Конти: as conti $male
 
@@ -76,7 +83,7 @@ police -- conti : фотограф
 
 :Клеманс Вальмон: as clemance $female
 
-clemance --> matilda : работает у
+clemance --> matilda : живет у
 
 
 
