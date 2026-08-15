@@ -1,0 +1,704 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+scale max 65536*65536
+
+
+title The Hallmarked man
+mainframe characters
+legend
+88.5% (Part nine / 110)
+end legend
+
+:Cormoran Blue Strike: as strike $male_protagonist
+:Robin Elacott: as robin $female_protagonist
+
+(Strike and Elacott Detective Agency) as Agency <<institution>>
+(Old cases) as old <<project>>
+
+(Masham) <<location>>
+Masham --- robin : from
+
+
+strike --- Agency : owner & founder
+robin --- Agency : partner
+
+:Ryan Murphy: as murphy $male
+murphy --> robin : boyfriend
+
+:Lucy: $female
+Lucy --> strike : sister
+:Edward Nancarrow a.k.a. Ted: as Ted <<dead>> $male
+Ted --> strike : uncle 
+
+:Decima Mullins: as decima $female
+
+(Decima's case) as mainCase <<project>>
+ Agency --- mainCase
+
+mainCase ----- decima : client
+
+(Delamore Lodge) as delamore <<location>> 
+decima - delamore  : hides in
+
+:Valentine Longcaster: as Valentine <<mentioned>> $male
+Valentine --> decima  : brother
+
+ :Charlotte Campbell: as Charlotte <<dead>> <<mentioned>> $female 
+
+
+ :Sacha Legard: as Sacha $male
+
+ Charlotte <-- Sacha : half brother
+
+ :William Wright: as body <<dead>><<alias>> $male
+
+ decima --> body : wants to know
+
+ (Ramsay Silver) as silver <<institution>>
+
+ body -- silver : worked at
+
+(The Happy Carrot) as carrot <<institution>>
+
+carrot -- decima : owns
+
+:Gayle: $female
+Gayle -- carrot : "maître d’"
+
+
+ :Jason Knowles: as Jason $male
+ body ... Jason  : identified by police
+
+ :Sir Daniel Gayle: as sirDaniel $male
+sirDaniel <-- Gayle : daughter
+
+ :Lion: $male
+ Lion -> decima : baby
+
+ :Jeff Whittaker: as Whittaker $male
+ :Leda a.k.a. Peggy: as Leda <<dead>> $female
+  Leda --> strike : mother
+  Whittaker --> Leda : murdered
+
+:Rupert Peter Bernard Christian Fleetwood: as rupe  $male
+rupe ---> decima : husband(?)
+rupe .. body : suspected by Decima
+Sacha --> rupe: cousin
+
+:Veronica: <<dead>> $female
+:Peter:  <<dead>> $male
+
+Veronica --> rupe : mother
+Peter --> rupe : father
+
+:Zacharias Lorimer: as Zac $male
+
+rupe <-- Zac  : housemate
+:Dredge: $male
+
+Zac --> Dredge  : owed
+
+:Anjelica Wallner: as aunt $female
+
+aunt --> rupe : aunt
+
+:Linda: $female
+Linda -- Masham : mother
+
+:Mr Butler: as mrButler $male
+mrButler ---> robin : Surgeon
+:Tara: $female
+Charlotte <-- Tara  : mother
+:Dino: $male
+Dino --> Valentine: father
+:Ned Legard: as Ned $male
+Charlotte <-- Ned  : second stepfather
+Ned --> Sacha : father
+Ned -----> rupe : uncle
+
+ :Kim Cochran: as Kim $female
+ Agency -- Kim : latest hire
+ (Plug case) as plugCase <<project>>
+ plugCase -- Agency : side case
+ :Plug: <<unnamed>> $male
+ :Plug's uncle: as plugUncle <<unnamed>> $male
+ :Plug's mother: as plugMother <<unnamed>> <<victim>> $female
+ :Plug's son: as plugSon <<unnamed>> $male
+ Plug -- plugCase : suspect
+ plugUncle -- plugCase : client
+ plugUncle -> Plug : uncle
+ plugMother --> Plug : mother
+ plugSon --> Plug : son
+
+ :Dave Polworth: as Dave $male
+ :Trevik Nancarrow: as grandFather <<dead>> $male
+ grandFather --> Ted : father
+
+ strike <-- Dave : childhood friend
+
+ Tara --> Dino $ex husband
+
+:Rowntree: <<pet>> <<dead>>
+
+Rowntree --- Masham $ex family Labrador
+:Michael: as robinDad  $male
+robinDad -- Masham : dad
+
+:Betty: <<pet>>
+Betty --- Masham : new labrador
+
+
+:Kenneth Ramsay: as Ramsay $male
+silver -- Ramsay: owner
+
+(Arsehole) <<project>>
+
+Agency -- Arsehole : another case
+:Mr A (Arsehole): as asshole  $male
+Arsehole -- asshole : client
+:Arsehole's ex wife: as assholeEx $female
+Arsehole -- assholeEx  : subject
+ :Dominic Culpepper: as Culpepper $male
+ Culpepper -- assholeEx  : suspected in having affair
+
+
+decima <-- Dino : father
+(Dino's club) as Dinos <<institution>>
+Dino -- Dinos   : owner
+
+:Albie Simpson-White: as Albie  $male
+
+Albie -- Dinos : waiter
+rupe <--> Albie : friend
+
+:DCI Malcom Truman: as Truman $male
+'body <-- Truman : investigated
+Truman --> body : investigated
+
+
+:Pat Chauncey: as Pat $female
+Pat -- Agency : secretary
+
+(Acquaintances in the Police) as police <<group>>
+police -- Agency
+:Vanessa Ekwensi: as Vanessa $female
+:Wardle: $male
+:Layborn: $male
+:Anstis: $male
+
+Wardle -- police
+police -- Layborn
+police -- Anstis
+
+Vanessa -- police : Robin
+
+:Lizzie:  $female
+
+Lizzie --> murphy $ex wife
+:Glaswegian Barclay: as Barclay  $male
+Agency - Barclay
+
+:Shah:  $male
+Agency -- Shah : short and good-looking
+:Midge Greenstreet: as Midge $female
+Midge -- Agency
+:Shanker: $male
+ strike <-- Shanker : childhood friend
+
+ :Graham "Hardy" Hardacre: as Hardy $male
+Hardy --> strike : military colleague, mason
+
+:Tyler Powell: as Powell $male
+:Dilys: as powellGrandmother   $female
+body .. Powell : grandmother called
+
+Powell <-- powellGrandmother : grandmother (adopted)
+:Niall Semple: as Niall $male
+:Mother: as niallMother <<unnamed>> <<dead>> $female
+:Jade: as niallWife $female
+
+body ... Niall : reported by wife
+Niall <-- niallMother : mother
+Niall <-- niallWife : wife 
+
+:Ginger Moustache: as jadePartner <<unnamed>> $male
+
+niallWife <-- jadePartner: partner? 
+
+:Pom Pom: as pomPom <<pet>> $male 
+niallWife <-- pomPom: dog
+
+:Lynden Knowles: as Lynden $male
+Jason <-- Lynden : uncle
+
+:Greg: $male
+
+Greg -> Lucy : husband
+
+' first talk to Ramsay
+:Pamela Bullen-Driscoll: as Pamela $female
+:Rachel:  $female
+Ramsay <-- Rachel : wife
+Rachel <-- Pamela : sister
+
+:John Auclair: as Auclair $male
+silver <- Auclair : customer (important collector)
+(Bullen & Co) as BullenCo <<institution>>
+:Bullen: $male
+Rachel <-- Bullen : father
+Pamela <- Bullen : father
+Bullen -- BullenCo : owned
+:Geoffrey (?)Driscoll: as Geoffrey  $male
+Pamela <-- Geoffrey : husband
+
+:Laura: $female
+Laura - silver : works
+
+:Jim Todd: as Jim <<alias>>  $male
+Jim  -- silver : cleaner
+
+:Calvin Osgood: as Osgood $male
+body ----> Osgood : sent email
+
+(Patterson agency) as Patterson <<institution>>
+Agency -- Patterson :competing
+:Mitch Patterson: as Mitch $male
+Patterson -- Mitch  : owner
+
+:Farah Navabi: as Farah $female
+Patterson -- Farah
+
+:Nina Lascelles: as Nina $female
+Nina --> Culpepper : sister
+
+:Ray:  $male
+Kim <-- Ray <<ex>>
+
+:Fergus Robertson: as Robertson $male
+Culpepper -> Robertson : jealous
+:Lady Violet: as Violet  $female
+Culpepper -- Violet : wife
+Violet--> assholeEx : having affair
+
+:Tasha: $female
+
+Tasha --> Midge : partner
+
+(Strike's exes) as exes <<group>>
+exes -- Charlotte
+:Ciara: <<mentioned>> $female
+Ciara -- exes : coocoo's nest (the model)
+exes -- Nina : book
+:Elin: <<mentioned>> $female
+Elin - exes
+:Lorelei: <<mentioned>> $female
+Lorelei -- exes : owner of a vintage closing store
+:Madeleine: <<mentioned>> $female
+exes -- Madeleine  : the jewellery designer
+:Bijou: $female
+exes -- Bijou : lawer
+'Bijou - exes  : lawer
+
+
+strike --- exes  $ex
+
+
+' visti to St George St.
+(St George St.) as stGeorge <<location>>
+body -- stGeorge : lived at
+
+: Mandy: as wrightNeighbour  $female
+:Daz: $male
+:Clint: as smallBoy $male
+
+stGeorge -- wrightNeighbour : neighbour
+wrightNeighbour <--  Daz : room fellow
+wrightNeighbour -->  smallBoy: mother
+
+:Hussein Mohamed: as Hussein  $male
+:wife: as hussainWife <<unnamed>> $female
+:Hafsa: as hussainDaughter $female
+
+stGeorge -- Hussein $ex neighbor who recognized
+Hussein <-- hussainDaughter : crippled daughter
+Hussein <-- hussainWife : wife
+
+:girl: as visitor1 <<unnamed>> $female
+
+:a guy: as visitor2 <<unnamed>> $male
+visitor2 ..> Osgood : could be
+
+stGeorge -- visitor1
+stGeorge -- visitor2
+
+:Ritalinda:  <<mentioned>> $female
+Ritalinda <-- body  : said to mention
+
+'20
+:Tilly: $female
+Tilly --> Pat : great-granddaughter
+:Oz: <<alias>>  $male
+Osgood <-- Oz : impersontates
+
+'21
+:Alyssa: $female
+Shanker <-- Alyssa : gf
+
+:Angel: $female
+Alyssa <-- Angel : older daughter
+
+(Barnaby) as Barnaby <<location>>
+
+Jason --> Barnaby : """gone to"""
+
+(Two-Times) <<project>>
+
+Agency -- (Two-Times)
+
+:Two-Times: as 2times <<unnamed>> $male
+
+(Two-Times) -- 2times : regular
+
+:Mrs Two-Times: as 2timesWife <<unnamed>> $female
+
+2times <-- 2timesWife : wife
+
+:Andrew Honbold: as Honbold <<mentioned>> $male
+Patterson ..> Honbold : bugged barrister
+
+'23
+:Lord Oliver Branfoot: as Branfoot  $male
+Culpepper --> Branfoot : interviewed
+
+:Miss Jones: as missJones <<mentioned>> $female
+old -- missJones : client long ago
+
+:Powell great-niece: as powellGrandniece <<unnamed>> $female
+powellGrandmother --> powellGrandniece : great-aunt
+
+'24
+(Gibsons) <<institution>>
+:Larry McGee: as Larry $male
+Gibsons ... Larry $ex delivery guy
+Larry --> silver: delivered
+' 25 
+:Diana Boadu: as Diana $female
+Diana - Gibsons : some boss
+
+:Charlie Carter: as Carter $male
+Carter -- Gibsons : Head of Deliveries
+
+:Bradley: $male
+Bradley -- Gibsons  : security guy
+
+:Dave: as driverDave $male
+Gibsons -- driverDave : driver
+driverDave <-- Larry : ditched
+
+:Hassan:  $male
+Gibsons -- Hassan : had stag party
+
+' 26 
+:Angela Darwish: as Darwish <<mentioned>> $female
+
+:Ralph Lawrence: as Lawrence $male
+Niall <-- Lawrence : warned about
+Lawrence --> Darwish : common aquantance with Strike
+
+'27
+:Ian "Griff" Griffiths: as Griff $male 
+Powell <-- Griff : friend
+
+'28
+:Mucky Ricci: as Mucky <<mentioned>> $male
+old -- Mucky : mentioned
+
+'29 
+:Lina: <<mentioned>> $female
+Lina -- Dinos : Albie's friend
+
+:Annabel: $female
+Annabel -- Masham : niece
+
+'30
+
+:Tish Benton: as Tish $female
+Zac <-- Tish $ex girlfriend
+
+:Cosima: $female
+
+Dino <-- Cosima : youngest daughter
+
+'32 
+:Candy: $female
+Candy <- Culpepper : presented
+
+'33
+:Sofia Medina: as Medina $female
+visitor1 <.. Medina : looked like
+
+:Gretchen Schiff: as Gretchen $female
+Medina <-- Gretchen : roommate
+
+'34 family reunion
+
+
+:Matthew: $male 
+Matthew --> robin $ex husband
+
+:Sarah Shadlock: as Sarah $female
+Sarah --> Matthew : second wife
+
+:Stephen: $male
+Stephen -- Masham : brother
+
+:Jenny: $female
+Jenny --> Stephen : wife
+
+:Jonathan: $male
+Jonathan -- Masham : youngest brother
+
+:Martin:  $male
+Martin -- Masham : third sibling 
+
+:Nick: <<mentioned>> $male
+Nick --> strike : old friend
+
+
+'38
+:Jack: $male
+strike <-- Jack : favourite nephew
+
+:Sir Victor Lambert: as Lambert $male
+Branfoot <-- Lambert : affiliated
+Lambert ----- silver : visited
+:Jeffrey Archer: as Archer <<mentioned>> $male
+:Savile:  <<mentioned>>
+
+Archer <... strike : mentioned
+Savile <... strike : mentioned
+
+:Dick de Lion: <<alias>> as Dick  $male
+Dick .. body : named in cipher message
+
+'39 
+:Carmen:  $female
+
+Carmen --> Martin : wife or gf
+
+Agency -- old $ex but mentioned 
+
+'40
+:Adam: $male 
+Adam --> strike: youngest nephew 
+:Marguerite:  $female
+
+:Luke: $male
+Luke --> strike: eldest and least favourite nephew
+(Christmas party) as Christmas <<event>>
+Marguerite -- Christmas
+Christmas -- Lucy
+:Hector: $male 
+Hector -- Christmas: lactose intolerant 
+
+:Sapphire Neagle: as Sapphire  $female
+
+Oz <- Sapphire: wrote
+Osgood <-- Sapphire: wrote 
+
+'51 
+
+:Ottolie: $female
+
+ Bijou <-- Ottolie : daughter
+'Ottolie --> Bijou : daughter
+
+'52
+
+:Barnaby: as babyBarnaby $male
+babyBarnaby --> Jenny : son 
+:Katie: $female
+Katie --> robin: cousin 
+
+'56 
+:Ilsa Herbert: as Ilsa $female
+:Benjy: $male
+Benjy --> Ilsa: son
+
+Ilsa ---> strike : old friend
+
+:Reata Lindvall: as Reata <<dead>>  $female
+Reata --> Ritalinda : could be
+
+:Ellas Maes: as Maes $male
+
+Maes --> Reata : partner
+
+:Jolanda: <<dead>> $female
+
+Jolanda --> Reata : daughter
+
+:Percy: $male
+Nina <-- Percy : groom
+
+:Nina's friend: as ninaFriend <<unnamed>> $female
+
+Nina <-- ninaFriend : bridesmaid
+
+ninaFriend --- old
+
+'58
+
+:Tia Thompson: as Tia $female
+
+Sapphire <- Tia : friend
+'59 
+
+:Mr Semple: as naillFather $male 
+Niall <-- naillFather: father
+
+Penny $female
+Dave <-Penny : wife
+
+:Ben Liddell: as Ben <<dead>> $male
+Niall <-- Ben : best friend
+
+niallWife <- Lawrence : took note
+
+:Mullins: $male
+
+decima <-- Mullins $ex husband 
+
+' Griff interview 
+
+:Faber Whitehead: as Whitehead $male 
+Griff --> Whitehead: mentioned 
+
+:Chloe: $female 
+Griff <-- Chloe: daughter 
+
+:Anne-Marie Morgan: as AnneMarie <<dead>> $female
+Powell <-- AnneMarie: gf 
+
+:Hugo: <<dead>> $male
+
+Whitehead <-- Hugo: son 
+AnneMarie --> Hugo: fell for 
+
+:Ivor: $male 
+
+Powell <--- Ivor: father
+
+:Gill: $female 
+Ivor <-- Gill: second wife 
+
+' dylis 
+
+:Wynn Jones: as Wynn $male 
+Powell <-> Wynn: friends
+
+' 69 fyola interview 
+:Fiona Freeman: as Fiona $female
+:Fyola Fay: <<alias>> as Fyola $female
+
+Fiona <.. Fyola : scenic name
+'Fyola -> Fiona : scenic name
+
+:Craig Wheaton: as Craig $male
+
+:Danny: $male
+
+Fiona --> Danny : wrote cipher message about
+
+Danny <.. Dick : scenic name
+
+Craig --> Dick : producer
+Fyola <-- Craig : producer
+
+Branfoot --> Craig : orphanage patron
+
+(Winston Churchill lodge) as lodge <<institution>>
+
+Branfoot -- lodge : moved to
+lodge --- Truman : member 
+
+
+'70
+
+:Colin Pepper: as Pepper <<mentioned>>  $male
+Pepper <.. Bijou : mentioned
+
+:Iverson:  $female
+
+(New police team) as newTeam <<group>>
+
+newTeam --> body : investigates
+
+Iverson -- newTeam
+
+:Liam: $male 
+Liam --> Wardle: son
+
+:Dirk: $male 
+Dirk --> Martin: son 
+Dirk -> Carmen: son 
+
+
+'71 
+:Zeta: $female
+Powell --> Zeta : abused
+
+'73 
+:Todd Jameson: as Todd $male
+
+Todd ..> Jim
+:Jim Philpott: <<alias>> as Philpott $male
+Todd ..> Philpott : by mother's maiden name
+
+:Clarissa: $female
+Albie -> Clarissa : met
+
+
+'Sark 
+:Richard de Leon: as Richard  $male
+(Clos de Camille) as Camille  <<location>>
+:Helen Platt: as Helen  $female
+
+'Danny <-- Richard : brother
+Richard --> Danny : brother
+Camille -- Danny : works on Sark
+Helen -- Camille : owner
+
+'88 
+:Nancy:  $female
+:Rena: $female
+Ben <-- Rena : sister
+
+Nancy --> Todd : mother
+
+:Marco Ricci: as Marco $male
+
+(Barnaby) -- Marco : disclosed
+
+'93
+:Northmore: $male
+Northmore -- newTeam
+
+
+:Lucinda: $female
+:Harvey: $male
+Whitehead <-- Lucinda : wife
+Whitehead <-- Harvey : elder son
+
+:Wade King: <<todo>>
+
+:Austin H: <<todo>>
+
+
+'Lottie Hazlerigg and Angus Lyall 
+
+:Jason: <<todo>>
+@enduml
