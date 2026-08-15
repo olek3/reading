@@ -9,12 +9,12 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 7.0%
+legend 7.4%
 
 mainframe characters
 
 
-:Матильда: as matilda $female_protagonist
+:Матильда: as matilda $female
 
 :Шарль Рейе: as charles $male
 
@@ -43,5 +43,11 @@ police .. florance : ??
 :Маржелон: as margelon $male
 
 police -- margelon : молодой сотрудник
+
+:Кастро: as castro $male
+
+
+adamberg -> castro : нарисовал шарж
+
 
 @enduml
