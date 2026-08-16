@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 27.0%
+legend 38.9%
 
 mainframe characters
 
@@ -85,6 +85,12 @@ police -- conti : фотограф
 
 clemance --> matilda : живет у
 
+(пятеро детей)  as children <<group>>
 
+danglar -- children
+
+:Арлетта: as arlette $female
+
+children -- arlette
 
 @enduml
