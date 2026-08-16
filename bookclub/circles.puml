@@ -103,4 +103,12 @@ Ponte -- circles : второй убитый
 :Лувье: as luvee $male
 police - luvee : из 14 округа 
 
+:Дельфина Ле Нермор, урожденная Витрюэль: as delfina <<dead>> $female
+
+delfina -- circles : третья убитая
+
+:Огюстен-Луи Ле Нермор: as nermor $male
+
+nermor --> delfina : муж
+
 @enduml
