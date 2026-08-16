@@ -1,0 +1,115 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+skinparam backgroundcolor #191a1c
+
+
+title Фред Варгас Человек, рисующий синие круги
+
+mainframe characters
+
+
+:Матилда Форестье: as matilda $female
+
+:Шарль Рейе: as charles $male
+
+:Жан-Батист "леший" Адамберг: as adamberg $male_protagonist
+matilda --> charles : встретила слепого
+
+:торговец текстилем: as body <<dead>> $male
+
+adamberg --> body : расследует
+
+:Патрис Верн: as patris $male
+
+body <-- patris : пасынок
+
+:Адриен Данглар: as danglar $male
+
+
+:Флоранс: as florance $female
+
+(Полиция) as police <<institution>>
+
+adamberg -- police : комиссар
+police -- danglar : инспектор
+police .. florance : ??
+
+:Маржелон: as margelon $male
+
+police -- margelon : молодой сотрудник
+
+:Кастро: as castro $male
+
+
+adamberg -> castro : нарисовал шарж
+
+(круги) as circles <<project>>
+
+circles -- adamberg 
+
+:Рене Веркор-Лори: as Rene $male 
+
+Rene -- circles : психиатр 
+
+:Кристиана: as Cristiana $female
+
+Cristiana --> adamberg : письмо
+
+:Камилла: as Camilla $female
+
+Camilla <-- adamberg $ex
+
+:Ричард Третий: as monkey <<pet>> $male
+
+monkey --> Camilla : обезьянка 
+
+matilda ---> police : обратилась
+
+:Мадлена Шатлен: as madlena <<dead>> $female
+:Делиль: as delil $male
+
+delil -- police : инспектор
+
+madlena -- circles : убитая
+
+:Конти: as conti $male
+
+police -- conti : фотограф 
+
+:Клеманс Вальмон: as clemance $female
+
+clemance --> matilda : живет у
+
+(пятеро детей)  as children <<group>>
+
+danglar -- children
+
+:Арлетта: as arlette $female
+
+children -- arlette
+
+:Реаль Лувенель: as real $male
+
+real --> matilda : друг-философ
+
+:Жерар Понтье: as Ponte <<dead>> $male
+Ponte -- circles : второй убитый
+
+:Лувье: as luvee $male
+police - luvee : из 14 округа 
+
+:Дельфина Ле Нермор, урожденная Витрюэль: as delfina <<dead>> $female
+
+delfina -- circles : третья убитая
+
+:Огюстен-Луи Ле Нермор: as nermor $male
+
+nermor --> delfina : муж
+
+:Менье: as megne $male
+police --- megne 	:графолог
+
+@enduml
