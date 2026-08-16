@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Фред Варгас Человек, рисующий синие круги
 
-legend 53.6%
+legend 64.2%
 
 mainframe characters
 
@@ -96,5 +96,8 @@ children -- arlette
 :Реаль Лувенель: as real $male
 
 real --> matilda : друг-философ
+
+:Жерар Понтье: as Ponte <<dead>> $male
+Ponte -- circles : второй убитый
 
 @enduml
