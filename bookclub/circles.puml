@@ -100,4 +100,7 @@ real --> matilda : друг-философ
 :Жерар Понтье: as Ponte <<dead>> $male
 Ponte -- circles : второй убитый
 
+:Лувье: as luvee $male
+police - luvee : из 14 округа 
+
 @enduml
