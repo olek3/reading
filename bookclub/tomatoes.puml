@@ -18,7 +18,7 @@ mainframe characters
 
 me --  cafe : next door 
 
-:Idgie Threadgoode: as Idgie $male
+:Idgie Threadgoode: as Idgie $female
 
 cafe -- Idgie : owner
 
@@ -65,5 +65,9 @@ Cleo -- roseTerrace
 :Mrs Otis: as Otis $female
 
 Otis -> Cleo : friend
+
+:Essie Rue: as Essie 
+
+Essie <.. Cleo : mentioned 
 
 @enduml
