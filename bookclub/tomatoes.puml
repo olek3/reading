@@ -58,21 +58,21 @@ bigMomma --> Ed : mother
 
 Ed --> Evelyn : husband 
 
-:Mrs. Cleo Threadgoode: as Cleo $female
+:Mrs. Cleo Threadgoode: as Ninny $female
 
-Cleo -- roseTerrace 
+Ninny -- roseTerrace 
 
 :Mrs Otis: as Otis $female
 
-Otis -> Cleo : friend
+Otis -> Ninny : friend
 
-:Essie Rue Threadgoode: as Essie $female
+:Essie Rue Threadgoode: as Essie $female 
 
-Essie <.. Cleo : mentioned 
+Essie <.. Ninny : mentioned 
 
 ' Chapter 3
 
-:Mrs. Biddie Louise Otis: $female
+:Virginia "Ninny'" Mrs. Biddie Louise Otis: $female <<todo>>
 
 note top: meteorite 
 
