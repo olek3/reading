@@ -58,4 +58,8 @@ bigMomma --> Ed : mother
 
 Ed --> Evelyn : husband 
 
+:Mrs. Cleo Threadgoode: as Cleo $female
+
+Cleo -- roseTerrace 
+
 @enduml
