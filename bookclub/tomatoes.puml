@@ -16,6 +16,28 @@ mainframe characters
 
 :me: <<narrator>>
 
-me - -  cafe : next door 
+me --  cafe : next door 
+
+:Idgie Threadgoode: as Idgie $male
+
+cafe -- Idgie : owner
+
+:Ruth Jamison: as Ruth $female
+
+cafe -- Ruth : owner
+
+:Sipsey: $female 
+
+cafe --- Sipsey: cook
+
+:Onzell: $female
+
+cafe --- Onzell : cook
+
+:Big George: as bigGeorge $male
+
+cafe --- bigGeorge : cook
+
+Onzell <- bigGeorge : husband
 
 @enduml
