@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-legend 1.6% (Chapter 1)
+legend 1.8% (Chapter 1)
 
 mainframe characters
 
@@ -39,5 +39,9 @@ cafe --- Onzell : cook
 cafe --- bigGeorge : cook
 
 Onzell <- bigGeorge : husband
+
+:Wilbur: $male
+
+Wilbur -- me : other half
 
 @enduml
