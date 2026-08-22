@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-legend 4.3% (Chapter 4)
+legend 4.7% (Chapter 5)
 
 mainframe characters
 
@@ -87,4 +87,11 @@ note top: meteorite
 :Ida Simms: <<todo>>
 
 :Cookie: <<pet>><<todo>>
+
+:Mrs. Philbeam: <<todo>>
+
+' Chapter 5
+:Vesta: <<todo>>
+:Earl Jr: <<todo>>
+
 @enduml
