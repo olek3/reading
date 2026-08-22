@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-legend 4.7% (Chapter 5)
+legend 4.9% (Chapter 6)
 
 mainframe characters
 
@@ -94,5 +94,7 @@ note top: meteorite
 :Vesta: <<todo>>
 :Earl Jr: <<todo>>
 : Roy: <<todo>>
-
+' Chapter 6
+(hobo camp) I <<location>><<todo>>
+'Jim Smokey Phillips, Elmo Inky Williams, BoWeevil Jake, Crackshot Sackett, and Chattanooga Red Barker
 @enduml
