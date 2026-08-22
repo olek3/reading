@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-legend 2.1% (Chapter 2)
+legend 3.3% (Chapter 3)
 
 mainframe characters
 
@@ -70,4 +70,9 @@ Otis -> Cleo : friend
 
 Essie <.. Cleo : mentioned 
 
+:Mrs. Biddie Louise Otis: $female
+
+note top: meteorite 
+
+:Mr. Earl Adcock Sr: <<mentioned>> $male
 @enduml
