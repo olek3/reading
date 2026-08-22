@@ -70,9 +70,14 @@ Otis -> Cleo : friend
 
 Essie <.. Cleo : mentioned 
 
+' Chapter 3
+
 :Mrs. Biddie Louise Otis: $female
 
 note top: meteorite 
 
 :Mr. Earl Adcock Sr: <<mentioned>> $male
+
+:Bertha Vick: <<todo>>
+:Harold Vick:  <<todo>>
 @enduml
