@@ -6,9 +6,16 @@
 skinparam backgroundcolor #191a1c
 
 
-title 
+title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
+
+legend 1.6% (Chapter 1)
 
 mainframe characters
 
+(Whistle Stop Cafe) as cafe <<institution>>
+
+:me: <<narrator>>
+
+me - -  cafe : next door 
 
 @enduml
