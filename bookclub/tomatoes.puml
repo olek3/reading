@@ -8,7 +8,7 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-legend 1.9% (Chapter 2)
+legend 2.1% (Chapter 2)
 
 mainframe characters
 
@@ -42,7 +42,7 @@ Onzell <- bigGeorge : husband
 
 :Wilbur: $male
 
-Wilbur -- me : other half
+Wilbur --> me : other half
 
 (Rose Terrace Nursing Home) as roseTerrace <<institution>>
 
@@ -61,5 +61,9 @@ Ed --> Evelyn : husband
 :Mrs. Cleo Threadgoode: as Cleo $female
 
 Cleo -- roseTerrace 
+
+:Mrs Otis: as Otis $female
+
+Otis -> Cleo : friend
 
 @enduml
