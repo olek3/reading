@@ -14,9 +14,9 @@ mainframe characters
 
 (Whistle Stop Cafe) as cafe <<institution>>
 
-:me: <<narrator>>
+:Dot Weems: as dotWeems
 
-me --  cafe : next door 
+dotWeems --  cafe : next door
 
 :Imogene "Idgie" Threadgoode: as Idgie $female
 
@@ -28,21 +28,21 @@ cafe -- Ruth : owner
 
 :Sipsey: $female 
 
-cafe --- Sipsey: cook
+cafe -- Sipsey: cook
 
 :Onzell: $female
 
-cafe --- Onzell : cook
+Onzell -- cafe : cook
 
 :Big George: as bigGeorge $male
 
-cafe --- bigGeorge : cook
+bigGeorge -- cafe : cook
 
 Onzell <- bigGeorge : husband
 
 :Wilbur: $male
 
-Wilbur --> me : other half
+Wilbur --> dotWeems : other half
 
 (Rose Terrace Nursing Home) as roseTerrace <<institution>>
 
@@ -58,52 +58,99 @@ bigMomma --> Ed : mother
 
 Ed --> Evelyn : husband 
 
-:Mrs. Cleo Threadgoode: as Ninny $female
+:Virginia "Ninny" Mrs. Cleo Threadgoode: as Ninny $female
 
-Ninny -- roseTerrace 
+Ninny -- roseTerrace
 
-:Mrs Otis: as Otis $female
+:Mrs. Biddie Louise Otis: as Otis $female
 
-Otis -> Ninny : friend
+Otis --> Ninny : friend
 
-:Essie Rue Threadgoode: as Essie $female 
+:Essie Rue Threadgoode: as Essie $female
 
-Essie <.. Ninny : mentioned 
+
 
 ' Chapter 3
 
-:Virginia "Ninny'" Mrs. Biddie Louise Otis: $female <<todo>>
 
-note top: meteorite 
 
-:Mr. Earl Adcock Sr: <<mentioned>> $male
 
-:Bertha Vick: <<todo>>
-:Harold Vick:  <<todo>>
+:Mr. Earl Adcock Sr: as AdcockSr $male
+AdcockSr --> Otis : landlord
 
-:Leona: <<todo>>
-:John Justice: <<todo>>
+:Bertha Vick: as Bertha $female
+:Harold Vick: as Harold $male
+
+Bertha --> Otis : neighbour
+Harold --> Bertha : husband
+
+(Threadgoode family) as Threadgoodes
+
+:Leona:  $female
+
+Threadgoodes -- Leona : oldest and prettiest
+
+:John Justice: as johnJustice $male
+Leona --> johnJustice : married
+
 ' Chapter 4
-:Ida Simms: <<todo>>
+:Ida Simms: as idaSimms $female
+Leona <-- idaSimms : seamstress for the wedding
 
-:Cookie: <<pet>><<todo>>
+:Cookie: <<pet>> $male
+Cookie -- Threadgoodes : rakoon
 
-:Mrs. Philbeam: <<todo>>
-
+:Mrs. Philbeam: <<mentioned>>  $female
+Ninny ..> :Mrs. Philbeam: : mentioned crazy as
 ' Chapter 5
-:Vesta: <<todo>>
-:Earl Jr: <<todo>>
-: Roy: <<todo>>
-' Chapter 6
-(hobo camp) I <<location>><<todo>>
-'Jim Smokey Phillips, Elmo Inky Williams, BoWeevil Jake, Crackshot Sackett, and Chattanooga Red Barker
+:Vesta:  $female
+Vesta --> AdcockSr : wife
 
-:Bernice:  <<todo>>
+:Earl Jr: as AdcockJr $male
+AdcockJr -> Vesta : son
+AdcockJr --> AdcockSr : son
+
+:Roy:  $male
+Roy --> Otis : husband
+' Chapter 6
+(hobo camp) as hoboCamp  <<location>>
+'Jim Smokey Phillips, , , , and
+
+:Jim Smokey Phillips: as Smokey $male
+:Elmo Inky Williams: as Inky $male
+:BoWeevil Jake: as BoWeevil $male
+:Crackshot Sackett: as Crackshot $male
+:Chattanooga Red Barker: as Barker $male
+
+hoboCamp -- Smokey
+Inky -- hoboCamp
+BoWeevil -- hoboCamp
+hoboCamp - Crackshot
+Barker -- hoboCamp
+
+Smokey -- cafe : came to
+
+:Bernice:   $female
+
+Smokey <-- Bernice : sister
 
 ' Chapter 8
 
-:Dr. Hadley:  <<todo>>
+Idgie --- Threadgoodes : daughter
 
-:Buddy:  <<todo>>
+:Dr. Hadley:  as drHadley $male
+
+Threadgoodes -- drHadley : doctor
+
+:Buddy:  $male
+
+Threadgoodes -- Buddy : son
+
+:Cleo: $male
+
+Cleo - Threadgoodes : son
+
+Ninny - Cleo : wife
+Threadgoodes - Essie : daughter
 
 @enduml
