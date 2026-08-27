@@ -8,7 +8,11 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-legend 7.1% (Chapter 8)
+!$pos_int = 7
+!$pos_frac = 1
+!$chapter = 8
+
+legend $pos_int.$pos_frac% (Chapter $chapter)
 
 mainframe characters
 
@@ -21,6 +25,7 @@ dotWeems --  cafe : next door
 :Imogene "Idgie" Threadgoode: as Idgie $female
 
 cafe -- Idgie : owner
+
 
 :Ruth Jamison: as Ruth $female
 
