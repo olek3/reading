@@ -8,9 +8,9 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 10
-!$pos_frac = 6
-!$chapter = 11
+!$pos_int = 11
+!$pos_frac = 0
+!$chapter = 12
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -71,7 +71,7 @@ Ninny -- roseTerrace
 
 Otis --> Ninny : friend
 
-:Essie Rue Threadgoode: as Essie $female
+:Essie Rue Limeway: as Essie $female
 
 
 
