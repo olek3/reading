@@ -8,9 +8,9 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 7
-!$pos_frac = 1
-!$chapter = 8
+!$pos_int = 8
+!$pos_frac = 2
+!$chapter = 9
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -157,5 +157,10 @@ Cleo - Threadgoodes : son
 
 Ninny - Cleo : wife
 Threadgoodes - Essie : daughter
+
+'Chapter 9
+
+:Opal:  <<todo>>
+:Julian:  <<todo>>
 
 @enduml
