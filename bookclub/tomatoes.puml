@@ -8,9 +8,9 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 8
+!$pos_int = 9
 !$pos_frac = 4
-!$chapter = 10
+!$chapter = 11
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -169,5 +169,9 @@ Wilma <<todo>>
 ' Chapter 10
 
 :Splinter Belly Jones:  <<todo>>
+
+'Chapter 11
+
+:Harry the goat!: <<todo>>
 
 @enduml
