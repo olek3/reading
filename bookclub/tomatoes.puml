@@ -9,7 +9,7 @@ skinparam backgroundcolor #191a1c
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
 !$pos_int = 11
-!$pos_frac = 0
+!$pos_frac = 6
 !$chapter = 12
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -174,5 +174,9 @@ Wilma <<todo>>
 
 :Harry the goat!: <<todo>>
 :Marie Miller:  <<todo>>
+
+
+' Chapter 12
+:Janice:  <<todo>>
 
 @enduml
