@@ -8,9 +8,9 @@ skinparam backgroundcolor #191a1c
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 12
-!$pos_frac = 4
-!$chapter = 13
+!$pos_int = 13
+!$pos_frac = 0
+!$chapter = 15
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -180,5 +180,9 @@ Wilma <<todo>>
 :Janice:  <<todo>>
 
 :Nadine Fingerhutt:  <<todo>>
+
+'Chapter 15
+
+:Sister: <<pet>> <<todo>>
 
 @enduml
