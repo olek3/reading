@@ -9,8 +9,8 @@ skinparam backgroundcolor #191a1c
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
 !$pos_int = 19
-!$pos_frac = 5
-!$chapter = 21
+!$pos_frac = 9
+!$chapter = 22
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -210,4 +210,9 @@ Joe --> sheriff : raised
 :Mary Bess: <<todo>> 
 
 :Scroggins: <<todo>> 
+
+
+' Chapter 22
+
+:Geneene: <<todo>> 
 @enduml
