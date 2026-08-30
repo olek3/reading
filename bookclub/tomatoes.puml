@@ -9,7 +9,7 @@ skinparam backgroundcolor #191a1c
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
 !$pos_int = 13
-!$pos_frac = 1
+!$pos_frac = 8
 !$chapter = 15
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -184,6 +184,8 @@ Wilma <<todo>>
 'Chapter 15
 
 :Sister: <<pet>> <<todo>>
-:Albert: I  <<todo>>
+:Albert:   <<todo>>
+:George Pullman Peavey:  <<todo>>
+
 
 @enduml
