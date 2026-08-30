@@ -190,9 +190,14 @@ Wilma <<todo>>
 'Chapter 16
 
 :Ocie Smith:  <<todo>>
-:Grady Kilgore:  <<todo>>
+:Grady Kilgore:  as sheriff <<todo>> $male 
 :Gladys:  <<todo>>
 :Eva Bates:  <<todo>>
 :Jack Butts: <<todo>> 
 :Pete Tidwell: <<todo>> 
+
+:Joe: $male
+
+Joe --> sheriff : raised 
+
 @enduml
