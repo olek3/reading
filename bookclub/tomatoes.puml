@@ -9,7 +9,7 @@ skinparam backgroundcolor #191a1c
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
 !$pos_int = 16
-!$pos_frac = 2
+!$pos_frac = 4
 !$chapter = 18
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -203,5 +203,6 @@ Joe --> sheriff : raised
 'Chapter 18
 
 :Dr. Clyde: <<todo>> 
+:Tommy: <<todo>> 
 
 @enduml
