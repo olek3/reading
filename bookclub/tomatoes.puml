@@ -9,7 +9,7 @@ skinparam backgroundcolor #191a1c
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
 !$pos_int = 15
-!$pos_frac = 1
+!$pos_frac = 3
 !$chapter = 16
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -193,5 +193,6 @@ Wilma <<todo>>
 :Grady Kilgore:  <<todo>>
 :Gladys:  <<todo>>
 :Eva Bates:  <<todo>>
-
+:Jack Butts: <<todo>> 
+:Pete Tidwell: <<todo>> 
 @enduml
