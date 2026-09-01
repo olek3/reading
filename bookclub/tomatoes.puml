@@ -4,7 +4,7 @@
 !include $stylePath/reading.iuml
 
 skinparam backgroundcolor #191a1c
-
+skinparam actor<<colored>>bordercolor sienna
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
@@ -31,15 +31,15 @@ cafe -- Idgie : owner
 
 cafe -- Ruth : owner
 
-:Sipsey Peavey: as Sipsey $female 
+:Sipsey Peavey: as Sipsey <<colored>> $female
 
 cafe -- Sipsey: cook
 
-:Onzell: $female
+:Onzell: <<colored>> $female
 
 Onzell -- cafe : cook
 
-:Big George: as bigGeorge $male
+:Big George: <<colored>> as bigGeorge $male
 
 bigGeorge -- cafe : cook
 
@@ -147,7 +147,7 @@ Idgie --- Threadgoodes : daughter
 
 Threadgoodes -- drHadley : doctor
 
-:Buddy:  $male
+:Buddy:  <<dead>> $male
 
 Threadgoodes -- Buddy : son
 
@@ -160,69 +160,122 @@ Threadgoodes - Essie : daughter
 
 'Chapter 9
 
-:Opal:  <<todo>>
-:Julian:  <<todo>>
+:Opal:  $female
 
-(Glasses) <<group>> <<todo>>
-Wilma <<todo>>
+Threadgoodes -- Opal : ??
+:Julian:  $male
+
+Opal <-- Julian : husband
+
+(beauty shop) as beautyShop <<institution>>
+
+Opal -- beautyShop : owns
+
+(Glass family reunion) as Glasses <<event>>
+:Mr. Roy Glass: as royGlass $male
+:Mrs. Roy Glass: as mrsGlass $female
+
+royGlass -- Glasses
+mrsGlass -- Glasses
+
+Wilma $female
+Glasses -- Wilma : tasted the cake
 
 ' Chapter 10
 
-:Splinter Belly Jones:  <<todo>>
+:Splinter Belly Jones:  $male
+note top: seen the name of the cafe in Canada
 
 'Chapter 11
 
-:Harry the goat!: <<todo>>
-:Marie Miller:  <<todo>>
+:Harry the goat!: as goat <<pet>> $male
 
+goat -- Threadgoodes : the goat
+:Marie Miller: as marieMiller  $female
+
+Buddy --> marieMiller : had been flirting
 
 ' Chapter 13
-:Janice:  <<todo>>
+:Janice:  $female
 
-:Nadine Fingerhutt:  <<todo>>
+Evelyn <-- Janice : daughter
+
+(Complete Woman) as completeWoman <<project>>
+
+Evelyn - completeWoman $ex attended
+
+:Nadine Fingerhutt: as Nadine $female
+
+completeWoman - Nadine $ex leader
 
 'Chapter 15
 
-:Sister: <<pet>> <<todo>>
-:Albert:   <<todo>>
-:George Pullman Peavey:  <<todo>>
+:Sister: <<pet>> $female
 
+Sister - Ninny $ex red hen
+
+:Albert:  $male
+Albert --> Ninny : ? son
+
+:George Pullman Peavey: as Pullman <<colored>> $male
+Sipsey --> Pullman : adopted
 'Chapter 16
 
-:Ocie Smith:  <<todo>>
-:Grady Kilgore:  as sheriff <<todo>> $male 
-:Gladys:  <<todo>>
-:Eva Bates:  <<todo>>
-:Jack Butts: <<todo>> 
-:Pete Tidwell: <<todo>> 
+:Ocie Smith: as Ocie  <<colored>> $male
+cafe -- Ocie : asked pie
 
-:Joe: $male
+:Grady Kilgore:  as sheriff $male   /' todo :Grady Kilgore:  as sheriff  '/
+
+(Whistle Stop) as whistleStop <<location>>
+
+whistleStop <--- cafe : located at
+
+sheriff -- whistleStop : sheriff
+
+:Gladys Moats: as Gladys  $female
+Gladys --> sheriff : wife
+
+:Eva Bates: as Eva $female
+
+sheriff --> Eva : sees
+
+(KKK) <<group>>
+
+(KKK) ... sheriff
+
+:Jack Butts: as jackButts $male
+:Pete Tidwell: as peteTidwell $male
+
+jackButts -- KKK
+peteTidwell -- KKK
+
+:Joe: <<colored>> $male
 
 Joe --> sheriff : raised 
 
 'Chapter 18
 
-:Dr. Clyde: <<todo>> 
-:Tommy: <<todo>> 
+:Dr. Clyde: <<todo>>   /' todo :Dr. Clyde:  '/
+:Tommy: <<todo>>   /' todo :Tommy:  '/
 
 'Chapter 21
 
-:Mary Bess: <<todo>> 
+:Mary Bess: <<todo>>   /' todo :Mary Bess:  '/
 
-:Scroggins: <<todo>> 
+:Scroggins: <<todo>>   /' todo :Scroggins:  '/
 
 
 ' Chapter 22
 
-:Geneene: <<todo>> 
+:Geneene: <<todo>>   /' todo :Geneene:  '/
 
-:Mr. Dunaway: <<todo>> 
+:Mr. Dunaway: <<todo>>   /' todo :Mr. Dunaway:  '/
 
-:Jasper: <<todo>> 
-:Jasper: <<todo>> 
+:Jasper: <<todo>>   /' todo :Jasper:  '/
+:Jasper: <<todo>>   /' todo :Jasper:  '/
 
-:Willie Boy: <<todo>> 
-:Naughty Bird: <<todo>> 
+:Willie Boy: <<todo>>   /' todo :Willie Boy:  '/
+:Naughty Bird: <<todo>>   /' todo :Naughty Bird:  '/
 
-:Hartman: <<todo>> 
+:Hartman: <<todo>>   /' todo :Hartman:  '/
 @enduml
