@@ -8,8 +8,8 @@ skinparam actor<<colored>>bordercolor sienna
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 23
-!$pos_frac = 9
+!$pos_int = 24
+!$pos_frac = 1
 !$chapter = 27
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -312,4 +312,8 @@ Ninny <-- Hartman : neighbour
 :Frank Bennett: as Frank $male
 
 Ruth --> Frank : engaged to
+
+:Mildred: <<todo>> 
+:Patsy Ruth: <<todo>> 
+
 @enduml
