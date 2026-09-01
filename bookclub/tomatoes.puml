@@ -20,7 +20,7 @@ mainframe characters
 
 :Dot Weems: as dotWeems
 
-dotWeems --  cafe : next door
+dotWeems ---  cafe : next door
 
 :Imogene "Idgie" Threadgoode: as Idgie $female
 
@@ -224,7 +224,7 @@ Sipsey --> Pullman : adopted
 :Ocie Smith: as Ocie  <<colored>> $male
 cafe -- Ocie : asked pie
 
-:Grady Kilgore:  as sheriff $male   /' todo :Grady Kilgore:  as sheriff  '/
+:Grady Kilgore:  as sheriff $male
 
 (Whistle Stop) as whistleStop <<location>>
 
@@ -255,27 +255,57 @@ Joe --> sheriff : raised
 
 'Chapter 18
 
-:Dr. Clyde: <<todo>>   /' todo :Dr. Clyde:  '/
-:Tommy: <<todo>>   /' todo :Tommy:  '/
+:Dr. Clyde: as obstetrician $male
+
+'Evelyn <-- obstetrician : obstetrician
+obstetrician --> Evelyn : obstetrician
+
+:Tommy: $male
+
+Evelyn <-- Tommy : son
 
 'Chapter 21
 
-:Mary Bess: <<todo>>   /' todo :Mary Bess:  '/
+:Mary Bess: as maryBess $female
 
-:Scroggins: <<todo>>   /' todo :Scroggins:  '/
+drHadley <-- maryBess : niece
 
+:reverend Scroggins: as Scroggins $male
+
+(Drama Club) as dramaClub <<group>>
+
+dramaClub -- Vesta : president
+
+Scroggins -- dramaClub
 
 ' Chapter 22
 
-:Geneene: <<todo>>   /' todo :Geneene:  '/
+:Geneene: <<colored>> $female
 
-:Mr. Dunaway: <<todo>>   /' todo :Mr. Dunaway:  '/
+Geneene - roseTerrace  : nurse
 
-:Jasper: <<todo>>   /' todo :Jasper:  '/
-:Jasper: <<todo>>   /' todo :Jasper:  '/
+:Mr. Dunaway: as Dunaway $male
 
-:Willie Boy: <<todo>>   /' todo :Willie Boy:  '/
-:Naughty Bird: <<todo>>   /' todo :Naughty Bird:  '/
+roseTerrace -- Dunaway : resident
 
-:Hartman: <<todo>>   /' todo :Hartman:  '/
+:Jasper: <<colored>> $male
+:Artis: <<colored>> $male
+
+Jasper --> Onzell : son
+Artis --> Onzell : son
+
+Jasper <-> Artis : twins
+
+:Wonderful Counselor (a.k.a. Willie Boy): as Willie <<colored>> $male
+
+Willie ---> Onzell : son
+
+:"Naughty Bird": as bird <<colored>> $female
+
+bird ---> Onzell : daughter
+
+:Mr. Hartman: as Hartman $male
+
+Ninny <-- Hartman : neighbour
+
 @enduml
