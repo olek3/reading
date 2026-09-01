@@ -8,8 +8,8 @@ skinparam actor<<colored>>bordercolor sienna
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 29
-!$pos_frac = 9
+!$pos_int = 30
+!$pos_frac = 0
 !$chapter = 35
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -121,7 +121,7 @@ Roy --> Otis : husband
 (hobo camp) as hoboCamp  <<location>>
 'Jim Smokey Phillips, , , , and
 
-:Jim Smokey Phillips: as Smokey $male
+:Jim Smokey Phillips "Lonesome": as Smokey $male
 :Elmo Inky Williams: as Inky $male
 :BoWeevil Jake: as BoWeevil $male
 :Crackshot Sackett: as Crackshot $male
