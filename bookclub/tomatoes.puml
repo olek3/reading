@@ -8,9 +8,9 @@ skinparam actor<<colored>>bordercolor sienna
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 24
-!$pos_frac = 1
-!$chapter = 27
+!$pos_int = 25
+!$pos_frac = 6
+!$chapter = 29
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -316,4 +316,6 @@ Ruth --> Frank : engaged to
 :Mildred: <<todo>> 
 :Patsy Ruth: <<todo>> 
 
+'Chapter 29
+:Jack Bates: <<todo>> 
 @enduml
