@@ -9,7 +9,7 @@ skinparam actor<<colored>>bordercolor sienna
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
 !$pos_int = 30
-!$pos_frac = 0
+!$pos_frac = 1
 !$chapter = 35
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -337,4 +337,6 @@ Ruth --> Frank : engaged to
 'Chapter 35
 :Dwane: <<todo>> 
 
+:Peggy: <<todo>> 
+:Vernon: <<todo>> 
 @enduml
