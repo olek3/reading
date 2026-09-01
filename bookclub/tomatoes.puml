@@ -8,9 +8,9 @@ skinparam actor<<colored>>bordercolor sienna
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 20
-!$pos_frac = 4
-!$chapter = 22
+!$pos_int = 23
+!$pos_frac = 9
+!$chapter = 27
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -308,4 +308,8 @@ bird ---> Onzell : daughter
 
 Ninny <-- Hartman : neighbour
 
+
+:Frank Bennett: as Frank $male
+
+Ruth --> Frank : engaged to
 @enduml
