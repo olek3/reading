@@ -6,15 +6,13 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
-
 !$pos_int = 32
 !$pos_frac = 4
 !$chapter = 37
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
-mainframe characters
+mainframe Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg -- characters
 
 (Whistle Stop Cafe) as cafe <<institution>>
 
