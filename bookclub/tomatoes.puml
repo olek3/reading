@@ -12,7 +12,7 @@ skinparam actor<<colored>>bordercolor sienna
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
-mainframe Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg -- characters
+mainframe **characters** Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
 (Whistle Stop Cafe) as cafe <<institution>>
 
