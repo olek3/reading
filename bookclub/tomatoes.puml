@@ -8,9 +8,9 @@ skinparam actor<<colored>>bordercolor sienna
 
 title Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
-!$pos_int = 30
-!$pos_frac = 1
-!$chapter = 35
+!$pos_int = 32
+!$pos_frac = 4
+!$chapter = 37
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -340,4 +340,7 @@ Ruth --> Frank : engaged to
 :Peggy: <<todo>> 
 :Vernon: <<todo>> 
 :Bobby Lee: <<todo>> 
+
+'Chapter 37
+:MR. MILTON JAME: <<todo>> 
 @enduml
