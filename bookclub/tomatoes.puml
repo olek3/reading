@@ -133,15 +133,15 @@ BoWeevil -- hoboCamp
 hoboCamp - Crackshot
 Barker -- hoboCamp
 
-Smokey -- cafe : came to
+Smokey --- cafe : came to
 
 :Bernice:   $female
 
-Smokey <-- Bernice : sister
+Smokey <- Bernice : sister
 
 ' Chapter 8
 
-Idgie --- Threadgoodes : daughter
+Idgie ---- Threadgoodes : daughter
 
 :Dr. Hadley:  as drHadley $male
 
@@ -183,7 +183,7 @@ Glasses -- Wilma : tasted the cake
 
 ' Chapter 10
 
-:Splinter Belly Jones:  $male
+:Splinter Belly Jones: <<mentioned>> $male
 note top: seen the name of the cafe in Canada
 
 'Chapter 11
@@ -237,7 +237,7 @@ Gladys --> sheriff : wife
 
 :Eva Bates: as Eva $female
 
-sheriff --> Eva : sees
+Eva <-- sheriff : sees
 
 (KKK) <<group>>
 
@@ -313,34 +313,58 @@ Ninny <-- Hartman : neighbour
 
 Ruth --> Frank : engaged to
 
-:Mildred: <<todo>> 
-:Patsy Ruth: <<todo>> 
+:Mildred: $female
+:Patsy Ruth: as Patsy $female
+
+Mildred --- Threadgoodes
+Patsy --- Threadgoodes
+
+Mildred <-> Patsy : twins
 
 'Chapter 29
-:Big Jack Bates: <<todo>> 
+:Big Jack Bates: as bigJack $male
+
+bigJack --> Eva : father
 
 
 ' Chapter 30
 
-:Railroad Bill: <<todo>> 
+:Railroad Bill: <<mentioned>>
+note top : bandit
 
-:Norris: <<todo>> 
-:Frances: <<todo>> 
+
+:Norris: $male
+:Francis: $female
+
+Otis <-- Norris : son
+Norris <-- Francis : wife
 
 'Chapter 32
 
-:Margaret: <<todo>> 
+:Margaret: $female
+
+drHadley <-- Margaret : wife
 
 ' Chapter 34
-:Buddy Jr: <<todo>> 
+:Buddy Jr "Stump": as stump $male
+
+Ruth -- stump : son
+Idgie -- stump : son
 
 'Chapter 35
-:Dwane: <<todo>> 
+:Dwane: $male
+Dwane --> sheriff : son
 
-:Peggy: <<todo>> 
-:Vernon: <<todo>> 
-:Bobby Lee: <<todo>> 
+:Peggy: $female
+:Vernon: $male
+
+drHadley <-- Vernon : son
+Vernon <-- Peggy : sister
+
+:Bobby Lee: as bobbyLee $male
+bobbyLee --> Scroggins : sone
 
 'Chapter 37
-:MR. MILTON JAME: <<todo>> 
+:MR. MILTON JAME: $male
+note top : BIRMINGHAM’S SEPIA NEWSPAPER
 @enduml
