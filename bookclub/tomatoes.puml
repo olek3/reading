@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 36
-!$pos_frac = 8
-!$chapter = 42
+!$pos_int = 39
+!$pos_frac = 4
+!$chapter = 45
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -369,4 +369,7 @@ note top : BIRMINGHAM’S SEPIA NEWSPAPER
 ' Chapter 42
 :kid: <<unnamed>><<dead>> $male
 kid .. Smokey
+
+'Chapter 45
+:Duane: <<todo>> 
 @enduml
