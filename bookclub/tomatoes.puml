@@ -427,4 +427,12 @@ Nixon -- Electra : performed wedding
 
 lewisJones -- Electra : provided music
 
+:Mrs. Lulu Butterfork: as Butterfork <<colored>> $female
+
+(Mrs. Lulu Butterfork's house) as butterforkHouse <<location>>
+
+Butterfork -- butterforkHouse : owns
+
+butterforkHouse -- Electra : wedding reception
+
 @enduml
