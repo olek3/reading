@@ -6,8 +6,8 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 66
-!$pos_frac = 7
+!$pos_int = 67
+!$pos_frac = 0
 !$chapter = 88
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -451,7 +451,11 @@ Mozell -- Evelyn : cashier at supermarket
 Winston Lewis --> Willie : killed
 
 ' Chapter 88
-:Miss Madeline Poole: as Madeline $female
+:Miss Madeline Poole: as Madeline <<colored>> $female
 
 Madeline --> Artis : second wife
+
+:After John: as afterJohn <<colored>> $male
+
+afterJohn --> Artis : friend 
 @enduml
