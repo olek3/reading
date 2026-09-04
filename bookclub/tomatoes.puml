@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 51
-!$pos_frac = 6
-!$chapter = 63
+!$pos_int = 52
+!$pos_frac = 4
+!$chapter = 65
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -406,5 +406,7 @@ mrsPucket <-- mrPucket : husband
 :Boots: <<todo>> 
 :Pee Wee: <<todo>> 
 
+' Chapter 65
+:Jake Box: <<todo>> 
 
 @enduml
