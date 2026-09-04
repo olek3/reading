@@ -7,7 +7,7 @@ skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
 !$pos_int = 67
-!$pos_frac = 0
+!$pos_frac = 4
 !$chapter = 88
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -456,6 +456,10 @@ Winston Lewis --> Willie : killed
 Madeline --> Artis : second wife
 
 :After John: as afterJohn <<colored>> $male
+
+:Mr. Fred Jones: as fredJones $male
+
+afterJohn --> fredJones : works for
 
 afterJohn --> Artis : friend 
 @enduml
