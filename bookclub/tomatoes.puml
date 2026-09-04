@@ -7,8 +7,8 @@ skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
 !$pos_int = 58
-!$pos_frac = 1
-!$chapter = 74
+!$pos_frac = 6
+!$chapter = 75
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -434,5 +434,10 @@ lewisJones -- Electra : provided music
 Butterfork -- butterforkHouse : owns
 
 butterforkHouse -- Electra : wedding reception
+
+' Chapter 75
+:Mozell: <<colored>> $male
+
+Mozell -- Evelyn : cashier at supermarket
 
 @enduml
