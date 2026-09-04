@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 48
-!$pos_frac = 0
-!$chapter = 58
+!$pos_int = 50
+!$pos_frac = 7
+!$chapter = 62
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -398,5 +398,6 @@ Frank <-- Gerald : brother
 Idgie <-- mrsPucket : told about Frank
 mrsPucket <-- mrPucket : husband
 
-
+' Chapter 62
+:Alice: <<todo>> 
 @enduml
