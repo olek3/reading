@@ -7,7 +7,7 @@ skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
 !$pos_int = 51
-!$pos_frac = 4
+!$pos_frac = 6
 !$chapter = 63
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -403,4 +403,8 @@ mrsPucket <-- mrPucket : husband
 
 'Chapter 63
 :Jesse Thiggins: <<todo>> 
+:Boots: <<todo>> 
+:Pee Wee: <<todo>> 
+
+
 @enduml
