@@ -213,7 +213,7 @@ completeWoman - Nadine $ex leader
 Sister - Ninny $ex red hen
 
 :Albert:  $male
-Albert --> Ninny : ? son
+Albert --> Ninny : son
 
 :George Pullman Peavey: as Pullman <<colored>> $male
 Sipsey --> Pullman : adopted
@@ -386,8 +386,8 @@ trainer --> elephant : elephant trainer
 :Reverend Charles Jamison: as charlesJamison $male
 :Mrs. Elizabeth Jamison: as Elizabeth $female
 
-Ruth <--- charlesJamison : father
-Ruth <--- Elizabeth : mother
+charlesJamison --> Ruth : father
+Elizabeth --> Ruth : mother
 
 Frank <-- Gerald : brother
 
@@ -399,17 +399,31 @@ Idgie <-- mrsPucket : told about Frank
 mrsPucket <-- mrPucket : husband
 
 ' Chapter 62
-:Alice: <<todo>> 
+:Alice: $female
+Alice --- Threadgoodes : Momma
+:Poppa: <<unnamed>> $male
+Poppa --- Threadgoodes : Poppa
 
 'Chapter 63
-:Jesse Thiggins: <<todo>> 
-:Boots: <<todo>> 
-:Pee Wee: <<todo>> 
+:Jesse Thiggins: as Jesse <<colored>> $male
+Jesse <-- Vesta : ran over
+
+:Boots: <<pet>><<dead>> $male
+Otis <- Boots $ex cat
+
+:Pee Wee: as peeWee $male
+
+Essie <- peeWee : son
 
 ' Chapter 65
-:Jake Box: <<todo>> 
+:Jake Box: as jakeBox $male
+Frank <-- jakeBox : hired man
 
 'Chapter 66
-:Officer Curtis Smoote: <<todo>> 
-:Officer Wendell Riggins: <<todo>> 
+:Officer Curtis Smoote: as Smoote $male
+:Officer Wendell Riggins: as Riggins $male
+
+Smoote --> Frank : came searching
+Riggins --> Frank : came searching
+
 @enduml
