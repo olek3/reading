@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 52
-!$pos_frac = 8
-!$chapter = 66
+!$pos_int = 54
+!$pos_frac = 9
+!$chapter = 69
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -181,8 +181,8 @@ Glasses -- Wilma : tasted the cake
 
 ' Chapter 10
 
-:Splinter Belly Jones: as Splinter <<mentioned>> $male
-cafe - Splinter : seen the name in Canada
+:Splinter Belly Jones: <<mentioned>> $male
+note top: seen the name of the cafe in Canada
 
 'Chapter 11
 
@@ -213,7 +213,7 @@ completeWoman - Nadine $ex leader
 Sister - Ninny $ex red hen
 
 :Albert:  $male
-Albert --> Ninny : son
+Albert --> Ninny : ? son
 
 :George Pullman Peavey: as Pullman <<colored>> $male
 Sipsey --> Pullman : adopted
@@ -386,8 +386,8 @@ trainer --> elephant : elephant trainer
 :Reverend Charles Jamison: as charlesJamison $male
 :Mrs. Elizabeth Jamison: as Elizabeth $female
 
-charlesJamison --> Ruth : father
-Elizabeth --> Ruth : mother
+Ruth <--- charlesJamison : father
+Ruth <--- Elizabeth : mother
 
 Frank <-- Gerald : brother
 
@@ -398,32 +398,8 @@ Frank <-- Gerald : brother
 Idgie <-- mrsPucket : told about Frank
 mrsPucket <-- mrPucket : husband
 
-' Chapter 62
-:Alice: $female
-Alice --- Threadgoodes : Momma
-:Poppa: <<unnamed>> $male
-Poppa --- Threadgoodes : Poppa
+' Chapter 69
+:Edward Threadgoode: as Edward $male
 
-'Chapter 63
-:Jesse Thiggins: as Jesse <<colored>> $male
-Jesse <-- Vesta : ran over
-
-:Boots: <<pet>><<dead>> $male
-Otis <- Boots $ex cat
-
-:Pee Wee: as peeWee $male
-
-Essie <- peeWee : son
-
-' Chapter 65
-:Jake Box: as jakeBox $male
-Frank <-- jakeBox : hired man
-
-'Chapter 66
-:Officer Curtis Smoote: as Smoote $male
-:Officer Wendell Riggins: as Riggins $male
-
-Smoote --> Frank : came searching
-Riggins --> Frank : came searching
-
+Threadgoodes --> Edward : son 
 @enduml
