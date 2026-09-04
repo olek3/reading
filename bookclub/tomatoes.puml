@@ -419,4 +419,12 @@ Artis --> Electra : hiding from
 mrGreene -- Electra : father
 mrsGreene -- Electra : mother
 
+:Dr. John W. Nixon: as Nixon <<colored>> $male
+
+Nixon -- Electra : performed wedding
+
+:Mr. Lewis Jones: as lewisJones <<colored>> $male
+
+lewisJones -- Electra : provided music
+
 @enduml
