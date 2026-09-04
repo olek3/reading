@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 58
-!$pos_frac = 6
-!$chapter = 75
+!$pos_int = 61
+!$pos_frac = 3
+!$chapter = 79
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -444,5 +444,10 @@ butterforkHouse -- Electra : wedding reception
 :Mozell: <<colored>> $male
 
 Mozell -- Evelyn : cashier at supermarket
+
+' Chapter 79
+:Winston Lewis: <<colored>> $male
+
+Winston Lewis --> Willie : killed
 
 @enduml
