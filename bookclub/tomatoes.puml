@@ -461,5 +461,9 @@ Madeline --> Artis : second wife
 
 afterJohn --> fredJones : works for
 
+:Mr. Leo: $male
+
+Artis --> Mr. Leo : asked for nickel
+
 afterJohn --> Artis : friend 
 @enduml
