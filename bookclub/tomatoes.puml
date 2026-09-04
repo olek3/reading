@@ -20,7 +20,7 @@ mainframe **characters** Fried green tomatoes at the Whistle Stop Cafe by Fannie
 
 dotWeems ---  cafe : next door
 
-:Imogene "Idgie" Threadgoode: as Idgie $female
+:Imogene "Idgie" Threadgoode: as Idgie $female_protagonist
 
 cafe -- Idgie : owner
 
@@ -57,11 +57,11 @@ roseTerrace -- bigMomma
 
 bigMomma --> Ed : mother 
 
-:Evelyn Couch: as Evelyn $female
+:Evelyn Couch: as Evelyn $female_protagonist
 
 Ed --> Evelyn : husband 
 
-:Virginia "Ninny" Mrs. Cleo Threadgoode: as Ninny $female
+:Virginia "Ninny" Mrs. Cleo Threadgoode: as Ninny <<narrator>> $female_protagonist
 
 Ninny -- roseTerrace
 
@@ -87,7 +87,7 @@ AdcockSr --> Otis : landlord
 Bertha --> Otis : neighbour
 Harold --> Bertha : husband
 
-(Threadgoode family) as Threadgoodes
+(Threadgoode family) as Threadgoodes <<group>>
 
 :Leona:  $female
 
@@ -169,7 +169,7 @@ Opal <-- Julian : husband
 
 Opal -- beautyShop : owns
 
-(Glass family reunion) as Glasses <<event>>
+(Glass family) as Glasses <<group>>
 :Mr. Roy Glass: as royGlass $male
 :Mrs. Roy Glass: as mrsGlass $female
 
@@ -309,7 +309,7 @@ Ninny <-- Hartman : neighbour
 
 :Frank Corley  Bennett: as Frank $male
 
-Ruth --> Frank : engaged to
+Ruth <-- Frank $ex husband
 
 :Mildred: $female
 :Patsy Ruth: as Patsy $female
@@ -347,7 +347,6 @@ drHadley <-- Margaret : wife
 :Buddy Jr "Stump": as stump $male
 
 Ruth -- stump : son
-Idgie -- stump : son
 
 'Chapter 35
 :Dwane: $male
@@ -371,18 +370,33 @@ note top : BIRMINGHAM’S SEPIA NEWSPAPER
 kid .. Smokey
 
 'Chapter 45
-:Duane: <<todo>> 
+:Duane Glass: as Duane   $male
+Glasses -- Duane : son?
+Otis .. Glasses : neighbours
 
 ' Chapter 46
-:Miss Fancy: <<todo>> 
-:J. W. Moldwater: <<todo>> 
+:Miss Fancy: as elephant <<pet>> $female
+:J. W. Moldwater: as trainer $male
+
+elephant --> bird : visited
+trainer --> elephant : elephant trainer
 
 'Chapter 48
-:Gerald Bennett: <<todo>> 
-:Reverend Charles Jamison: <<todo>> 
-:Mrs. Elizabeth Jamison: <<todo>> 
+:Gerald Bennett: as Gerald $male
+:Reverend Charles Jamison: as charlesJamison $male
+:Mrs. Elizabeth Jamison: as Elizabeth $female
+
+Ruth <--- charlesJamison : father
+Ruth <--- Elizabeth : mother
+
+Frank <-- Gerald : brother
 
 ' Chapter 58
-:Mrs. Pucket: <<todo>> 
-:Mr. Pucket: <<todo>> 
+:Mrs. Pucket: as mrsPucket $female
+:Mr. Pucket: as mrPucket $male
+
+Idgie <-- mrsPucket : told about Frank
+mrsPucket <-- mrPucket : husband
+
+
 @enduml
