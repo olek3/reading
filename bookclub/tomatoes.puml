@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 57
+!$pos_int = 58
 !$pos_frac = 1
-!$chapter = 73
+!$chapter = 74
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -408,7 +408,15 @@ Threadgoodes --> Edward : son
 :Mrs. Sallie Jinx: as Jinx <<todo>> $female
 
 ' Chapter 73
-:Electra Greene: as Electra $female
+:Electra Greene: as Electra <<colored>> $female
 
 Artis --> Electra : hiding from
+
+' Chapter 74
+:Mr. R. C. Greene: as mrGreene <<colored>> $male
+:Mrs. R. C. Greene: as mrsGreene <<colored>> $female
+
+mrGreene -- Electra : father
+mrsGreene -- Electra : mother
+
 @enduml
