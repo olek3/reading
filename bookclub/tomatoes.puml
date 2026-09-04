@@ -7,8 +7,8 @@ skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
 !$pos_int = 52
-!$pos_frac = 4
-!$chapter = 65
+!$pos_frac = 8
+!$chapter = 66
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -409,4 +409,7 @@ mrsPucket <-- mrPucket : husband
 ' Chapter 65
 :Jake Box: <<todo>> 
 
+'Chapter 66
+:Officer Curtis Smoote: <<todo>> 
+:Officer Wendell Riggins: <<todo>> 
 @enduml
