@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 39
-!$pos_frac = 4
-!$chapter = 45
+!$pos_int = 40
+!$pos_frac = 8
+!$chapter = 46
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -372,4 +372,9 @@ kid .. Smokey
 
 'Chapter 45
 :Duane: <<todo>> 
+
+' Chapter 46
+:Miss Fancy: <<todo>> 
+:J. W. Moldwater: <<todo>> 
+
 @enduml
