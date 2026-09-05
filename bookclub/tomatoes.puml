@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 67
-!$pos_frac = 4
-!$chapter = 88
+!$pos_int = 72
+!$pos_frac = 5
+!$chapter = 97
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -466,4 +466,11 @@ afterJohn --> fredJones : works for
 Artis --> Mr. Leo : asked for nickel
 
 afterJohn --> Artis : friend 
+
+
+' Chapter 97
+:Blanche: <<colored>> $female
+
+Blanche --> Jasper : wife
+
 @enduml
