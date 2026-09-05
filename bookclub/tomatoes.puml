@@ -7,7 +7,7 @@ skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
 !$pos_int = 72
-!$pos_frac = 5
+!$pos_frac = 6
 !$chapter = 97
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
@@ -472,5 +472,8 @@ afterJohn --> Artis : friend
 :Blanche: <<colored>> $female
 
 Blanche --> Jasper : wife
+:Clarissa: <<colored>> $female
+
+Clarissa --> Jasper : daughter
 
 @enduml
