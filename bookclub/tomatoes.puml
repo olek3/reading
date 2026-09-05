@@ -6,9 +6,9 @@
 skinparam backgroundcolor #191a1c
 skinparam actor<<colored>>bordercolor sienna
 
-!$pos_int = 72
-!$pos_frac = 6
-!$chapter = 97
+!$pos_int = 74
+!$pos_frac = 9
+!$chapter = 100
 
 legend $pos_int.$pos_frac% (Chapter $chapter)
 
@@ -475,5 +475,16 @@ Blanche --> Jasper : wife
 :Clarissa: <<colored>> $female
 
 Clarissa --> Jasper : daughter
+
+' Chapter 100
+:Le Roy Grooms: <<colored>> $male
+
+bird --> Le Roy Grooms : laid eyes on
+
+:Almondine: <<colored>> $female
+
+Almondine --> bird : daughter
+Almondine --> Le Roy Grooms : daughter
+
 
 @enduml
