@@ -314,8 +314,8 @@ Ruth <-- Frank $ex husband
 :Mildred: $female
 :Patsy Ruth: as Patsy $female
 
-Mildred --- Threadgoodes
-Patsy --- Threadgoodes
+Mildred -- Threadgoodes
+Patsy -- Threadgoodes
 
 Mildred <-> Patsy : twins
 
@@ -346,7 +346,7 @@ drHadley <-- Margaret : wife
 ' Chapter 34
 :Buddy Jr "Stump": as stump $male
 
-Ruth -- stump : son
+stump --> Ruth  : son
 
 'Chapter 35
 :Dwane: $male
@@ -386,8 +386,8 @@ trainer --> elephant : elephant trainer
 :Reverend Charles Jamison: as charlesJamison $male
 :Mrs. Elizabeth Jamison: as Elizabeth $female
 
-Ruth <--- charlesJamison : father
-Ruth <--- Elizabeth : mother
+charlesJamison --> Ruth : father
+Ruth <-- Elizabeth : mother
 
 Frank <-- Gerald : brother
 
@@ -446,9 +446,9 @@ butterforkHouse -- Electra : wedding reception
 Mozell -- Evelyn : cashier at supermarket
 
 ' Chapter 79
-:Winston Lewis: <<colored>> $male
+:Winston Lewis: as Winston <<colored>> $male
 
-Winston Lewis --> Willie : killed
+Winston <-- Willie : killed
 
 ' Chapter 88
 :Miss Madeline Poole: as Madeline <<colored>> $female
@@ -461,9 +461,9 @@ Madeline --> Artis : second wife
 
 afterJohn --> fredJones : works for
 
-:Mr. Leo: $male
+:Mr. Leo: as Leo $male
 
-Artis --> Mr. Leo : asked for nickel
+Artis --> Leo : asked for nickel
 
 afterJohn --> Artis : friend 
 
@@ -477,14 +477,14 @@ Blanche --> Jasper : wife
 Clarissa --> Jasper : daughter
 
 ' Chapter 100
-:Le Roy Grooms: <<colored>> $male
+:Le Roy Grooms: as Grooms <<colored>> $male
 
-bird --> Le Roy Grooms : laid eyes on
+Grooms <-- bird : laid eyes on
 
 :Almondine: <<colored>> $female
 
 Almondine --> bird : daughter
-Almondine --> Le Roy Grooms : daughter
+Almondine -> Grooms : daughter
 
 
 @enduml
