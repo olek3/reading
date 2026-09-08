@@ -1,0 +1,56 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+skinparam backgroundcolor #191a1c
+
+
+!$pos_int = 6
+!$pos_frac = 8
+!$part = 1
+!$chapter = 7
+
+legend $pos_int.$pos_frac% (глава $part/$chapter)
+
+mainframe **characters** С.Лукьяненко Линия грез
+
+:Кей Альтос: as key $male_protagonist
+
+:Мальчишка: as boy <<unnamed>> $male
+
+:Ленка: as lenka <<dead>> $female
+
+lenka --> boy :  сестра
+boy --> key : убил
+
+:Кертис Ван Кертис: as curtis $male
+
+(аТан) as atan <<institution>>
+
+atan - curtis : владелец
+
+curtis -> key : оживил и нанял
+
+:мистер Освальд: as osvald <<alias>> $male
+
+key ..> osvald : под видом
+
+:Артур: as artur $male
+curtis --> artur : сын
+
+:Шульман: as shulman <<dead>> $male
+
+shulman --> curtis $ex конкурент
+
+:силикоид: as silicoid <<unnamed>>
+
+silicoid --> curtis : прислуживает
+
+:инструктор: as instructor <<Булрати>> <<unnamed>>
+
+instructor --> curtis : работает на
+instructor --> key : тренировал
+
+
+@enduml
