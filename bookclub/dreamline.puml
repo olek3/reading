@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 41
-!$pos_frac = 7
+!$pos_int = 44
+!$pos_frac = 2
 !$part = 4
-!$chapter = 5
+!$chapter = 7
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -127,5 +127,9 @@ Isabella <-- lemak : дал корабли
 sedmin --> key : спас с Лайона
 :Барт Паолини: as bart $male
 bart <-- kri : паразитировал на
+
+:Мизаар: as misaar <<силикоид>>
+
+key <--> misaar : поединок
 
 @enduml
