@@ -7,7 +7,7 @@ skinparam backgroundcolor #191a1c
 
 
 !$pos_int = 19
-!$pos_frac = 4
+!$pos_frac = 7
 !$part = 2
 !$chapter = 7
 
@@ -67,5 +67,14 @@ chen <-- anna : напарник
 :Изабелла Каль: as Isabella $female
 
 osvald <-- Isabella : проверяла 
+
+(Служба имперской безопасности) as security <<institution>>
+
+Isabella -- security
+:Курт: as Kurt $male
+:Луис Номачи: as Luis 
+
+security -- Kurt : директор 
+security -- Luis : оперативник 
 
 @enduml
