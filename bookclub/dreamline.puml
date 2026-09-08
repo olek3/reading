@@ -17,8 +17,8 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 30
-!$pos_frac = 4
+!$pos_int = 31
+!$pos_frac = 1
 !$part = 3
 !$chapter = 8
 
@@ -114,5 +114,9 @@ note top : агент Дарлока
 :Вячеслав: as vyacheclav $male
 
 key <-- vyacheclav : уточка для рассказа про дарлок
+
+:Эзсанти Кри Чесциафо: as kri <<дарлок>>
+
+kri --> key : давний знакомый
 
 @enduml
