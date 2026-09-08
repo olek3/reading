@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 27
-!$pos_frac = 7
+!$pos_int = 30
+!$pos_frac = 4
 !$part = 3
-!$chapter = 4
+!$chapter = 8
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -107,4 +107,12 @@ artur <-- Vera : девочка на лайнере
 ovald --> Gertrude : уговорил лететь на Волантис
 
 Isabella ----> Kurt : любовница
+
+:Рад Гарч: as garch $male
+note top : агент Дарлока
+
+:Вячеслав: as vyacheclav $male
+
+key <-- vyacheclav : уточка для рассказа про дарлок
+
 @enduml
