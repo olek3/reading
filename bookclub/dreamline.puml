@@ -5,6 +5,17 @@
 
 skinparam backgroundcolor #191a1c
 
+skinparam actor<<алкари>>backgroundcolor #FFCC00
+skinparam actor<<булрати>>backgroundcolor #8B4513
+skinparam actor<<дарлок>>backgroundcolor #663399
+skinparam actor<<человек>>backgroundcolor #0066FF
+skinparam actor<<клакон>>backgroundcolor #CC0000
+skinparam actor<<меклонец>>backgroundcolor #00CCCC
+skinparam actor<<мрршан>>backgroundcolor #FF8800
+skinparam actor<<псилон>>backgroundcolor #FFFFFF
+skinparam actor<<саккра>>backgroundcolor #00CC00
+skinparam actor<<силикоид>>backgroundcolor #808080
+
 
 !$pos_int = 27
 !$pos_frac = 7
@@ -72,7 +83,7 @@ ovald <-- Isabella : проверяла
 
 Isabella -- security : заместитель Командующего планетарного филиала
 :Курт Рокхайм: as Kurt $male
-:Луис Номачи: as Luis 
+:Луис Номачи: as Luis $male
 
 security -- Kurt : Командующий на Инцедиосе 
 security -- Luis : оперативник 
