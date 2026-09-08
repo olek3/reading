@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 59
-!$pos_frac = 5
-!$part = 5
-!$chapter = 8
+!$pos_int = 64
+!$pos_frac = 6
+!$part = 7
+!$chapter = 1
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -150,4 +150,6 @@ ahmedi --> boy : знакомый с 4 круга
 :Данияр Вазаде: as teacher $male
 
 teacher --> boy : учитель древней истории
+
+:Дариан Арано: <<todo>> 
 @enduml
