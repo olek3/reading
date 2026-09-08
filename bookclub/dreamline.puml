@@ -18,7 +18,7 @@ skinparam actor<<силикоид>>backgroundcolor #808080
 
 
 !$pos_int = 59
-!$pos_frac = 4
+!$pos_frac = 5
 !$part = 5
 !$chapter = 8
 
@@ -142,4 +142,8 @@ key <--> misaar : поединок
 (Непогода) <<todo>> 
 :Нарасин Хан: <<todo>> 
 :Дьердж Саване: <<todo>> 
+
+:Ахмеди: as ahmedi $male
+
+ahmedi --> boy : знакомый с 4 круга
 @enduml
