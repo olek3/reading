@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 55
-!$pos_frac = 8
+!$pos_int = 57
+!$pos_frac = 0
 !$part = 5
-!$chapter = 4
+!$chapter = 5
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -134,5 +134,5 @@ key <--> misaar : поединок
 
 :Генриетта Фискалоччи: <<alias>> <<todo>> $female 
 :Рашель: <<todo>> $female 
-
+:Ванда Каховски: <<todo>> 
 @enduml
