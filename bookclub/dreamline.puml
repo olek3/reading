@@ -17,16 +17,16 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 39
-!$pos_frac = 6
+!$pos_int = 41
+!$pos_frac = 7
 !$part = 4
-!$chapter = 4
+!$chapter = 5
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
 mainframe **characters** С.Лукьяненко Линия грез
 
-:Кей Альтос (a. k. a. Лацитис): as key $male_protagonist
+:Кей Альтос (a.k.a. Лацитис, a.k.a. Дач): as key $male_protagonist
 
 :Мальчишка: as boy <<unnamed>> $male
 
@@ -85,7 +85,7 @@ Isabella -- security : заместитель Командующего план�
 :Курт Рокхайм: as Kurt $male
 :Луис Номачи: as Luis $male
 
-security -- Kurt : Командующий на Инцедиосе 
+Kurt - security : Командующий на Инцедиосе
 security -- Luis : оперативник 
 
 :Маржан Мухаммади: as marjan $female
@@ -106,7 +106,7 @@ artur <-- Vera : девочка на лайнере
 
 ovald --> Gertrude : уговорил лететь на Волантис
 
-Isabella ----> Kurt : любовница
+Isabella --> Kurt : любовница
 
 :Рад Гарч: as garch $male
 note top : агент Дарлока
