@@ -6,10 +6,10 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 19
+!$pos_int = 22.6
 !$pos_frac = 7
 !$part = 2
-!$chapter = 7
+!$chapter = 9
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -32,9 +32,9 @@ atan - curtis : владелец
 
 curtis -> key : оживил и нанял
 
-:мистер Освальд: as osvald <<alias>> $male
+:мистер Овальд: as ovald <<alias>> $male
 
-key ..> osvald : под видом
+key ..> ovald : под видом
 
 :Артур: as artur $male
 curtis --> artur : сын
@@ -66,11 +66,11 @@ chen <-- anna : напарник
 
 :Изабелла Каль: as Isabella $female
 
-osvald <-- Isabella : проверяла 
+ovald <-- Isabella : проверяла 
 
 (Служба имперской безопасности) as security <<institution>>
 
-Isabella -- security
+Isabella -- security : заместитель Командующего планетарного филиала
 :Курт: as Kurt $male
 :Луис Номачи: as Luis 
 
