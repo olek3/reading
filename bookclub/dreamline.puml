@@ -146,4 +146,8 @@ key <--> misaar : поединок
 :Ахмеди: as ahmedi $male
 
 ahmedi --> boy : знакомый с 4 круга
+
+:Данияр Вазаде: as teacher $male
+
+teacher --> boy : учитель древней истории
 @enduml
