@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 69
-!$pos_frac = 6
-!$part = 6
-!$chapter = 4
+!$pos_int = 80
+!$pos_frac = 7
+!$part = 7
+!$chapter = 1
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -166,4 +166,7 @@ Andrey --> lika : дворецкий
 :Тамура: <<todo>> 
 
 :Севолд Мартызенски: <<todo>> 
+
+
+:Ян Думбовский: <<todo>> 
 @enduml
