@@ -6,10 +6,10 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 23
-!$pos_frac = 8
-!$part = 2
-!$chapter = 11
+!$pos_int = 26
+!$pos_frac = 0
+!$part = 3
+!$chapter = 3
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -77,7 +77,7 @@ Isabella -- security : заместитель Командующего план�
 security -- Kurt : Командующий на Инцедиосе 
 security -- Luis : оперативник 
 
-:Маржан: as marjan $female
+:Маржан Мухаммади: as marjan $female
 :Кадар: as kadar $male
 :Т/сан: as tsan
 :Ахар: as ajar $male
@@ -86,5 +86,14 @@ security --- marjan
 security --- kadar
 security --- tsan
 security --- ajar
+
+:Вера Андреевна: as Vera $female
+
+Arthur <-- Vera : девочка на лайнере
+
+:Гертруда Теффер: as Gertrude <<dead>> $female
+
+ovald --> Gertrude : уговорил лететь на Волантис
+
 
 @enduml
