@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 47
-!$pos_frac = 7
+!$pos_int = 48
+!$pos_frac = 5
 !$part = 4
-!$chapter = 10
+!$chapter = 11
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -133,5 +133,6 @@ bart <-- kri : паразитировал на
 key <--> misaar : поединок
 
 :Генриетта Фискалоччи: <<todo>> $female 
+:Рашель: <<todo>> $female 
 
 @enduml
