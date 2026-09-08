@@ -47,7 +47,7 @@ shulman --> curtis $ex конкурент
 
 silicoid --> curtis : прислуживает
 
-:Аггаш: as instructor <<булрати>>
+:Аггаш: as instructor <<булрати>> <<dead>>
 
 instructor --> curtis : работает на
 instructor --> key : тренировал
@@ -89,11 +89,11 @@ security --- ajar
 
 :Вера Андреевна: as Vera $female
 
-Arthur <-- Vera : девочка на лайнере
+artur <-- Vera : девочка на лайнере
 
 :Гертруда Теффер: as Gertrude <<dead>> $female
 
 ovald --> Gertrude : уговорил лететь на Волантис
 
-
+Isabella ----> Kurt : любовница
 @enduml
