@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 58
-!$pos_frac = 5
+!$pos_int = 59
+!$pos_frac = 4
 !$part = 5
-!$chapter = 7
+!$chapter = 8
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -28,7 +28,7 @@ mainframe **characters** С.Лукьяненко Линия грез
 
 :Кей Альтос (a.k.a. Лацитис, a.k.a. Дач): as key $male_protagonist
 
-:Мальчишка: as boy <<unnamed>> $male
+:Томми Арано: as boy  $male
 
 :Ленка: as lenka <<dead>> $female
 
