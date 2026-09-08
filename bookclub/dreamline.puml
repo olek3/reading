@@ -6,10 +6,10 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 6
-!$pos_frac = 8
+!$pos_int = 9
+!$pos_frac = 6
 !$part = 1
-!$chapter = 7
+!$chapter = 9
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -43,11 +43,11 @@ curtis --> artur : сын
 
 shulman --> curtis $ex конкурент
 
-:силикоид: as silicoid <<unnamed>>
+:силикоид: as silicoid <<силикоид>> <<unnamed>>
 
 silicoid --> curtis : прислуживает
 
-:инструктор: as instructor <<Булрати>> <<unnamed>>
+:Аггаш: as instructor <<булрати>>
 
 instructor --> curtis : работает на
 instructor --> key : тренировал
