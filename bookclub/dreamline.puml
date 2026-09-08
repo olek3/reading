@@ -6,10 +6,10 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 11
-!$pos_frac = 0
-!$part = 1
-!$chapter = 11
+!$pos_int = 12
+!$pos_frac = 4
+!$part = 2
+!$chapter = 1
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -55,4 +55,13 @@ instructor --> key : тренировал
 :Ник: as nick $male
 
 curtis <-- nick : охрана?
+
+:Владимир Чен: as chen $male
+
+atan -- chen : сотрудник
+
+:Анна Хорн: as anna $female
+
+chen <-- anna : напарник
+
 @enduml
