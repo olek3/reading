@@ -10,7 +10,7 @@ skinparam actor<<colored>>bordercolor sienna
 !$pos_frac = 9
 !$chapter = 100
 
-legend $pos_int.$pos_frac% (Chapter $chapter)
+legend $pos_int.$pos_frac% (Chapter $chapter) - забросил, потому что торопился дочитать
 
 mainframe **characters** Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
 
