@@ -6,10 +6,10 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 17
-!$pos_frac = 5
+!$pos_int = 19
+!$pos_frac = 4
 !$part = 2
-!$chapter = 5
+!$chapter = 7
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -63,5 +63,9 @@ atan -- chen : сотрудник
 :Анна Хорн: as anna $female
 
 chen <-- anna : напарник
+
+:Изабелла: as Isabella $female
+
+osvald <-- Isabella : проверяла 
 
 @enduml
