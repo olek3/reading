@@ -1,0 +1,490 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+skinparam backgroundcolor #191a1c
+skinparam actor<<colored>>bordercolor sienna
+
+!$pos_int = 74
+!$pos_frac = 9
+!$chapter = 100
+
+legend $pos_int.$pos_frac% (Chapter $chapter) - забросил, потому что торопился дочитать
+
+mainframe **characters** Fried green tomatoes at the Whistle Stop Cafe by Fannie Flagg
+
+(Whistle Stop Cafe) as cafe <<institution>>
+
+:Dot Weems: as dotWeems
+
+dotWeems ---  cafe : next door
+
+:Imogene "Idgie" Threadgoode: as Idgie $female_protagonist
+
+cafe -- Idgie : owner
+
+
+:Ruth Anne Jamison: as Ruth $female
+
+cafe -- Ruth : owner
+
+:Sipsey Peavey: as Sipsey <<colored>> $female
+
+cafe -- Sipsey: cook
+
+:Onzell: <<colored>> $female
+
+Onzell -- cafe : cook
+
+:Big George: <<colored>> as bigGeorge $male
+
+bigGeorge -- cafe : cook
+
+Onzell <- bigGeorge : husband
+
+:Wilbur: $male
+
+Wilbur --> dotWeems : other half
+
+(Rose Terrace Nursing Home) as roseTerrace <<institution>>
+
+:Big Momma: as bigMomma $female
+
+roseTerrace -- bigMomma 
+
+:Ed: $male
+
+bigMomma --> Ed : mother 
+
+:Evelyn Couch: as Evelyn $female_protagonist
+
+Ed --> Evelyn : husband 
+
+:Virginia "Ninny" Mrs. Cleo Threadgoode: as Ninny <<narrator>> $female_protagonist
+
+Ninny -- roseTerrace
+
+:Mrs. Biddie Louise Otis: as Otis $female
+
+Otis --> Ninny : friend
+
+:Essie Rue Limeway: as Essie $female
+
+
+
+' Chapter 3
+
+
+
+
+:Mr. Earl Adcock Sr: as AdcockSr $male
+AdcockSr --> Otis : landlord
+
+:Bertha Vick: as Bertha $female
+:Harold Vick: as Harold $male
+
+Bertha --> Otis : neighbour
+Harold --> Bertha : husband
+
+(Threadgoode family) as Threadgoodes <<group>>
+
+:Leona:  $female
+
+Threadgoodes -- Leona : oldest and prettiest
+
+:John Justice: as johnJustice $male
+Leona --> johnJustice : married
+
+' Chapter 4
+:Ida Simms: as idaSimms $female
+Leona <-- idaSimms : seamstress for the wedding
+
+:Cookie: <<pet>> $male
+Cookie -- Threadgoodes : rakoon
+
+:Mrs. Philbeam: <<mentioned>>  $female
+Ninny ..> :Mrs. Philbeam: : mentioned crazy as
+' Chapter 5
+:Vesta:  $female
+Vesta --> AdcockSr : wife
+
+:Earl Jr: as AdcockJr $male
+AdcockJr -> Vesta : son
+AdcockJr --> AdcockSr : son
+
+:Roy:  $male
+Roy --> Otis : husband
+' Chapter 6
+(hobo camp) as hoboCamp  <<location>>
+'Jim Smokey Phillips, , , , and
+
+:Jim Smokey Phillips "Lonesome": as Smokey $male
+:Elmo Inky Williams: as Inky $male
+:BoWeevil Jake: as BoWeevil $male
+:Crackshot Sackett: as Crackshot $male
+:Chattanooga Red Barker: as Barker $male
+
+hoboCamp -- Smokey
+Inky -- hoboCamp
+BoWeevil -- hoboCamp
+hoboCamp - Crackshot
+Barker -- hoboCamp
+
+Smokey --- cafe : came to
+
+:Bernice:   $female
+
+Smokey <- Bernice : sister
+
+' Chapter 8
+
+Idgie ---- Threadgoodes : daughter
+
+:Dr. Hadley:  as drHadley $male
+
+Threadgoodes -- drHadley : doctor
+
+:Buddy:  <<dead>> $male
+
+Threadgoodes -- Buddy : son
+
+:Cleo: $male
+
+Cleo - Threadgoodes : son
+
+Ninny - Cleo : wife
+Threadgoodes - Essie : daughter
+
+'Chapter 9
+
+:Opal:  $female
+
+Threadgoodes -- Opal : ??
+:Julian:  $male
+
+Opal <-- Julian : husband
+
+(beauty shop) as beautyShop <<institution>>
+
+Opal -- beautyShop : owns
+
+(Glass family) as Glasses <<group>>
+:Mr. Roy Glass: as royGlass $male
+:Mrs. Roy Glass: as mrsGlass $female
+
+royGlass -- Glasses
+mrsGlass -- Glasses
+
+Wilma $female
+Glasses -- Wilma : tasted the cake
+
+' Chapter 10
+
+:Splinter Belly Jones: <<mentioned>> $male
+note top: seen the name of the cafe in Canada
+
+'Chapter 11
+
+:Harry the goat!: as goat <<pet>> $male
+
+goat -- Threadgoodes : the goat
+:Marie Miller: as marieMiller  $female
+
+Buddy --> marieMiller : had been flirting
+
+' Chapter 13
+:Janice:  $female
+
+Evelyn <-- Janice : daughter
+
+(Complete Woman) as completeWoman <<project>>
+
+Evelyn - completeWoman $ex attended
+
+:Nadine Fingerhutt: as Nadine $female
+
+completeWoman - Nadine $ex leader
+
+'Chapter 15
+
+:Sister: <<pet>> $female
+
+Sister - Ninny $ex red hen
+
+:Albert:  $male
+Albert --> Ninny : ? son
+
+:George Pullman Peavey: as Pullman <<colored>> $male
+Sipsey --> Pullman : adopted
+'Chapter 16
+
+:Ocie Smith: as Ocie  <<colored>> $male
+cafe -- Ocie : asked pie
+
+:Grady Kilgore:  as sheriff $male
+
+(Whistle Stop) as whistleStop <<location>>
+
+whistleStop <--- cafe : located at
+
+sheriff -- whistleStop : sheriff
+
+:Gladys Moats: as Gladys  $female
+Gladys --> sheriff : wife
+
+:Eva Bates: as Eva $female
+
+Eva <-- sheriff : sees
+
+(KKK) <<group>>
+
+(KKK) ... sheriff
+
+:Jack Butts: as jackButts $male
+:Pete Tidwell: as peteTidwell $male
+
+jackButts -- KKK
+peteTidwell -- KKK
+
+:Joe: <<colored>> $male
+
+Joe --> sheriff : raised 
+
+'Chapter 18
+
+:Dr. Clyde: as obstetrician $male
+
+'Evelyn <-- obstetrician : obstetrician
+obstetrician --> Evelyn : obstetrician
+
+:Tommy: $male
+
+Evelyn <-- Tommy : son
+
+'Chapter 21
+
+:Mary Bess: as maryBess $female
+
+drHadley <-- maryBess : niece
+
+:reverend Scroggins: as Scroggins $male
+
+(Drama Club) as dramaClub <<group>>
+
+dramaClub -- Vesta : president
+
+Scroggins -- dramaClub
+
+' Chapter 22
+
+:Geneene: <<colored>> $female
+
+Geneene - roseTerrace  : nurse
+
+:Mr. Dunaway: as Dunaway $male
+
+roseTerrace -- Dunaway : resident
+
+:Jasper: <<colored>> $male
+:Artis: <<colored>> $male
+
+Jasper --> Onzell : son
+Artis --> Onzell : son
+
+Jasper <-> Artis : twins
+
+:Wonderful Counselor (a.k.a. Willie Boy): as Willie <<colored>> $male
+
+Willie ---> Onzell : son
+
+:"Naughty Bird": as bird <<colored>> $female
+
+bird ---> Onzell : daughter
+
+:Mr. Hartman: as Hartman $male
+
+Ninny <-- Hartman : neighbour
+
+
+:Frank Corley  Bennett: as Frank $male
+
+Ruth <-- Frank $ex husband
+
+:Mildred: $female
+:Patsy Ruth: as Patsy $female
+
+Mildred -- Threadgoodes
+Patsy -- Threadgoodes
+
+Mildred <-> Patsy : twins
+
+'Chapter 29
+:Big Jack Bates: as bigJack $male
+
+bigJack --> Eva : father
+
+
+' Chapter 30
+
+:Railroad Bill: <<mentioned>>
+note top : bandit
+
+
+:Norris: $male
+:Francis: $female
+
+Otis <-- Norris : son
+Norris <-- Francis : wife
+
+'Chapter 32
+
+:Margaret: $female
+
+drHadley <-- Margaret : wife
+
+' Chapter 34
+:Buddy Jr "Stump": as stump $male
+
+stump --> Ruth  : son
+
+'Chapter 35
+:Dwane: $male
+Dwane --> sheriff : son
+
+:Peggy: $female
+:Vernon: $male
+
+drHadley <-- Vernon : son
+Vernon <-- Peggy : sister
+
+:Bobby Lee: as bobbyLee $male
+bobbyLee --> Scroggins : sone
+
+'Chapter 37
+:MR. MILTON JAME: $male
+note top : BIRMINGHAM’S SEPIA NEWSPAPER
+
+' Chapter 42
+:kid: <<unnamed>><<dead>> $male
+kid .. Smokey
+
+'Chapter 45
+:Duane Glass: as Duane   $male
+Glasses -- Duane : son?
+Otis .. Glasses : neighbours
+
+' Chapter 46
+:Miss Fancy: as elephant <<pet>> $female
+:J. W. Moldwater: as trainer $male
+
+elephant --> bird : visited
+trainer --> elephant : elephant trainer
+
+'Chapter 48
+:Gerald Bennett: as Gerald $male
+:Reverend Charles Jamison: as charlesJamison $male
+:Mrs. Elizabeth Jamison: as Elizabeth $female
+
+charlesJamison --> Ruth : father
+Ruth <-- Elizabeth : mother
+
+Frank <-- Gerald : brother
+
+' Chapter 58
+:Mrs. Pucket: as mrsPucket $female
+:Mr. Pucket: as mrPucket $male
+
+Idgie <-- mrsPucket : told about Frank
+mrsPucket <-- mrPucket : husband
+
+' Chapter 63
+:Ray "Pee Wee": as peeWee $male
+
+Essie <- peeWee : son
+
+' Chapter 69
+:Edward Threadgoode: as Edward $male
+
+Threadgoodes --> Edward : son 
+
+
+' Chapter 72
+:Mrs. Sallie Jinx: as Jinx <<todo>> $female
+
+' Chapter 73
+:Electra Greene: as Electra <<colored>> $female
+
+Artis --> Electra : hiding from
+
+' Chapter 74
+:Mr. R. C. Greene: as mrGreene <<colored>> $male
+:Mrs. R. C. Greene: as mrsGreene <<colored>> $female
+
+mrGreene -- Electra : father
+mrsGreene -- Electra : mother
+
+:Dr. John W. Nixon: as Nixon <<colored>> $male
+
+Nixon -- Electra : performed wedding
+
+:Mr. Lewis Jones: as lewisJones <<colored>> $male
+
+lewisJones -- Electra : provided music
+
+:Mrs. Lulu Butterfork: as Butterfork <<colored>> $female
+
+(Mrs. Lulu Butterfork's house) as butterforkHouse <<location>>
+
+Butterfork -- butterforkHouse : owns
+
+butterforkHouse -- Electra : wedding reception
+
+' Chapter 75
+:Mozell: <<colored>> $male
+
+Mozell -- Evelyn : cashier at supermarket
+
+' Chapter 79
+:Winston Lewis: as Winston <<colored>> $male
+
+Winston <-- Willie : killed
+
+' Chapter 88
+:Miss Madeline Poole: as Madeline <<colored>> $female
+
+Madeline --> Artis : second wife
+
+:After John: as afterJohn <<colored>> $male
+
+:Mr. Fred Jones: as fredJones $male
+
+afterJohn --> fredJones : works for
+
+:Mr. Leo: as Leo $male
+
+Artis --> Leo : asked for nickel
+
+afterJohn --> Artis : friend 
+
+
+' Chapter 97
+:Blanche: <<colored>> $female
+
+Blanche --> Jasper : wife
+:Clarissa: <<colored>> $female
+
+Clarissa --> Jasper : daughter
+
+' Chapter 100
+:Le Roy Grooms: as Grooms <<colored>> $male
+
+Grooms <-- bird : laid eyes on
+
+:Almondine: <<colored>> $female
+
+Almondine --> bird : daughter
+Almondine -> Grooms : daughter
+
+
+@enduml
