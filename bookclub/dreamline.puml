@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 57
-!$pos_frac = 4
+!$pos_int = 58
+!$pos_frac = 5
 !$part = 5
-!$chapter = 6
+!$chapter = 7
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -138,4 +138,8 @@ key <--> misaar : поединок
 
 :Чен Чамри: <<todo>> 
 :Ральф Гордон: <<todo>> 
+
+(Непогода) <<todo>> 
+:Нарасин Хан: <<todo>> 
+:Дьердж Саване: <<todo>> 
 @enduml
