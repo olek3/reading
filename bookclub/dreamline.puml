@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 33
-!$pos_frac = 0
-!$part = 3
-!$chapter = 11
+!$pos_int = 39
+!$pos_frac = 6
+!$part = 4
+!$chapter = 4
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -122,5 +122,10 @@ kri --> key : давний знакомый
 :адмирал Лемак: as lemak $male
 
 Isabella <-- lemak : дал корабли
+
+:Седмин: as sedmin <<силикоид>>
+sedmin --> key : спас с Лайона
+:Барт Паолини: as bart $male
+bart <-- kri : паразитировал на
 
 @enduml
