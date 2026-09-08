@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 64
-!$pos_frac = 6
+!$pos_int = 66
+!$pos_frac = 4
 !$part = 7
-!$chapter = 1
+!$chapter = 2
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -155,4 +155,6 @@ teacher --> boy : учитель древней истории
 
 :Люк: <<todo>> 
 :Галя: <<todo>> 
+
+:Лика Сейкер: <<todo>> 
 @enduml
