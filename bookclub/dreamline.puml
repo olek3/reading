@@ -6,16 +6,16 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 12
-!$pos_frac = 4
+!$pos_int = 17
+!$pos_frac = 5
 !$part = 2
-!$chapter = 1
+!$chapter = 5
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
 mainframe **characters** С.Лукьяненко Линия грез
 
-:Кей Альтос: as key $male_protagonist
+:Кей Альтос (a. k. a. Лацитис): as key $male_protagonist
 
 :Мальчишка: as boy <<unnamed>> $male
 
