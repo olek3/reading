@@ -6,10 +6,10 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 22.6
+!$pos_int = 23
 !$pos_frac = 7
 !$part = 2
-!$chapter = 9
+!$chapter = 11
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -71,10 +71,10 @@ ovald <-- Isabella : проверяла
 (Служба имперской безопасности) as security <<institution>>
 
 Isabella -- security : заместитель Командующего планетарного филиала
-:Курт: as Kurt $male
+:Курт Рокхайм: as Kurt $male
 :Луис Номачи: as Luis 
 
-security -- Kurt : директор 
+security -- Kurt : Командующий на Инцедиосе 
 security -- Luis : оперативник 
 
 @enduml
