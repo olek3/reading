@@ -18,7 +18,7 @@ skinparam actor<<силикоид>>backgroundcolor #808080
 
 
 !$pos_int = 57
-!$pos_frac = 1
+!$pos_frac = 4
 !$part = 5
 !$chapter = 6
 
@@ -137,4 +137,5 @@ key <--> misaar : поединок
 :Ванда Каховски: <<todo>> 
 
 :Чен Чамри: <<todo>> 
+:Ральф Гордон: <<todo>> 
 @enduml
