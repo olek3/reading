@@ -6,10 +6,10 @@
 skinparam backgroundcolor #191a1c
 
 
-!$pos_int = 9
-!$pos_frac = 6
+!$pos_int = 11
+!$pos_frac = 0
 !$part = 1
-!$chapter = 9
+!$chapter = 11
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -52,5 +52,7 @@ silicoid --> curtis : прислуживает
 instructor --> curtis : работает на
 instructor --> key : тренировал
 
+:Ник: as nick $male
 
+curtis <-- nick : охрана?
 @enduml
