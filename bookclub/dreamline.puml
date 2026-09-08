@@ -7,7 +7,7 @@ skinparam backgroundcolor #191a1c
 
 
 !$pos_int = 23
-!$pos_frac = 7
+!$pos_frac = 8
 !$part = 2
 !$chapter = 11
 
@@ -76,5 +76,15 @@ Isabella -- security : заместитель Командующего план�
 
 security -- Kurt : Командующий на Инцедиосе 
 security -- Luis : оперативник 
+
+:Маржан: as marjan $female
+:Кадар: as kadar $male
+:Т/сан: as tsan
+:Ахар: as ajar $male
+
+security --- marjan
+security --- kadar
+security --- tsan
+security --- ajar
 
 @enduml
