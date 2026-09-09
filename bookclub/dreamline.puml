@@ -1,0 +1,203 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+skinparam backgroundcolor #191a1c
+
+skinparam actor<<алкари>>backgroundcolor #FFCC00
+skinparam actor<<булрати>>backgroundcolor #8B4513
+skinparam actor<<дарлок>>backgroundcolor #663399
+skinparam actor<<человек>>backgroundcolor #0066FF
+skinparam actor<<клакон>>backgroundcolor #CC0000
+skinparam actor<<меклонец>>backgroundcolor #00CCCC
+skinparam actor<<мрршан>>backgroundcolor #FF8800
+skinparam actor<<псилон>>backgroundcolor #FFFFFF
+skinparam actor<<саккра>>backgroundcolor #00CC00
+skinparam actor<<силикоид>>backgroundcolor #808080
+
+
+!$pos_int = 91
+!$pos_frac = 2
+!$part = 7
+!$chapter = 9
+
+'legend $pos_int.$pos_frac% (глава $part/$chapter)
+
+mainframe **characters** С.Лукьяненко Линия грез
+
+:Кей Альтос (a.k.a. Лацитис, a.k.a. Дач): as key $male_protagonist
+
+:Томми Арано: as boy  $male
+
+:Ленка: as lenka <<dead>> $female
+
+boy ---> key : убил
+
+:Кертис Ван Кертис: as curtis $male
+
+(аТан) as atan <<institution>>
+
+atan - curtis : владелец
+
+curtis -> key : оживил и нанял
+
+:мистер Овальд: as ovald <<alias>> $male
+
+key ..> ovald : под видом
+
+:Артур: as artur $male
+curtis --> artur : сын
+
+:Шульман: as shulman <<dead>> $male
+
+shulman --> curtis $ex конкурент
+
+:силикоид: as silicoid <<силикоид>> <<unnamed>>
+
+silicoid --> curtis : прислуживает
+
+:Аггаш: as instructor <<булрати>> <<dead>>
+
+instructor --> curtis : работает на
+instructor --> key : тренировал
+
+:Ник: as nick $male
+
+curtis <-- nick : охрана?
+
+:Владимир Чен: as chen $male
+
+atan -- chen : сотрудник на Инцедиосе
+
+:Анна Хорн: as anna $female
+
+chen <-- anna : напарник
+
+:Изабелла Каль: as Isabella $female
+
+ovald <-- Isabella : проверяла
+
+(Служба имперской безопасности) as security <<institution>>
+
+Isabella -- security : заместитель Командующего планетарного филиала
+:Курт Рокхайм: as Kurt $male
+:Луис Номачи: as Luis $male
+
+Kurt - security : Командующий на Инцедиосе
+Luis -- security : оперативник
+
+:Маржан Мухаммади: as marjan $female
+:Кадар: as kadar $male
+:Т/сан: as tsan <<меклонец>>
+:Ахар: as ajar <<булрати>>
+
+security --- marjan
+security --- kadar
+security --- tsan
+security --- ajar
+
+:Вера Андреевна: as Vera $female
+
+artur <-- Vera : девочка на лайнере
+
+:Гертруда Теффер: as Gertrude <<dead>> $female
+
+ovald --> Gertrude : уговорил лететь на Волантис
+
+Isabella --> Kurt : любовница
+
+:Рад Гарч: as garch $male
+note top : агент Дарлока
+
+:Вячеслав: as vyacheclav $male
+
+key <-- vyacheclav : уточка для рассказа про дарлок
+
+:Эзсанти Кри Чесциафо: as kri <<дарлок>>
+
+kri --> key : давний знакомый
+
+:адмирал Лемак: as lemak $male
+
+Isabella <-- lemak : дал корабли
+
+:Седмин: as sedmin <<силикоид>>
+key <- sedmin : спас с Лайона
+:Барт Паолини: as bart $male
+bart <-- kri : паразитировал на
+
+:Мизаар: as misaar <<силикоид>>
+
+key <--> misaar : поединок
+
+(Таури) as tauri <<location>>
+key --- tauri : высадился в компенсатор
+
+:Генриетта Фискалоччи: as henrietta  <<alias>> $female
+:Рашель: as rashel $female
+:Ванда Каховски: as vanda $female
+
+tauri -- henrietta
+henrietta <-- vanda : живет под именем
+tauri - rashel
+
+
+:Чен Чамри: as chamri $male
+:Ральф Гордон: as ralf $male
+
+tauri -- chamri
+tauri -- ralf
+
+chamri --> lemak : в подчинении
+ralf --> lemak : в подчинении
+
+
+(отель "Непогода") as malweater <<location>>
+
+malweater -- boy
+:Нарасин Хан: as khan $male
+:Дьердж Саване: as djerdj $male
+
+khan -- malweater
+djerdj -- malweater
+
+:Ахмеди: as ahmedi $male
+
+ahmedi -> boy : знакомый с 4 круга
+
+:Данияр Вазаде: as teacher $male
+
+boy <- teacher : учитель древней истории
+
+:Дариан Арано: as darian $male
+darian --> boy : приемный отец
+lenka --> darian :  дочь
+
+:Люк: as luke $male
+luke --> darian : сын
+:Галя: as gala $female
+gala --> darian : жена
+
+:Лика Сейкер: as lika $female
+lika <-- key : старый друг 
+:Кас/с/ис: as kassis <<меклонец>>
+kassis --> lika : служит
+
+:Андрей: as Andrey $male
+Andrey --> lika : дворецкий 
+
+:Тамура: as tamura $male
+
+atan -- tamura : сотрудник на Горре
+
+:Севолд Мартызенски: as sevold $male
+sevold --> lika : работает на мафию
+
+:Ян Думбовский: as yan <<dead>> $male
+
+yan <-- kassis : убил на базе
+
+:Карен Брауди: as karen $female
+karen - atan : сотрудница на Граале
+@enduml
