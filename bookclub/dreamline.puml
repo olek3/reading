@@ -22,7 +22,7 @@ skinparam actor<<силикоид>>backgroundcolor #808080
 !$part = 7
 !$chapter = 9
 
-legend $pos_int.$pos_frac% (глава $part/$chapter)
+'legend $pos_int.$pos_frac% (глава $part/$chapter)
 
 mainframe **characters** С.Лукьяненко Линия грез
 
@@ -32,8 +32,7 @@ mainframe **characters** С.Лукьяненко Линия грез
 
 :Ленка: as lenka <<dead>> $female
 
-lenka --> boy :  сестра
-boy --> key : убил
+boy ---> key : убил
 
 :Кертис Ван Кертис: as curtis $male
 
@@ -69,7 +68,7 @@ curtis <-- nick : охрана?
 
 :Владимир Чен: as chen $male
 
-atan -- chen : сотрудник
+atan -- chen : сотрудник на Инцедиосе
 
 :Анна Хорн: as anna $female
 
@@ -77,7 +76,7 @@ chen <-- anna : напарник
 
 :Изабелла Каль: as Isabella $female
 
-ovald <-- Isabella : проверяла 
+ovald <-- Isabella : проверяла
 
 (Служба имперской безопасности) as security <<institution>>
 
@@ -86,7 +85,7 @@ Isabella -- security : заместитель Командующего план�
 :Луис Номачи: as Luis $male
 
 Kurt - security : Командующий на Инцедиосе
-security -- Luis : оперативник 
+Luis -- security : оперативник
 
 :Маржан Мухаммади: as marjan $female
 :Кадар: as kadar $male
@@ -124,7 +123,7 @@ kri --> key : давний знакомый
 Isabella <-- lemak : дал корабли
 
 :Седмин: as sedmin <<силикоид>>
-sedmin --> key : спас с Лайона
+key <- sedmin : спас с Лайона
 :Барт Паолини: as bart $male
 bart <-- kri : паразитировал на
 
@@ -132,43 +131,73 @@ bart <-- kri : паразитировал на
 
 key <--> misaar : поединок
 
-:Генриетта Фискалоччи: <<alias>> <<todo>> $female 
-:Рашель: <<todo>> $female 
-:Ванда Каховски: <<todo>> 
+(Таури) as tauri <<location>>
+key --- tauri : высадился в компенсатор
 
-:Чен Чамри: <<todo>> 
-:Ральф Гордон: <<todo>> 
+:Генриетта Фискалоччи: as henrietta  <<alias>> $female
+:Рашель: as rashel $female
+:Ванда Каховски: as vanda $female
 
-(Непогода) <<todo>> 
-:Нарасин Хан: <<todo>> 
-:Дьердж Саване: <<todo>> 
+tauri -- henrietta
+henrietta <-- vanda : живет под именем
+tauri - rashel
+
+
+:Чен Чамри: as chamri $male
+:Ральф Гордон: as ralf $male
+
+tauri -- chamri
+tauri -- ralf
+
+chamri --> lemak : в подчинении
+ralf --> lemak : в подчинении
+
+
+(отель "Непогода") as malweater <<location>>
+
+malweater -- boy
+:Нарасин Хан: as khan $male
+:Дьердж Саване: as djerdj $male
+
+khan -- malweater
+djerdj -- malweater
 
 :Ахмеди: as ahmedi $male
 
-ahmedi --> boy : знакомый с 4 круга
+ahmedi -> boy : знакомый с 4 круга
 
 :Данияр Вазаде: as teacher $male
 
-teacher --> boy : учитель древней истории
+boy <- teacher : учитель древней истории
 
-:Дариан Арано: <<todo>> 
+:Дариан Арано: as darian $male
+darian --> boy : приемный отец
+lenka --> darian :  дочь
 
-:Люк: <<todo>> 
-:Галя: <<todo>> 
+:Люк: as luke $male
+luke --> darian : сын
+:Галя: as gala $female
+gala --> darian : жена
 
-:Лика Сейкер: as lika
+:Лика Сейкер: as lika $female
 lika <-- key : старый друг 
-:Кас/с/ис: <<меклонец>> <<todo>> 
+:Кас/с/ис: as kassis <<меклонец>>
+kassis --> lika : служит
 
 :Андрей: as Andrey $male
 Andrey --> lika : дворецкий 
 
-:Тамура: <<todo>> 
+:Тамура: as tamura $male
 
-:Севолд Мартызенски: <<todo>> 
+atan -- tamura : сотрудник на Горре
 
+:Севолд Мартызенски: as sevold $male
+sevold --> lika : работает на мафию
 
-:Ян Думбовский: <<todo>> 
+:Ян Думбовский: as yan <<dead>> $male
 
-:Карен Брауди: <<todo>> 
+yan <-- kassis : убил на базе
+
+:Карен Брауди: as karen $female
+karen - atan : сотрудница на Граале
 @enduml
