@@ -55,6 +55,13 @@ rashel <-- gafur : бойфренд
 
 shield -- vyacheclav : клинч-командор
 
+:Император Грей: as emperor $male
+
+:Алиса: as alice $female
+
+vyacheclav --> emperor : посетил
+emperor <-- alice : любовница
+
 /'
 
 
