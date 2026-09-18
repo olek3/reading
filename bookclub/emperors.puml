@@ -70,7 +70,7 @@ henrietta <-- vanda : живет под именем
 
 rashel <- henrietta : тетя
 
-:Агат: as agat <<pet>> $male
+$pet(Агат,agat,$male)
 
 henrietta <-- agat : кот
 
