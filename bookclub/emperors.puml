@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 10
-!$pos_frac = 2
-!$part = 1
-!$chapter = 6
+!$pos_int = 27
+!$pos_frac = 6
+!$part = 2
+!$chapter = 8
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -74,7 +74,12 @@ rashel <- henrietta : тетя
 
 henrietta <-- agat : кот
 
-:Патриарх единой воли: <<todo>> 
+:Кертис Ван Кертис: as curtis $male
+
+:Артур: as artur $male
+curtis --> artur : сын
+
+emperor --> curtis : принял 
 
 /' ------------------------------------------------------------------------------------
 
@@ -95,8 +100,6 @@ curtis -> key : оживил и нанял
 
 key ..> ovald : под видом
 
-:Артур: as artur $male
-curtis --> artur : сын
 
 :Шульман: as shulman <<dead>> $male
 
