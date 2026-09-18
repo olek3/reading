@@ -1,4 +1,4 @@
 
-# Now reading
+# Last book
 
-![now reading](https://www.plantuml.com/plantuml/dpng/ROp93S0W30HRIHh0Z_pI3OS32B0Hs4hxSG5vhMP6shDIx9hmA29ptm3BlovNAHfquufCWYGkyW3ks2vOw5EbRFjiA0OR0dEpam39ukYLy4UvgQD_)
+![now reading](https://www.plantuml.com/plantuml/dpng/HOox3S0W30LNIHR0HRfimyS11DZ8DihweKlrT7VIEol5lX8UnMpg3I3-TRbQMM4fIcGo97EH1t37Te6WJvNotaUXR508p6sV14WxZbu9VuLZeh2ecslq3m00)
