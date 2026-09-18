@@ -17,10 +17,10 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 5
-!$pos_frac = 6
+!$pos_int = 10
+!$pos_frac = 0
 !$part = 1
-!$chapter = 4
+!$chapter = 6
 
 legend $pos_int.$pos_frac% (глава $part/$chapter)
 
@@ -61,6 +61,14 @@ shield -- vyacheclav : клинч-командор
 
 vyacheclav --> emperor : посетил
 emperor <-- alice : любовница
+
+:Генриетта Фискалоччи: as henrietta  <<alias>> $female
+:Ванда Каховски: as vanda $female
+
+tauri -- henrietta
+henrietta <-- vanda : живет под именем
+
+rashel <- henrietta : тетя
 
 /'
 
@@ -168,11 +176,6 @@ key <--> misaar : поединок
 
 key --- tauri : высадился в компенсатор
 
-:Генриетта Фискалоччи: as henrietta  <<alias>> $female
-:Ванда Каховски: as vanda $female
-
-tauri -- henrietta
-henrietta <-- vanda : живет под именем
 tauri - rashel
 
 
