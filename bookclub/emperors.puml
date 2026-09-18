@@ -18,7 +18,7 @@ skinparam actor<<силикоид>>backgroundcolor #808080
 
 
 !$pos_int = 10
-!$pos_frac = 0
+!$pos_frac = 2
 !$part = 1
 !$chapter = 6
 
@@ -70,7 +70,11 @@ henrietta <-- vanda : живет под именем
 
 rashel <- henrietta : тетя
 
-/'
+:Агат: as agat <<pet>> $male
+
+henrietta <-- agat : кот
+
+/' ------------------------------------------------------------------------------------
 
 
 :Ленка: as lenka <<dead>> $female
