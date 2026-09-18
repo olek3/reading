@@ -17,18 +17,46 @@ skinparam actor<<саккра>>backgroundcolor #00CC00
 skinparam actor<<силикоид>>backgroundcolor #808080
 
 
-!$pos_int = 91
-!$pos_frac = 2
-!$part = 7
-!$chapter = 9
+!$pos_int = 5
+!$pos_frac = 6
+!$part = 1
+!$chapter = 4
 
-'legend $pos_int.$pos_frac% (глава $part/$chapter)
+legend $pos_int.$pos_frac% (глава $part/$chapter)
 
-mainframe **characters** С.Лукьяненко Линия грез
+mainframe **characters** С.Лукьяненко Императоры иллюзий
 
 :Кей Альтос (a.k.a. Лацитис, a.k.a. Дач): as key $male_protagonist
 
-:Томми Арано: as boy  $male
+:Рашель: as rashel $female
+
+:Ищущий истину: as truthSeeker <<алкари>>
+:Рваный Ветер: as pilot <<алкари>>
+
+truthSeeker <-- pilot : пилот
+
+key --> truthSeeker : догнал
+
+:Томми Кертис (Арано): as boy  $male
+
+boy -> key : спутник
+
+(Таури) as tauri <<location>>
+
+tauri -- rashel
+
+:Гафур: as gafur $male
+
+rashel <-- gafur : бойфренд
+
+
+:Вячеслав Шегал: as vyacheclav $male
+(Щит) as shield <<group>>
+
+shield -- vyacheclav : клинч-командор
+
+/'
+
 
 :Ленка: as lenka <<dead>> $female
 
@@ -131,11 +159,9 @@ bart <-- kri : паразитировал на
 
 key <--> misaar : поединок
 
-(Таури) as tauri <<location>>
 key --- tauri : высадился в компенсатор
 
 :Генриетта Фискалоччи: as henrietta  <<alias>> $female
-:Рашель: as rashel $female
 :Ванда Каховски: as vanda $female
 
 tauri -- henrietta
@@ -200,4 +226,6 @@ yan <-- kassis : убил на базе
 
 :Карен Брауди: as karen $female
 karen - atan : сотрудница на Граале
+
+'/
 @enduml
