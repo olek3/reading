@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 1
-!$pos_frac = 4
+!$pos_int = 2
+!$pos_frac = 2
 !$part = 1
-!$chapter = 2
+!$chapter = 3
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -31,5 +31,11 @@ I <- Samuel : grandfather
 
 
 Samuel <-- Liza : wife
+
+:Adam Trask: as Adam $male
+:Cyrus: $male
+
+Adam -- salinas
+Cyrus --> Adam : father
 
 @enduml
