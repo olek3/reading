@@ -1,0 +1,18 @@
+@startuml
+
+!$stylePath = "https://raw.githubusercontent.com/olek3/plantuml-includes/refs/heads/main/iuml"
+!include $stylePath/reading.iuml
+
+'skinparam backgroundcolor #191a1c
+
+!$pos_int = 0
+!$pos_frac = 0
+!$part = 1
+!$chapter = 1
+
+legend $pos_int.$pos_frac% (глава $part/$chapter)
+
+mainframe **characters**
+
+
+@enduml
