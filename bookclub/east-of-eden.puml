@@ -5,14 +5,31 @@
 
 'skinparam backgroundcolor #191a1c
 
-!$pos_int = 0
-!$pos_frac = 0
+skinparam packagebordercolor #888
+
+!$pos_int = 1
+!$pos_frac = 4
 !$part = 1
-!$chapter = 1
+!$chapter = 2
 
-legend $pos_int.$pos_frac% (глава $part/$chapter)
+legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
-mainframe **characters**
+mainframe **characters** John Steinbeck ***East of Eden***
 
+
+(Salinas Valley) as salinas <<location>>
+
+package Hamiltons {
+    :I: <<narrator>>
+    :Samuel: $male
+    :Liza: $female
+}
+
+salinas <-- Hamiltons : came about 1870
+
+I <- Samuel : grandfather
+
+
+Samuel <-- Liza : wife
 
 @enduml
