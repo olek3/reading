@@ -14,7 +14,7 @@ skinparam packagebordercolor #888
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
-mainframe **characters** John Steinbeck ***East of Eden***
+mainframe **characters** John Steinbeck //**East of Eden**//
 
 
 (Salinas Valley) as salinas <<location>>
