@@ -49,6 +49,10 @@ mrsTrask --> Adam : mother
 :Charles: $male
 
 Alice --> Charles : mother
-Alice --> Cyrus : 2nd wife
+Alice --> Cyrus : 2<sup>nd</sup> wife
+
+Charles --> Adam : brother
+
+mrsTrask -> Cyrus : 1<sup>st</sup> wife
 
 @enduml
