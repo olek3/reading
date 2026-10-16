@@ -7,8 +7,8 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 6
-!$pos_frac = 8
+!$pos_int = 7
+!$pos_frac = 2
 !$part = 1
 !$chapter = 5
 
@@ -26,9 +26,11 @@ package Hamiltons {
 
     :George: $male
     :Will: $male
+    :Tom: $male
 
     George <-- Samuel : father
     Will <-- Samuel : father
+    Tom --> Samuel : third son
 }
 
 salinas <-- Hamiltons : came about 1870
