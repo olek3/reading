@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 7
-!$pos_frac = 7
+!$pos_int = 8
+!$pos_frac = 1
 !$part = 1
-!$chapter = 5
+!$chapter = 6
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -89,5 +89,13 @@ mrsTrask -> Cyrus : 1<sup>st</sup> wife
 
 salinas -- Thornes
 salinas -- Delmars
+
+:Mr Hallam: as innkeeper $male
+
+innkeeper -- salinas : the innkeeper
+
+:Edwards: $male
+
+Edwards --> innkeeper : whoremaster
 
 @enduml
