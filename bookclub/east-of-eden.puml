@@ -30,11 +30,15 @@ package Hamiltons {
 
     :Mollie: $female
 
+    :Joseph (Joe): as Joe $male
+
     George <-- Samuel : father
     Will <-- Samuel : father
     Tom --> Samuel : third son
 
     Samuel <- Mollie : daughter
+
+    Samuel <-- Joe : fourth son
 }
 
 salinas <-- Hamiltons : came about 1870
