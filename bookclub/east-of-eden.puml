@@ -8,7 +8,7 @@
 skinparam packagebordercolor #888
 
 !$pos_int = 7
-!$pos_frac = 3
+!$pos_frac = 7
 !$part = 1
 !$chapter = 5
 
@@ -32,13 +32,26 @@ package Hamiltons {
 
     :Joseph (Joe): as Joe $male
 
+    :Una: $female
+    :Lizzie: $female
+    :Dessie: $female
+    :Olive: $female
+
     George <-- Samuel : father
     Will <-- Samuel : father
     Tom --> Samuel : third son
 
     Samuel <- Mollie : daughter
 
-    Samuel <-- Joe : fourth son
+    Samuel <--- Joe : fourth son
+
+    Lizzie ---> Samuel : daughter
+    Dessie ---> Samuel : daughter
+
+    Samuel <--- Una : daughter
+    Samuel <-- Olive : daughter
+
+    I <-- Olive : mother
 }
 
 salinas <-- Hamiltons : came about 1870
