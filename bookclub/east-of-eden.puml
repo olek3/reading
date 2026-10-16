@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 2
+!$pos_int = 6
 !$pos_frac = 8
 !$part = 1
-!$chapter = 3
+!$chapter = 5
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -23,6 +23,12 @@ package Hamiltons {
     :I: <<narrator>>
     :Samuel: $male
     :Liza: $female
+
+    :George: $male
+    :Will: $male
+
+    George <-- Samuel : father
+    Will <-- Samuel : father
 }
 
 salinas <-- Hamiltons : came about 1870
@@ -54,5 +60,11 @@ Alice --> Cyrus : 2<sup>nd</sup> wife
 Charles --> Adam : brother
 
 mrsTrask -> Cyrus : 1<sup>st</sup> wife
+
+(Thornes) <<group>>
+(Delmars) <<group>>
+
+salinas -- Thornes
+salinas -- Delmars
 
 @enduml
