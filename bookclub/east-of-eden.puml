@@ -8,7 +8,7 @@
 skinparam packagebordercolor #888
 
 !$pos_int = 8
-!$pos_frac = 1
+!$pos_frac = 8
 !$part = 1
 !$chapter = 6
 
@@ -97,5 +97,15 @@ innkeeper -- salinas : the innkeeper
 :Edwards: $male
 
 Edwards --> innkeeper : whoremaster
+
+(Niagara Falls) as falls <<location>>
+
+Adam -- falls : visited on way home
+
+:"Cat": as cat $male
+:Mrs May: as mrsMay
+
+falls -- cat : bartender
+falls -- mrsMay : boarding house
 
 @enduml
