@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 8
-!$pos_frac = 8
+!$pos_int = 15
+!$pos_frac = 6
 !$part = 1
-!$chapter = 6
+!$chapter = 8
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -61,7 +61,7 @@ I <- Samuel : grandfather
 
 Samuel <-- Liza : wife
 
-:Adam Trask: as Adam $male
+:Adam Trask: as Adam <<protagonist>> $male
 :Cyrus: $male
 
 Adam -- salinas
@@ -75,14 +75,14 @@ mrsTrask --> Adam : mother
 :Alice: $female
 
 
-:Charles: $male
+:Charles: <<protagonist>> $male
 
 Alice --> Charles : mother
 Alice --> Cyrus : 2<sup>nd</sup> wife
 
 Charles --> Adam : brother
 
-mrsTrask -> Cyrus : 1<sup>st</sup> wife
+mrsTrask --> Cyrus : 1<sup>st</sup> wife
 
 (Thornes) <<group>>
 (Delmars) <<group>>
@@ -107,5 +107,22 @@ Adam -- falls : visited on way home
 
 falls -- cat : bartender
 falls -- mrsMay : boarding house
+
+:Cathy Ames: as Cathy $female
+
+Cathy ..> Edwards
+:Bill Ames: as billAmes <<dead>> $male
+
+billAmes --> Cathy : father
+
+:Dr. Williams: as drWilliams $male
+drWilliams --> billAmes : family doctor
+
+:James Grew: as Grew <<dead>> $male
+Grew --> Cathy  : latin teacher
+
+:Joel Robinson: as Robinson $male
+
+Robinson --> billAmes : foreman
 
 @enduml
