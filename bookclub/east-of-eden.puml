@@ -94,7 +94,7 @@ salinas -- Delmars
 
 innkeeper -- salinas : the innkeeper
 
-:Edwards: $male
+:Mr. Edwards: as Edwards $male
 
 Edwards --> innkeeper : whoremaster
 
@@ -127,5 +127,9 @@ Robinson --> billAmes : foreman
 :Catherine Amesbury: as Cathy2 <<alias>> $female
 Cathy ..> Cathy2
 Cathy2 ..> Edwards
+
+:Mrs Edwards: as mrsEdwards $female
+
+Edwards <- mrsEdwards : wife
 
 @enduml
