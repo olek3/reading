@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 15
+!$pos_int = 16
 !$pos_frac = 6
 !$part = 1
-!$chapter = 8
+!$chapter = 9
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -110,7 +110,6 @@ falls -- mrsMay : boarding house
 
 :Cathy Ames: as Cathy $female
 
-Cathy ..> Edwards
 :Bill Ames: as billAmes <<dead>> $male
 
 billAmes --> Cathy : father
@@ -124,5 +123,9 @@ Grew --> Cathy  : latin teacher
 :Joel Robinson: as Robinson $male
 
 Robinson --> billAmes : foreman
+
+:Catherine Amesbury: as Cathy2 <<alias>> $female
+Cathy ..> Cathy2
+Cathy2 ..> Edwards
 
 @enduml
