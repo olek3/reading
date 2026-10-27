@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 16
+!$pos_int = 21
 !$pos_frac = 6
 !$part = 1
-!$chapter = 9
+!$chapter = 11
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -126,10 +126,16 @@ Robinson --> billAmes : foreman
 
 :Catherine Amesbury: as Cathy2 <<alias>> $female
 Cathy ..> Cathy2
-Cathy2 ..> Edwards
+Cathy2 <.. Edwards : almost killed
 
 :Mrs Edwards: as mrsEdwards $female
 
 Edwards <- mrsEdwards : wife
+
+Cathy ----> Adam : married
+
+:Alex Platt: as Platt $male
+
+Platt ...> Edwards  : found things
 
 @enduml
