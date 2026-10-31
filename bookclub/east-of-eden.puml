@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 21
-!$pos_frac = 6
-!$part = 1
-!$chapter = 11
+!$pos_int = 23
+!$pos_frac = 4
+!$part = 2
+!$chapter = 13
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -64,7 +64,6 @@ Samuel <-- Liza : wife
 :Adam Trask: as Adam <<protagonist>> $male
 :Cyrus: $male
 
-Adam -- salinas
 Cyrus --> Adam : father
 
 ' жена Сайруса 
@@ -137,5 +136,21 @@ Cathy ----> Adam : married
 :Alex Platt: as Platt $male
 
 Platt ...> Edwards  : found things
+
+:Dr. Tilson: as drTilson $male
+
+drTilson --> Cathy : found pregnant
+
+:Mrs. Bordoni: as mrsBordoni  $female
+
+mrsBordoni -- salinas
+
+Adam --> mrsBordoni : buying farm from
+
+:Louis Lippo: as Lippo  $male
+
+Adam <--Lippo : drove to Hamiltons
+
+Lippo -- salinas
 
 @enduml
