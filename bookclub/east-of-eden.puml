@@ -7,8 +7,8 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 23
-!$pos_frac = 4
+!$pos_int = 24
+!$pos_frac = 2
 !$part = 2
 !$chapter = 13
 
@@ -152,5 +152,13 @@ Adam --> mrsBordoni : buying farm from
 Adam <--Lippo : drove to Hamiltons
 
 Lippo -- salinas
+
+:Jennie Williams: as jennie $female
+:Belle Williams: as belle $female
+
+Tom --> jennie : asked
+Tom --> belle : asked
+
+jennie <-> belle : sisters 
 
 @enduml
