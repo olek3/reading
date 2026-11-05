@@ -164,4 +164,7 @@ jennie <-> belle : sisters
 :Martin Hopps: as Martin <<dead>> $male
 Olive <-- Martin : neighbour
 
+:Lee: $male 
+Lee --> Adam : cook
+
 @enduml
