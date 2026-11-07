@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 26
-!$pos_frac = 1
+!$pos_int = 34
+!$pos_frac = 9
 !$part = 2
-!$chapter = 14
+!$chapter = 18
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -166,5 +166,7 @@ Olive <-- Martin : neighbour
 
 :Lee: $male 
 Lee --> Adam : cook
+
+:Horace Quinn: <<todo>> $male /' sheriff '/
 
 @enduml
