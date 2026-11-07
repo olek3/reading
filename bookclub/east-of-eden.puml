@@ -7,8 +7,8 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 35
-!$pos_frac = 1
+!$pos_int = 36
+!$pos_frac = 7
 !$part = 2
 !$chapter = 18
 
@@ -170,5 +170,7 @@ Lee --> Adam : cook
 :Horace Quinn: <<todo>> $male /' sheriff '/
 :Julius Euskadi: <<todo>> $male 
 :Rabbit Holman: <<todo>> /' was working '/
+
+:Faye: <<todo>> $female 
 
 @enduml
