@@ -53,8 +53,7 @@ package Hamiltons {
 
     I <-- Olive : mother
 
-'    :Doxology: <<pet>> $female
-    $pet(Doxology,Doxology,red)
+    $pet(Doxology)
 }
 
 Samuel <-- Doxology : horse
@@ -161,26 +160,28 @@ Lippo -- salinas
 :Jennie Williams: as jennie $female
 :Belle Williams: as belle $female
 
-Tom --> jennie : asked
-Tom --> belle : asked
+jennie <--- Tom : asked
+belle <--- Tom : asked
 
 jennie <-> belle : sisters
 
 :Martin Hopps: as Martin <<dead>> $male
-Olive <-- Martin : neighbour
+Olive <--- Martin : neighbour
 
 :Lee a. k. a. Ching Chong: as Lee $male 
 Lee --> Adam : cook
 
 :Horace Quinn: as Horace $male
-:Julius Euskadi: <<todo>> $male   /' todo :Julius Euskadi:  '/
-:Rabbit Holman: <<todo>> /' was working todo :Rabbit Holman:  '/
+:Julius Euskadi: as Julius $male 
+:Rabbit Holman: as Rabbit $male
+
+Adam <-- Rabbit : worked for
 
 salinas - Horace : deputy sheriff
+Julius <-- Horace : deputized
 
-:Faye: <<todo>> $female   /' todo :Faye:  '/
+:Faye: $female  
 
-
-
+Cathy --> Faye : came to
 
 @enduml
