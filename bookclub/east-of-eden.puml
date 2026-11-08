@@ -7,8 +7,8 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 36
-!$pos_frac = 7
+!$pos_int = 37
+!$pos_frac = 0
 !$part = 2
 !$chapter = 18
 
@@ -52,7 +52,12 @@ package Hamiltons {
     Samuel <-- Olive : daughter
 
     I <-- Olive : mother
+
+'    :Doxology: <<pet>> $female
+    $pet(Doxology,Doxology,red)
 }
+
+Samuel <-- Doxology : horse
 
 salinas <-- Hamiltons : came about 1870
 
@@ -167,10 +172,15 @@ Olive <-- Martin : neighbour
 :Lee a. k. a. Ching Chong: as Lee $male 
 Lee --> Adam : cook
 
-:Horace Quinn: <<todo>> $male /' sheriff '/
-:Julius Euskadi: <<todo>> $male 
-:Rabbit Holman: <<todo>> /' was working '/
+:Horace Quinn: as Horace $male
+:Julius Euskadi: <<todo>> $male   /' todo :Julius Euskadi:  '/
+:Rabbit Holman: <<todo>> /' was working todo :Rabbit Holman:  '/
 
-:Faye: <<todo>> $female 
+salinas - Horace : deputy sheriff
+
+:Faye: <<todo>> $female   /' todo :Faye:  '/
+
+
+
 
 @enduml
