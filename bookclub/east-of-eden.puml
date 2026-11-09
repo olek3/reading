@@ -8,9 +8,9 @@
 skinparam packagebordercolor #888
 
 !$pos_int = 37
-!$pos_frac = 0
+!$pos_frac = 8
 !$part = 2
-!$chapter = 18
+!$chapter = 19
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
