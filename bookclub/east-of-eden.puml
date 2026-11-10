@@ -8,7 +8,7 @@
 skinparam packagebordercolor #888
 
 !$pos_int = 39
-!$pos_frac = 1
+!$pos_frac = 4
 !$part = 2
 !$chapter = 20
 
@@ -193,5 +193,10 @@ Cathy --> Faye : came to
 :Kate: <<todo>> 
 
 :Cotton Eye: <<todo>> 
+
+:Clarence Monteith: <<todo>> 
+:Grace: <<todo>> 
+:Dr. Wilde: <<todo>> 
+:Ethel: <<todo>> 
 
 @enduml
