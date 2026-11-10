@@ -7,8 +7,8 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 39
-!$pos_frac = 7
+!$pos_int = 40
+!$pos_frac = 9
 !$part = 2
 !$chapter = 20
 
@@ -200,4 +200,8 @@ Cathy --> Faye : came to
 :Ethel: <<todo>> 
 
 :Alice: as fayeAlice <<todo>> 
+
+:Alex: as cook <<todo>> 
+
+
 @enduml
