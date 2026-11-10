@@ -8,7 +8,7 @@
 skinparam packagebordercolor #888
 
 !$pos_int = 39
-!$pos_frac = 4
+!$pos_frac = 7
 !$part = 2
 !$chapter = 20
 
@@ -184,7 +184,7 @@ Julius <-- Horace : deputized
 
 Cathy --> Faye : came to
 
-:Kate: <<todo>> 
+:Kate Albey: <<todo>> 
 
 :Jenny: <<todo>> 
 
