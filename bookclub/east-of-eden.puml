@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 40
-!$pos_frac = 9
+!$pos_int = 41
+!$pos_frac = 8
 !$part = 2
-!$chapter = 20
+!$chapter = 21
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -182,26 +182,37 @@ Julius <-- Horace : deputized
 
 :Faye: $female  
 
-Cathy --> Faye : came to
 
-:Kate Albey: <<todo>> 
+:Kate Albey: as Kate <<alias>> $female
+Kate <.. Cathy
+(Faye's place) as Fayes <<institution>>
+Fayes <-- Kate : came to
 
-:Jenny: <<todo>> 
+Faye -- Fayes : owner
 
-:Nigger: <<todo>> 
+:Jenny:  $female
+Jenny --> Faye : competitor
 
-:Kate: <<todo>> 
+:Nigger: $male
+Nigger --> Faye : competitor
 
-:Cotton Eye: <<todo>> 
+:Cotton Eye:  as blind $male
+Fayes - blind : piano player
 
-:Clarence Monteith: <<todo>> 
-:Grace: <<todo>> 
-:Dr. Wilde: <<todo>> 
-:Ethel: <<todo>> 
+:Clarence Monteith: <<mentioned>> <<dead>> $male
+:Grace:  $female
+Grace -- Fayes : girl
+:Dr. Wilde: as drWilde  $male
+Faye <-- drWilde : doctor
 
-:Alice: as fayeAlice <<todo>> 
+:Ethel: $female
+Ethel -- Fayes : girl
 
-:Alex: as cook <<todo>> 
+:Alice: as fayeAlice $female
+fayeAlice -- Fayes : girl
+
+:Alex: as cook $male
+cook - Fayes : cook
 
 
 @enduml
