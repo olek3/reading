@@ -7,8 +7,8 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 47
-!$pos_frac = 4
+!$pos_int = 48
+!$pos_frac = 5
 !$part = 3
 !$chapter = 23
 
@@ -227,5 +227,7 @@ cook - Fayes : cook
 :Mary: <<todo>> 
 
 :Mathilde: <<todo>> 
+
+:William J. Martin, Mollie's husband : <<todo>> 
 
 @enduml
