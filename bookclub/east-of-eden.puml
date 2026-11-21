@@ -7,10 +7,10 @@
 
 skinparam packagebordercolor #888
 
-!$pos_int = 41
-!$pos_frac = 9
+!$pos_int = 46
+!$pos_frac = 5
 !$part = 2
-!$chapter = 21
+!$chapter = 22
 
 legend $pos_int.$pos_frac% (Chapter $part/$chapter)
 
@@ -218,5 +218,8 @@ cook - Fayes : cook
 :Georgia: <<todo>> 
 
 :Georgia: <<todo>> 
+
+:Aaron: <<todo>> 
+:Caleb: <<todo>>
 
 @enduml
