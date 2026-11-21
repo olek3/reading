@@ -106,7 +106,7 @@ Edwards --> innkeeper : whoremaster
 Adam -- falls : visited on way home
 
 :"Cat": as cat $male
-:Mrs May: as mrsMay
+:Mrs May: as mrsMay $female 
 
 falls -- cat : bartender
 falls -- mrsMay : boarding house
@@ -229,5 +229,7 @@ cook - Fayes : cook
 :Mathilde: <<todo>> 
 
 :William J. Martin, Mollie's husband : <<todo>> 
+
+:Mamie Dempsey: <<todo>> 
 
 @enduml
