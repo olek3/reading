@@ -8,7 +8,7 @@
 skinparam packagebordercolor #888
 
 !$pos_int = 41
-!$pos_frac = 8
+!$pos_frac = 9
 !$part = 2
 !$chapter = 21
 
@@ -214,5 +214,7 @@ fayeAlice -- Fayes : girl
 :Alex: as cook $male
 cook - Fayes : cook
 
+:Oscar Trip: <<todo>> 
+:Georgia: <<todo>> 
 
 @enduml
